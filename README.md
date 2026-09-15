@@ -1,9 +1,82 @@
 <div align="center">
 
-<!-- 1. 主标题（social 风格，圆角轻盈） -->
-<a href="https://github.com/syxscott/academic-paper-polish">
-  <img src="https://img.shields.io/badge/✨_学术论文润色指令合集-Academic_Paper_Polish-8b5cf6?style=social&logo=openai&logoColor=white" alt="Title" />
-</a>
+<!-- 自包含 SVG 大 banner（0 外部依赖，GitHub 原生支持） -->
+<svg viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:900px;">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景圆角矩形 -->
+  <rect width="900" height="240" rx="20" fill="url(#bg)"/>
+
+  <!-- 顶部渐变装饰条 -->
+  <rect x="0" y="0" width="900" height="5" rx="2.5" fill="url(#titleGrad)"/>
+
+  <!-- 动态闪烁光点 -->
+  <circle cx="60" cy="40" r="3" fill="#22c55e">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="60" r="4" fill="#f59e0b">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="200" r="3" fill="#ec4899">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="190" r="3.5" fill="#3b82f6">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 主标题（中） -->
+  <text x="450" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="800" fill="white" text-anchor="middle">
+    ✨ 学术论文润色指令合集 ✨
+  </text>
+
+  <!-- 副标题（英） -->
+  <text x="450" y="108" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-size="14" font-weight="500" fill="#fbbf24" text-anchor="middle" letter-spacing="2">
+    ACADEMIC PAPER POLISH PROMPTS
+  </text>
+
+  <!-- 8 模块彩虹色块 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-size="13" font-weight="600">
+    <rect x="60"  y="145" width="92" height="40" rx="8" fill="#8b5cf6"/>
+    <text x="106" y="170" fill="white" text-anchor="middle">📝摘要</text>
+
+    <rect x="162" y="145" width="92" height="40" rx="8" fill="#ec4899"/>
+    <text x="208" y="170" fill="white" text-anchor="middle">🔭引言</text>
+
+    <rect x="264" y="145" width="92" height="40" rx="8" fill="#f59e0b"/>
+    <text x="310" y="170" fill="white" text-anchor="middle">📚综述</text>
+
+    <rect x="366" y="145" width="92" height="40" rx="8" fill="#22c55e"/>
+    <text x="412" y="170" fill="white" text-anchor="middle">🧪方法</text>
+
+    <rect x="468" y="145" width="92" height="40" rx="8" fill="#06b6d4"/>
+    <text x="514" y="170" fill="white" text-anchor="middle">📊结果</text>
+
+    <rect x="570" y="145" width="92" height="40" rx="8" fill="#3b82f6"/>
+    <text x="616" y="170" fill="white" text-anchor="middle">💡讨论</text>
+
+    <rect x="672" y="145" width="92" height="40" rx="8" fill="#6366f1"/>
+    <text x="718" y="170" fill="white" text-anchor="middle">🎯结论</text>
+
+    <rect x="774" y="145" width="92" height="40" rx="8" fill="#ef4444"/>
+    <text x="820" y="170" fill="white" text-anchor="middle">🤖去AI</text>
+  </g>
+
+  <!-- 一句话定位 -->
+  <text x="450" y="215" font-family="-apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-size="12" font-weight="400" fill="#cbd5e1" text-anchor="middle">
+    🎯 8 modules × 1 prompt = 从初稿到终稿的全流程学术润色
+  </text>
+</svg>
 
 <br/>
 
@@ -11,25 +84,7 @@
 
 <br/>
 
-<!-- 2. 8 模块彩虹进度条（social 风格，每个纯色块，无黑色） -->
-<a href="#modules-overview"><img src="https://img.shields.io/badge/📝_摘要-8b5cf6?style=social" alt="摘要" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🔭_引言-ec4899?style=social" alt="引言" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/📚_综述-f59e0b?style=social" alt="综述" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🧪_方法-22c55e?style=social" alt="方法" /></a>
-<br/>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/📊_结果-06b6d4?style=social" alt="结果" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/💡_讨论-3b82f6?style=social" alt="讨论" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🎯_结论-6366f1?style=social" alt="结论" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🤖_去_AI-ef4444?style=social" alt="去 AI" /></a>
-
-<br/>
-
-<!-- 3. 一句话定位 -->
-**🎯 8 个 prompt 模块 × 1 条指令 = 从初稿到终稿的全流程学术润色**
-
-<br/>
-
-<!-- 4. 元信息徽章（social 风格，彩色圆角） -->
+<!-- 元信息徽章（social 风格，彩色圆角） -->
 <img src="https://img.shields.io/badge/📜_MIT_License-22c55e?style=social&logo=opensourceinitiative" alt="MIT" />
 <img src="https://img.shields.io/badge/🧩_8_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
@@ -38,7 +93,7 @@
 
 <br/>
 
-<!-- 5. 实时仓库统计（social 风格） -->
+<!-- 实时仓库统计（social 风格） -->
 <img src="https://img.shields.io/github/stars/syxscott/academic-paper-polish?style=social&logo=github&color=22c55e" alt="Stars" />
 <img src="https://img.shields.io/github/forks/syxscott/academic-paper-polish?style=social&logo=github&color=8b5cf6" alt="Forks" />
 <img src="https://img.shields.io/github/watchers/syxscott/academic-paper-polish?style=social&logo=github&color=3b82f6" alt="Watchers" />
