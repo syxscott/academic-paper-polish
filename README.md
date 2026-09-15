@@ -1,12 +1,11 @@
 <div align="center">
 
-<!-- 顶部动态打字 SVG -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=30&duration=2800&pause=1500&color=8B5CF6&center=true&vCenter=true&multiline=true&width=720&height=100&lines=让+AI+读懂学术写作;Eight+modules.+One+paper.;从初稿到终稿的全程润色" alt="Typing SVG" />
+<!-- 顶部彩色大标题（shields.io 拼图，100% 稳定，不会截断） -->
+<img src="https://img.shields.io/badge/学术论文润色指令合集-Academic_Paper_Polish-8b5cf6?style=for-the-badge&labelColor=1e1b4b&logo=bookstack&logoColor=white" alt="Title" />
 
 <br/>
 
-# ✨ 学术论文润色指令合集 ✨
-### *Academic Paper Polish Prompts*
+# ✨ *Academic Paper Polish Prompts* ✨
 
 **8 个 prompt 模块 × 1 条指令 = 从初稿到终稿的全流程学术润色**
 
