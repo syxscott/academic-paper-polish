@@ -42,11 +42,14 @@
 
 ---
 
-<!-- 仓库信息卡（动态） -->
+<!-- 仓库跳转条（shields.io 稳定服务，GitHub 官方 API 驱动） -->
 <div align="center">
-<a href="https://github.com/syxscott/academic-paper-polish">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=syxscott&repo=academic-paper-polish&theme=tokyonight&show_owner=true&description_lines_count=3" alt="Repo Card" />
-</a>
+
+[![syxscott / academic-paper-polish](https://img.shields.io/badge/syxscott%20%2F%20academic--paper--polish-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/syxscott/academic-paper-polish)
+[![License](https://img.shields.io/github/license/syxscott/academic-paper-polish?style=for-the-badge&color=22c55e)](LICENSE)
+[![Created](https://img.shields.io/github/created-at/syxscott/academic-paper-polish?style=for-the-badge&color=8b5cf6)](https://github.com/syxscott/academic-paper-polish)
+[![Last Commit](https://img.shields.io/github/last-commit/syxscott/academic-paper-polish?style=for-the-badge&color=3b82f6)](https://github.com/syxscott/academic-paper-polish/commits/main)
+
 </div>
 
 <br/>
