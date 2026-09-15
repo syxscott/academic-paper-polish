@@ -1,13 +1,19 @@
 <div align="center">
 
-<!-- 顶部彩色大标题（shields.io 拼图，100% 稳定，不会截断） -->
-<img src="https://img.shields.io/badge/学术论文润色指令合集-Academic_Paper_Polish-8b5cf6?style=for-the-badge&labelColor=1e1b4b&logo=bookstack&logoColor=white" alt="Title" />
+<!-- 1. 顶部动态打字 SVG（demolab 镜像，比 herokuapp 更稳） -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2800&pause=1800&color=8B5CF6&center=true&vCenter=true&width=720&lines=让+AI+读懂学术写作;Eight+modules.+One+paper." alt="Typing SVG" />
 
 <br/>
 
-# ✨ *Academic Paper Polish Prompts* ✨
+<!-- 2. 主标题三段拼接 banner：中文 · 英文 · 版本号 -->
+<img src="https://img.shields.io/badge/✨-学术论文润色指令合集-8b5cf6?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=1e1b4b" alt="中文" />
+<img src="https://img.shields.io/badge/Academic_Paper_Polish-000000?style=for-the-badge&logoColor=white" alt="英文" />
+<img src="https://img.shields.io/badge/v1.0.0-22c55e?style=for-the-badge&logo=github&logoColor=white" alt="版本" />
 
-**8 个 prompt 模块 × 1 条指令 = 从初稿到终稿的全流程学术润色**
+<br/>
+
+<!-- 3. 一句话定位 -->
+**🎯 8 个 prompt 模块 × 1 条指令 = 从初稿到终稿的全流程学术润色**
 
 <br/>
 
