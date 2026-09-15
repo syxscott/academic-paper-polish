@@ -1,14 +1,26 @@
 <div align="center">
 
-<!-- 1. 顶部动态打字 SVG（demolab 镜像，比 herokuapp 更稳） -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2800&pause=1800&color=8B5CF6&center=true&vCenter=true&width=720&lines=让+AI+读懂学术写作;Eight+modules.+One+paper." alt="Typing SVG" />
+<!-- 1. 主标题 banner（单图，简洁大气） -->
+<a href="https://github.com/syxscott/academic-paper-polish">
+  <img src="https://img.shields.io/badge/✨_学术论文润色指令合集-Academic_Paper_Polish-1e1b4b?style=for-the-badge&labelColor=8b5cf6&logoColor=white" alt="Title" />
+</a>
 
 <br/>
 
-<!-- 2. 主标题三段拼接 banner：中文 · 英文 · 版本号 -->
-<img src="https://img.shields.io/badge/✨-学术论文润色指令合集-8b5cf6?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=1e1b4b" alt="中文" />
-<img src="https://img.shields.io/badge/Academic_Paper_Polish-000000?style=for-the-badge&logoColor=white" alt="英文" />
-<img src="https://img.shields.io/badge/v1.0.0-22c55e?style=for-the-badge&logo=github&logoColor=white" alt="版本" />
+### *让 AI 像资深同行评审一样打磨你的论文*
+
+<br/>
+
+<!-- 2. 8 模块彩虹进度条（核心视觉锚点，一眼纵览全流程） -->
+<a href="#modules-overview"><img src="https://img.shields.io/badge/📝_摘要-8b5cf6?style=for-the-badge&labelColor=1e1b4b" alt="摘要" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🔭_引言-ec4899?style=for-the-badge&labelColor=831843" alt="引言" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/📚_综述-f59e0b?style=for-the-badge&labelColor=78350f" alt="综述" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🧪_方法-22c55e?style=for-the-badge&labelColor=14532d" alt="方法" /></a>
+<br/>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/📊_结果-06b6d4?style=for-the-badge&labelColor=164e63" alt="结果" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/💡_讨论-3b82f6?style=for-the-badge&labelColor=1e3a8a" alt="讨论" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🎯_结论-6366f1?style=for-the-badge&labelColor=312e81" alt="结论" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🤖_去_AI-ef4444?style=for-the-badge&labelColor=7f1d1d" alt="去 AI" /></a>
 
 <br/>
 
@@ -18,42 +30,28 @@
 <br/>
 
 [![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
-[![Modules](https://img.shields.io/badge/Modules-8-8b5cf6?style=for-the-badge&logo=bookstack&logoColor=white)](#-八模块速览-modules)
+[![Modules](https://img.shields.io/badge/Modules-8-8b5cf6?style=for-the-badge&logo=bookstack&logoColor=white)](#modules-overview)
 [![Lang](https://img.shields.io/badge/Lang-中文-ef4444?style=for-the-badge&logo=googletranslate&logoColor=white)](#-english-summary)
 [![Claude Skill](https://img.shields.io/badge/Claude_Code-Skill_Ready-3b82f6?style=for-the-badge&logo=anthropic&logoColor=white)](#-skill-安装-install-as-skill)
 [![Release](https://img.shields.io/badge/Release-v1.0.0-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/syxscott/academic-paper-polish/releases/tag/v1.0.0)
 
 <br/>
 
-<!-- 实时仓库统计（stars / forks / watchers / issues / license） -->
-<p>
+<!-- 4. 实时仓库统计 -->
 <img src="https://img.shields.io/github/stars/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=22c55e&label=STARS" />
 <img src="https://img.shields.io/github/forks/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=8b5cf6&label=FORKS" />
 <img src="https://img.shields.io/github/watchers/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=3b82f6&label=WATCHERS" />
 <img src="https://img.shields.io/github/issues/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=ef4444&label=ISSUES" />
 <img src="https://img.shields.io/github/license/syxscott/academic-paper-polish?style=for-the-badge&color=000000&label=LICENSE" />
-</p>
 
-<br/>
+<br/><br/>
 
 [🚀 快速开始](#-快速开始-quick-start) ·
-[🧩 八模块](#-八模块速览-modules) ·
+[🧩 八模块](#modules-overview) ·
 [📦 Skill 安装](#-skill-安装-install-as-skill) ·
 [🗺️ 流程图](#-写作流程-workflow) ·
 [❓ FAQ](#-faq) ·
 [🌍 English](#-english-summary)
-
-</div>
-
----
-
-<!-- 仓库跳转条（shields.io 稳定服务，GitHub 官方 API 驱动） -->
-<div align="center">
-
-[![syxscott / academic-paper-polish](https://img.shields.io/badge/syxscott%20%2F%20academic--paper--polish-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/syxscott/academic-paper-polish)
-[![License](https://img.shields.io/github/license/syxscott/academic-paper-polish?style=for-the-badge&color=22c55e)](LICENSE)
-[![Created](https://img.shields.io/github/created-at/syxscott/academic-paper-polish?style=for-the-badge&color=8b5cf6)](https://github.com/syxscott/academic-paper-polish)
-[![Last Commit](https://img.shields.io/github/last-commit/syxscott/academic-paper-polish?style=for-the-badge&color=3b82f6)](https://github.com/syxscott/academic-paper-polish/commits/main)
 
 </div>
 
@@ -102,7 +100,7 @@
 
 ---
 
-## 🧩 八模块速览 Modules
+## 🧩 Modules Overview
 
 > 推荐顺序：`摘要 → 引言 → 文献综述 → 研究方法 → 结果 → 讨论 → 结论 → 降低 AI 率`
 
@@ -361,17 +359,6 @@ flowchart LR
 </td>
 </tr>
 </table>
-
----
-
-## 📊 仓库动态 Repo Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=syxscott&repo=academic-paper-polish&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Activity Graph" />
-</div>
-
-> 📈 即便是新建仓库也会渲染一个干净的 activity graph，占位也很酷。
-> *Even a new repo gets a clean placeholder graph.*
 
 ---
 
