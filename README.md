@@ -1,8 +1,8 @@
 <div align="center">
 
-<!-- 1. 主标题 banner（单图，简洁大气） -->
+<!-- 1. 主标题（social 风格，圆角轻盈） -->
 <a href="https://github.com/syxscott/academic-paper-polish">
-  <img src="https://img.shields.io/badge/✨_学术论文润色指令合集-Academic_Paper_Polish-1e1b4b?style=for-the-badge&labelColor=8b5cf6&logoColor=white" alt="Title" />
+  <img src="https://img.shields.io/badge/✨_学术论文润色指令合集-Academic_Paper_Polish-8b5cf6?style=social&logo=openai&logoColor=white" alt="Title" />
 </a>
 
 <br/>
@@ -11,16 +11,16 @@
 
 <br/>
 
-<!-- 2. 8 模块彩虹进度条（核心视觉锚点，一眼纵览全流程） -->
-<a href="#modules-overview"><img src="https://img.shields.io/badge/📝_摘要-8b5cf6?style=for-the-badge&labelColor=1e1b4b" alt="摘要" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🔭_引言-ec4899?style=for-the-badge&labelColor=831843" alt="引言" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/📚_综述-f59e0b?style=for-the-badge&labelColor=78350f" alt="综述" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🧪_方法-22c55e?style=for-the-badge&labelColor=14532d" alt="方法" /></a>
+<!-- 2. 8 模块彩虹进度条（social 风格，每个纯色块，无黑色） -->
+<a href="#modules-overview"><img src="https://img.shields.io/badge/📝_摘要-8b5cf6?style=social" alt="摘要" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🔭_引言-ec4899?style=social" alt="引言" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/📚_综述-f59e0b?style=social" alt="综述" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🧪_方法-22c55e?style=social" alt="方法" /></a>
 <br/>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/📊_结果-06b6d4?style=for-the-badge&labelColor=164e63" alt="结果" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/💡_讨论-3b82f6?style=for-the-badge&labelColor=1e3a8a" alt="讨论" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🎯_结论-6366f1?style=for-the-badge&labelColor=312e81" alt="结论" /></a>
-<a href="#modules-overview"><img src="https://img.shields.io/badge/🤖_去_AI-ef4444?style=for-the-badge&labelColor=7f1d1d" alt="去 AI" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/📊_结果-06b6d4?style=social" alt="结果" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/💡_讨论-3b82f6?style=social" alt="讨论" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🎯_结论-6366f1?style=social" alt="结论" /></a>
+<a href="#modules-overview"><img src="https://img.shields.io/badge/🤖_去_AI-ef4444?style=social" alt="去 AI" /></a>
 
 <br/>
 
@@ -29,20 +29,20 @@
 
 <br/>
 
-[![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
-[![Modules](https://img.shields.io/badge/Modules-8-8b5cf6?style=for-the-badge&logo=bookstack&logoColor=white)](#modules-overview)
-[![Lang](https://img.shields.io/badge/Lang-中文-ef4444?style=for-the-badge&logo=googletranslate&logoColor=white)](#-english-summary)
-[![Claude Skill](https://img.shields.io/badge/Claude_Code-Skill_Ready-3b82f6?style=for-the-badge&logo=anthropic&logoColor=white)](#-skill-安装-install-as-skill)
-[![Release](https://img.shields.io/badge/Release-v1.0.0-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/syxscott/academic-paper-polish/releases/tag/v1.0.0)
+<!-- 4. 元信息徽章（social 风格，彩色圆角） -->
+<img src="https://img.shields.io/badge/📜_MIT_License-22c55e?style=social&logo=opensourceinitiative" alt="MIT" />
+<img src="https://img.shields.io/badge/🧩_8_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
+<img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
+<img src="https://img.shields.io/badge/🤖_Claude_Code-3b82f6?style=social&logo=anthropic" alt="Claude" />
+<img src="https://img.shields.io/badge/🏷️_v1.0.0-fbbf24?style=social&logo=github" alt="v1.0.0" />
 
 <br/>
 
-<!-- 4. 实时仓库统计 -->
-<img src="https://img.shields.io/github/stars/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=22c55e&label=STARS" />
-<img src="https://img.shields.io/github/forks/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=8b5cf6&label=FORKS" />
-<img src="https://img.shields.io/github/watchers/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=3b82f6&label=WATCHERS" />
-<img src="https://img.shields.io/github/issues/syxscott/academic-paper-polish?style=for-the-badge&logo=github&color=ef4444&label=ISSUES" />
-<img src="https://img.shields.io/github/license/syxscott/academic-paper-polish?style=for-the-badge&color=000000&label=LICENSE" />
+<!-- 5. 实时仓库统计（social 风格） -->
+<img src="https://img.shields.io/github/stars/syxscott/academic-paper-polish?style=social&logo=github&color=22c55e" alt="Stars" />
+<img src="https://img.shields.io/github/forks/syxscott/academic-paper-polish?style=social&logo=github&color=8b5cf6" alt="Forks" />
+<img src="https://img.shields.io/github/watchers/syxscott/academic-paper-polish?style=social&logo=github&color=3b82f6" alt="Watchers" />
+<img src="https://img.shields.io/github/issues/syxscott/academic-paper-polish?style=social&logo=github&color=ef4444" alt="Issues" />
 
 <br/><br/>
 
