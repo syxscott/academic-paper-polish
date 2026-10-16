@@ -81,6 +81,7 @@ academic-paper-polish/
 │   ├── checklist.md            投稿前自查清单（A–J 十组）
 │   ├── journal-constraints.md  期刊结构硬约束
 │   ├── figure-specs.md         图表硬参数
+│   ├── paleobiology-journal.md ★ Paleobiology 全刊规范
 │   ├── literature-search.md    检索与素材积累
 │   ├── sentence-bank.md        句式库
 │   └── course-sources.md       课件逐页索引
@@ -114,7 +115,7 @@ academic-paper-polish/
 
 ---
 
-## 🔴 七条硬规则
+## 🔴 八条硬规则
 
 ### 1️⃣ 先定期刊，再动笔
 
@@ -124,6 +125,7 @@ academic-paper-polish/
 |---|---|---|
 | **GCA** | 🔴 **必须分离**，各自独立编号 | 允许 |
 | **ES&T** | 🔴 **合并**为 Results and Discussion | ❌ *"A separate conclusion is not to be used"* |
+| ***Paleobiology*** | — | 🔴 **须另加 Non-technical Summary**；送审图 **<40 MP**，终稿按图型 **1200/800/600 dpi** |
 
 > 🔴 **格式不过关 → 直接拒稿，走不到学术编辑和审稿人那一步。**
 > 原因：① 第一印象 ② 基本学术素养 ③ 评审是挑错过程 ④ **格式意见往往比内容意见多**
@@ -172,6 +174,16 @@ Further research should focus on [方向].
 
 综述约 **100 篇**是质量标志；优先近 5 年（最好 1–3 年）、优先一次文献。
 
+### 8️⃣ 地质年代：Ga/Ma/ka ≠ Gyr/Myr/kyr
+
+| | 表示什么 |
+|---|---|
+| **Ga / Ma / ka** | 🔴 **年代（dates）** |
+| **Gyr / Myr / kyr** | 🔴 **时间跨度（duration）** |
+
+**upper/middle/lower** → 岩石地层单位；**early/late** → 时间单位；仅正式 ICS 时间单元大写。
+界线用 **/**，范围用 **–**。⚠️ *"Middle Cretaceous"* 不规范。
+
 ---
 
 ## 📐 技术检查卡口
@@ -190,6 +202,8 @@ Further research should focus on [方向].
 | 排版 | **12 号字 + 双倍行距 + 连续行号 + 页码** |
 
 > 🔴🔴 **从制图 → 导出 → 插入 Word，全程严禁拉对角线或等比例缩放！**
+>
+> ⚠️ 上表是**通用 / 地球化学方向**参数。**投 *Paleobiology* 时不同**：线条 **1200 dpi** / 半调 **600** / 组合 **800**；单栏 **9 cm**、双栏 **18 cm**、最大高 **24 cm**；线宽 ≥**0.3 pt**、字号 ≥**8 pt**；🔴 **标本照片必须带比例尺，不可用 ×40 代替**。详见 [references/paleobiology-journal.md](references/paleobiology-journal.md)。
 >
 > 🔴 **严禁直接复制已发表的图**（除 OA / 已获许可）；修改后必须标注文献来源；**不使用有政治分歧的地图**。
 
@@ -378,7 +392,7 @@ flowchart LR
 | 模块 | 8 | **10**（+期刊匹配与投稿、审稿意见回复） |
 | 参考资料 | 无 | **6 份**（期刊约束 / 图表参数 / 检索 / 句式库 / 自查清单 / 课件索引） |
 | 平台支持 | 主要 Claude Code / Cursor | **11 个工具**，AGENTS.md 双轨 |
-| 硬规则 | 部分 | **七条**，全部标注出处 |
+| 硬规则 | 部分 | **八条**，全部标注出处 |
 | 内容来源 | 通用 IMRaD | 融合 **172 页**地学写作课件 |
 
 **⚠️ v1.0 有一个 bug 已修复**：`SKILL.md` 的 `name` 是 `paper-polish-prompts`，但仓库目录名是 `academic-paper-polish`。Agent Skills 规范要求两者一致，**不一致会静默加载失败**。v2.0 已修正。

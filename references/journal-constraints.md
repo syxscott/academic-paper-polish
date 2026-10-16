@@ -76,6 +76,74 @@
 
 ---
 
+# ★ Paleobiology（*Paleobiology*, Cambridge）
+
+**化石 / 古生物学方向专用，规则最细的一份。** 图件规范见 `paleobiology-journal.md`。
+
+ScholarOne 投稿，paleobiology@cambridge.org。遵循《芝加哥格式手册》+ ICS 年代表。
+
+## 图件要求（送审 vs 终稿**完全不同**）
+
+| | **送审 Figures for Review** | **终稿 Figures for Production** |
+|---|---|---|
+| DPI | 无要求，但须可供审阅 | **线条图 1200 / 半调图 600 / 组合图 800** |
+| 格式 | 任意 | 任意，**❌ 不收 .doc** |
+| 大小 | 🔴 **<40 兆像素**（宽×高）才能进 PDF proof | 任意，不需进 proof |
+| 文件名 | 至少含图号 `Figure_1.tif` | 图号 + 栏宽 `Fig1_2col.tif` |
+
+## 版面与图内规范
+
+| 项 | 要求 |
+|---|---|
+| 单栏 / 双栏 | **9 cm / 18 cm** 宽，最大高 **24 cm** |
+| 线条下限 | 🔴 **0.3 pt（0.11 mm）**；突出线条 0.75–1.0 pt |
+| 字号下限 | 🔴 **8 pt**（终版） |
+| 子图标签 | **大写字母**，左上或右上角 |
+| 字体 | 无衬线；大小写混排；**不用粗体**；🔴 **须嵌入字体** |
+| 色彩避坑 | 🔴 避免 **红/蓝、红/绿、蓝/绿、蓝/黄** 对 |
+
+## 🔴 标本照相（化石形态学论文核心）
+
+- 🔴 **照片不得改动**，除色调、对比度、加标注/轮廓线
+- **左上斜向照射**（原位拍摄除外）
+- 按分类群标准惯例摆放
+- 🔴 **关键特征必须清晰可见**
+- 🔴 **标本照片必须带比例尺**，须给数值说明
+- 🔴 **不可用 ×40 等放大倍数代替比例尺**（终版可能缩放）
+- 地图 / 地层柱状图须有尺度感（比例尺或经纬度）
+
+## 🔴 地质年代（Ga/Ma/ka vs Gyr/Myr/kyr）
+
+| | 表示 | 例 |
+|---|---|---|
+| **Ga / Ma / ka** | 🔴 **年代（dates）** | 距今十亿/百万/千年 |
+| **Gyr / Myr / kyr** | 🔴 **时间跨度（duration）** | — |
+
+- **upper / middle / lower** → 岩石或时间地层单位
+- **early / late** → 时间单位；**仅正式 ICS 时间单元**大写
+- 界线用 **/** ，时间范围用 **–**（en-dash）
+
+## 🔴 Paleobiology 特有要求
+
+- 🔴 **必须提供 Non-technical Summary + Abstract，各自 ≤300 词**；非技术摘要要让非专业读者读懂
+- 全稿 **12 号 Times New Roman + 双倍行距**；**US Letter**；四边 1 英寸；**不用两端对齐**；**不在右边界断词**
+- 🔴 **从标题页开始编连续行号**
+- 正文引用：**作者与年份间不加逗号**；(Darwin 1859)；3+ 作者用 et al.
+- **Figure** 正文大写拼写、括号缩写 `(Fig. 2)`；**Table / Appendix 不缩写**
+- 🔴 **不用图注排位（no figure call outs）**
+- Competing Interests **所有作者必写**；无则写 "the author/authors declare none"
+- Author Contributions 参考 **CRediT**（credit.niso.org）
+- 数据与代码遵循 **FAIR**；Dryad / Zenodo **Paleobiology 全额付费**，Morphobank 始终免费
+- 🔴 **DOI 必须是最终 DOI**，审稿专用私有链接不可
+- 🔴 **Supplementary Material 的文献不计入主 Literature Cited**
+- Literature Cited：**严格字母序**（含 Mac/Mc）；作者名**粗体**；期刊名**斜体不缩写**；**卷号粗体**；**Hanging Indent**；**不用 Cite-While-You-Write**
+- 表题置于**表格正上方**且同页；**不用竖排标题或竖边框**
+- 🔴 **图不要嵌入正文**，作为独立文件提交
+
+详见 `paleobiology-journal.md`。
+
+---
+
 # 田力老师《论文写作规范与技巧》补充（2025-09-08）
 
 ## 体裁与篇幅（以 PPP 为例）

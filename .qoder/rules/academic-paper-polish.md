@@ -24,7 +24,7 @@
 
 文件路径：`prompts/01-abstract.md` … `prompts/10-reviewer-response.md`
 
-### 🔴 七条硬规则
+### 🔴 八条硬规则
 
 1. **先定期刊再动笔** —— GCA 要求 Results/Discussion 分离；ES&T 合并且禁用独立结论段
 2. **引言 = 倒金字塔**，opening 必须与 resolution 对齐

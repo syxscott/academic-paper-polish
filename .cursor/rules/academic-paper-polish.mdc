@@ -25,7 +25,7 @@ alwaysApply: false
 | 选期刊 / 投稿 | `prompts/09-journal-submission.md` |
 | 回复审稿意见 | `prompts/10-reviewer-response.md` |
 
-## 🔴 七条硬规则（速览）
+## 🔴 八条硬规则（速览）
 
 1. **先定期刊再动笔** —— GCA 要求 Results/Discussion 分离；ES&T 合并且**禁用独立结论段**
 2. **引言 = 倒金字塔**，opening 必须与 resolution 对齐（overpromising / on target / underpromising）

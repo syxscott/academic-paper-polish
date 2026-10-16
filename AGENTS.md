@@ -32,6 +32,7 @@ academic-paper-polish/
 │   ├── checklist.md           # 投稿前自查清单
 │   ├── journal-constraints.md # 期刊结构硬约束
 │   ├── figure-specs.md        # 图表硬参数
+│   ├── paleobiology-journal.md# ★ Paleobiology 全刊规范（图件+文体+数据）
 │   ├── literature-search.md   # 检索与素材积累
 │   ├── sentence-bank.md       # 句式库
 │   └── course-sources.md      # 课件出处与逐页索引
@@ -117,6 +118,17 @@ academic-paper-polish/
 - **GCA**：Results 与 Discussion **必须分离**；不收纯方法学论文、不收 regional case studies
 - **ES&T**：Results 与 Discussion **合并**；**禁用独立结论段**；限 7000 词
 - **ES&T 编辑红线**：摘要语法错误 **>6 处 → 不读正文**
+- ***Paleobiology***（古生物 / 化石形态学，规则最细，见 `references/paleobiology-journal.md`）：
+  - 送审图须 **<40 兆像素** 才能进 PDF proof；终稿 **线条 1200 / 半调 600 / 组合 800 dpi**
+  - 单栏 **9 cm** / 双栏 **18 cm** / 最大高 **24 cm**；线宽 ≥**0.3 pt**；字号 ≥**8 pt**
+  - 🔴 **标本照片必须带比例尺，不可用 ×40 等放大倍数代替**（终版可能缩放）
+  - 🔴 **须提供 Non-technical Summary + Abstract，各自 ≤300 词**
+  - 全稿 **12 号 Times New Roman + 双倍行距**；**US Letter**；四边 1 英寸；**不用两端对齐**；**不在右边界断词**
+  - 🔴 **从标题页开始编连续行号**
+  - **Ga/Ma/ka = 年代；Gyr/Myr/kyr = 跨度**（混用是审稿常扣分项）
+  - 🔴 **图不得嵌入正文**，作为独立文件提交；**不用图注排位（no figure call outs）**
+  - 数据与代码遵循 **FAIR**；Dryad/Zenodo 由期刊全额付费；**DOI 必须最终 DOI**
+  - 🔴 **Supplementary Material 的文献不计入主 Literature Cited**
 
 ### 措辞
 

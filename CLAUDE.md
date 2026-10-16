@@ -26,7 +26,7 @@ git clone https://github.com/syxscott/academic-paper-polish.git \
 
 ### 渐进披露
 
-`SKILL.md` 只放框架与七条硬规则。**不要一次读完全部 `prompts/` 和 `references/`** —— 先读 `SKILL.md`，按用户意图只读需要的模块。
+`SKILL.md` 只放框架与八条硬规则。**不要一次读完全部 `prompts/` 和 `references/`** —— 先读 `SKILL.md`，按用户意图只读需要的模块。
 
 ### Claude Code 特有能力
 

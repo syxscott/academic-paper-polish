@@ -36,6 +36,7 @@ metadata:
 | **GCA** | 🔴 **必须分离**，各自独立编号 | 允许 | ❌ 不收纯方法学/技术/模型论文；❌ 不收 regional case studies；Cover Letter 必推荐 3 位副主编 |
 | **ES&T** | 🔴 **合并**为 R&D | ❌ *"A separate conclusion is not to be used"* | Research Article 限 **7,000 词** |
 | **PPP** | — | — | Articles **5000–7000 词 / 4–8 图**；图单栏 **<85 mm** / 双栏 **<180 mm** |
+| **Paleobiology**<br>★化石/古生物方向，规则最细 | — | — | 送审图 **<40 兆像素**；终稿 **线条 1200 / 半调 600 / 组合 800 dpi**；单栏 9 cm / 双栏 18 cm / 最大高 24 cm；🔴 **须提供 Non-technical Summary + Abstract 各 ≤300 词**；全稿 **12 号 TNR + 双倍行距 + 连续行号**；**Ga/Ma/ka = 年代，Gyr/Myr/kyr = 跨度** |
 | **Earth-Science Reviews** | — | — | **IF > 10** |
 | **Biological Reviews / Chemical Reviews / Nature Reviews** | — | — | **IF > 14 / > 50 / 46–123** |
 
@@ -71,8 +72,7 @@ metadata:
 
 ---
 
-## 🔴 七条硬规则（跨模块通用）
-
+## 🔴 八条硬规则（跨模块通用）
 ### 1. 引言 = 倒金字塔，且 opening 必须与 resolution 对齐
 
 | 图形 | 英文 | 后果 |
@@ -125,6 +125,21 @@ Further research should focus on [方向].
 
 综述约 **100 篇**是质量标志；优先近 5 年（最好 1–3 年）、优先一次文献。
 
+### 8. 🔴 地质年代：Ga/Ma/ka ≠ Gyr/Myr/kyr
+
+地学论文最常见的形式错误，两个方向都要查：
+
+| | 表示什么 | 例 |
+|---|---|---|
+| **Ga / Ma / ka** | 🔴 **年代（dates）** | 距今十亿 / 百万 / 千年 |
+| **Gyr / Myr / kyr** | 🔴 **时间跨度（duration）** | — |
+
+- **upper / middle / lower** → 岩石或时间地层单位；**early / late** → 时间单位
+- **仅正式 ICS 时间单元**才大写 Early / Middle / Late
+- 界线用 **/**，时间范围用 **–**（en-dash）
+- 规范依据：**ICS 年代表**（stratigraphy.org/chart）与 **ICS Guide**（stratigraphy.org/guide）
+- ⚠️ *"Middle Cretaceous"* 不规范 → 用 *Upper/Lower Cretaceous*，或作形容词时 *mid-Cretaceous*
+
 ---
 
 ## 🔴 技术检查卡口（这层不过直接拒稿）
@@ -147,11 +162,19 @@ Further research should focus on [方向].
 
 **🔴 版权红线**：严禁直接复制已发表的图（除 OA/获许可）；改后必标来源；**不使用有政治分歧的地图**。
 
+> ⚠️ 上表是**通用 / 地球化学方向**的参数。**若投 *Paleobiology*（古生物 / 化石形态学），参数不同**：
+> 线条图 **1200 dpi** / 半调图 **600** / 组合图 **800**；单栏 **9 cm**、双栏 **18 cm**、最大高 **24 cm**；
+> 线条 ≥**0.3 pt**、字号 ≥**8 pt**；🔴 **标本照片必须带比例尺，不可用 ×40 等放大倍数代替**；
+> 🔴 送审图须 **<40 兆像素** 才能进 PDF proof。
+> 详见 `references/paleobiology-journal.md`。
+
 ### 排版
 
 **12 号字 + 双倍行距 + 连续行号 + 页码**
 
-详见 `references/figure-specs.md`。
+*Paleobiology* 另要求：**US Letter 纸张、四边 1 英寸、不用两端对齐、不在右边界断词**。
+
+详见 `references/figure-specs.md` 与 `references/paleobiology-journal.md`。
 
 ---
 
@@ -197,6 +220,7 @@ Further research should focus on [方向].
 | `references/checklist.md` | 投稿前自查清单（A–J 十组，可打印） |
 | `references/journal-constraints.md` | 期刊结构硬约束 + 体裁篇幅 + 引文密度 + 送审流程 |
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
+| `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性） |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |
 | `references/sentence-bank.md` | 句式库（引出不足 / 讨论动词 / 局限句式 / 回复审稿人） |
 | `references/course-sources.md` | 两份课件出处与逐页索引（含所有文献范例出处） |
