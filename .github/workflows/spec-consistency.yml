@@ -1,0 +1,30 @@
+name: Spec consistency
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: spec-consistency-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  spec-consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Check skill spec compliance
+        run: python3 scripts/check_skill.py --strict
+
+      - name: Check markdown links resolve
+        run: python3 scripts/check_links.py
+
+      - name: Check for encoding corruption
+        run: python3 scripts/check_encoding.py

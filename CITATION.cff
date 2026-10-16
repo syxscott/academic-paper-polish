@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "academic-paper-polish: An agent skill for academic paper writing, polishing, journal matching, and reviewer response"
+abstract: >-
+  A cross-platform agent skill that encodes hard rules for writing and submitting
+  geoscience SCI papers and degree theses: journal-specific structural constraints,
+  inverted-pyramid introductions, citation-density tables, figure and table hard
+  parameters, submission workflows, and reviewer-response techniques.
+type: software
+authors:
+  - name: "syxscott"
+repository-code: "https://github.com/syxscott/academic-paper-polish"
+url: "https://github.com/syxscott/academic-paper-polish"
+keywords:
+  - academic-writing
+  - agent-skills
+  - claude-code
+  - codex
+  - geoscience
+  - scientific-writing
+  - peer-review
+license: MIT

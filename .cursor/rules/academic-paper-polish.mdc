@@ -14,16 +14,16 @@ alwaysApply: false
 
 | 用户意图 | 读取 |
 |---|---|
-| 润色摘要 | `prompts/01-abstract.md` |
-| 润色引言 | `prompts/02-introduction.md` |
-| 组织文献综述 | `prompts/03-literature-review.md` |
-| 审查方法 | `prompts/04-methods.md` |
-| 结果与图表 | `prompts/05-results.md` |
-| 深化讨论 | `prompts/06-discussion.md` |
-| 写结论 | `prompts/07-conclusion.md` |
-| 去 AI 化 | `prompts/08-deai-polish.md` |
-| 选期刊 / 投稿 | `prompts/09-journal-submission.md` |
-| 回复审稿意见 | `prompts/10-reviewer-response.md` |
+| 润色摘要 | `skills/academic-paper-polish/prompts/01-abstract.md` |
+| 润色引言 | `skills/academic-paper-polish/prompts/02-introduction.md` |
+| 组织文献综述 | `skills/academic-paper-polish/prompts/03-literature-review.md` |
+| 审查方法 | `skills/academic-paper-polish/prompts/04-methods.md` |
+| 结果与图表 | `skills/academic-paper-polish/prompts/05-results.md` |
+| 深化讨论 | `skills/academic-paper-polish/prompts/06-discussion.md` |
+| 写结论 | `skills/academic-paper-polish/prompts/07-conclusion.md` |
+| 去 AI 化 | `skills/academic-paper-polish/prompts/08-deai-polish.md` |
+| 选期刊 / 投稿 | `skills/academic-paper-polish/prompts/09-journal-submission.md` |
+| 回复审稿意见 | `skills/academic-paper-polish/prompts/10-reviewer-response.md` |
 
 ## 🔴 八条硬规则（速览）
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Paper Polish"
+  short_description: "Academic paper drafting, rewriting, journal matching, and reviewer response"
+  default_prompt: "Use $academic-paper-polish to review and improve my manuscript before submission."

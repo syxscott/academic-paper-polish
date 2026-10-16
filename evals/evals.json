@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "skill": "academic-paper-polish",
+  "updated": "2026-10-17",
+  "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
+  "grading": {
+    "scale": "pass / partial / fail",
+    "pass": "正确加载对应模块，输出包含该模块的全部硬规则与关键数字，且无编造",
+    "partial": "加载了模块但遗漏关键硬规则或数字",
+    "fail": "未触发 / 触发了错误模块 / 编造数字或文献"
+  },
+  "cases": [
+    {
+      "id": "M01-abstract",
+      "module": "prompts/01-abstract.md",
+      "prompt": "帮我压缩一下摘要，投 Earth-Science Reviews",
+      "expect": {
+        "load": "prompts/01-abstract.md",
+        "must_mention": ["300 词", "Highlights", "避免缩写"],
+        "must_not": ["编造期刊影响因子"]
+      }
+    },
+    {
+      "id": "M02-introduction",
+      "module": "prompts/02-introduction.md",
+      "prompt": "引言怎么写？我感觉我写得像流水账",
+      "expect": {
+        "load": "prompts/02-introduction.md",
+        "must_mention": ["倒金字塔", "opening-resolution", "topic sentence"]
+      }
+    },
+    {
+      "id": "M03-literature-review",
+      "module": "prompts/03-literature-review.md",
+      "prompt": "我要写篇综述，从哪开始？",
+      "expect": {
+        "load": "prompts/03-literature-review.md",
+        "must_mention": ["18 步", "三段结构"]
+      }
+    },
+    {
+      "id": "M04-methods",
+      "module": "prompts/04-methods.md",
+      "prompt": "方法部分被人说无法重复，怎么改？",
+      "expect": {
+        "load": "prompts/04-methods.md",
+        "must_mention": ["标准流程", "参考文献"]
+      }
+    },
+    {
+      "id": "M05-results",
+      "module": "prompts/05-results.md",
+      "prompt": "结果部分要不要引文献？",
+      "expect": {
+        "load": "prompts/05-results.md",
+        "must_mention": ["几乎没有参考文献"]
+      }
+    },
+    {
+      "id": "M06-discussion",
+      "module": "prompts/06-discussion.md",
+      "prompt": "讨论和结果总是写混，给我个判据",
+      "expect": {
+        "load": "prompts/06-discussion.md",
+        "must_mention": ["6 步", "局限"]
+      }
+    },
+    {
+      "id": "M07-conclusion",
+      "module": "prompts/07-conclusion.md",
+      "prompt": "结论能不能和摘要重复？",
+      "expect": {
+        "load": "prompts/07-conclusion.md",
+        "must_mention": ["1–2 个段落"]
+      }
+    },
+    {
+      "id": "M08-deai-polish",
+      "module": "prompts/08-deai-polish.md",
+      "prompt": "编辑说我这稿子 AI 味太重，怎么洗",
+      "expect": {
+        "load": "prompts/08-deai-polish.md",
+        "must_mention": ["去 AI 化"]
+      }
+    },
+    {
+      "id": "M09-journal-submission",
+      "module": "prompts/09-journal-submission.md",
+      "prompt": "GCA 的 cover letter 有什么硬性要求？",
+      "expect": {
+        "load": "prompts/09-journal-submission.md",
+        "must_mention": ["Associate Editors", "通讯作者"]
+      }
+    },
+    {
+      "id": "M10-reviewer-response",
+      "module": "prompts/10-reviewer-response.md",
+      "prompt": "审稿人意见回来了，回复信怎么组织？",
+      "expect": {
+        "load": "prompts/10-reviewer-response.md",
+        "must_mention": ["四要素"]
+      }
+    }
+  ]
+}

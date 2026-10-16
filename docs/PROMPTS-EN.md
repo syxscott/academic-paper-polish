@@ -1,13 +1,13 @@
 # Academic Paper Polish — English
 
 > **This is the English entry point.** The 10 ready-to-use prompt modules live in
-> [`prompts-en/`](../prompts-en/) — one file per module, each **self-contained**.
+> [`skills/academic-paper-polish/prompts-en/`](../skills/academic-paper-polish/prompts-en/) — one file per module, each **self-contained**.
 
 ---
 
 ## How to use (no installation required)
 
-1. Open the module you need in [`prompts-en/`](../prompts-en/)
+1. Open the module you need in [`skills/academic-paper-polish/prompts-en/`](../skills/academic-paper-polish/prompts-en/)
 2. Copy the code block
 3. Replace the bracketed placeholder with your draft
 4. Send it to any LLM — ChatGPT, Claude, Gemini, Copilot, or a local model
@@ -20,16 +20,16 @@ Each file contains its own prompt **plus** the hard rules and numbers it depends
 
 | # | Module | File | One-line purpose |
 |---|---|---|---|
-| 1 | 📝 Abstract | [`01-abstract.md`](../prompts-en/01-abstract.md) | Compress the paper into its journal's word limit |
-| 2 | 🔭 Introduction | [`02-introduction.md`](../prompts-en/02-introduction.md) | Inverted pyramid · gap argument · roadmap |
-| 3 | 📚 Literature Review | [`03-literature-review.md`](../prompts-en/03-literature-review.md) | Make sources converse rather than accumulate |
-| 4 | 🧪 Methods | [`04-methods.md`](../prompts-en/04-methods.md) | Survive peer reproduction |
-| 5 | 📊 Results | [`05-results.md`](../prompts-en/05-results.md) | Report *what was found*, not *what it means* |
-| 6 | 💡 Discussion | [`06-discussion.md`](../prompts-en/06-discussion.md) | Results ↔ literature ↔ theory ↔ limitations |
-| 7 | 🎯 Conclusion | [`07-conclusion.md`](../prompts-en/07-conclusion.md) | Elevate without introducing new information |
-| 8 | 🤖 De-AI Polish | [`08-deai-polish.md`](../prompts-en/08-deai-polish.md) | Final whole-manuscript humanisation pass |
-| 9 | 🎯 Journal Matching & Submission | [`09-journal-submission.md`](../prompts-en/09-journal-submission.md) | Pick the journal **before** drafting |
-| 10 | 💬 Reviewer Response | [`10-reviewer-response.md`](../prompts-en/10-reviewer-response.md) | Answer every point, with line references |
+| 1 | 📝 Abstract | [`01-abstract.md`](../skills/academic-paper-polish/prompts-en/01-abstract.md) | Compress the paper into its journal's word limit |
+| 2 | 🔭 Introduction | [`02-introduction.md`](../skills/academic-paper-polish/prompts-en/02-introduction.md) | Inverted pyramid · gap argument · roadmap |
+| 3 | 📚 Literature Review | [`03-literature-review.md`](../skills/academic-paper-polish/prompts-en/03-literature-review.md) | Make sources converse rather than accumulate |
+| 4 | 🧪 Methods | [`04-methods.md`](../skills/academic-paper-polish/prompts-en/04-methods.md) | Survive peer reproduction |
+| 5 | 📊 Results | [`05-results.md`](../skills/academic-paper-polish/prompts-en/05-results.md) | Report *what was found*, not *what it means* |
+| 6 | 💡 Discussion | [`06-discussion.md`](../skills/academic-paper-polish/prompts-en/06-discussion.md) | Results ↔ literature ↔ theory ↔ limitations |
+| 7 | 🎯 Conclusion | [`07-conclusion.md`](../skills/academic-paper-polish/prompts-en/07-conclusion.md) | Elevate without introducing new information |
+| 8 | 🤖 De-AI Polish | [`08-deai-polish.md`](../skills/academic-paper-polish/prompts-en/08-deai-polish.md) | Final whole-manuscript humanisation pass |
+| 9 | 🎯 Journal Matching & Submission | [`09-journal-submission.md`](../skills/academic-paper-polish/prompts-en/09-journal-submission.md) | Pick the journal **before** drafting |
+| 10 | 💬 Reviewer Response | [`10-reviewer-response.md`](../skills/academic-paper-polish/prompts-en/10-reviewer-response.md) | Answer every point, with line references |
 
 **Recommended order**: `9 → 2–7 → 10 → 8`
 
@@ -47,7 +47,7 @@ A set of **10 role-scoped prompts** covering the full academic writing pipeline,
 |---|---|
 | Zhang Peng (Researcher, China University of Geosciences, Wuhan), *How to Write a Research-Direction Literature Review*, 2026-10-16, 94 pp. | Methodological skeleton: inverted-pyramid introduction, journal-specific Results/Discussion rules, six-step discussion, review 18-step workflow, Elsevier ACCEPTANCE checklist |
 | Course B, *Paper Writing Conventions & Techniques* / *Literature Review*, 2025-09-08, 43+35 pp. | Operational parameters: citation-density table, figure hard limits, three-stage submission review, 6–8 week schedule, search tooling |
-| Nine official journal style guides | Journal-by-journal hard constraints (see [`references/multi-journal-style-guides.md`](../references/multi-journal-style-guides.md)) |
+| Nine official journal style guides | Journal-by-journal hard constraints (see [`skills/academic-paper-polish/references/multi-journal-style-guides.md`](../skills/academic-paper-polish/references/multi-journal-style-guides.md)) |
 
 ---
 
@@ -199,4 +199,4 @@ See [`docs/COMPATIBILITY.md`](COMPATIBILITY.md) for the full matrix. Short versi
 - **`CLAUDE.md`** is a one-line `@AGENTS.md` shim for Claude Code.
 - **`SKILL.md`** follows the Agent Skills spec; its `name` **must equal the directory name** or loading fails silently.
 
-English-language contributors: the `prompts-en/` modules are the translation surface. When you update a Chinese module in `prompts/`, mirror the change here. Pull requests welcome.
+English-language contributors: the `skills/academic-paper-polish/prompts-en/` modules are the translation surface. When you update a Chinese module in `skills/academic-paper-polish/prompts/`, mirror the change here. Pull requests welcome.

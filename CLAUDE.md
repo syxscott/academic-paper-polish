@@ -26,13 +26,13 @@ git clone https://github.com/syxscott/academic-paper-polish.git \
 
 ### 渐进披露
 
-`SKILL.md` 只放框架与八条硬规则。**不要一次读完全部 `prompts/` 和 `references/`** —— 先读 `SKILL.md`，按用户意图只读需要的模块。
+`SKILL.md` 只放框架与八条硬规则。**不要一次读完全部 `skills/academic-paper-polish/prompts/` 和 `skills/academic-paper-polish/references/`** —— 先读 `SKILL.md`，按用户意图只读需要的模块。
 
 ### Claude Code 特有能力
 
 | 能力 | 用法 |
 |---|---|
-| **子代理并行审稿** | 把 `prompts/02` `prompts/05` `prompts/06` 分给 3 个 subagent 并行审，各自独立上下文互不污染 |
+| **子代理并行审稿** | 把 `skills/academic-paper-polish/prompts/02` `skills/academic-paper-polish/prompts/05` `skills/academic-paper-polish/prompts/06` 分给 3 个 subagent 并行审，各自独立上下文互不污染 |
 | **`/config` 加载双文件** | *Project instructions* → `claude-md-and-agents-md`，可同时读 `CLAUDE.md` 与 `AGENTS.md` |
 | **Skills 更新后需重启** | `SKILL.md` 改动后需重启会话才会重新加载 |
 | **`$CLAUDE_SKILL_DIR`** | 在 `scripts/` 中用此变量写可移植路径 |
@@ -44,7 +44,7 @@ git clone https://github.com/syxscott/academic-paper-polish.git \
 | Skill 不被发现 | 目录名 ≠ SKILL.md 的 `name` | 重命名为 `academic-paper-polish` |
 | 规则未加载 | 同目录存在 `CLAUDE.local.md`，阻止 `AGENTS.md` 直接加载 | `/config` 设为 `claude-md-and-agents-md` |
 | 规则未加载 | Claude Code < v2.1.277 | 保留 `CLAUDE.md` 的 `@AGENTS.md` 导入（本仓库已配好） |
-| 看不到具体模块 | 直接读 SKILL.md 会只看到框架 | 明确读 `prompts/01-abstract.md` 等具体文件 |
+| 看不到具体模块 | 直接读 SKILL.md 会只看到框架 | 明确读 `skills/academic-paper-polish/prompts/01-abstract.md` 等具体文件 |
 
 ---
 

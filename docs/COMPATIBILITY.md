@@ -76,7 +76,7 @@ git clone https://github.com/syxscott/academic-paper-polish.git
 
 ### 直接当 Prompt 用（零安装）
 
-复制 `prompts/*.md` 中任意模块的内容 → 替换 `【此处粘贴你的 XXX 初稿】` → 发给任意 LLM。
+复制 `skills/academic-paper-polish/prompts/*.md` 中任意模块的内容 → 替换 `【此处粘贴你的 XXX 初稿】` → 发给任意 LLM。
 
 ---
 
@@ -120,8 +120,8 @@ Codex 累积加载 `AGENTS.md` 超过 **32 KiB** 会截断，且**离当前目�
 
 | 目录 | 语言 | 说明 |
 |---|---|---|
-| `prompts/` | 中文 | 10 个模块 |
-| `prompts-en/` | English | 同 10 个模块，**每文件自包含** |
+| `skills/academic-paper-polish/prompts/` | 中文 | 10 个模块 |
+| `skills/academic-paper-polish/prompts-en/` | English | 同 10 个模块，**每文件自包含** |
 
 **英文版为何自包含**：prompt 被复制进通用 LLM（ChatGPT / Gemini / 本地模型）后，那个 LLM **拿不到本仓库的其他文件**。所以每个英文模块都内嵌了它依赖的硬规则与期刊数字，单文件即可完整工作。
 
@@ -129,7 +129,7 @@ Codex 累积加载 `AGENTS.md` 超过 **32 KiB** 会截断，且**离当前目�
 
 **给 AI 工具的指令示例**：
 ```
-Read prompts-en/02-introduction.md and polish my introduction per its rules: [paste draft]
+Read skills/academic-paper-polish/prompts-en/02-introduction.md and polish my introduction per its rules: [paste draft]
 ```
 
 ---

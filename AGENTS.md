@@ -12,35 +12,52 @@
 
 ```
 academic-paper-polish/
-├── AGENTS.md              # ⭐ 跨工具规则单一来源（本文件）
-├── CLAUDE.md              # Claude Code 跳板：@AGENTS.md + Claude 专属说明
-├── SKILL.md               # ⭐ Agent Skills 入口（name 必须 = academic-paper-polish）
-├── README.md              # 人类向说明：安装、方法论、FAQ
-├── LICENSE                # MIT
-├── prompts/               # 10 个可独立调用的 prompt 模块
-├── prompts-en/            # 同 10 模块英文版，每文件自包含（单文件复制进任意 LLM 即可用）
-│   ├── 01-abstract.md
-│   ├── 02-introduction.md
-│   ├── 03-literature-review.md
-│   ├── 04-methods.md
-│   ├── 05-results.md
-│   ├── 06-discussion.md
-│   ├── 07-conclusion.md
-│   ├── 08-deai-polish.md
-│   ├── 09-journal-submission.md
-│   └── 10-reviewer-response.md
-├── references/            # 按需加载的深度参考（progressive disclosure）
-│   ├── checklist.md           # 投稿前自查清单
-│   ├── journal-constraints.md # 期刊结构硬约束
-│   ├── figure-specs.md        # 图表硬参数
-│   ├── paleobiology-journal.md# ★ Paleobiology 全刊规范（图件+文体+数据）
-│   ├── literature-search.md   # 检索与素材积累
-│   ├── sentence-bank.md       # 句式库
+├── AGENTS.md                        # ⭐ 跨工具规则单一来源（本文件）
+├── CLAUDE.md                        # Claude Code 跳板：@AGENTS.md + Claude 专属说明
+├── README.md                        # 人类向说明：安装、方法论、FAQ
+├── CHANGELOG.md                     # 版本历史
+├── CITATION.cff                     # 学术引用元数据
+├── LICENSE                          # MIT
+├── skills/
+│   └── academic-paper-polish/       # ⭐ 自包含 skill 包（整目录拷贝即可安装）
+│       ├── SKILL.md                 # Agent Skills 入口（name 必须 = 目录名）
+│       ├── agents/
+│       │   └── openai.yaml          # Codex 界面元数据（display_name / default_prompt）
+│       ├── prompts/                 # 10 个可独立调用的 prompt 模块（中文）
+│       │   ├── 01-abstract.md
+│       │   ├── 02-introduction.md
+│       │   ├── 03-literature-review.md
+│       │   ├── 04-methods.md
+│       │   ├── 05-results.md
+│       │   ├── 06-discussion.md
+│       │   ├── 07-conclusion.md
+│       │   ├── 08-deai-polish.md
+│       │   ├── 09-journal-submission.md
+│       │   └── 10-reviewer-response.md
+│       ├── prompts-en/              # 同 10 模块英文版，每文件自包含（单文件复制进任意 LLM 即可用）
+│       └── references/              # 按需加载的深度参考（progressive disclosure）
+│           ├── checklist.md             # 投稿前自查清单
+│           ├── journal-constraints.md   # 期刊结构硬约束
+│           ├── figure-specs.md          # 图表硬参数
+│           ├── paleobiology-journal.md  # ★ Paleobiology 全刊规范（图件+文体+数据）
+│           ├── multi-journal-style-guides.md  # ★ 9 家期刊官方 Style Guide 汇总
+│           ├── literature-search.md     # 检索与素材积累
+│           ├── sentence-bank.md         # 句式库
+│           ├── 论文写作方法论骨架.md     # 写作方法论（引言/讨论/综述/投稿）
+│           └── 格式硬参数与文献检索实操.md  # 格式参数与检索实操
+├── scripts/                         # 规范一致性校验脚本
+│   ├── check_skill.py               # frontmatter / name / 行数 / 引用存在性
+│   ├── check_links.py               # 本地 .md 链接可达性
+│   └── check_encoding.py            # U+FFFD 编码损坏扫描
+├── evals/                           # 评测集用例与基线
+│   ├── evals.json
+│   └── README.md
 ├── docs/
-│   ├── COMPATIBILITY.md   # 各 AI 工具兼容性矩阵
-│   └── PROMPTS-EN.md      # 英文版 prompt
+│   ├── COMPATIBILITY.md             # 各 AI 工具兼容性矩阵
+│   └── PROMPTS-EN.md                # 英文版 prompt 入口
 ├── assets/banner.svg
-└── .cursor/rules/         # Cursor 规则（含 mdc 头）
+├── .cursor/rules/                   # Cursor 规则（含 mdc 头）
+└── .qoder/rules/                    # Qoder / QCode 规则
 ```
 
 ---
@@ -51,20 +68,20 @@ academic-paper-polish/
 
 | 用户意图 | 中文模块 | 英文模块 |
 |---|---|---|
-| 润色摘要 | `prompts/01-abstract.md` | `prompts-en/01-abstract.md` |
-| 润色引言 / 强化论证结构 | `prompts/02-introduction.md` | `prompts-en/02-introduction.md` |
-| 组织文献综述 / review paper 结构 | `prompts/03-literature-review.md` | `prompts-en/03-literature-review.md` |
-| 审查方法可复现性 | `prompts/04-methods.md` | `prompts-en/04-methods.md` |
-| 检查结果与图表规范 | `prompts/05-results.md` | `prompts-en/05-results.md` |
-| 深化讨论 / 提炼贡献与局限 | `prompts/06-discussion.md` | `prompts-en/06-discussion.md` |
-| 写结论 | `prompts/07-conclusion.md` | `prompts-en/07-conclusion.md` |
-| 终稿去 AI 化 | `prompts/08-deai-polish.md` | `prompts-en/08-deai-polish.md` |
-| 选期刊 / 投稿 / Cover Letter | `prompts/09-journal-submission.md` | `prompts-en/09-journal-submission.md` |
-| 回复审稿意见 | `prompts/10-reviewer-response.md` | `prompts-en/10-reviewer-response.md` |
+| 润色摘要 | `skills/academic-paper-polish/prompts/01-abstract.md` | `skills/academic-paper-polish/prompts-en/01-abstract.md` |
+| 润色引言 / 强化论证结构 | `skills/academic-paper-polish/prompts/02-introduction.md` | `skills/academic-paper-polish/prompts-en/02-introduction.md` |
+| 组织文献综述 / review paper 结构 | `skills/academic-paper-polish/prompts/03-literature-review.md` | `skills/academic-paper-polish/prompts-en/03-literature-review.md` |
+| 审查方法可复现性 | `skills/academic-paper-polish/prompts/04-methods.md` | `skills/academic-paper-polish/prompts-en/04-methods.md` |
+| 检查结果与图表规范 | `skills/academic-paper-polish/prompts/05-results.md` | `skills/academic-paper-polish/prompts-en/05-results.md` |
+| 深化讨论 / 提炼贡献与局限 | `skills/academic-paper-polish/prompts/06-discussion.md` | `skills/academic-paper-polish/prompts-en/06-discussion.md` |
+| 写结论 | `skills/academic-paper-polish/prompts/07-conclusion.md` | `skills/academic-paper-polish/prompts-en/07-conclusion.md` |
+| 终稿去 AI 化 | `skills/academic-paper-polish/prompts/08-deai-polish.md` | `skills/academic-paper-polish/prompts-en/08-deai-polish.md` |
+| 选期刊 / 投稿 / Cover Letter | `skills/academic-paper-polish/prompts/09-journal-submission.md` | `skills/academic-paper-polish/prompts-en/09-journal-submission.md` |
+| 回复审稿意见 | `skills/academic-paper-polish/prompts/10-reviewer-response.md` | `skills/academic-paper-polish/prompts-en/10-reviewer-response.md` |
 
-**加载原则**：先读 `SKILL.md` 建立框架 → 按用户意图只读对应的 `prompts/*.md` → 涉及具体数字时再读 `references/*.md`。
+**加载原则**：先读 `skills/academic-paper-polish/SKILL.md` 建立框架 → 按用户意图只读对应的 `skills/academic-paper-polish/prompts/*.md` → 涉及具体数字时再读 `skills/academic-paper-polish/references/*.md`。
 
-**英文用户**：优先加载 `prompts-en/` 对应模块。它与中文版规则一致，且**自包含** —— 已内置该模块所需的硬规则与期刊数字，不需要额外读 `references/`。
+**英文用户**：优先加载 `skills/academic-paper-polish/prompts-en/` 对应模块。它与中文版规则一致，且**自包含** —— 已内置该模块所需的硬规则与期刊数字，不需要额外读 `skills/academic-paper-polish/references/`。
 
 **不要一次把所有文件读进上下文。** 本仓库的核心设计是渐进披露（progressive disclosure）。
 
@@ -120,7 +137,7 @@ academic-paper-polish/
 - **GCA**：Results 与 Discussion **必须分离**；不收纯方法学论文、不收 regional case studies
 - **ES&T**：Results 与 Discussion **合并**；**禁用独立结论段**；限 7000 词
 - **ES&T 编辑红线**：摘要语法错误 **>6 处 → 不读正文**
-- ***Paleobiology***（古生物 / 化石形态学，规则最细，见 `references/paleobiology-journal.md`）：
+- ***Paleobiology***（古生物 / 化石形态学，规则最细，见 `skills/academic-paper-polish/references/paleobiology-journal.md`）：
   - 送审图须 **<40 兆像素** 才能进 PDF proof；终稿 **线条 1200 / 半调 600 / 组合 800 dpi**
   - 单栏 **9 cm** / 双栏 **18 cm** / 最大高 **24 cm**；线宽 ≥**0.3 pt**；字号 ≥**8 pt**
   - 🔴 **标本照片必须带比例尺，不可用 ×40 等放大倍数代替**（终版可能缩放）
@@ -142,8 +159,9 @@ academic-paper-polish/
 
 ## 维护约定
 
-- **SKILL.md 的 `name` 必须等于仓库目录名**（`academic-paper-polish`），否则违反 Agent Skills 规范，会**静默加载失败**
-- **SKILL.md 正文控制在 500 行以内**，详细内容下沉到 `prompts/` 和 `references/`
+- **`skills/academic-paper-polish/SKILL.md` 的 `name` 必须等于其父目录名**（`academic-paper-polish`），否则违反 Agent Skills 规范，会**静默加载失败**
+- **SKILL.md 正文控制在 500 行以内**，详细内容下沉到 `skills/academic-paper-polish/prompts/` 和 `skills/academic-paper-polish/references/`
+- **改动后跑一遍 `python3 scripts/check_skill.py --strict`**（与 CI 的 `.github/workflows/spec-consistency.yml` 同一套校验）
 - **修改 prompt 时同步更新** `README.md` 的模块表与 `docs/PROMPTS-EN.md`（如有对应条目）
 - **引用规则或数字时标注出处**（来自哪份资料、哪一条），便于核验
 - 保持**中文为主、关键术语中英并列**的现状；英文版单独放 `docs/`
@@ -162,8 +180,8 @@ academic-paper-polish/
 
 - **不要删除 `AGENTS.md`** —— 它是多数工具的唯一规则入口
 - **不要把 `CLAUDE.md` 做成内容副本** —— 它应只有 `@AGENTS.md` 一行 + Claude 专属说明，否则会产生双份维护
-- **新增 prompt 模块时**，同步更新五处：`SKILL.md` 模块索引（中英双列） · `README.md` 模块表 · `AGENTS.md` 加载表 · `docs/PROMPTS-EN.md` · 对应的 `prompts-en/` 英文文件
-- **中英双语维护原则**：`prompts/` 与 `prompts-en/` 是**同一套规则的两种语言**，改一边必须同步另一边。英文版必须**自包含**（内嵌硬规则），因为单文件会被复制进通用 LLM，拿不到仓库其他文件
+- **新增 prompt 模块时**，同步更新六处：`skills/academic-paper-polish/SKILL.md` 模块索引（中英双列） · `README.md` 模块表 · `AGENTS.md` 加载表 · `docs/PROMPTS-EN.md` · 对应的 `skills/academic-paper-polish/prompts-en/` 英文文件 · `evals/evals.json` 补一条用例
+- **中英双语维护原则**：`skills/academic-paper-polish/prompts/` 与 `skills/academic-paper-polish/prompts-en/` 是**同一套规则的两种语言**，改一边必须同步另一边。英文版必须**自包含**（内嵌硬规则），因为单文件会被复制进通用 LLM，拿不到仓库其他文件
 - **写中文长文档后**，用脚本扫一遍编码替换字符（`re.finditer('\ufffd')`），中文标点与全角字符容易在此环节损坏
 
 ---

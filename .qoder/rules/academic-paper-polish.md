@@ -22,7 +22,7 @@
 | 9 | 期刊匹配与投稿 | 先定期刊再动笔 |
 | 10 | 审稿意见回复 | 逐条答复 |
 
-文件路径：`prompts/01-abstract.md` … `prompts/10-reviewer-response.md`
+文件路径：`skills/academic-paper-polish/prompts/01-abstract.md` … `skills/academic-paper-polish/prompts/10-reviewer-response.md`
 
 ### 🔴 八条硬规则
 
