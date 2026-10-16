@@ -46,7 +46,7 @@ A set of **10 role-scoped prompts** covering the full academic writing pipeline,
 | Source | Contribution |
 |---|---|
 | Zhang Peng (Researcher, China University of Geosciences, Wuhan), *How to Write a Research-Direction Literature Review*, 2026-10-16, 94 pp. | Methodological skeleton: inverted-pyramid introduction, journal-specific Results/Discussion rules, six-step discussion, review 18-step workflow, Elsevier ACCEPTANCE checklist |
-| Tian Li (CUG), *Paper Writing Conventions & Techniques* / *Literature Review*, 2025-09-08, 43+35 pp. | Operational parameters: citation-density table, figure hard limits, three-stage submission review, 6–8 week schedule, search tooling |
+| Course B, *Paper Writing Conventions & Techniques* / *Literature Review*, 2025-09-08, 43+35 pp. | Operational parameters: citation-density table, figure hard limits, three-stage submission review, 6–8 week schedule, search tooling |
 | Nine official journal style guides | Journal-by-journal hard constraints (see [`references/multi-journal-style-guides.md`](../references/multi-journal-style-guides.md)) |
 
 ---
