@@ -37,6 +37,9 @@ metadata:
 | **ES&T** | 🔴 **合并**为 R&D | ❌ *"A separate conclusion is not to be used"* | Research Article 限 **7,000 词** |
 | **PPP** | — | — | Articles **5000–7000 词 / 4–8 图**；图单栏 **<85 mm** / 双栏 **<180 mm** |
 | **Paleobiology**<br>★化石/古生物方向，规则最细 | — | — | 送审图 **<40 兆像素**；终稿 **线条 1200 / 半调 600 / 组合 800 dpi**；单栏 9 cm / 双栏 18 cm / 最大高 24 cm；🔴 **须提供 Non-technical Summary + Abstract 各 ≤300 词**；全稿 **12 号 TNR + 双倍行距 + 连续行号**；**Ga/Ma/ka = 年代，Gyr/Myr/kyr = 跨度** |
+| **Acta Palaeontologica Polonica** | — | — | 图件参数最精确：单栏 **89 mm** / 双栏 **183 mm** / 最大长 **237 mm**；**Calibri 8 pt**；线宽 **0.2 mm**；照片 **400 dpi**；🔴 **ZooBank 强制注册** |
+| **Palaeontologia Electronica** | — | — | 🔴 **无页限、无版面费**；图宽 **175 mm / 84 mm**，**300 ppi**，**RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符，仅小写/数字/`_`/`.`）；须提供 plain language summary |
+| **PalZ** | — | — | Systematic Palaeontology：分类单元名**粗体**，authority **加逗号**（与 Paleobiology/APP 系相反），同义名列表**隔行缩进** |
 | **Earth-Science Reviews** | — | — | **IF > 10** |
 | **Biological Reviews / Chemical Reviews / Nature Reviews** | — | — | **IF > 14 / > 50 / 46–123** |
 
@@ -221,6 +224,7 @@ Further research should focus on [方向].
 | `references/journal-constraints.md` | 期刊结构硬约束 + 体裁篇幅 + 引文密度 + 送审流程 |
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性） |
+| `references/multi-journal-style-guides.md` | ★ **9 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系）+ 横向对比与选刊建议 |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |
 | `references/sentence-bank.md` | 句式库（引出不足 / 讨论动词 / 局限句式 / 回复审稿人） |
 | `references/course-sources.md` | 两份课件出处与逐页索引（含所有文献范例出处） |

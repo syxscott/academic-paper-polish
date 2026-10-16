@@ -144,6 +144,31 @@ ScholarOne 投稿，paleobiology@cambridge.org。遵循《芝加哥格式手册�
 
 ---
 
+# ★ 多期刊官方 Style Guide 汇总
+
+**已取得官方原文的 9 份规范**，见 [`multi-journal-style-guides.md`](multi-journal-style-guides.md)：
+
+| 期刊 | 出版社 | 对你研究的价值 |
+|---|---|---|
+| **Earth-Science Reviews** | Elsevier | ⭐⭐⭐ 综述顶刊；只发综述，拒 bibliometric studies |
+| **Nature** | Springer Nature | ⭐⭐ summary paragraph 四步结构；主文 ≤50 refs |
+| **PNAS** | NAS | ⭐⭐ 🔴 Significance Statement ≤120 词（独有） |
+| **CVPR / ICCV / 3DV** | CVF | ⭐⭐⭐ 放射虫图像方向；🔴 色盲友好要求 |
+| **Palaeoworld** | Elsevier | ⭐⭐⭐ Systematic palaeontology 完整规范；无版面费 |
+| **Paleobiology** | Cambridge | ⭐⭐⭐ 化石标本照相（见 [`paleobiology-journal.md`](paleobiology-journal.md)） |
+| **Acta Palaeontologica Polonica** | 波兰科学院 | ⭐⭐⭐ 图件参数最精确；🔴 ZooBank 强制 |
+| **Palaeontologia Electronica** | OA | ⭐⭐ 无页限无版面费；ISO 9660 文件命名 |
+| **PalZ** | Springer | ⭐⭐⭐ Systematic Palaeontology 格式范例 |
+| **Elsevier 微体古生物系**<br>Revue de Micro / Marine Micro / Geobios | Elsevier | ⭐⭐⭐ 放射虫直接对口 |
+
+**横向对比与选刊建议见该文档第十、十一章**，含：
+- 各刊摘要上限与双摘要差异（Nature / PNAS / Paleobiology / PE 各不相同）
+- 图表 dpi / 栏宽 / 字号对比 —— **同是化石照片，Paleobiology 要 600 dpi、APP 要 400、PNAS 要 300**
+- Systematic palaeontology 格式换刊差异 —— **PalZ 要粗体名称 + authority 加逗号 + 隔行缩进；Paleobiology/APP 系要斜体 + 不加逗号**
+- 12 条全刊通用红线
+
+---
+
 # 田力老师《论文写作规范与技巧》补充（2025-09-08）
 
 ## 体裁与篇幅（以 PPP 为例）

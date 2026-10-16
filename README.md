@@ -82,6 +82,7 @@ academic-paper-polish/
 │   ├── journal-constraints.md  期刊结构硬约束
 │   ├── figure-specs.md         图表硬参数
 │   ├── paleobiology-journal.md ★ Paleobiology 全刊规范
+│   ├── multi-journal-style-guides.md ★ 9 份官方 style guide 汇总
 │   ├── literature-search.md    检索与素材积累
 │   ├── sentence-bank.md        句式库
 │   └── course-sources.md       课件逐页索引
@@ -126,6 +127,9 @@ academic-paper-polish/
 | **GCA** | 🔴 **必须分离**，各自独立编号 | 允许 |
 | **ES&T** | 🔴 **合并**为 Results and Discussion | ❌ *"A separate conclusion is not to be used"* |
 | ***Paleobiology*** | — | 🔴 **须另加 Non-technical Summary**；送审图 **<40 MP**，终稿按图型 **1200/800/600 dpi** |
+| **Acta Palaeontologica Polonica** | — | 图件参数最精确：单栏 **89 mm** / 双栏 **183 mm** / 最大长 **237 mm**；**Calibri 8 pt**；线宽 **0.2 mm**；照片 **400 dpi**；🔴 **ZooBank 强制注册** |
+| **Palaeontologia Electronica** | — | 🔴 **无页限、无版面费**；图宽 **175 mm / 84 mm**，**300 ppi**，**RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符，仅小写/数字/`_`/`.`） |
+| **PalZ** | — | Systematic Palaeontology：分类单元名**粗体**，authority **加逗号**（与 Paleobiology/APP 系相反），同义名列表**隔行缩进** |
 
 > 🔴 **格式不过关 → 直接拒稿，走不到学术编辑和审稿人那一步。**
 > 原因：① 第一印象 ② 基本学术素养 ③ 评审是挑错过程 ④ **格式意见往往比内容意见多**
