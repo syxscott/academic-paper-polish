@@ -18,6 +18,7 @@ academic-paper-polish/
 ├── README.md              # 人类向说明：安装、方法论、FAQ
 ├── LICENSE                # MIT
 ├── prompts/               # 10 个可独立调用的 prompt 模块
+├── prompts-en/            # 同 10 模块英文版，每文件自包含（单文件复制进任意 LLM 即可用）
 │   ├── 01-abstract.md
 │   ├── 02-introduction.md
 │   ├── 03-literature-review.md
@@ -49,20 +50,22 @@ academic-paper-polish/
 
 ### 何时加载哪个模块
 
-| 用户意图 | 加载 |
-|---|---|
-| 润色摘要 | `prompts/01-abstract.md` |
-| 润色引言 / 强化论证结构 | `prompts/02-introduction.md` |
-| 组织文献综述 / review paper 结构 | `prompts/03-literature-review.md` |
-| 审查方法可复现性 | `prompts/04-methods.md` |
-| 检查结果与图表规范 | `prompts/05-results.md` |
-| 深化讨论 / 提炼贡献与局限 | `prompts/06-discussion.md` |
-| 写结论 | `prompts/07-conclusion.md` |
-| 终稿去 AI 化 | `prompts/08-deai-polish.md` |
-| 选期刊 / 投稿 / Cover Letter | `prompts/09-journal-submission.md` |
-| 回复审稿意见 | `prompts/10-reviewer-response.md` |
+| 用户意图 | 中文模块 | 英文模块 |
+|---|---|---|
+| 润色摘要 | `prompts/01-abstract.md` | `prompts-en/01-abstract.md` |
+| 润色引言 / 强化论证结构 | `prompts/02-introduction.md` | `prompts-en/02-introduction.md` |
+| 组织文献综述 / review paper 结构 | `prompts/03-literature-review.md` | `prompts-en/03-literature-review.md` |
+| 审查方法可复现性 | `prompts/04-methods.md` | `prompts-en/04-methods.md` |
+| 检查结果与图表规范 | `prompts/05-results.md` | `prompts-en/05-results.md` |
+| 深化讨论 / 提炼贡献与局限 | `prompts/06-discussion.md` | `prompts-en/06-discussion.md` |
+| 写结论 | `prompts/07-conclusion.md` | `prompts-en/07-conclusion.md` |
+| 终稿去 AI 化 | `prompts/08-deai-polish.md` | `prompts-en/08-deai-polish.md` |
+| 选期刊 / 投稿 / Cover Letter | `prompts/09-journal-submission.md` | `prompts-en/09-journal-submission.md` |
+| 回复审稿意见 | `prompts/10-reviewer-response.md` | `prompts-en/10-reviewer-response.md` |
 
 **加载原则**：先读 `SKILL.md` 建立框架 → 按用户意图只读对应的 `prompts/*.md` → 涉及具体数字时再读 `references/*.md`。
+
+**英文用户**：优先加载 `prompts-en/` 对应模块。它与中文版规则一致，且**自包含** —— 已内置该模块所需的硬规则与期刊数字，不需要额外读 `references/`。
 
 **不要一次把所有文件读进上下文。** 本仓库的核心设计是渐进披露（progressive disclosure）。
 
@@ -161,7 +164,8 @@ academic-paper-polish/
 
 - **不要删除 `AGENTS.md`** —— 它是多数工具的唯一规则入口
 - **不要把 `CLAUDE.md` 做成内容副本** —— 它应只有 `@AGENTS.md` 一行 + Claude 专属说明，否则会产生双份维护
-- **新增 prompt 模块时**，同步更新四处：`SKILL.md` 模块索引 · `README.md` 模块表 · `docs/PROMPTS-EN.md` · `AGENTS.md` 加载表
+- **新增 prompt 模块时**，同步更新五处：`SKILL.md` 模块索引（中英双列） · `README.md` 模块表 · `AGENTS.md` 加载表 · `docs/PROMPTS-EN.md` · 对应的 `prompts-en/` 英文文件
+- **中英双语维护原则**：`prompts/` 与 `prompts-en/` 是**同一套规则的两种语言**，改一边必须同步另一边。英文版必须**自包含**（内嵌硬规则），因为单文件会被复制进通用 LLM，拿不到仓库其他文件
 - **写中文长文档后**，用脚本扫一遍编码替换字符（`re.finditer('\ufffd')`），中文标点与全角字符容易在此环节损坏
 
 ---

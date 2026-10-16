@@ -52,18 +52,22 @@ metadata:
 
 ## 模块索引
 
-| # | 模块 | 一句话定位 | 文件 |
-|---|---|---|---|
-| 1 | 📝 摘要 | 把整篇压缩进 300 词 | `prompts/01-abstract.md` |
-| 2 | 🔭 引言 | 倒金字塔 · 缺口 · 路线图 | `prompts/02-introduction.md` |
-| 3 | 📚 文献综述 | 让文献"对话"而非罗列 | `prompts/03-literature-review.md` |
-| 4 | 🧪 研究方法 | 经得起同行复现 | `prompts/04-methods.md` |
-| 5 | 📊 结果 | 只讲"发现了什么" | `prompts/05-results.md` |
-| 6 | 💡 讨论 | 结果 ↔ 文献 ↔ 理论 ↔ 局限 | `prompts/06-discussion.md` |
-| 7 | 🎯 结论 | 升华但不引入新信息 | `prompts/07-conclusion.md` |
-| 8 | 🤖 去 AI 化 | 终稿通篇润色 | `prompts/08-deai-polish.md` |
-| 9 | 🎯 期刊匹配与投稿 | 先定期刊再动笔 | `prompts/09-journal-submission.md` |
-| 10 | 💬 审稿意见回复 | 逐条答复的四要素 | `prompts/10-reviewer-response.md` |
+| # | 模块 | 一句话定位 | 中文 | English |
+|---|---|---|---|---|
+| 01 | 📝 摘要 | 把整篇压缩进 300 词 | `prompts/01-abstract.md` | `prompts-en/01-abstract.md` |
+| 02 | 🔭 引言 | 倒金字塔 · 缺口 · 路线图 | `prompts/02-introduction.md` | `prompts-en/02-introduction.md` |
+| 03 | 📚 文献综述 | 让文献"对话"而非罗列 | `prompts/03-literature-review.md` | `prompts-en/03-literature-review.md` |
+| 04 | 🧪 研究方法 | 经得起同行复现 | `prompts/04-methods.md` | `prompts-en/04-methods.md` |
+| 05 | 📊 结果 | 只讲"发现了什么" | `prompts/05-results.md` | `prompts-en/05-results.md` |
+| 06 | 💡 讨论 | 结果 ↔ 文献 ↔ 理论 ↔ 局限 | `prompts/06-discussion.md` | `prompts-en/06-discussion.md` |
+| 07 | 🎯 结论 | 升华但不引入新信息 | `prompts/07-conclusion.md` | `prompts-en/07-conclusion.md` |
+| 08 | 🤖 去 AI 化 | 终稿通篇润色 | `prompts/08-deai-polish.md` | `prompts-en/08-deai-polish.md` |
+| 09 | 🎯 期刊匹配与投稿 | 先定期刊再动笔 | `prompts/09-journal-submission.md` | `prompts-en/09-journal-submission.md` |
+| 10 | 💬 审稿意见回复 | 逐条答复的四要素 | `prompts/10-reviewer-response.md` | `prompts-en/10-reviewer-response.md` |
+
+> 🌍 **英文用户**：直接读 `prompts-en/` 对应模块 —— 每个文件**自包含**（含所需硬规则与期刊数字），
+> 单文件复制进任意 LLM 即可用，无需先读 `references/`。英文入口见 `docs/PROMPTS-EN.md`。
+
 
 **推荐顺序**：`① 期刊匹配(9) → ② 写/润色正文(2-7) → ③ 返修回复(10) → ④ 终稿去 AI 化(8)`
 

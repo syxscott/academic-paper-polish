@@ -67,6 +67,7 @@ academic-paper-polish/
 ├── SKILL.md               # ⭐ Agent Skills 入口
 ├── README.md              # 📖 你正在读的文件
 ├── prompts/               # 10 个可独立调用的 prompt 模块
+├── prompts-en/            # 同 10 模块英文版，每文件自包含
 │   ├── 01-abstract.md              📝 摘要
 │   ├── 02-introduction.md🔭 引言
 │   ├── 03-literature-review.md     📚 文献综述
@@ -101,18 +102,21 @@ academic-paper-polish/
 
 > 推荐顺序：`🎯 期刊匹配(9) → ✍️ 写/润色正文(2-7) → 💬 返修回复(10) → 🤖 终稿去 AI 化(8)`
 
-| # | 模块 Module | 一句话定位 Tagline | 核心评审维度 |
-|---|---|---|---|
-| 1 | 📝 **摘要** Abstract | 把整篇论文压缩进 300 词 | 背景 · 方法 · 发现 · 意义 |
-| 2 | 🔭 **引言** Introduction | 倒金字塔 · 缺口 · 问题 · 路线图 | 倒三角结构 · opening-resolution 对齐 · 引文密度 |
-| 3 | 📚 **文献综述** Lit Review | 让文献"对话"而非罗列 | 主题整合 · 批判分析 · 综述 18 步 |
-| 4 | 🧪 **研究方法** Methods | 经得起同行复现的细节度 | 设计 · 数据 · 模型 · 指标 |
-| 5 | 📊 **结果** Results | 只讲"发现了什么"，不解释"为什么" | 客观性 · Results/Discussion 分工 · 图表规范 |
-| 6 | 💡 **讨论** Discussion | 结果 ↔ 文献 ↔ 理论 ↔ 实践 | 解读 · 对话 · 贡献 · **局限** |
-| 7 | 🎯 **结论** Conclusion | 升华，但不引入新信息 | 回顾 · 重申 · 不越界 |
-| 8 | 🤖 **降低 AI 率** De-AI Polish | 终稿通篇去 AI 化润色 | 自然节奏 · 弱化绝对化 · **不碰数据** |
-| 9 | 🎯 **期刊匹配与投稿** ★新 | 🔴 先定期刊，再动笔 | 期刊硬约束 · 送审流程 · Cover Letter |
-| 10 | 💬 **审稿意见回复** ★新 | 逐条答复的四要素 | 四要素 · 六条纪律 · ACCEPTANCE 十点 |
+| # | 模块 Module | 一句话定位 Tagline | 中文 | English |
+|---|---|---|---|---|
+| 1 | 📝 **摘要** Abstract | 把整篇论文压缩进 300 词 | `prompts/01-abstract.md` | `prompts-en/01-abstract.md` |
+| 2 | 🔭 **引言** Introduction | 倒金字塔 · 缺口 · 问题 · 路线图 | `prompts/02-introduction.md` | `prompts-en/02-introduction.md` |
+| 3 | 📚 **文献综述** Lit Review | 让文献"对话"而非罗列 | `prompts/03-literature-review.md` | `prompts-en/03-literature-review.md` |
+| 4 | 🧪 **研究方法** Methods | 经得起同行复现的细节度 | `prompts/04-methods.md` | `prompts-en/04-methods.md` |
+| 5 | 📊 **结果** Results | 只讲"发现了什么"，不解释"为什么" | `prompts/05-results.md` | `prompts-en/05-results.md` |
+| 6 | 💡 **讨论** Discussion | 结果 ↔ 文献 ↔ 理论 ↔ 实践 | `prompts/06-discussion.md` | `prompts-en/06-discussion.md` |
+| 7 | 🎯 **结论** Conclusion | 升华，但不引入新信息 | `prompts/07-conclusion.md` | `prompts-en/07-conclusion.md` |
+| 8 | 🤖 **降低 AI 率** De-AI Polish | 终稿通篇去 AI 化润色 | `prompts/08-deai-polish.md` | `prompts-en/08-deai-polish.md` |
+| 9 | 🎯 **期刊匹配与投稿** ★新 | 🔴 先定期刊，再动笔 | `prompts/09-journal-submission.md` | `prompts-en/09-journal-submission.md` |
+| 10 | 💬 **审稿意见回复** ★新 | 逐条答复的四要素 | `prompts/10-reviewer-response.md` | `prompts-en/10-reviewer-response.md` |
+
+> 🌍 **English users**: read the `prompts-en/` module directly. Each file is **self-contained** — copy one file into any LLM (ChatGPT, Claude, Gemini) and it works, no need to read `references/` first. English entry point: [`docs/PROMPTS-EN.md`](docs/PROMPTS-EN.md).
+
 
 ---
 
@@ -282,8 +286,17 @@ git clone https://github.com/syxscott/academic-paper-polish.git
 
 </details>
 
+<details open>
+<summary><b>🌍 方式五 · 英文直接用（零安装，零翻译）</b></summary>
+
+打开 [`prompts-en/`](prompts-en/) 对应模块 → 复制代码块 → 替换占位符 → 发给任意 LLM。
+
+每个英文文件**自包含**（已内嵌硬规则与期刊数字），不需要先读本仓库其他文件。
+
+</details>
+
 <details>
-<summary><b>🐍 方式五 · 任意 LLM API</b></summary>
+<summary><b>🐍 方式六 · 任意 LLM API</b></summary>
 
 ```python
 import openai

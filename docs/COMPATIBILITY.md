@@ -114,6 +114,26 @@ Codex 累积加载 `AGENTS.md` 超过 **32 KiB** 会截断，且**离当前目�
 
 ---
 
+## 5.5 英文用户（English users）
+
+本仓库同时提供**中文与英文**两套 prompt，规则完全一致：
+
+| 目录 | 语言 | 说明 |
+|---|---|---|
+| `prompts/` | 中文 | 10 个模块 |
+| `prompts-en/` | English | 同 10 个模块，**每文件自包含** |
+
+**英文版为何自包含**：prompt 被复制进通用 LLM（ChatGPT / Gemini / 本地模型）后，那个 LLM **拿不到本仓库的其他文件**。所以每个英文模块都内嵌了它依赖的硬规则与期刊数字，单文件即可完整工作。
+
+**入口**：[`docs/PROMPTS-EN.md`](PROMPTS-EN.md)
+
+**给 AI 工具的指令示例**：
+```
+Read prompts-en/02-introduction.md and polish my introduction per its rules: [paste draft]
+```
+
+---
+
 ## 六、验证你的环境是否正确加载
 
 **通用方法**（唯一可靠的方式）：
