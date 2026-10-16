@@ -36,7 +36,6 @@ academic-paper-polish/
 │   ├── paleobiology-journal.md# ★ Paleobiology 全刊规范（图件+文体+数据）
 │   ├── literature-search.md   # 检索与素材积累
 │   ├── sentence-bank.md       # 句式库
-│   └── course-sources.md      # 课件出处与逐页索引
 ├── docs/
 │   ├── COMPATIBILITY.md   # 各 AI 工具兼容性矩阵
 │   └── PROMPTS-EN.md      # 英文版 prompt
@@ -146,17 +145,16 @@ academic-paper-polish/
 - **SKILL.md 的 `name` 必须等于仓库目录名**（`academic-paper-polish`），否则违反 Agent Skills 规范，会**静默加载失败**
 - **SKILL.md 正文控制在 500 行以内**，详细内容下沉到 `prompts/` 和 `references/`
 - **修改 prompt 时同步更新** `README.md` 的模块表与 `docs/PROMPTS-EN.md`（如有对应条目）
-- **引用规则或数字时标注出处**（哪份课件、哪一页），便于核验
+- **引用规则或数字时标注出处**（来自哪份资料、哪一条），便于核验
 - 保持**中文为主、关键术语中英并列**的现状；英文版单独放 `docs/`
 
 ### 内容来源（修改时可回查）
 
 | 来源 | 提供什么 |
 |---|---|
-| 课件 A《如何开展研究方向文献综述：论文写作》2026-10-16，94 页 | 方法论骨架：引言倒金字塔、Results/Discussion 期刊差异、讨论六步、综述 18 步、ACCEPTANCE 十点 |
-| 课件 B（78 页 PPTX）《论文写作规范与技巧》《文献综述》2025-09-08，43+35 页 | 实操参数：引文密度表、图表硬参数、送审三段流程、6–8 周时间预算、检索工具 |
+| 写作方法论骨架 | 引言倒金字塔、Results/Discussion 期刊差异、讨论六步、综述 18 步、ACCEPTANCE 十点 |
+| 格式硬参数与文献检索 | 引文密度表、图表硬参数、送审三段流程、6–8 周时间预算、检索工具 |
 
-逐页索引见 `references/course-sources.md`。
 
 ---
 

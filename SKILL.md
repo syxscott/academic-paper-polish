@@ -1,13 +1,13 @@
 ---
 name: academic-paper-polish
-description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。融合课件 A《研究方向文献综述与论文写作》与课件 B《论文写作规范与技巧》《文献综述》两份课件的方法论：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选。
+description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。内置地学 SCI 写作与投稿的硬规则：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选。
 license: MIT
 metadata:
   author: syxscott
   version: "2.0.0"
   source_courses:
-    - "课件 A《如何开展研究方向文献综述：论文写作》2026-10-16, 94页"
-    - "课件 B（78 页 PPTX）《论文写作规范与技巧》《文献综述》2025-09-08, 43+35页"
+    - "写作方法论骨架：章节写法、综述流程、投稿与返修"
+    - "格式硬参数与文献检索：图表规范、引文密度、送审流程、时间预算"
 ---
 
 # 学术论文写作与润色全流程
@@ -230,7 +230,8 @@ Further research should focus on [方向].
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性） |
 | `references/multi-journal-style-guides.md` | ★ **9 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系）+ 横向对比与选刊建议 |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |
+| `references/论文写作方法论骨架.md` | 写作方法论全篇：章节写法、综述流程、投稿与返修 |
+| `references/格式硬参数与文献检索实操.md` | 格式硬参数全篇 + 文献检索实操 |
 | `references/sentence-bank.md` | 句式库（引出不足 / 讨论动词 / 局限句式 / 回复审稿人） |
-| `references/course-sources.md` | 两份课件出处与逐页索引（含所有文献范例出处） |
 | `docs/COMPATIBILITY.md` | 各 AI 工具兼容性矩阵与安装路径 |
 | `docs/PROMPTS-EN.md` | 英文版 prompt（English version of the 10 modules） |
