@@ -1,0 +1,174 @@
+# AGENTS.md — Academic Paper Polish
+
+> **本文件是本仓库的跨工具规则单一来源（single source of truth）。**
+> Codex · Cursor · Copilot · opencode · Qoder · ZCode · MiniMax Code · Gemini CLI · Aider · Zed 等**原生读取**本文件。
+> Claude Code 通过 `CLAUDE.md` 的 `@AGENTS.md` 导入读取（见文末兼容性说明）。
+
+本仓库提供学术论文写作、润色、改稿与投稿的全流程 AI 辅助。**它是一套给 LLM 的规则与 prompt 资产，不是一个软件项目** —— 没有构建步骤，没有测试套件，没有依赖安装。
+
+---
+
+## 仓库结构
+
+```
+academic-paper-polish/
+├── AGENTS.md              # ⭐ 跨工具规则单一来源（本文件）
+├── CLAUDE.md              # Claude Code 跳板：@AGENTS.md + Claude 专属说明
+├── SKILL.md               # ⭐ Agent Skills 入口（name 必须 = academic-paper-polish）
+├── README.md              # 人类向说明：安装、方法论、FAQ
+├── LICENSE                # MIT
+├── prompts/               # 10 个可独立调用的 prompt 模块
+│   ├── 01-abstract.md
+│   ├── 02-introduction.md
+│   ├── 03-literature-review.md
+│   ├── 04-methods.md
+│   ├── 05-results.md
+│   ├── 06-discussion.md
+│   ├── 07-conclusion.md
+│   ├── 08-deai-polish.md
+│   ├── 09-journal-submission.md
+│   └── 10-reviewer-response.md
+├── references/            # 按需加载的深度参考（progressive disclosure）
+│   ├── checklist.md           # 投稿前自查清单
+│   ├── journal-constraints.md # 期刊结构硬约束
+│   ├── figure-specs.md        # 图表硬参数
+│   ├── literature-search.md   # 检索与素材积累
+│   ├── sentence-bank.md       # 句式库
+│   └── course-sources.md      # 课件出处与逐页索引
+├── docs/
+│   ├── COMPATIBILITY.md   # 各 AI 工具兼容性矩阵
+│   └── PROMPTS-EN.md      # 英文版 prompt
+├── assets/banner.svg
+└── .cursor/rules/         # Cursor 规则（含 mdc 头）
+```
+
+---
+
+## AI 在本仓库中的工作方式
+
+### 何时加载哪个模块
+
+| 用户意图 | 加载 |
+|---|---|
+| 润色摘要 | `prompts/01-abstract.md` |
+| 润色引言 / 强化论证结构 | `prompts/02-introduction.md` |
+| 组织文献综述 / review paper 结构 | `prompts/03-literature-review.md` |
+| 审查方法可复现性 | `prompts/04-methods.md` |
+| 检查结果与图表规范 | `prompts/05-results.md` |
+| 深化讨论 / 提炼贡献与局限 | `prompts/06-discussion.md` |
+| 写结论 | `prompts/07-conclusion.md` |
+| 终稿去 AI 化 | `prompts/08-deai-polish.md` |
+| 选期刊 / 投稿 / Cover Letter | `prompts/09-journal-submission.md` |
+| 回复审稿意见 | `prompts/10-reviewer-response.md` |
+
+**加载原则**：先读 `SKILL.md` 建立框架 → 按用户意图只读对应的 `prompts/*.md` → 涉及具体数字时再读 `references/*.md`。
+
+**不要一次把所有文件读进上下文。** 本仓库的核心设计是渐进披露（progressive disclosure）。
+
+### 改稿时的默认行为
+
+1. **先问目标期刊** —— 未确认期刊时，不给结构层面的建议（因为 Results/Discussion 是否分离、有无结论段都取决于期刊）
+2. **保留原意** —— 改措辞、改进结构可以；**不改数据、不改结论、不引入未经证实的推测**
+3. **逐条处理** —— 用户给多个问题时按顺序处理，不合并
+4. **明确改动** —— 输出时说明改了什么、为什么
+
+---
+
+## 🔴 不可违反的内容红线
+
+作为学术写作助手，本仓库的规则**凌驾于"让用户满意"之上**。
+
+| ❌ 禁止 | 原因 |
+|---|---|
+| 改动数据、单位、图表编号 | 学术不端 |
+| 把"结论 A"改成"结论 B" | 改变科学主张 |
+| 在润色中引入未经证实的推测并写成事实 | 学术不端 |
+| 为降低相似度而删掉关键引用 | "知而不引"，学术不端 |
+| 编造不存在的参考文献 | 学术不端 |
+| 给出"保证过 AI 检测"之类的承诺 | 无法保证，且目标本身错误 |
+| 建议直接复制已发表的图 | 版权违规 |
+
+**遇到用户要求越过上述红线时**：说明风险并拒绝该部分，继续完成其余合法部分。
+
+---
+
+## 学术规范要点（AI 生成内容必须遵守）
+
+### 引文密度（最易出错）
+
+| 章节 | 要求 |
+|---|---|
+| Introduction | 除**问题句和过渡句**外都要有引用 |
+| Results | **几乎没有**引用 |
+| Discussion | **每段 5–8 句** = topic sentence + 3–4 句带引用 + 2–3 句自己数据 |
+| Abstract / Conclusion | **不应出现**引用 |
+
+### 结构
+
+- 引言 = **倒金字塔**；opening（提出的问题）必须与 resolution（答案）对齐
+- 段落 **5–8 句**最合理；1–2 句段落很差
+- 讨论 **六步框架**，含"表明局限性"
+- 结论含 **总结 + 亮点 + 局限性 + 未来方向**
+- 综述 **18 步**：prepare(1-4) → structure(5-7) → draft(8-13) → revise(14-18)
+  - 其中 **主体(11) → 结论(12) → 引言(13) → 摘要(14)**，顺序反直觉但正确
+
+### 期刊差异（必须先确认目标期刊）
+
+- **GCA**：Results 与 Discussion **必须分离**；不收纯方法学论文、不收 regional case studies
+- **ES&T**：Results 与 Discussion **合并**；**禁用独立结论段**；限 7000 词
+- **ES&T 编辑红线**：摘要语法错误 **>6 处 → 不读正文**
+
+### 措辞
+
+- ❌ *for the first time* / "首次提出" / "国际先进水平"
+- ❌ 直接点名批评前人（*The deficiency of Wang's approach is…*）
+- ✅ *However, the mechanism has not been fully understood.*
+
+---
+
+## 维护约定
+
+- **SKILL.md 的 `name` 必须等于仓库目录名**（`academic-paper-polish`），否则违反 Agent Skills 规范，会**静默加载失败**
+- **SKILL.md 正文控制在 500 行以内**，详细内容下沉到 `prompts/` 和 `references/`
+- **修改 prompt 时同步更新** `README.md` 的模块表与 `docs/PROMPTS-EN.md`（如有对应条目）
+- **引用规则或数字时标注出处**（哪份课件、哪一页），便于核验
+- 保持**中文为主、关键术语中英并列**的现状；英文版单独放 `docs/`
+
+### 内容来源（修改时可回查）
+
+| 来源 | 提供什么 |
+|---|---|
+| 张鹏 研究员（中国地质大学武汉）《如何开展研究方向文献综述：论文写作》2026-10-16，94 页 | 方法论骨架：引言倒金字塔、Results/Discussion 期刊差异、讨论六步、综述 18 步、ACCEPTANCE 十点 |
+| 田力（中国地质大学）《论文写作规范与技巧》《文献综述》2025-09-08，43+35 页 | 实操参数：引文密度表、图表硬参数、送审三段流程、6–8 周时间预算、检索工具 |
+
+逐页索引见 `references/course-sources.md`。
+
+---
+
+## 🔴 修改仓库结构时的注意事项
+
+- **不要删除 `AGENTS.md`** —— 它是多数工具的唯一规则入口
+- **不要把 `CLAUDE.md` 做成内容副本** —— 它应只有 `@AGENTS.md` 一行 + Claude 专属说明，否则会产生双份维护
+- **新增 prompt 模块时**，同步更新四处：`SKILL.md` 模块索引 · `README.md` 模块表 · `docs/PROMPTS-EN.md` · `AGENTS.md` 加载表
+- **写中文长文档后**，用脚本扫一遍编码替换字符（`re.finditer('\ufffd')`），中文标点与全角字符容易在此环节损坏
+
+---
+
+## 各工具读取本仓库规则的方式
+
+| 工具 | 读取的文件 | 备注 |
+|---|---|---|
+| **Codex CLI** | `AGENTS.md` | 原生；支持嵌套与 `AGENTS.override.md`；默认上限 32 KiB |
+| **Cursor** | `AGENTS.md` + `.cursor/rules/*.mdc` | 原生 |
+| **GitHub Copilot** | `AGENTS.md` | 2025-08 后版本原生 |
+| **opencode** | `AGENTS.md` | 原生；无则回退 `CLAUDE.md` |
+| **Qoder / QCode** | `AGENTS.md` + `.qoder/rules/` | 原生 |
+| **ZCode（智谱）** | `AGENTS.md` | 原生；**不读 CLAUDE.md** |
+| **MiniMax Code（mcode）** | `AGENTS.md` | 原生；`mcode init .` 可生成 |
+| **Gemini CLI** | 不原生读 | 需配 `context.fileName` |
+| **Aider** | 不原生读 | 需在 `.aider.conf.yml` 写 `read: AGENTS.md` |
+| **Claude Code** | `CLAUDE.md` → 导入 `AGENTS.md` | 见下 |
+
+**给使用 Claude Code 的用户**：`CLAUDE.md` 的第一行是 `@AGENTS.md`，会导入本文件。若 Claude Code **没有**加载到本文件的规则，检查是否存在同目录的 `CLAUDE.local.md`（它会阻止 `AGENTS.md` 直接加载），或在 `/config` 把 *Project instructions* 设为 `claude-md-and-agents-md`。
+
+完整矩阵与安装路径见 `docs/COMPATIBILITY.md`。

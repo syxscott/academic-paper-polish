@@ -1,0 +1,47 @@
+---
+description: 学术论文写作、润色、改稿与投稿全流程助手。10 个模块：摘要、引言、文献综述、研究方法、结果、讨论、结论、去 AI 化、期刊匹配与投稿、审稿意见回复。当用户提到写论文、论文润色、SCI、投稿、返修、审稿意见、文献综述、review paper、cover letter、期刊要求、制图规范、图件要求、论文自查、降低 AI 率、文献检索时使用。
+globs:
+alwaysApply: false
+---
+
+# 学术论文写作与润色（Cursor Rule）
+
+> 规则来源：[AGENTS.md](https://github.com/syxscott/academic-paper-polish/blob/main/AGENTS.md) —— 单一来源。此文件仅为 Cursor 适配层，**不重复规则**。
+
+## 加载方式
+
+本规则被触发后，按用户意图读取对应模块（**不要一次读完全部**）：
+
+| 用户意图 | 读取 |
+|---|---|
+| 润色摘要 | `prompts/01-abstract.md` |
+| 润色引言 | `prompts/02-introduction.md` |
+| 组织文献综述 | `prompts/03-literature-review.md` |
+| 审查方法 | `prompts/04-methods.md` |
+| 结果与图表 | `prompts/05-results.md` |
+| 深化讨论 | `prompts/06-discussion.md` |
+| 写结论 | `prompts/07-conclusion.md` |
+| 去 AI 化 | `prompts/08-deai-polish.md` |
+| 选期刊 / 投稿 | `prompts/09-journal-submission.md` |
+| 回复审稿意见 | `prompts/10-reviewer-response.md` |
+
+## 🔴 七条硬规则（速览）
+
+1. **先定期刊再动笔** —— GCA 要求 Results/Discussion 分离；ES&T 合并且**禁用独立结论段**
+2. **引言 = 倒金字塔**，opening 必须与 resolution 对齐（overpromising / on target / underpromising）
+3. **引文密度**：Intro 除问题句外都要引文｜Results 几乎无引文｜Discussion 每段 5–8 句 = 1 topic sentence + 3–4 句带引用 + 2–3 句自己数据｜Abstract/Conclusion 不引文
+4. **段落 5–8 句**最合理，1–2 句很差
+5. **讨论六步**：引言空白 → 重述发现 → 解释比较 → **表明局限性** → 未来启示 → 结论
+6. **结论含局限性 + 未来方向**
+7. **文献五误区**：知而不引 / 断章取义 / 引而不确 / 来源不实 / 盲目自引
+
+## 🔴 内容红线
+
+不得：改数据/单位/图表编号 · 改结论 · 引入未经证实的推测并写成事实 · 为降重删关键引用 · 编造文献 · 保证过 AI 检测 · 建议直接复制已发表图。
+
+**改稿时保留原意。** 措辞与结构可改，数据与科学主张不可改。
+
+## 🔴 图表硬参数
+
+300 dpi 至少 · 单图 <10 MB · 总文件 <50 MB · 图宽单栏 <85 mm 或双栏 <180 mm · 线宽 0.25/0.5 mm · 字号 10&6 或 12&8（严禁 <4 号）
+**Word 中严禁拉对角线缩放** · 图注必须自明 · 表名写在表上 · 连续行号 + 双倍行距 + 12 号字。

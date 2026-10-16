@@ -1,7 +1,6 @@
 <div align="center">
 
-<!-- 自包含 SVG 大 banner（GitHub 把 repo 内 SVG 当图片直接渲染，绕过 sanitizer） -->
-<img src="assets/banner.svg" alt="Academic Paper Polish Prompts Banner" width="900" />
+<img src="assets/banner.svg" alt="Academic Paper Polish Banner" width="900" />
 
 <br/>
 
@@ -9,16 +8,14 @@
 
 <br/>
 
-<!-- 元信息徽章（social 风格，彩色圆角） -->
 <img src="https://img.shields.io/badge/📜_MIT_License-22c55e?style=social&logo=opensourceinitiative" alt="MIT" />
-<img src="https://img.shields.io/badge/🧩_8_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
+<img src="https://img.shields.io/badge/🧩_10_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
-<img src="https://img.shields.io/badge/🤖_Claude_Code-3b82f6?style=social&logo=anthropic" alt="Claude" />
-<img src="https://img.shields.io/badge/🏷️_v1.0.0-fbbf24?style=social&logo=github" alt="v1.0.0" />
+<img src="https://img.shields.io/badge/🪄_11_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
+<img src="https://img.shields.io/badge/🏷️_v2.0.0-fbbf24?style=social&logo=github" alt="v2.0.0" />
 
 <br/>
 
-<!-- 实时仓库统计（social 风格） -->
 <img src="https://img.shields.io/github/stars/syxscott/academic-paper-polish?style=social&logo=github&color=22c55e" alt="Stars" />
 <img src="https://img.shields.io/github/forks/syxscott/academic-paper-polish?style=social&logo=github&color=8b5cf6" alt="Forks" />
 <img src="https://img.shields.io/github/watchers/syxscott/academic-paper-polish?style=social&logo=github&color=3b82f6" alt="Watchers" />
@@ -27,11 +24,12 @@
 <br/><br/>
 
 [🚀 快速开始](#-快速开始-quick-start) ·
-[🧩 八模块](#modules-overview) ·
-[📦 Skill 安装](#-skill-安装-install-as-skill) ·
+[🧩 十模块](#-十模块-modules) ·
+[📦 安装](#-安装-install) ·
+[🪄 兼容性](#-ai-工具兼容性) ·
 [🗺️ 流程图](#-写作流程-workflow) ·
 [❓ FAQ](#-faq) ·
-[🌍 English](#-english-summary)
+[🌍 English](docs/PROMPTS-EN.md)
 
 </div>
 
@@ -42,196 +40,170 @@
 ## 🎯 TL;DR
 
 > **不是模板，不是填空，是给 LLM 的精准角色定义 + 输入约束 + 输出规范。**
->
-> *Not a template. Not a fill-in-the-blank. It's role + constraints + output spec for the LLM.*
 
-<details>
-<summary><b>👀 一句话技术总结</b></summary>
+v2.0 把原来的 8 个润色 prompt 扩展到 **10 个模块 + 6 份深度参考**，并新增 **11 个 AI 工具的跨平台适配层**。
 
-8 个 prompt 模块覆盖论文写作全流程。每个模块包含：
+**v2.0 新增**
 
-- **角色定义**：「你是一位资深学术编辑」「你是一位评审专家」
-- **输入约束**：明确哪些要素必须覆盖（背景、方法、发现、意义…）
-- **输出规范**：语言风格、字数、客观性要求、避免的措辞
-- **可替换占位符**：`【此处粘贴你的 XXX 初稿】`
+| 新增 | 说明 |
+|---|---|
+| 🎯 **模块 9 · 期刊匹配与投稿** | 🔴 **先定期刊再动笔** —— GCA 与 ES&T 的结构要求完全相反 |
+| 💬 **模块 10 · 审稿意见回复** | 四要素范式 + 六条纪律 |
+| 📐 **图表硬参数** | 300 dpi / <10 MB / <180 mm / 禁对角线缩放 |
+| 📊 **引文密度表** | Intro / Results / Discussion 各有不同的引用要求 |
+| 🔤 **句式库** | 可直接套用的英文句式 |
+| 🪄 **跨平台适配** | AGENTS.md + CLAUDE.md 双轨，覆盖 11 个工具 |
 
-把这套机制喂给 Claude / GPT / Gemini 等任意 LLM，立刻获得专业级润色。
-
-</details>
-
----
-
-## ✨ 为什么选这个 Skill? Why?
-
-<table>
-<tr>
-<td align="center" width="25%">🎓<br/><b>学术规范</b><br/><i>Academic-grade</i></td>
-<td align="center" width="25%">⚡<br/><b>即拿即用</b><br/><i>Plug & play</i></td>
-<td align="center" width="25%">🌐<br/><b>跨平台</b><br/><i>Cross-platform</i></td>
-<td align="center" width="25%">🔓<br/><b>完全开源</b><br/><i>MIT licensed</i></td>
-</tr>
-<tr>
-<td align="center">严格遵循 IMRaD 写作逻辑<br/><sub>Strict IMRaD compliance</sub></td>
-<td align="center">每个模块独立可调用<br/><sub>Each module is independently usable</sub></td>
-<td align="center">Claude Code / Cursor / Trae / 任意 LLM<br/><sub>Works everywhere</sub></td>
-<td align="center">可商用、可二次开发<br/><sub>Commercial & derivative-friendly</sub></td>
-</tr>
-</table>
+**内容来源**：融合中国地质大学张鹏研究员《研究方向文献综述与论文写作》（94 页）与田力《论文写作规范与技巧》《文献综述》（78 页）两份课件 —— 从"怎么写"到"怎么投"全链路。
 
 ---
 
-## 🧩 Modules Overview
+## 📂 仓库结构 Repo Layout
 
-> 推荐顺序：`摘要 → 引言 → 文献综述 → 研究方法 → 结果 → 讨论 → 结论 → 降低 AI 率`
+```
+academic-paper-polish/
+├── AGENTS.md              # ⭐ 跨工具规则单一来源（Codex/Cursor/opencode/ZCode…）
+├── CLAUDE.md              # Claude Code 跳板：@AGENTS.md
+├── SKILL.md               # ⭐ Agent Skills 入口
+├── README.md              # 📖 你正在读的文件
+├── prompts/               # 10 个可独立调用的 prompt 模块
+│   ├── 01-abstract.md              📝 摘要
+│   ├── 02-introduction.md🔭 引言
+│   ├── 03-literature-review.md     📚 文献综述
+│   ├── 04-methods.md               🧪 研究方法
+│   ├── 05-results.md               📊 结果
+│   ├── 06-discussion.md            💡 讨论
+│   ├── 07-conclusion.md            🎯 结论
+│   ├── 08-deai-polish.md           🤖 降低 AI 率
+│   ├── 09-journal-submission.md    🎯 期刊匹配与投稿  ★新
+│   └── 10-reviewer-response.md     💬 审稿意见回复    ★新
+├── references/            # 按需加载的深度参考
+│   ├── checklist.md            投稿前自查清单（A–J 十组）
+│   ├── journal-constraints.md  期刊结构硬约束
+│   ├── figure-specs.md         图表硬参数
+│   ├── literature-search.md    检索与素材积累
+│   ├── sentence-bank.md        句式库
+│   └── course-sources.md       课件逐页索引
+├── docs/
+│   ├── COMPATIBILITY.md    🪄 11 工具兼容性矩阵
+│   └── PROMPTS-EN.md       🌍 英文版参考
+├── assets/banner.svg
+├── .cursor/rules/          Cursor 适配层
+├── .qoder/rules/           Qoder 适配层
+└── LICENSE                 MIT
+```
+
+---
+
+## 🧩 十模块 Modules
+
+> 推荐顺序：`🎯 期刊匹配(9) → ✍️ 写/润色正文(2-7) → 💬 返修回复(10) → 🤖 终稿去 AI 化(8)`
 
 | # | 模块 Module | 一句话定位 Tagline | 核心评审维度 |
 |---|---|---|---|
-| 1 | 📝 **摘要润色** Abstract | 把整篇论文压缩进 200 字 | 背景 · 方法 · 发现 · 意义 |
-| 2 | 🔭 **引言润色** Introduction | 倒金字塔 · 缺口 · 问题 · 路线图 | 倒三角结构 · 缺口论证 · 问题 |
-| 3 | 📚 **文献综述润色** Lit Review | 让文献"对话"而非罗列 | 主题整合 · 批判分析 · 对话 |
-| 4 | 🧪 **研究方法润色** Methods | 经得起同行复现的细节度 | 设计 · 数据 · 模型 · 指标 |
-| 5 | 📊 **结果润色** Results | 只讲"发现了什么"，不解释"为什么" | 客观性 · 逻辑 · 图表规范 |
-| 6 | 💡 **讨论润色** Discussion | 结果 ↔ 文献 ↔ 理论 ↔ 实践 | 解读 · 对话 · 贡献 · 局限 |
-| 7 | 🎯 **结论润色** Conclusion | 升华，但不引入新信息 | 回顾 · 重申 · 不越界 |
-| 8 | 🤖 **降低 AI 率** De-AI Polish | 终稿通篇去 AI 化润色 | 自然节奏 · 弱化绝对化 |
+| 1 | 📝 **摘要** Abstract | 把整篇论文压缩进 300 词 | 背景 · 方法 · 发现 · 意义 |
+| 2 | 🔭 **引言** Introduction | 倒金字塔 · 缺口 · 问题 · 路线图 | 倒三角结构 · opening-resolution 对齐 · 引文密度 |
+| 3 | 📚 **文献综述** Lit Review | 让文献"对话"而非罗列 | 主题整合 · 批判分析 · 综述 18 步 |
+| 4 | 🧪 **研究方法** Methods | 经得起同行复现的细节度 | 设计 · 数据 · 模型 · 指标 |
+| 5 | 📊 **结果** Results | 只讲"发现了什么"，不解释"为什么" | 客观性 · Results/Discussion 分工 · 图表规范 |
+| 6 | 💡 **讨论** Discussion | 结果 ↔ 文献 ↔ 理论 ↔ 实践 | 解读 · 对话 · 贡献 · **局限** |
+| 7 | 🎯 **结论** Conclusion | 升华，但不引入新信息 | 回顾 · 重申 · 不越界 |
+| 8 | 🤖 **降低 AI 率** De-AI Polish | 终稿通篇去 AI 化润色 | 自然节奏 · 弱化绝对化 · **不碰数据** |
+| 9 | 🎯 **期刊匹配与投稿** ★新 | 🔴 先定期刊，再动笔 | 期刊硬约束 · 送审流程 · Cover Letter |
+| 10 | 💬 **审稿意见回复** ★新 | 逐条答复的四要素 | 四要素 · 六条纪律 · ACCEPTANCE 十点 |
 
-<details>
-<summary><b>📝 点击展开 · 模块 1 详情 · 摘要润色</b></summary>
+---
 
-**核心目标**：精炼概括研究的核心贡献
+## 🔴 七条硬规则
 
-**评审维度**：
-- 研究背景：宏观背景 + 具体问题 + 研究缺口
-- 研究方法：核心方法 / 关键技术 / 理论框架
-- 核心发现：精确数据 + 定性结论
-- 意义与影响：理论贡献 + 实践价值
-- 语言风格：正式、客观、无口语
+### 1️⃣ 先定期刊，再动笔
 
-**占位符**：`【此处粘贴你的摘要初稿】`
+**这不是流程形式，它决定后面所有结构决策。**
 
-</details>
+| 期刊 | Results/Discussion | 结论段 |
+|---|---|---|
+| **GCA** | 🔴 **必须分离**，各自独立编号 | 允许 |
+| **ES&T** | 🔴 **合并**为 Results and Discussion | ❌ *"A separate conclusion is not to be used"* |
 
-<details>
-<summary><b>🔭 点击展开 · 模块 2 详情 · 引言润色</b></summary>
+> 🔴 **格式不过关 → 直接拒稿，走不到学术编辑和审稿人那一步。**
+> 原因：① 第一印象 ② 基本学术素养 ③ 评审是挑错过程 ④ **格式意见往往比内容意见多**
 
-**核心目标**：快速建立研究动机（不展开系统综述）
+### 2️⃣ 引言 = 倒金字塔，opening 必须与 resolution 对齐
 
-**评审维度**：
-- 倒三角写作范式
-- 文献缺口论证
-- 研究问题与假设
-- 论文结构概述
+| 图形 | 英文 | 后果 |
+|---|---|---|
+| 开口 > 收口 | *overpromising* | 读者觉得被欺骗 |
+| **开口 = 收口** | ***on target*** | ✅ **读者认可** |
+| 收口 > 开口 | *underpromising* | 读者看不到值得关注的 story |
 
-**占位符**：`【此处粘贴你的引言初稿】`
+### 3️⃣ 引文密度（最易自查）
 
-</details>
+| 章节 | 要求 |
+|---|---|
+| **Introduction** | 除**问题句和过渡句**外都要有引用 |
+| **Results** | **几乎没有**引用 |
+| **Discussion** | **每段 5–8 句** = topic sentence + **3–4 句带引用** + **2–3 句自己数据** |
+| **Abstract / Conclusion** | **不应出现**引用 |
 
-<details>
-<summary><b>📚 点击展开 · 模块 3 详情 · 文献综述润色</b></summary>
+### 4️⃣ 段落 5–8 句最合理
 
-**核心目标**：构建批判性、综合性的分析框架
+**1–2 句话的段落是非常差的结构。** 换了对象主体就分段。
 
-**评审维度**：
-- 主题式整合（而非按作者罗列）
-- 批判性分析（指出矛盾、局限、缺陷）
-- 建立文献间对话关系
-- 凝练研究缺口
+### 5️⃣ 讨论必须走完六步（含"局限性"）
 
-**占位符**：`【此处粘贴你的文献综述初稿】`
+```
+① 引言空白 → ② 重述发现(用数据/图) → ③ 解释并比较
+→ ④ 表明局限性 → ⑤ 未来启示 → ⑥ 结论
+```
 
-</details>
+**第 ④ 步最常被跳过，但它恰恰是审稿人判断作者是否诚实的关键。**
 
-<details>
-<summary><b>🧪 点击展开 · 模块 4 详情 · 研究方法润色</b></summary>
+### 6️⃣ 结论要含"局限性 + 未来方向"
 
-**核心目标**：严谨性、清晰度、可复现性
+```
+Despite its advantages, the [方法名] also has some limitations.
+First, [限制1]. Second, [限制2].
+Further research should focus on [方向].
+```
 
-**评审维度**：
-- 研究设计 + 适用性依据
-- 数据采集/处理（来源、样本、纳入排除、时间、缺失值）
-- 模型/算法描述（数学表达、假设、实现细节）
-- 评估指标（相关性、定义、公式）
+### 7️⃣ 参考文献五误区
 
-**占位符**：`【此处粘贴你的研究方法初稿】`
+**知而不引 · 断章取义 · 引而不确 · 来源不实 · 盲目自引**
 
-</details>
+综述约 **100 篇**是质量标志；优先近 5 年（最好 1–3 年）、优先一次文献。
 
-<details>
-<summary><b>📊 点击展开 · 模块 5 详情 · 结果润色</b></summary>
+---
 
-**核心目标**：客观、清晰、符合学术图表规范
+## 📐 技术检查卡口
 
-**评审维度**：
-- 客观性陈述（剔除主观/推测语言）
-- 逻辑结构（与研究问题一致）
-- 图表引用与说明
-- 图表类型与数据匹配性
+| 项 | 要求 |
+|---|---|
+| 图表格式 | TIFF / JPG |
+| **分辨率** | 🔴 **300 dpi 至少** |
+| **文件大小** | 🔴 单图 **<10 MB** / 总 **<50 MB** |
+| 图中字体 | Arial、Helvetica、Times New Roman |
+| 图宽度（双栏刊） | 单栏 **<85 mm** / 双栏 **<180 mm** |
+| 线条粗细 | **0.25 与 0.5 mm 组合** |
+| 字号 | **10&6** 或 **12&8**；🔴 严禁 <4 号 |
+| 图注 | 🔴 **只看图注就能把图看明白** |
+| 表名 | **写在表上** |
+| 排版 | **12 号字 + 双倍行距 + 连续行号 + 页码** |
 
-**占位符**：`【此处粘贴你的结果初稿】`
-
-</details>
-
-<details>
-<summary><b>💡 点击展开 · 模块 6 详情 · 讨论润色</b></summary>
-
-**核心目标**：将结果与现有文献对话 + 挖掘理论与实践意义
-
-**评审维度**：
-- 结果解读（超越简单复述）
-- 与文献对话
-- 理论贡献（1-3 个清晰、具体）
-- 实践启示（具体、可操作）
-- 局限性与未来研究
-
-**占位符**：`【此处粘贴你的讨论初稿】`
-
-</details>
-
-<details>
-<summary><b>🎯 点击展开 · 模块 7 详情 · 结论润色</b></summary>
-
-**核心目标**：强有力总结全文 + 升华研究价值
-
-**评审维度**：
-- 核心回顾（用新语言，不重复摘要）
-- 贡献重申（高度凝练）
-- 避免引入新信息
-- 宏大愿景（可选）
-
-**占位符**：`【此处粘贴你的结论初稿】`
-
-</details>
-
-<details>
-<summary><b>🤖 点击展开 · 模块 8 详情 · 降低 AI 率（终篇通篇）</b></summary>
-
-**核心目标**：去 AI 化通篇润色，仅在前 7 章定稿后使用
-
-**评审维度**：
-- 自然节奏（资深学者笔调）
-- 连接词替换（避免"首先/其次/最后"等机械连接）
-- 语态与句式（主动语态、长短交错）
-- 审慎的个人化表达（不改变核心结论）
-- 结构调整（打破总分总模板）
-- 适度冗余（口语化插入语、限定词）
-- 避免绝对化（替换 AI 高频词）
-- 具体化表达（具体动词、可设问）
-
-**占位符**：`【此处粘贴你的完整初稿】`
-
-</details>
+> 🔴🔴 **从制图 → 导出 → 插入 Word，全程严禁拉对角线或等比例缩放！**
+>
+> 🔴 **严禁直接复制已发表的图**（除 OA / 已获许可）；修改后必须标注文献来源；**不使用有政治分歧的地图**。
 
 ---
 
 ## 🚀 快速开始 Quick Start
 
 <details open>
-<summary><b>📋 方式一 · 直接当 Prompt 用（最快）</b></summary>
+<summary><b>📋 方式一 · 直接当 Prompt 用（零安装，最快）</b></summary>
 
-复制任意模块 → 替换 `【此处粘贴你的 XXX 初稿】` → 发给任意 LLM。
+复制 `prompts/*.md` 中任意模块 → 替换 `【此处粘贴你的 XXX 初稿】` → 发给任意 LLM。
 
 ```text
-请根据我提供的论文摘要初稿进行优化与重构 ...
+请根据我提供的论文摘要初稿进行优化与重构...
 
 请处理以下摘要内容：
 【把这里替换成你的摘要初稿】
@@ -239,57 +211,74 @@
 
 </details>
 
-<details>
-<summary><b>🤖 方式二 · Claude Code Skill</b></summary>
+<details open>
+<summary><b>📦 方式二 · 作为 Skill 安装（推荐）</b></summary>
 
+获得完整 10 模块 + 渐进披露（只加载你需要的部分）。
+
+**Claude Code**
 ```bash
 git clone https://github.com/syxscott/academic-paper-polish.git \
-  ~/.claude/skills/paper-polish-prompts
+  ~/.claude/skills/academic-paper-polish
 ```
 
-重启 Claude Code，自动发现。
+**WorkBuddy**
+```bash
+git clone https://github.com/syxscott/academic-paper-polish.git \
+  ~/.workbuddy/skills/academic-paper-polish
+```
+
+**opencode / ZCode / MiniMax Code / VS Code**
+```bash
+git clone https://github.com/syxscott/academic-paper-polish.git \
+  ~/.config/opencode/skills/academic-paper-polish
+```
+
+> ⚠️ **目录名必须是 `academic-paper-polish`** —— 与 `SKILL.md` 的 `name` 字段一致。
+> 不一致会**静默加载失败**（不报错，只是不生效）。
+
+重启客户端，自动发现。
 
 </details>
 
 <details>
-<summary><b>💠 方式三 · Cursor Rule</b></summary>
+<summary><b>📖 方式三 · 作为项目规则使用</b></summary>
 
-1. 复制 `SKILL.md` 内容
-2. 顶部补 mdc 头：
+克隆到你的论文写作项目，`AGENTS.md` 会作为项目规则生效：
 
-   ```yaml
-   ---
-   description: 论文润色指令合集
-   globs: *
-   alwaysApply: false
-   ---
-   ```
-
-3. 保存到 `~/.cursor/rules/paper-polish-prompts.mdc`
+```bash
+git clone https://github.com/syxscott/academic-paper-polish.git
+```
 
 </details>
 
 <details>
-<summary><b>🌊 方式四 · Trae / Cline / Continue / 其他通用 Agent</b></summary>
+<summary><b>🔗 方式四 · 接入 opencode.json（多文件指令）</b></summary>
 
-将 `SKILL.md` 整文件作为 system prompt 或规则文件载入即可。
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md", "SKILL.md"]
+}
+```
 
 </details>
 
 <details>
-<summary><b>🤖 方式五 · 任意 LLM API</b></summary>
+<summary><b>🐍 方式五 · 任意 LLM API</b></summary>
 
 ```python
 import openai
 
-prompt = open("SKILL.md").read()
-# 取模块 1 的部分，加上你的初稿
-user_input = prompt + "\n\n以下是我的初稿：\n" + your_abstract
+skill = open("SKILL.md", encoding="utf-8").read()
+module = open("prompts/01-abstract.md", encoding="utf-8").read()
 
 openai.ChatCompletion.create(
     model="gpt-4",
-    messages=[{"role": "system", "content": prompt},
-              {"role": "user", "content": user_input}]
+    messages=[
+        {"role": "system", "content": skill},
+        {"role": "user", "content": module + "\n\n以下是我的摘要初稿：\n" + your_abstract},
+    ],
 )
 ```
 
@@ -297,25 +286,53 @@ openai.ChatCompletion.create(
 
 ---
 
+## 🪄 AI 工具兼容性
+
+| 工具 | 读取方式 | 配置 |
+|---|---|---|
+| **OpenAI Codex CLI** | ✅ 原生读 `AGENTS.md` | 零配置 |
+| **Cursor** | ✅ 原生 + `.cursor/rules/*.mdc` | 零配置（已放适配层） |
+| **GitHub Copilot** | ✅ 原生（2025-08 后） | 零配置 |
+| **opencode** | ✅ 原生 | 零配置 |
+| **Qoder / QCode** | ✅ 原生 + `.qoder/rules/` | 零配置（已放适配层） |
+| **ZCode（智谱）** | ✅ 原生 | 零配置 |
+| **MiniMax Code（mcode）** | ✅ 原生 | 零配置 |
+| **Claude Code** | ✅ `CLAUDE.md` → `@AGENTS.md` | 已配好（见下） |
+| **WorkBuddy** | ✅ `~/.workbuddy/skills/` | 零配置 |
+| **Trae** | ⚠️ 桌面版需手动开启 | 设置 → 规则 |
+| **Gemini CLI** | ❌ 不原生读 | 配 `context.fileName: AGENTS.md` |
+| **Aider** | ❌ 不原生读 | `.aider.conf.yml` 写 `read: AGENTS.md` |
+
+**设计原理**：`AGENTS.md` 是**跨工具规则单一来源**（2026 Q2 起由 Linux Foundation 下的 Agentic AI Foundation 接管，成为跨厂商事实标准）。Claude Code 通过 `CLAUDE.md` 的一行 `@AGENTS.md` 导入共享同一份规则 —— **改一处，所有工具同步生效**。
+
+**Claude Code 用户注意**：若发现规则未加载，检查同目录是否有 `CLAUDE.local.md`（它的存在会阻止 `AGENTS.md` 直接加载），或在 `/config` 把 *Project instructions* 设为 `claude-md-and-agents-md`。
+
+完整矩阵与排查指南见 **[docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)**。
+
+---
+
 ## 🗺️ 写作流程 Workflow
 
 ```mermaid
 flowchart LR
-    A[📝 摘要] --> B[🔭 引言]
+    A[🎯 模块9<br/>定期刊] --> B[🔭 引言]
     B --> C[📚 文献综述]
     C --> D[🧪 研究方法]
     D --> E[📊 结果]
     E --> F[💡 讨论]
     F --> G[🎯 结论]
-    G --> H{{🤖 降低 AI 率}}
-    H --> I[✨ 终稿]
-    style H fill:#8b5cf6,color:#fff
-    style I fill:#22c55e,color:#fff
+    G --> H[📝 摘要]
+    H --> I[💬 模块10<br/>返修回复]
+    I --> J{{🤖 模块8<br/>去 AI 化}}
+    J --> K[✨ 终稿]
+    style A fill:#f59e0b,color:#fff
+    style J fill:#8b5cf6,color:#fff
+    style K fill:#22c55e,color:#fff
 ```
 
-> ⚠️ **模块 8「降低 AI 率」必须在前 7 章全部定稿后再使用。**
+> ⚠️ **注意摘要与引言的位置** —— 严格遵循「综述 18 步」时，**主体 → 结论 → 引言 → 摘要**才是自然顺序（引言和摘要在结构定稿后才写得出来）。
 >
-> *Module 8 (De-AI Polish) must be the last step, after chapters 1-7 are finalized.*
+> ⚠️ **模块 8「降低 AI 率」必须最后用**，且**不得改动数据、单位、图表编号与结论**。
 
 ---
 
@@ -345,90 +362,98 @@ flowchart LR
 ## ❓ FAQ
 
 <details>
-<summary><b>🤔 1. 这个 Skill 适合什么学科？</b></summary>
+<summary><b>🤔 1. 适合什么学科？</b></summary>
 
-通用学术写作。CS / 社科 / 人文 / 医学都能用。模块四「研究方法」对 CS 类更友好（提到超参数、训练测试划分）；其他学科把"超参数"换成"研究工具 / 材料 / 访谈提纲"即可。
+通用学术写作（CS / 社科 / 人文 / 医学 / **地学**）。地学、地质、环境、古生物方向**规则最完整** —— 期刊硬约束（GCA / ES&T / PPP / Earth-Science Reviews）、图表参数、地层术语规范都来自地学写作课并已通用化。
 
-</details>
-
-<details>
-<summary><b>🤔 2. 和 ChatGPT 默认润色有什么不同？</b></summary>
-
-ChatGPT 默认润色没有明确的角色 / 约束 / 输出规范。本 Skill 给 LLM：
-- **角色定义**：「你是一位资深学术编辑」
-- **输入约束**：明确评审维度（5-7 个 checklist）
-- **输出规范**：禁用词清单、语言风格、字数范围
-
-直接复制 prompt 给 ChatGPT 也能用，体验比"帮我润色一下"高一个数量级。
+非地学学科把"样品/仪器"换成"数据/工具"即可。
 
 </details>
 
 <details>
-<summary><b>🤔 3. 八个模块必须按顺序用吗？</b></summary>
+<summary><b>🤔 2. v2.0 和 v1.0 的区别？</b></summary>
 
-不强求顺序。但推荐按论文写作顺序：摘要 → 引言 → 综述 → 方法 → 结果 → 讨论 → 结论 → 降低 AI 率。
+| | v1.0.0 | v2.0.0 |
+|---|---|---|
+| 模块 | 8 | **10**（+期刊匹配与投稿、审稿意见回复） |
+| 参考资料 | 无 | **6 份**（期刊约束 / 图表参数 / 检索 / 句式库 / 自查清单 / 课件索引） |
+| 平台支持 | 主要 Claude Code / Cursor | **11 个工具**，AGENTS.md 双轨 |
+| 硬规则 | 部分 | **七条**，全部标注出处 |
+| 内容来源 | 通用 IMRaD | 融合 **172 页**地学写作课件 |
 
-模块 8「降低 AI 率」**必须最后用**——通篇润色，不分章节。
+**⚠️ v1.0 有一个 bug 已修复**：`SKILL.md` 的 `name` 是 `paper-polish-prompts`，但仓库目录名是 `academic-paper-polish`。Agent Skills 规范要求两者一致，**不一致会静默加载失败**。v2.0 已修正。
 
 </details>
 
 <details>
-<summary><b>🤔 4. 英文论文能用吗？</b></summary>
+<summary><b>🤔 3. 会"过度润色"丢失原意吗？</b></summary>
+
+不会，而且**这是本仓库的红线**：
+
+| ❌ 禁止 | 原因 |
+|---|---|
+| 改动数据、单位、图表编号 | 学术不端 |
+| 把"结论 A"改成"结论 B" | 改变科学主张 |
+| 引入未经证实的推测并写成事实 | 学术不端 |
+| 为降重而删关键引用 | 知而不引，学术不端 |
+| 编造不存在的参考文献 | 学术不端 |
+
+**措辞与结构可改，数据与科学主张不可改。**
+
+</details>
+
+<details>
+<summary><b>🤔 4. 模块必须按顺序用吗？</b></summary>
+
+不强求。但推荐：`9（定期刊）→ 2–7（正文）→ 10（返修）→ 8（终稿去 AI 化）`。
+
+**模块 8 必须最后用** —— 通篇润色，不分章节。
+
+</details>
+
+<details>
+<summary><b>🤔 5. 英文论文能用吗？</b></summary>
 
 可以。prompt 是中文写的，所以：
-- 给中文初稿：直接用
-- 给英文初稿：把 prompt 主体英化（结构一致），或者先用本 Skill 把中文 prompt 翻成英文 prompt 再用
+- 给中文初稿 → 直接用
+- 给英文初稿 → 把对应 `prompts/*.md` 英化（结构一致），或用本 Skill 把中文 prompt 翻成英文 prompt 再用
 
-后续可加 `prompts-en/SKILL.md` 英文版（欢迎 PR）。
-
-</details>
-
-<details>
-<summary><b>🤔 5. 模块之间会冲突吗？比如"客观陈述"和"降低 AI 率"的口语化？</b></summary>
-
-模块 1-7 是**学术规范**（客观、严谨），模块 8 是**终篇润色**（自然、人味）。两者不冲突——
-前 7 章先保证学术规范，终稿再用模块 8 调整"人味"。
+英文**方法论参考**见 [docs/PROMPTS-EN.md](docs/PROMPTS-EN.md)。英文 prompt 完整版欢迎 PR。
 
 </details>
 
 <details>
-<summary><b>🤔 6. 是否会"过度润色"丢失原意？</b></summary>
+<summary><b>🤔 6. 内容可靠吗？</b></summary>
 
-不会。每个 prompt 都强调"不改变核心结论、不引入未经证实的推测"。模块 8 明确要求"在适当位置可加入审慎的个人判断或反思性表述……但不得改变核心结论或引入未经证实的推测"。
+**所有硬性数字都有出处**，并在 `references/course-sources.md` 中逐页索引：
 
-建议每章润色后人工 review 一遍再进入下一章。
+| 来源 | 页数 | 提供 |
+|---|---|---|
+| 张鹏 研究员（中国地质大学武汉）《如何开展研究方向文献综述：论文写作》2026-10-16 | 94 | 方法论骨架、期刊结构差异、ACCEPTANCE 十点 |
+| 田力（中国地质大学）《论文写作规范与技巧》《文献综述》2025-09-08 | 78 | 引文密度表、图表硬参数、送审流程、时间预算 |
+
+规则部分逐条标注了来源与页码，便于核验。
+
+</details>
+
+<details>
+<summary><b>🤔 7. 怎么验证我的环境正确加载了？</b></summary>
+
+对 AI 说：
+
+```
+请列出你已加载的项目规则文件，并复述其中「🔴 不可违反的内容红线」一节有几个禁止项。
+```
+
+正确加载时会说出 **7 个禁止项**。详见 [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md) 第六节。
 
 </details>
 
 ---
 
-## 🌍 English Summary
+## 🌍 English
 
-A curated set of **8 academic writing polish prompts** that walk you through the full pipeline:
-
-`Abstract → Introduction → Literature Review → Methods → Results → Discussion → Conclusion → De-AI Polish`
-
-Each module gives the LLM a clear **role**, strict **input constraints**, and a defined **output format** — not a template, not a fill-in-the-blank.
-
-- **Format**: Anthropic / Claude Code Skill (`SKILL.md` + YAML frontmatter)
-- **Platforms**: Claude Code · Cursor · Trae · Cline · any LLM API
-- **License**: MIT
-- **Version**: [v1.0.0](https://github.com/syxscott/academic-paper-polish/releases/tag/v1.0.0)
-- **Author**: [@syxscott](https://github.com/syxscott)
-
-Pull requests and translations (e.g. `prompts-en/`) are welcome.
-
----
-
-## 📂 项目结构 Repo Layout
-
-```
-academic-paper-polish/
-├── SKILL.md       # ⭐ 主体（frontmatter + 8 模块）
-├── README.md      # 📖 本文件
-├── LICENSE        # 🔓 MIT
-└── .gitignore     # 🚫 标准忽略
-```
+See **[docs/PROMPTS-EN.md](docs/PROMPTS-EN.md)** for the English methodology reference covering all 10 modules, the seven hard rules, figure specifications, and submission workflow.
 
 ---
 
@@ -444,6 +469,6 @@ academic-paper-polish/
 
 Made with ❤️ for Chinese academic writers
 
-**MIT Licensed** · [⬆ 回到顶部](#-学术论文润色指令合集-)
+**MIT Licensed**
 
 </div>
