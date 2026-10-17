@@ -11,8 +11,8 @@
 <img src="https://img.shields.io/badge/📜_MIT_License-22c55e?style=social&logo=opensourceinitiative" alt="MIT" />
 <img src="https://img.shields.io/badge/🧩_10_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
-<img src="https://img.shields.io/badge/🪄_11_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
-<img src="https://img.shields.io/badge/🏷️_v2.0.0-fbbf24?style=social&logo=github" alt="v2.0.0" />
+<img src="https://img.shields.io/badge/🪄_10_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
+<img src="https://img.shields.io/badge/🏷️_v2.3.0-fbbf24?style=social&logo=github" alt="v2.3.0" />
 
 <br/>
 
@@ -23,12 +23,15 @@
 
 <br/><br/>
 
-[🚀 快速开始](#-快速开始-quick-start) ·
-[🧩 十模块](#-十模块-modules) ·
-[📦 安装](#-安装-install) ·
-[🪄 兼容性](#-ai-工具兼容性) ·
-[🗺️ 流程图](#-写作流程-workflow) ·
-[❓ FAQ](#-faq) ·
+[🎯 TL;DR](#tldr) ·
+[📂 仓库结构](#仓库结构-repo-layout) ·
+[🧩 十模块](#十模块-modules) ·
+[🔴 八条硬规则](#八条硬规则) ·
+[📐 检查卡口](#技术检查卡口) ·
+[🚀 快速开始](#快速开始-quick-start) ·
+[🪄 兼容性](#ai-工具兼容性) ·
+[🗺️ 流程图](#写作流程-workflow) ·
+[❓ FAQ](#faq) ·
 [🌍 English](docs/PROMPTS-EN.md)
 
 </div>
@@ -41,9 +44,9 @@
 
 > **不是模板，不是填空，是给 LLM 的精准角色定义 + 输入约束 + 输出规范。**
 
-v2.0 把原来的 8 个润色 prompt 扩展到 **10 个模块 + 6 份深度参考**，并新增 **11 个 AI 工具的跨平台适配层**。
+v2.x 把原来的 8 个润色 prompt 扩展到 **10 个模块 + 9 份深度参考**，并新增 **10 个 AI 工具的跨平台适配层**。
 
-**v2.0 新增**
+**v2.x 新增**
 
 | 新增 | 说明 |
 |---|---|
@@ -52,7 +55,7 @@ v2.0 把原来的 8 个润色 prompt 扩展到 **10 个模块 + 6 份深度参�
 | 📐 **图表硬参数** | 300 dpi / <10 MB / <180 mm / 禁对角线缩放 |
 | 📊 **引文密度表** | Intro / Results / Discussion 各有不同的引用要求 |
 | 🔤 **句式库** | 可直接套用的英文句式 |
-| 🪄 **跨平台适配** | AGENTS.md + CLAUDE.md 双轨，覆盖 11 个工具 |
+| 🪄 **跨平台适配** | AGENTS.md + CLAUDE.md 双轨，覆盖 10 个工具 |
 
 **内容定位**：地学 SCI 论文与学位论文的写作、改稿、投稿与返修方法库 —— 从"怎么写"到"怎么投"全链路。
 
@@ -98,7 +101,9 @@ academic-paper-polish/
 ├── scripts/                         # 规范一致性校验脚本
 │   ├── check_skill.py               # frontmatter / name / 行数 / 引用存在性
 │   ├── check_links.py               # 本地 Markdown 链接可达性
-│   └── check_encoding.py            # U+FFFD 编码损坏扫描
+│   ├── check_encoding.py            # U+FFFD 编码损坏扫描
+│   ├── check_markdown.py            # 围栏配对 / 标题层级 / 表格列数
+│   └── check_anchors.py             # README 内部锚点可达性
 ├── evals/                           # 评测集用例与基线
 │   ├── evals.json
 │   └── README.md
@@ -108,6 +113,73 @@ academic-paper-polish/
 ├── assets/banner.svg
 ├── .cursor/rules/                   # Cursor 规则（含 mdc 头）
 └── .qoder/rules/                    # Qoder / QCode 规则
+```
+
+---
+
+## 🧩 十模块 Modules
+
+> 推荐顺序：`🎯 期刊匹配(9) → ✍️ 写/润色正文(2-7) → 💬 返修回复(10) → 🤖 终稿去 AI 化(8)`
+
+| # | 模块 Module | 一句话定位 Tagline | 中文 | English |
+|---|---|---|---|---|
+| 1 | 📝 **摘要** Abstract | 把整篇论文压缩进 300 词 | `skills/academic-paper-polish/prompts/01-abstract.md` | `skills/academic-paper-polish/prompts-en/01-abstract.md` |
+| 2 | 🔭 **引言** Introduction | 倒金字塔 · 缺口 · 问题 · 路线图 | `skills/academic-paper-polish/prompts/02-introduction.md` | `skills/academic-paper-polish/prompts-en/02-introduction.md` |
+| 3 | 📚 **文献综述** Lit Review | 让文献"对话"而非罗列 | `skills/academic-paper-polish/prompts/03-literature-review.md` | `skills/academic-paper-polish/prompts-en/03-literature-review.md` |
+| 4 | 🧪 **研究方法** Methods | 经得起同行复现的细节度 | `skills/academic-paper-polish/prompts/04-methods.md` | `skills/academic-paper-polish/prompts-en/04-methods.md` |
+| 5 | 📊 **结果** Results | 只讲"发现了什么"，不解释"为什么" | `skills/academic-paper-polish/prompts/05-results.md` | `skills/academic-paper-polish/prompts-en/05-results.md` |
+| 6 | 💡 **讨论** Discussion | 结果 ↔ 文献 ↔ 理论 ↔ 实践 | `skills/academic-paper-polish/prompts/06-discussion.md` | `skills/academic-paper-polish/prompts-en/06-discussion.md` |
+| 7 | 🎯 **结论** Conclusion | 升华，但不引入新信息 | `skills/academic-paper-polish/prompts/07-conclusion.md` | `skills/academic-paper-polish/prompts-en/07-conclusion.md` |
+| 8 | 🤖 **降低 AI 率** De-AI Polish | 终稿通篇去 AI 化润色 | `skills/academic-paper-polish/prompts/08-deai-polish.md` | `skills/academic-paper-polish/prompts-en/08-deai-polish.md` |
+| 9 | 🎯 **期刊匹配与投稿** ★新 | 🔴 先定期刊，再动笔 | `skills/academic-paper-polish/prompts/09-journal-submission.md` | `skills/academic-paper-polish/prompts-en/09-journal-submission.md` |
+| 10 | 💬 **审稿意见回复** ★新 | 逐条答复的四要素 | `skills/academic-paper-polish/prompts/10-reviewer-response.md` | `skills/academic-paper-polish/prompts-en/10-reviewer-response.md` |
+
+> 🌍 **English users**: read the `skills/academic-paper-polish/prompts-en/` module directly. Each file is **self-contained** — copy one file into any LLM (ChatGPT, Claude, Gemini) and it works, no need to read `skills/academic-paper-polish/references/` first. English entry point: [`docs/PROMPTS-EN.md`](docs/PROMPTS-EN.md).
+
+
+---
+
+## 🔴 八条硬规则
+
+### 1️⃣ 先定期刊，再动笔
+
+**这不是流程形式，它决定后面所有结构决策。**
+
+| 期刊 | Results/Discussion | 结论段 |
+|---|---|---|
+| **GCA** | 🔴 **必须分离**，各自独立编号 | 允许 |
+| **ES&T** | 🔴 **合并**为 Results and Discussion | ❌ *"A separate conclusion is not to be used"* |
+| ***Paleobiology*** | — | 🔴 **须另加 Non-technical Summary**；送审图 **<40 MP**，终稿按图型 **1200/800/600 dpi** |
+| **Acta Palaeontologica Polonica** | — | 图件参数最精确：单栏 **89 mm** / 双栏 **183 mm** / 最大长 **237 mm**；**Calibri 8 pt**；线宽 **0.2 mm**；照片 **400 dpi**；🔴 **ZooBank 强制注册** |
+| **Palaeontologia Electronica** | — | 🔴 **无页限、无版面费**；图宽 **175 mm / 84 mm**，**300 ppi**，**RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符，仅小写/数字/`_`/`.`） |
+| **PalZ** | — | Systematic Palaeontology：分类单元名**粗体**，authority **加逗号**（与 Paleobiology/APP 系相反），同义名列表**隔行缩进** |
+
+> 🔴 **格式不过关 → 直接拒稿，走不到学术编辑和审稿人那一步。**
+> 原因：① 第一印象 ② 基本学术素养 ③ 评审是挑错过程 ④ **格式意见往往比内容意见多**
+
+### 2️⃣ 引言 = 倒金字塔，opening 必须与 resolution 对齐
+
+| 图形 | 英文 | 后果 |
+|---|---|---|
+| 开口 > 收口 | *overpromising* | 读者觉得被欺骗 |
+| **开口 = 收口** | ***on target*** | ✅ **读者认可** |
+| 收口 > 开口 | *underpromising* | 读者看不到值得关注的 story |
+
+### 3️⃣ 引文密度（最易自查）
+
+| 章节 | 要求 |
+|---|---|
+| **Introduction** | 除**问题句和过渡句**外都要有引用 |
+| **Results** | **几乎没有**引用 |
+| **Discussion** | **每段 5–8 句** = topic sentence + **3–4 句带引用** + **2–3 句自己数据** |
+| **Abstract / Conclusion** | **不应出现**引用 |
+
+### 4️⃣ 段落 5–8 句最合理
+
+**1–2 句话的段落是非常差的结构。** 换了对象主体就分段。
+
+### 5️⃣ 讨论必须走完六步（含"局限性"）
+
 ```
 ① 引言空白 → ② 重述发现(用数据/图) → ③ 解释并比较
 → ④ 表明局限性 → ⑤ 未来启示 → ⑥ 结论
@@ -138,6 +210,8 @@ Further research should focus on [方向].
 
 **upper/middle/lower** → 岩石地层单位；**early/late** → 时间单位；仅正式 ICS 时间单元大写。
 界线用 **/**，范围用 **–**。⚠️ *"Middle Cretaceous"* 不规范。
+
+---
 
 ---
 
@@ -352,13 +426,13 @@ flowchart LR
 </details>
 
 <details>
-<summary><b>🤔 2. v2.0 和 v1.0 的区别？</b></summary>
+<summary><b>🤔 2. v2.x 和 v1.0 的区别？</b></summary>
 
-| | v1.0.0 | v2.0.0 |
+| | v1.0.0 | v2.x |
 |---|---|---|
 | 模块 | 8 | **10**（+期刊匹配与投稿、审稿意见回复） |
-| 参考资料 | 无 | **6 份**（期刊约束 / 图表参数 / 检索 / 句式库 / 自查清单 / 多刊 style guide） |
-| 平台支持 | 主要 Claude Code / Cursor | **11 个工具**，AGENTS.md 双轨 |
+| 参考资料 | 无 | **9 份**（期刊约束 / 图表参数 / 检索 / 句式库 / 自查清单 / 多刊 style guide / Paleobiology 全刊规范 / 写作方法论 / 格式与检索实操） |
+| 平台支持 | 主要 Claude Code / Cursor | **10 个工具**，AGENTS.md 双轨 |
 | 硬规则 | 部分 | **八条**，全部标注出处 |
 | 内容定位 | 通用 IMRaD | 地学 SCI 写作 + 期刊官方规范的方法库 |
 

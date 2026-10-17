@@ -48,7 +48,9 @@ academic-paper-polish/
 ├── scripts/                         # 规范一致性校验脚本
 │   ├── check_skill.py               # frontmatter / name / 行数 / 引用存在性
 │   ├── check_links.py               # 本地 .md 链接可达性
-│   └── check_encoding.py            # U+FFFD 编码损坏扫描
+│   ├── check_encoding.py            # U+FFFD 编码损坏扫描
+│   ├── check_markdown.py            # 围栏配对 / 标题层级 / 表格列数
+│   └── check_anchors.py             # README 内部锚点可达性
 ├── evals/                           # 评测集用例与基线
 │   ├── evals.json
 │   └── README.md
@@ -161,7 +163,14 @@ academic-paper-polish/
 
 - **`skills/academic-paper-polish/SKILL.md` 的 `name` 必须等于其父目录名**（`academic-paper-polish`），否则违反 Agent Skills 规范，会**静默加载失败**
 - **SKILL.md 正文控制在 500 行以内**，详细内容下沉到 `skills/academic-paper-polish/prompts/` 和 `skills/academic-paper-polish/references/`
-- **改动后跑一遍 `python3 scripts/check_skill.py --strict`**（与 CI 的 `.github/workflows/spec-consistency.yml` 同一套校验）
+- **改动后跑一遍全部校验**（与 CI 同一套，缺一不可）：
+  ```bash
+  python3 scripts/check_skill.py --strict   # Agent Skills 规范
+  python3 scripts/check_links.py            # 本地链接
+  python3 scripts/check_encoding.py         # U+FFFD
+  python3 scripts/check_markdown.py         # 围栏/标题/表格结构
+  python3 scripts/check_anchors.py README.md # 内部锚点
+  ```
 - **修改 prompt 时同步更新** `README.md` 的模块表与 `docs/PROMPTS-EN.md`（如有对应条目）
 - **引用规则或数字时标注出处**（来自哪份资料、哪一条），便于核验
 - 保持**中文为主、关键术语中英并列**的现状；英文版单独放 `docs/`
@@ -183,6 +192,13 @@ academic-paper-polish/
 - **新增 prompt 模块时**，同步更新六处：`skills/academic-paper-polish/SKILL.md` 模块索引（中英双列） · `README.md` 模块表 · `AGENTS.md` 加载表 · `docs/PROMPTS-EN.md` · 对应的 `skills/academic-paper-polish/prompts-en/` 英文文件 · `evals/evals.json` 补一条用例
 - **中英双语维护原则**：`skills/academic-paper-polish/prompts/` 与 `skills/academic-paper-polish/prompts-en/` 是**同一套规则的两种语言**，改一边必须同步另一边。英文版必须**自包含**（内嵌硬规则），因为单文件会被复制进通用 LLM，拿不到仓库其他文件
 - **写中文长文档后**，用脚本扫一遍编码替换字符（`re.finditer('\ufffd')`），中文标点与全角字符容易在此环节损坏
+- 🔴 **用脚本批量替换 Markdown 代码块时，正则绝不能带 `re.S` 跨越大段内容**。
+  本仓库曾因此把「十模块」表尾与整个「八条硬规则」章节误删、并使围栏数变奇数
+  （代码块提前闭合、整页渲染错乱），且损坏随 push 进了 main。
+  **规避**：① 替换前后用 `grep -c '^```'` 比对围栏数，奇数即结构损坏；
+  ② 用 `(?ms)^```\n<锚点开头>.*?^```$` 这类**首尾都锚定**的模式，不要只锚开头；
+  ③ 改完立刻 `git diff` 核对行数与章节序列。
+  `scripts/check_markdown.py` 现在会在 CI 里拦住这类问题。
 
 ---
 

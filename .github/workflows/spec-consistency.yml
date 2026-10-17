@@ -28,3 +28,9 @@ jobs:
 
       - name: Check for encoding corruption
         run: python3 scripts/check_encoding.py
+
+      - name: Check markdown structure
+        run: python3 scripts/check_markdown.py
+
+      - name: Check README anchors
+        run: python3 scripts/check_anchors.py README.md
