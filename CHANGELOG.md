@@ -2,6 +2,25 @@
 
 本文件记录本仓库（agent skill：学术论文写作、润色、改稿与投稿）的主要变更。
 
+## [2.3.2] — 2026-10-17
+
+### 新增
+- **`opencode.json`** —— 对齐同类仓库做法，把 `AGENTS.md` 与 `skills/academic-paper-polish/SKILL.md`
+  注册进 `instructions`。此前 README 只教用户「自己写一个」，仓库本身并没有该文件，
+  是当初借鉴清单里唯一漏落地的一项。
+
+### 文档
+- README「方式四」改为「仓库已自带 opencode.json」，并说明已有配置时如何合并
+- `docs/COMPATIBILITY.md` opencode 行的「专属规则文件」列补上 `opencode.json`
+- `AGENTS.md` 仓库结构树补 `opencode.json`
+
+### 核查结论（未改动）
+逐条复核借鉴清单 6 项，全部已落地；另核实两项曾被我误判为「差距」的：
+- **description 437 字符不算冗余** —— 官方 Agent Skills 规范明确鼓励 description
+  包含具体关键词以帮助 agent 识别任务，本 skill 含 160 字符触发词，符合推荐做法。
+- **`check_skill.py` 已完整覆盖 name 全部约束** —— 实测 7 个样本（含 `-pdf`、`pdf-`、
+  `pdf--processing`、`PDF-Processing` 等官方明令非法者）全部正确拒绝。
+
 ## [2.3.1] — 2026-10-17
 
 ### 🔴 修复

@@ -301,12 +301,16 @@ git clone https://github.com/syxscott/academic-paper-polish.git
 <details>
 <summary><b>🔗 方式四 · 接入 opencode.json（多文件指令）</b></summary>
 
+本仓库已自带 [`opencode.json`](opencode.json)，克隆后 opencode 会自动读取：
+
 ```json
 {
   "$schema": "https://opencode.ai/config.json",
   "instructions": ["AGENTS.md", "skills/academic-paper-polish/SKILL.md"]
 }
 ```
+
+若你已有自己的 `opencode.json`，把上面两项追加进 `instructions` 数组即可。
 
 </details>
 

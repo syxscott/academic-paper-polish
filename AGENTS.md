@@ -14,6 +14,7 @@
 academic-paper-polish/
 ├── AGENTS.md                        # ⭐ 跨工具规则单一来源（本文件）
 ├── CLAUDE.md                        # Claude Code 跳板：@AGENTS.md + Claude 专属说明
+├── opencode.json                    # opencode 指令注册（instructions 指向 AGENTS.md + SKILL.md）
 ├── README.md                        # 人类向说明：安装、方法论、FAQ
 ├── CHANGELOG.md                     # 版本历史
 ├── CITATION.cff                     # 学术引用元数据

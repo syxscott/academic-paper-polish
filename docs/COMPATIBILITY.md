@@ -25,7 +25,7 @@ SKILL.md    ← Agent Skills 标准入口（name 必须 = 目录名）
 | **OpenAI Codex CLI** | ✅ 原生 | ❌ | — | — | 支持嵌套目录与 `AGENTS.override.md`；默认 32 KiB 上限（`project_doc_max_bytes`） |
 | **Cursor** | ✅ 原生 | ❌ | — | `.cursor/rules/*.mdc` | 本仓库已放适配层 |
 | **GitHub Copilot** | ✅ 原生（2025-08 后） | ❌ | `.github/copilot-instructions.md` | `.github/` | 网页版 Chat 不支持，需手动粘贴 |
-| **opencode** | ✅ 原生 | ✅ 回退 | `~/.claude/skills/` | — | 无 `AGENTS.md` 时回退 `CLAUDE.md`；`OPENCODE_DISABLE_CLAUDE_CODE=1` 可关闭 |
+| **opencode** | ✅ 原生 | ✅ 回退 | `~/.claude/skills/` | `opencode.json` | **本仓库已自带 `opencode.json`**，把 `AGENTS.md` 与 `SKILL.md` 注册进 `instructions`；无 `AGENTS.md` 时回退 `CLAUDE.md`；`OPENCODE_DISABLE_CLAUDE_CODE=1` 可关闭 |
 | **Qoder / QCode** | ✅ 原生 | ❌ | — | `.qoder/rules/` | 本仓库已放适配层 |
 | **ZCode（智谱）** | ✅ 原生 | ❌ | — | — | **不读 CLAUDE.md**（仅 onboarding 时一次性迁移）；不扫子目录、不展开 @import |
 | **MiniMax Code（mcode）** | ✅ 原生 | ❌ | 支持 Skills | — | `mcode init .` 可生成/更新 `AGENTS.md` |
