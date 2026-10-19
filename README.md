@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/📚_10_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
 <img src="https://img.shields.io/badge/🪄_12_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
-<img src="https://img.shields.io/badge/🏷️_v2.4.0-fbbf24?style=social&logo=github" alt="v2.4.0" />
+<img src="https://img.shields.io/badge/🏷️_v2.4.1-fbbf24?style=social&logo=github" alt="v2.4.1" />
 
 <br/>
 
@@ -232,7 +232,9 @@ Further research should focus on [方向].
 
 | 规则 | 要点 |
 |---|---|
-| 🔴 **对照冷色 / 处理暖色** | 色相在**全图所有面板必须固定** —— 不能 A 图蓝=对照、B 图蓝=处理 |
+| 🔴 **色相全图可追溯** | 同一组在**所有面板**必须是同一色相 —— 不能 A 图蓝=对照、B 图蓝=处理。（冷色=对照是常见约定，非铁律） |
+| 🔴 **一通道一变量** | 颜色/形状/大小/位置各承载一个变量 —— 轴用了什么，颜色就避开它 |
+| 🔴 **阴性组用空心** | 空心 ○ = 阴性对照或无显著差异，不必另配第三种颜色 |
 | 🔴 **一色一义** | 同一颜色只能承载一个含义；柱状图的颜色深浅**不能**重复表达数值大小 |
 | 🔴 **色相编码主变量，明度编码次变量** | 如「属 = 色相，种 = 明度」，读者一眼看出层次 |
 | 🔴 **基因型用色温编码版面** | 左右分屏用**冷蓝 / 暖红**极浅底色，省去反复对照图例 |
@@ -515,7 +517,7 @@ flowchart LR
 | 写作方法论骨架 | 章节写法、期刊结构差异、ACCEPTANCE 十点、综述 18 步 |
 | 格式硬参数与文献检索 | 引文密度表、图表硬参数、送审流程、时间预算 |
 | 9 份期刊官方 Style Guide | ESR / Nature / PNAS / CVPR / Palaeoworld / Paleobiology / APP / PE / PalZ 原文数字 |
-| Cell / Cell Metabolism 顶刊 Figure | 配色组织逻辑（对照冷暖、色相编码、灰度检验） |
+| Cell / Cell Metabolism / Cancer Cell 顶刊 Figure | 配色组织逻辑（符号矩阵、气泡三通道、色标方向、空心编码、灰度检验） |
 
 规则部分逐条标注了来源，便于核验。
 
