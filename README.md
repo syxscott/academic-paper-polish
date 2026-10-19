@@ -105,9 +105,8 @@ academic-paper-polish/
 │   ├── check_skill.py               # frontmatter / name / 行数 / 引用存在性
 │   ├── check_links.py               # 本地 Markdown 链接可达性
 │   ├── check_encoding.py            # U+FFFD 编码损坏扫描
-│   ├── check_markdown.py            # 围栏配对 / 标题层级（根级 6 文件）
-│   ├── check_anchors.py             # README 内部锚点可达性
-│   └── check_md_full.py             # ★ 全量 Markdown 结构体检（全部 39 文件）
+│   ├── check_markdown.py            # ★ 全量 Markdown 结构体检（围栏/标题/表格/空白）
+│   └── check_anchors.py             # README 内部锚点可达性
 ├── evals/                           # 评测集用例与基线
 │   ├── evals.json
 │   └── README.md
@@ -547,19 +546,19 @@ Agent Skills 规范要求两者一致，**不一致会静默加载失败**（不
 <details>
 <summary><b>🤔 8. 贡献代码前要跑什么？</b></summary>
 
-改动后跑一遍全部 6 个校验脚本（与 CI 同一套，缺一不可）：
+改动后跑一遍全部 5 个校验脚本（与 CI 同一套，缺一不可）：
 
 ```bash
 python3 scripts/check_skill.py --strict    # Agent Skills 规范
 python3 scripts/check_links.py             # 本地链接
 python3 scripts/check_encoding.py          # U+FFFD
-python3 scripts/check_markdown.py          # 根级 6 文件结构
+python3 scripts/check_markdown.py          # ★ 全量 md 结构体检（含表格列数）
 python3 scripts/check_anchors.py README.md # 内部锚点
-python3 scripts/check_md_full.py           # ★ 全部 39 个 md 结构体检
 ```
 
-`check_md_full.py` 是 v2.4 新增 —— 原 `check_markdown.py` 只检查 6 个根级文件，
-**33 个 references/prompts 文件从未被结构检查过**。
+`check_markdown.py` 自 v2.4.1 起**扫描全部 39 个 md 文件** ——
+v2.4.0 之前它只检查 6 个根级文件，**33 个 references/prompts 文件从未被结构检查过**，
+且表格列数检查因缩进错误从未执行。
 
 </details>
 

@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "skill": "academic-paper-polish",
-  "updated": "2026-10-17",
+  "updated": "2026-10-19",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
   "grading": {
     "scale": "pass / partial / fail",
@@ -99,6 +99,39 @@
       "expect": {
         "load": "prompts/10-reviewer-response.md",
         "must_mention": ["四要素"]
+      }
+    },
+    {
+      "id": "R01-color-system",
+      "module": "references/color-system.md",
+      "prompt": "同一组数据，别人画出来就是不一样。Figure 的配色有什么讲究？",
+      "expect": {
+        "load": "references/color-system.md",
+        "must_mention": ["语义系统", "全图可追溯", "一通道一变量", "空心", "色标条"],
+        "must_not": [
+          "把「对照冷色/处理暖色」说成铁律",
+          "编造色号（应引用 figure-specs.md 七色表）"
+        ]
+      }
+    },
+    {
+      "id": "R02-color-heatmap",
+      "module": "references/color-system.md",
+      "prompt": "我的热图该用什么色阶？两个组对比，图例怎么标？",
+      "expect": {
+        "load": "references/color-system.md",
+        "must_mention": ["感知均匀色阶", "以 0 为中心", "色标条", "两端数值", "变量名"],
+        "must_not": ["推荐彩虹色阶 jet", "推荐红绿渐变"]
+      }
+    },
+    {
+      "id": "R03-figure-specs",
+      "module": "references/figure-specs.md",
+      "prompt": "投稿 Palaeontologia Electronica，图件有什么硬要求？",
+      "expect": {
+        "load": "references/figure-specs.md",
+        "must_mention": ["300 ppi", "ISO 9660", "RGB", "图宽 175 mm"],
+        "must_not": ["编造期刊影响因子", "把 Paleobiology 的 dpi 参数当成 PE 的"]
       }
     }
   ]

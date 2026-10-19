@@ -51,9 +51,8 @@ academic-paper-polish/
 │   ├── check_skill.py               # frontmatter / name / 行数 / 引用存在性
 │   ├── check_links.py               # 本地 .md 链接可达性
 │   ├── check_encoding.py            # U+FFFD 编码损坏扫描
-│   ├── check_markdown.py            # 围栏配对 / 标题层级（仅 6 个根级文件）
-│   ├── check_anchors.py             # README 内部锚点可达性
-│   └── check_md_full.py             # 全量 Markdown 结构体检（全部 md 文件）
+│   ├── check_markdown.py            # 全量 Markdown 结构体检（围栏/标题/表格/空白）
+│   └── check_anchors.py             # README 内部锚点可达性
 ├── evals/                           # 评测集用例与基线
 │   ├── evals.json
 │   └── README.md
@@ -171,9 +170,8 @@ academic-paper-polish/
   python3 scripts/check_skill.py --strict   # Agent Skills 规范
   python3 scripts/check_links.py            # 本地链接
   python3 scripts/check_encoding.py         # U+FFFD
-  python3 scripts/check_markdown.py         # 根级 6 文件结构
+  python3 scripts/check_markdown.py         # ★ 全量 md 结构体检（含表格列数）
   python3 scripts/check_anchors.py README.md # 内部锚点
-  python3 scripts/check_md_full.py           # ★ 全量 md 结构体检（含表格列数）
   ```
 - **修改 prompt 时同步更新** `README.md` 的模块表与 `docs/PROMPTS-EN.md`（如有对应条目）
 - **引用规则或数字时标注出处**（来自哪份资料、哪一条），便于核验
@@ -202,13 +200,13 @@ academic-paper-polish/
   **规避**：① 替换前后用 `grep -c '^```'` 比对围栏数，奇数即结构损坏；
   ② 用 `(?ms)^```\n<锚点开头>.*?^```$` 这类**首尾都锚定**的模式，不要只锚开头；
   ③ 改完立刻 `git diff` 核对行数与章节序列；
-  ④ 跑 `python3 scripts/check_md_full.py` —— 它对**全部** md 文件做结构体检。
-- 🔴 **`check_markdown.py` 的表格列数检查是死代码，不可依赖**：
-  第 4 项的 `hdr = ...` 缩进与 `if in_fence:` 块的 `continue` 同级，整段永不可达，
-  且它默认**只检查 6 个根级文件**。表格结构一律以 `check_md_full.py` 为准。
-  若要修它，**必须加表头门控**（`lines[i].startswith("|")` + 次行为分隔行）——
-  仅删 `continue` 会产生大量假阳性。
-  `scripts/check_markdown.py` 现在会在 CI 里拦住这类问题。
+  ④ 跑 `python3 scripts/check_markdown.py` —— 它对**全部** md 文件做结构体检。
+- 🔴 **`check_markdown.py` 的表格检查必须保留「表头门控」**：
+  即 `lines[i].startswith("|")` **且** 次行为分隔行（`^\|[\s\-:|]+\|$`）。
+  早期版本缺门控且因缩进错误整段不可达；把逻辑单独抽出实测时，
+  在 31 个真表格上产生 **210 行假阳性**，把真问题淹没。
+  **仅删除 `continue` 是错的** —— 必须同时加门控。
+  同理，管道符计数须忽略行内代码与 `\|` 转义。
 
 ---
 
