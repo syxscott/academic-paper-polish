@@ -40,6 +40,7 @@ academic-paper-polish/
 │           ├── checklist.md             # 投稿前自查清单
 │           ├── journal-constraints.md   # 期刊结构硬约束
 │           ├── figure-specs.md          # 图表硬参数
+│           ├── color-system.md          # 配色系统与视觉编码（对照冷暖/色相编码/灰度检验）
 │           ├── paleobiology-journal.md  # ★ Paleobiology 全刊规范（图件+文体+数据）
 │           ├── multi-journal-style-guides.md  # ★ 9 家期刊官方 Style Guide 汇总
 │           ├── literature-search.md     # 检索与素材积累
@@ -50,8 +51,9 @@ academic-paper-polish/
 │   ├── check_skill.py               # frontmatter / name / 行数 / 引用存在性
 │   ├── check_links.py               # 本地 .md 链接可达性
 │   ├── check_encoding.py            # U+FFFD 编码损坏扫描
-│   ├── check_markdown.py            # 围栏配对 / 标题层级 / 表格列数
-│   └── check_anchors.py             # README 内部锚点可达性
+│   ├── check_markdown.py            # 围栏配对 / 标题层级（仅 6 个根级文件）
+│   ├── check_anchors.py             # README 内部锚点可达性
+│   └── check_md_full.py             # 全量 Markdown 结构体检（全部 md 文件）
 ├── evals/                           # 评测集用例与基线
 │   ├── evals.json
 │   └── README.md
@@ -169,8 +171,9 @@ academic-paper-polish/
   python3 scripts/check_skill.py --strict   # Agent Skills 规范
   python3 scripts/check_links.py            # 本地链接
   python3 scripts/check_encoding.py         # U+FFFD
-  python3 scripts/check_markdown.py         # 围栏/标题/表格结构
+  python3 scripts/check_markdown.py         # 根级 6 文件结构
   python3 scripts/check_anchors.py README.md # 内部锚点
+  python3 scripts/check_md_full.py           # ★ 全量 md 结构体检（含表格列数）
   ```
 - **修改 prompt 时同步更新** `README.md` 的模块表与 `docs/PROMPTS-EN.md`（如有对应条目）
 - **引用规则或数字时标注出处**（来自哪份资料、哪一条），便于核验
@@ -198,7 +201,13 @@ academic-paper-polish/
   （代码块提前闭合、整页渲染错乱），且损坏随 push 进了 main。
   **规避**：① 替换前后用 `grep -c '^```'` 比对围栏数，奇数即结构损坏；
   ② 用 `(?ms)^```\n<锚点开头>.*?^```$` 这类**首尾都锚定**的模式，不要只锚开头；
-  ③ 改完立刻 `git diff` 核对行数与章节序列。
+  ③ 改完立刻 `git diff` 核对行数与章节序列；
+  ④ 跑 `python3 scripts/check_md_full.py` —— 它对**全部** md 文件做结构体检。
+- 🔴 **`check_markdown.py` 的表格列数检查是死代码，不可依赖**：
+  第 4 项的 `hdr = ...` 缩进与 `if in_fence:` 块的 `continue` 同级，整段永不可达，
+  且它默认**只检查 6 个根级文件**。表格结构一律以 `check_md_full.py` 为准。
+  若要修它，**必须加表头门控**（`lines[i].startswith("|")` + 次行为分隔行）——
+  仅删 `continue` 会产生大量假阳性。
   `scripts/check_markdown.py` 现在会在 CI 里拦住这类问题。
 
 ---

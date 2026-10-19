@@ -4,7 +4,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.3.0"
+  version: "2.4.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -227,6 +227,7 @@ Further research should focus on [方向].
 | `references/checklist.md` | 投稿前自查清单（A–J 十组，可打印） |
 | `references/journal-constraints.md` | 期刊结构硬约束 + 体裁篇幅 + 引文密度 + 送审流程 |
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
+| `references/color-system.md` | ★ **配色系统与视觉编码** —— 对照冷/处理暖、色相编码主变量、连续色阶、红绿禁忌、灰度检验 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性） |
 | `references/multi-journal-style-guides.md` | ★ **9 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系）+ 横向对比与选刊建议 |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |

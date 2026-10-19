@@ -10,9 +10,10 @@
 
 <img src="https://img.shields.io/badge/📜_MIT_License-22c55e?style=social&logo=opensourceinitiative" alt="MIT" />
 <img src="https://img.shields.io/badge/🧩_10_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
+<img src="https://img.shields.io/badge/📚_10_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
-<img src="https://img.shields.io/badge/🪄_10_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
-<img src="https://img.shields.io/badge/🏷️_v2.3.0-fbbf24?style=social&logo=github" alt="v2.3.0" />
+<img src="https://img.shields.io/badge/🪄_12_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
+<img src="https://img.shields.io/badge/🏷️_v2.4.0-fbbf24?style=social&logo=github" alt="v2.4.0" />
 
 <br/>
 
@@ -27,12 +28,12 @@
 [📂 仓库结构](#仓库结构-repo-layout) ·
 [🧩 十模块](#十模块-modules) ·
 [🔴 八条硬规则](#八条硬规则) ·
+[🎨 配色系统](#配色系统-new) ·
 [📐 检查卡口](#技术检查卡口) ·
 [🚀 快速开始](#快速开始-quick-start) ·
 [🪄 兼容性](#ai-工具兼容性) ·
 [🗺️ 流程图](#写作流程-workflow) ·
-[❓ FAQ](#faq) ·
-[🌍 English](docs/PROMPTS-EN.md)
+[❓ FAQ](#faq)
 
 </div>
 
@@ -44,20 +45,20 @@
 
 > **不是模板，不是填空，是给 LLM 的精准角色定义 + 输入约束 + 输出规范。**
 
-v2.x 把原来的 8 个润色 prompt 扩展到 **10 个模块 + 9 份深度参考**，并新增 **10 个 AI 工具的跨平台适配层**。
+**10 个模块 + 10 份深度参考 + 12 个 AI 工具适配 + 6 个 CI 校验脚本。**
+覆盖从选题到返修的完整链路 —— 从「怎么写」到「怎么投」。
 
-**v2.x 新增**
+| | v1.0 | **v2.4** |
+|---|---|---|
+| 模块 | 8 | **10**（+ 期刊匹配与投稿、审稿意见回复） |
+| 深度参考 | 无 | **10 份**（期刊约束 / 图表参数 / **配色系统** / 检索 / 句式库 / 自查清单 / 多刊 style guide / Paleobiology 全刊规范 / 写作方法论 / 格式与检索实操） |
+| AI 工具 | 主要 Claude Code / Cursor | **12 个**，`AGENTS.md` 单轨 + `CLAUDE.md` 跳板 |
+| CI 校验 | 无 | **6 个脚本**，含全量 Markdown 结构体检 |
+| 硬规则 | 部分 | **八条**，全部标注出处 |
 
-| 新增 | 说明 |
-|---|---|
-| 🎯 **模块 9 · 期刊匹配与投稿** | 🔴 **先定期刊再动笔** —— GCA 与 ES&T 的结构要求完全相反 |
-| 💬 **模块 10 · 审稿意见回复** | 四要素范式 + 六条纪律 |
-| 📐 **图表硬参数** | 300 dpi / <10 MB / <180 mm / 禁对角线缩放 |
-| 📊 **引文密度表** | Intro / Results / Discussion 各有不同的引用要求 |
-| 🔤 **句式库** | 可直接套用的英文句式 |
-| 🪄 **跨平台适配** | AGENTS.md + CLAUDE.md 双轨，覆盖 10 个工具 |
-
-**内容定位**：地学 SCI 论文与学位论文的写作、改稿、投稿与返修方法库 —— 从"怎么写"到"怎么投"全链路。
+**内容定位**：地学 SCI 论文与学位论文的写作、改稿、投稿与返修方法库。
+**地学 / 地质 / 环境 / 古生物方向规则最完整** —— 期刊硬约束、图件参数、地层术语规范、
+配色决策逻辑均来自地学写作课并已通用化。非地学学科替换名词即可用。
 
 ---
 
@@ -67,9 +68,10 @@ v2.x 把原来的 8 个润色 prompt 扩展到 **10 个模块 + 9 份深度参�
 academic-paper-polish/
 ├── AGENTS.md                        # ⭐ 跨工具规则单一来源（Codex/Cursor/opencode/ZCode…）
 ├── CLAUDE.md                        # Claude Code 跳板：@AGENTS.md
+├── opencode.json                    # opencode 指令注册
 ├── README.md                        # 📖 你正在读的文件
 ├── CHANGELOG.md                     # 版本变更
-├── CITATION.cff                     # 学术引用方式
+├── CITATION.cff                     # 学术引用元数据
 ├── LICENSE                          # MIT
 ├── skills/
 │   └── academic-paper-polish/       # ⭐ 自包含 skill 包（整目录拷贝即可安装）
@@ -79,7 +81,7 @@ academic-paper-polish/
 │       ├── prompts/                 # 10 个可独立调用的 prompt 模块（中文）
 │       │   ├── 01-abstract.md       # 📝 摘要
 │       │   ├── 02-introduction.md   # 🔭 引言
-│       │   ├── 03-literature-review.md   # 📚 文献综述
+│       │   ├── 03-literature-review.md  # 📚 文献综述
 │       │   ├── 04-methods.md        # 🧪 研究方法
 │       │   ├── 05-results.md        # 📊 结果
 │       │   ├── 06-discussion.md     # 💡 讨论
@@ -88,22 +90,24 @@ academic-paper-polish/
 │       │   ├── 09-journal-submission.md  # 🎯 期刊匹配与投稿
 │       │   └── 10-reviewer-response.md    # 💬 审稿意见回复
 │       ├── prompts-en/              # 同 10 模块英文版，每文件自包含
-│       └── references/              # 按需加载的深度参考
-│           ├── checklist.md         # 投稿前自查清单
-│           ├── journal-constraints.md   # 期刊结构硬约束
-│           ├── figure-specs.md      # 图表硬参数
-│           ├── paleobiology-journal.md  # ★ Paleobiology 全刊规范
+│       └── references/              # 按需加载的深度参考（10 份）
+│           ├── checklist.md              # 投稿前自查清单（A–J 十组）
+│           ├── journal-constraints.md    # 期刊结构硬约束
+│           ├── figure-specs.md           # 图表硬参数 + 构图
+│           ├── color-system.md           # 🎨 配色系统与视觉编码
+│           ├── paleobiology-journal.md   # ★ Paleobiology 全刊规范
 │           ├── multi-journal-style-guides.md  # ★ 9 家期刊官方 Style Guide
-│           ├── literature-search.md # 检索与素材积累
-│           ├── sentence-bank.md     # 句式库
-│           ├── 论文写作方法论骨架.md     # 写作方法论（引言/讨论/综述/投稿）
+│           ├── literature-search.md      # 检索与素材积累
+│           ├── sentence-bank.md          # 句式库
+│           ├── 论文写作方法论骨架.md       # 写作方法论（引言/讨论/综述/投稿）
 │           └── 格式硬参数与文献检索实操.md  # 格式参数与检索实操
-├── scripts/                         # 规范一致性校验脚本
+├── scripts/                         # 规范一致性校验脚本（CI 全跑）
 │   ├── check_skill.py               # frontmatter / name / 行数 / 引用存在性
 │   ├── check_links.py               # 本地 Markdown 链接可达性
 │   ├── check_encoding.py            # U+FFFD 编码损坏扫描
-│   ├── check_markdown.py            # 围栏配对 / 标题层级 / 表格列数
-│   └── check_anchors.py             # README 内部锚点可达性
+│   ├── check_markdown.py            # 围栏配对 / 标题层级（根级 6 文件）
+│   ├── check_anchors.py             # README 内部锚点可达性
+│   └── check_md_full.py             # ★ 全量 Markdown 结构体检（全部 39 文件）
 ├── evals/                           # 评测集用例与基线
 │   ├── evals.json
 │   └── README.md
@@ -111,6 +115,8 @@ academic-paper-polish/
 │   ├── COMPATIBILITY.md             # 各 AI 工具兼容性矩阵
 │   └── PROMPTS-EN.md                # 英文版 prompt 入口
 ├── assets/banner.svg
+├── .github/workflows/
+│   └── spec-consistency.yml         # push / PR 自动跑全部 6 个脚本
 ├── .cursor/rules/                   # Cursor 规则（含 mdc 头）
 └── .qoder/rules/                    # Qoder / QCode 规则
 ```
@@ -119,23 +125,24 @@ academic-paper-polish/
 
 ## 🧩 十模块 Modules
 
-> 推荐顺序：`🎯 期刊匹配(9) → ✍️ 写/润色正文(2-7) → 💬 返修回复(10) → 🤖 终稿去 AI 化(8)`
+> 推荐顺序：`🎯 期刊匹配(9) → ✍️ 写/润色正文(2–7) → 💬 返修回复(10) → 🤖 终稿去 AI 化(8)`
 
 | # | 模块 Module | 一句话定位 Tagline | 中文 | English |
 |---|---|---|---|---|
-| 1 | 📝 **摘要** Abstract | 把整篇论文压缩进 300 词 | `skills/academic-paper-polish/prompts/01-abstract.md` | `skills/academic-paper-polish/prompts-en/01-abstract.md` |
-| 2 | 🔭 **引言** Introduction | 倒金字塔 · 缺口 · 问题 · 路线图 | `skills/academic-paper-polish/prompts/02-introduction.md` | `skills/academic-paper-polish/prompts-en/02-introduction.md` |
-| 3 | 📚 **文献综述** Lit Review | 让文献"对话"而非罗列 | `skills/academic-paper-polish/prompts/03-literature-review.md` | `skills/academic-paper-polish/prompts-en/03-literature-review.md` |
-| 4 | 🧪 **研究方法** Methods | 经得起同行复现的细节度 | `skills/academic-paper-polish/prompts/04-methods.md` | `skills/academic-paper-polish/prompts-en/04-methods.md` |
-| 5 | 📊 **结果** Results | 只讲"发现了什么"，不解释"为什么" | `skills/academic-paper-polish/prompts/05-results.md` | `skills/academic-paper-polish/prompts-en/05-results.md` |
-| 6 | 💡 **讨论** Discussion | 结果 ↔ 文献 ↔ 理论 ↔ 实践 | `skills/academic-paper-polish/prompts/06-discussion.md` | `skills/academic-paper-polish/prompts-en/06-discussion.md` |
-| 7 | 🎯 **结论** Conclusion | 升华，但不引入新信息 | `skills/academic-paper-polish/prompts/07-conclusion.md` | `skills/academic-paper-polish/prompts-en/07-conclusion.md` |
-| 8 | 🤖 **降低 AI 率** De-AI Polish | 终稿通篇去 AI 化润色 | `skills/academic-paper-polish/prompts/08-deai-polish.md` | `skills/academic-paper-polish/prompts-en/08-deai-polish.md` |
-| 9 | 🎯 **期刊匹配与投稿** ★新 | 🔴 先定期刊，再动笔 | `skills/academic-paper-polish/prompts/09-journal-submission.md` | `skills/academic-paper-polish/prompts-en/09-journal-submission.md` |
-| 10 | 💬 **审稿意见回复** ★新 | 逐条答复的四要素 | `skills/academic-paper-polish/prompts/10-reviewer-response.md` | `skills/academic-paper-polish/prompts-en/10-reviewer-response.md` |
+| 1 | 📝 **摘要** Abstract | 把整篇论文压缩进 300 词 | [`prompts/01-abstract.md`](skills/academic-paper-polish/prompts/01-abstract.md) | [`prompts-en/01`](skills/academic-paper-polish/prompts-en/01-abstract.md) |
+| 2 | 🔭 **引言** Introduction | 倒金字塔 · 缺口 · 问题 · 路线图 | [`prompts/02-introduction.md`](skills/academic-paper-polish/prompts/02-introduction.md) | [`prompts-en/02`](skills/academic-paper-polish/prompts-en/02-introduction.md) |
+| 3 | 📚 **文献综述** Lit Review | 让文献"对话"而非罗列 | [`prompts/03-literature-review.md`](skills/academic-paper-polish/prompts/03-literature-review.md) | [`prompts-en/03`](skills/academic-paper-polish/prompts-en/03-literature-review.md) |
+| 4 | 🧪 **研究方法** Methods | 经得起同行复现的细节度 | [`prompts/04-methods.md`](skills/academic-paper-polish/prompts/04-methods.md) | [`prompts-en/04`](skills/academic-paper-polish/prompts-en/04-methods.md) |
+| 5 | 📊 **结果** Results | 只讲"发现了什么"，不解释"为什么" | [`prompts/05-results.md`](skills/academic-paper-polish/prompts/05-results.md) | [`prompts-en/05`](skills/academic-paper-polish/prompts-en/05-results.md) |
+| 6 | 💡 **讨论** Discussion | 结果 ↔ 文献 ↔ 理论 ↔ 实践 | [`prompts/06-discussion.md`](skills/academic-paper-polish/prompts/06-discussion.md) | [`prompts-en/06`](skills/academic-paper-polish/prompts-en/06-discussion.md) |
+| 7 | 🎯 **结论** Conclusion | 升华，但不引入新信息 | [`prompts/07-conclusion.md`](skills/academic-paper-polish/prompts/07-conclusion.md) | [`prompts-en/07`](skills/academic-paper-polish/prompts-en/07-conclusion.md) |
+| 8 | 🤖 **降低 AI 率** De-AI Polish | 终稿通篇去 AI 化润色 | [`prompts/08-deai-polish.md`](skills/academic-paper-polish/prompts/08-deai-polish.md) | [`prompts-en/08`](skills/academic-paper-polish/prompts-en/08-deai-polish.md) |
+| 9 | 🎯 **期刊匹配与投稿** | 🔴 先定期刊，再动笔 | [`prompts/09-journal-submission.md`](skills/academic-paper-polish/prompts/09-journal-submission.md) | [`prompts-en/09`](skills/academic-paper-polish/prompts-en/09-journal-submission.md) |
+| 10 | 💬 **审稿意见回复** | 逐条答复的四要素 | [`prompts/10-reviewer-response.md`](skills/academic-paper-polish/prompts/10-reviewer-response.md) | [`prompts-en/10`](skills/academic-paper-polish/prompts-en/10-reviewer-response.md) |
 
-> 🌍 **English users**: read the `skills/academic-paper-polish/prompts-en/` module directly. Each file is **self-contained** — copy one file into any LLM (ChatGPT, Claude, Gemini) and it works, no need to read `skills/academic-paper-polish/references/` first. English entry point: [`docs/PROMPTS-EN.md`](docs/PROMPTS-EN.md).
-
+> 🌍 **English users**: read the `skills/academic-paper-polish/prompts-en/` module directly.
+> Each file is **self-contained** — copy one file into any LLM (ChatGPT, Claude, Gemini) and it works,
+> no need to read `references/` first. English entry point: [`docs/PROMPTS-EN.md`](docs/PROMPTS-EN.md).
 
 ---
 
@@ -145,17 +152,19 @@ academic-paper-polish/
 
 **这不是流程形式，它决定后面所有结构决策。**
 
-| 期刊 | Results/Discussion | 结论段 |
+| 期刊 | Results/Discussion | 结论段 / 关键约束 |
 |---|---|---|
-| **GCA** | 🔴 **必须分离**，各自独立编号 | 允许 |
-| **ES&T** | 🔴 **合并**为 Results and Discussion | ❌ *"A separate conclusion is not to be used"* |
-| ***Paleobiology*** | — | 🔴 **须另加 Non-technical Summary**；送审图 **<40 MP**，终稿按图型 **1200/800/600 dpi** |
-| **Acta Palaeontologica Polonica** | — | 图件参数最精确：单栏 **89 mm** / 双栏 **183 mm** / 最大长 **237 mm**；**Calibri 8 pt**；线宽 **0.2 mm**；照片 **400 dpi**；🔴 **ZooBank 强制注册** |
-| **Palaeontologia Electronica** | — | 🔴 **无页限、无版面费**；图宽 **175 mm / 84 mm**，**300 ppi**，**RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符，仅小写/数字/`_`/`.`） |
-| **PalZ** | — | Systematic Palaeontology：分类单元名**粗体**，authority **加逗号**（与 Paleobiology/APP 系相反），同义名列表**隔行缩进** |
+| **GCA** | 🔴 **必须分离**，各自独立编号 | 允许；❌ 不收纯方法学论文、不收 regional case studies |
+| **ES&T** | 🔴 **合并**为 Results and Discussion | ❌ *"A separate conclusion is not to be used"*；限 **7,000 词** |
+| **PPP** | — | Articles **5000–7000 词 / 4–8 图**；图单栏 **<85 mm** / 双栏 **<180 mm** |
+| ***Paleobiology*** | — | 🔴 须另加 **Non-technical Summary ≤300 词**；送审图 **<40 MP**；终稿 **1200/800/600 dpi** |
+| **APP** | — | 单栏 **89 mm** / 双栏 **183 mm** / 最大长 **237 mm**；**Calibri 8 pt**；🔴 **ZooBank 强制注册** |
+| **Palaeontologia Electronica** | — | 🔴 **无页限、无版面费**；**300 ppi，RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符） |
 
 > 🔴 **格式不过关 → 直接拒稿，走不到学术编辑和审稿人那一步。**
 > 原因：① 第一印象 ② 基本学术素养 ③ 评审是挑错过程 ④ **格式意见往往比内容意见多**
+
+📖 完整 9 家期刊对照见 [`skills/academic-paper-polish/references/multi-journal-style-guides.md`](skills/academic-paper-polish/references/multi-journal-style-guides.md)
 
 ### 2️⃣ 引言 = 倒金字塔，opening 必须与 resolution 对齐
 
@@ -205,13 +214,35 @@ Further research should focus on [方向].
 
 | | 表示什么 |
 |---|---|
-| **Ga / Ma / ka** | 🔴 **年代（dates）** |
+| **Ga / Ma / ka** | 🔴 **年代（dates）** —— 距今十亿 / 百万 / 千年 |
 | **Gyr / Myr / kyr** | 🔴 **时间跨度（duration）** |
 
-**upper/middle/lower** → 岩石地层单位；**early/late** → 时间单位；仅正式 ICS 时间单元大写。
-界线用 **/**，范围用 **–**。⚠️ *"Middle Cretaceous"* 不规范。
+**upper/middle/lower** → 岩石地层单位；**early/late** → 时间单元；仅正式 ICS 时间单元大写。
+界线用 **/**，范围用 **–**（en-dash）。⚠️ *"Middle Cretaceous"* 不规范。
 
 ---
+
+## 🎨 配色系统 NEW
+
+> 图表硬参数（dpi / 尺寸 / 字号）见 [`figure-specs.md`](skills/academic-paper-polish/references/figure-specs.md)；
+> **配色怎么组织**见 [`color-system.md`](skills/academic-paper-polish/references/color-system.md)。
+
+**核心认知：配色是语义系统，不是审美选择。**
+判据 —— 拿掉图例，只看颜色，能否在 3 秒内判断「哪个是对照、哪个是处理」？做不到就是配色失败。
+
+| 规则 | 要点 |
+|---|---|
+| 🔴 **对照冷色 / 处理暖色** | 色相在**全图所有面板必须固定** —— 不能 A 图蓝=对照、B 图蓝=处理 |
+| 🔴 **一色一义** | 同一颜色只能承载一个含义；柱状图的颜色深浅**不能**重复表达数值大小 |
+| 🔴 **色相编码主变量，明度编码次变量** | 如「属 = 色相，种 = 明度」，读者一眼看出层次 |
+| 🔴 **基因型用色温编码版面** | 左右分屏用**冷蓝 / 暖红**极浅底色，省去反复对照图例 |
+| 🔴 **连续数据用感知均匀色阶** | 禁 jet 彩虹色阶与红绿渐变；发散色阶**必须以 0 为中心** |
+| 🔴 **红绿并置必配第二重线索** | 形状（●/▲/■）、线型（实线/虚线）或直接标注 |
+| **显著性星号保持中性色** | 🔴 染色后会被误读为属于某个组别 |
+| **荧光通道色是全球约定** | 绿=目标蛋白 / 蓝=DAPI / 洋红=线粒体，色标文字写在图下方 |
+
+**地学场景特别注意**：地层柱状图颜色只编码**时代**，岩性用**花纹** —— 两者混用印刷后极易糊成一团。
+完整规则与 **12 条交稿前检查清单**见 [`color-system.md`](skills/academic-paper-polish/references/color-system.md)。
 
 ---
 
@@ -232,7 +263,7 @@ Further research should focus on [方向].
 
 > 🔴🔴 **从制图 → 导出 → 插入 Word，全程严禁拉对角线或等比例缩放！**
 >
-> ⚠️ 上表是**通用 / 地球化学方向**参数。**投 *Paleobiology* 时不同**：线条 **1200 dpi** / 半调 **600** / 组合 **800**；单栏 **9 cm**、双栏 **18 cm**、最大高 **24 cm**；线宽 ≥**0.3 pt**、字号 ≥**8 pt**；🔴 **标本照片必须带比例尺，不可用 ×40 代替**。详见 [skills/academic-paper-polish/references/paleobiology-journal.md](skills/academic-paper-polish/references/paleobiology-journal.md)。
+> ⚠️ 上表是**通用 / 地球化学方向**参数。**投 *Paleobiology* 时不同**：线条 **1200 dpi** / 半调 **600** / 组合 **800**；单栏 **9 cm**、双栏 **18 cm**、最大高 **24 cm**；线宽 ≥**0.3 pt**、字号 ≥**8 pt**；🔴 **标本照片必须带比例尺，不可用 ×40 代替**。详见 [`paleobiology-journal.md`](skills/academic-paper-polish/references/paleobiology-journal.md)。
 >
 > 🔴 **严禁直接复制已发表的图**（除 OA / 已获许可）；修改后必须标注文献来源；**不使用有政治分歧的地图**。
 
@@ -266,24 +297,24 @@ Skill 包位于仓库的 `skills/academic-paper-polish/`，**只需把这一个�
 git clone --depth 1 https://github.com/syxscott/academic-paper-polish.git /tmp/app
 
 # 2) 整目录拷贝 —— 按你的客户端选一行
-cp -R /tmp/app/skills/academic-paper-polish ~/.claude/skills/                 # Claude Code
-cp -R /tmp/app/skills/academic-paper-polish ~/.workbuddy/skills/             # WorkBuddy
-cp -R /tmp/app/skills/academic-paper-polish "$CODEX_HOME/skills/"            # Codex CLI（默认 ~/.codex/skills/）
-cp -R /tmp/app/skills/academic-paper-polish ~/.config/opencode/skills/       # opencode / ZCode / MiniMax Code / VS Code
-cp -R /tmp/app/skills/academic-paper-polish ~/.cursor/skills/                 # Cursor
+cp -R /tmp/app/skills/academic-paper-polish ~/.claude/skills/            # Claude Code
+cp -R /tmp/app/skills/academic-paper-polish ~/.workbuddy/skills/        # WorkBuddy
+cp -R /tmp/app/skills/academic-paper-polish "$CODEX_HOME/skills/"       # Codex CLI（默认 ~/.codex/skills/）
+cp -R /tmp/app/skills/academic-paper-polish ~/.config/opencode/skills/  # opencode / ZCode / MiniMax Code
+cp -R /tmp/app/skills/academic-paper-polish ~/.cursor/skills/           # Cursor
 ```
 
 > ⚠️ **两个必须满足的条件，否则会静默加载失败**（不报错，只是不生效）：
 > 1. 目标**目录名必须是 `academic-paper-polish`** —— 与 `SKILL.md` 的 `name` 字段一致；
 > 2. **拷贝 `skills/` 里面的那一层**，不是仓库根目录。直接把仓库 clone 成 `~/.claude/skills/academic-paper-polish` 会多套一层目录，客户端发现不了 SKILL.md。
 
-验证安装：目录下应能直接看到入口文件。
+验证安装：
 
 ```bash
 ls "$HOME/.claude/skills/academic-paper-polish/SKILL.md"
 ```
 
-重启客户端，自动发现。
+然后重启客户端，自动发现。
 
 </details>
 
@@ -351,20 +382,25 @@ openai.ChatCompletion.create(
 |---|---|---|
 | **OpenAI Codex CLI** | ✅ 原生读 `AGENTS.md` | 零配置 |
 | **Cursor** | ✅ 原生 + `.cursor/rules/*.mdc` | 零配置（已放适配层） |
-| **GitHub Copilot** | ✅ 原生（2025-08 后） | 零配置 |
-| **opencode** | ✅ 原生 | 零配置 |
+| **GitHub Copilot** | ✅ 原生（2025-08 后） | 网页版 Chat 需手动粘贴 |
+| **opencode** | ✅ 原生 + `opencode.json` | 零配置（已自带） |
 | **Qoder / QCode** | ✅ 原生 + `.qoder/rules/` | 零配置（已放适配层） |
 | **ZCode（智谱）** | ✅ 原生 | 零配置 |
-| **MiniMax Code（mcode）** | ✅ 原生 | 零配置 |
-| **Claude Code** | ✅ `CLAUDE.md` → `@AGENTS.md` | 已配好（见下） |
+| **MiniMax Code（mcode）** | ✅ 原生 + Skills | 零配置 |
+| **Claude Code** | ✅ `CLAUDE.md` → `@AGENTS.md` | 需 v2.1.277+ |
 | **WorkBuddy** | ✅ `~/.workbuddy/skills/` | 零配置 |
-| **Trae** | ⚠️ 桌面版需手动开启 | 设置 → 规则 |
+| **Windsurf / Roo / Cline** | ✅ 原生 | 零配置 |
+| **VS Code / Zed / Warp** | ✅ 原生（VS Code 支持 Skills） | 零配置 |
+| **Trae** | ⚠️ 认但默认关 | 设置 → 规则 → 手动开启 |
 | **Gemini CLI** | ❌ 不原生读 | 配 `context.fileName: AGENTS.md` |
 | **Aider** | ❌ 不原生读 | `.aider.conf.yml` 写 `read: AGENTS.md` |
 
-**设计原理**：`AGENTS.md` 是**跨工具规则单一来源**（2026 Q2 起由 Linux Foundation 下的 Agentic AI Foundation 接管，成为跨厂商事实标准）。Claude Code 通过 `CLAUDE.md` 的一行 `@AGENTS.md` 导入共享同一份规则 —— **改一处，所有工具同步生效**。
+**设计原理**：`AGENTS.md` 是**跨工具规则单一来源**（2026 Q2 起由 Linux Foundation 下的
+Agentic AI Foundation 接管，成为跨厂商事实标准）。Claude Code 通过 `CLAUDE.md` 的
+一行 `@AGENTS.md` 导入共享同一份规则 —— **改一处，所有工具同步生效**。
 
-**Claude Code 用户注意**：若发现规则未加载，检查同目录是否有 `CLAUDE.local.md`（它的存在会阻止 `AGENTS.md` 直接加载），或在 `/config` 把 *Project instructions* 设为 `claude-md-and-agents-md`。
+**Claude Code 用户注意**：若发现规则未加载，检查同目录是否有 `CLAUDE.local.md`
+（它的存在会阻止 `AGENTS.md` 直接加载），或在 `/config` 把 *Project instructions* 设为 `claude-md-and-agents-md`。
 
 完整矩阵与排查指南见 **[docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)**。
 
@@ -423,29 +459,16 @@ flowchart LR
 <details>
 <summary><b>🤔 1. 适合什么学科？</b></summary>
 
-通用学术写作（CS / 社科 / 人文 / 医学 / **地学**）。地学、地质、环境、古生物方向**规则最完整** —— 期刊硬约束（GCA / ES&T / PPP / Earth-Science Reviews）、图表参数、地层术语规范都来自地学写作课并已通用化。
+通用学术写作（CS / 社科 / 人文 / 医学 / **地学**）。地学、地质、环境、古生物方向**规则最完整** ——
+期刊硬约束（GCA / ES&T / PPP / Earth-Science Reviews）、图件参数、地层术语规范、
+配色决策逻辑都来自地学写作课并已通用化。
 
 非地学学科把"样品/仪器"换成"数据/工具"即可。
 
 </details>
 
 <details>
-<summary><b>🤔 2. v2.x 和 v1.0 的区别？</b></summary>
-
-| | v1.0.0 | v2.x |
-|---|---|---|
-| 模块 | 8 | **10**（+期刊匹配与投稿、审稿意见回复） |
-| 参考资料 | 无 | **9 份**（期刊约束 / 图表参数 / 检索 / 句式库 / 自查清单 / 多刊 style guide / Paleobiology 全刊规范 / 写作方法论 / 格式与检索实操） |
-| 平台支持 | 主要 Claude Code / Cursor | **10 个工具**，AGENTS.md 双轨 |
-| 硬规则 | 部分 | **八条**，全部标注出处 |
-| 内容定位 | 通用 IMRaD | 地学 SCI 写作 + 期刊官方规范的方法库 |
-
-**⚠️ v1.0 有一个 bug 已修复**：`SKILL.md` 的 `name` 是 `paper-polish-prompts`，但仓库目录名是 `academic-paper-polish`。Agent Skills 规范要求两者一致，**不一致会静默加载失败**。v2.0 已修正。
-
-</details>
-
-<details>
-<summary><b>🤔 3. 会"过度润色"丢失原意吗？</b></summary>
+<summary><b>🤔 2. 会"过度润色"丢失原意吗？</b></summary>
 
 不会，而且**这是本仓库的红线**：
 
@@ -462,7 +485,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><b>🤔 4. 模块必须按顺序用吗？</b></summary>
+<summary><b>🤔 3. 模块必须按顺序用吗？</b></summary>
 
 不强求。但推荐：`9（定期刊）→ 2–7（正文）→ 10（返修）→ 8（终稿去 AI 化）`。
 
@@ -471,27 +494,38 @@ flowchart LR
 </details>
 
 <details>
-<summary><b>🤔 5. 英文论文能用吗？</b></summary>
+<summary><b>🤔 4. 英文论文能用吗？</b></summary>
 
-可以。prompt 是中文写的，所以：
-- 给中文初稿 → 直接用
-- 给英文初稿 → 把对应 `skills/academic-paper-polish/prompts/*.md` 英化（结构一致），或用本 Skill 把中文 prompt 翻成英文 prompt 再用
+可以。`prompts-en/` 是**与中文版规则完全一致**的英文版，每文件自包含：
 
-英文**方法论参考**见 [docs/PROMPTS-EN.md](docs/PROMPTS-EN.md)。英文 prompt 完整版欢迎 PR。
+- 给英文初稿 → 直接用 `prompts-en/` 对应模块
+- 给中文初稿 → 直接用 `prompts/` 对应模块
+
+英文入口见 [docs/PROMPTS-EN.md](docs/PROMPTS-EN.md)。
 
 </details>
 
 <details>
-<summary><b>🤔 6. 内容可靠吗？</b></summary>
+<summary><b>🤔 5. 内容可靠吗？</b></summary>
 
 **所有硬性数字都来自期刊官方 Guide for Authors 或已发表文献**：
 
-| 来源 | 页数 | 提供 |
-|---|---|---|
-| 写作方法论骨架 | — | 章节写法、期刊结构差异、ACCEPTANCE 十点 |
-| 格式硬参数与文献检索 | — | 引文密度表、图表硬参数、送审流程、时间预算 |
+| 来源 | 提供什么 |
+|---|---|
+| 写作方法论骨架 | 章节写法、期刊结构差异、ACCEPTANCE 十点、综述 18 步 |
+| 格式硬参数与文献检索 | 引文密度表、图表硬参数、送审流程、时间预算 |
+| 9 份期刊官方 Style Guide | ESR / Nature / PNAS / CVPR / Palaeoworld / Paleobiology / APP / PE / PalZ 原文数字 |
+| Cell / Cell Metabolism 顶刊 Figure | 配色组织逻辑（对照冷暖、色相编码、灰度检验） |
 
 规则部分逐条标注了来源，便于核验。
+
+</details>
+
+<details>
+<summary><b>🤔 6. v1.0 有什么已修复的 bug？</b></summary>
+
+`SKILL.md` 的 `name` 原为 `paper-polish-prompts`，与仓库目录名 `academic-paper-polish` 不一致 ——
+Agent Skills 规范要求两者一致，**不一致会静默加载失败**（不报错，只是不生效）。v2.0 已修正。
 
 </details>
 
@@ -508,11 +542,31 @@ flowchart LR
 
 </details>
 
+<details>
+<summary><b>🤔 8. 贡献代码前要跑什么？</b></summary>
+
+改动后跑一遍全部 6 个校验脚本（与 CI 同一套，缺一不可）：
+
+```bash
+python3 scripts/check_skill.py --strict    # Agent Skills 规范
+python3 scripts/check_links.py             # 本地链接
+python3 scripts/check_encoding.py          # U+FFFD
+python3 scripts/check_markdown.py          # 根级 6 文件结构
+python3 scripts/check_anchors.py README.md # 内部锚点
+python3 scripts/check_md_full.py           # ★ 全部 39 个 md 结构体检
+```
+
+`check_md_full.py` 是 v2.4 新增 —— 原 `check_markdown.py` 只检查 6 个根级文件，
+**33 个 references/prompts 文件从未被结构检查过**。
+
+</details>
+
 ---
 
 ## 🌍 English
 
-See **[docs/PROMPTS-EN.md](docs/PROMPTS-EN.md)** for the English methodology reference covering all 10 modules, the seven hard rules, figure specifications, and submission workflow.
+See **[docs/PROMPTS-EN.md](docs/PROMPTS-EN.md)** for the English methodology reference
+covering all 10 modules, the hard rules, figure specifications, and submission workflow.
 
 ---
 
