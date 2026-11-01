@@ -2,6 +2,39 @@
 
 本文件记录本仓库（agent skill：学术论文写作、润色、改稿与投稿）的主要变更。
 
+## [2.8.0] — 2026-11-01
+
+### 🔴 剩余期刊全部按「官方原文」标准复核
+
+延续 v2.7.0 的原文优先规则，把 `multi-journal-style-guides.md` 里其余各刊逐本过了一遍，
+每本都读官方页/官方 author kit，**逐字英文原文**追加为「📌 官方原文速查（verbatim）」小节。
+
+| 刊 | 官方来源 | 取到的原文要点 |
+|---|---|---|
+| **Nature** | nature.com formatting-guide | 印刷页数、summary paragraph 200 词、Title 75 字符、Refs ≤50、Methods ≤3,000 词、90/180/170 mm、lower-case 标注、scale bars、12-pt TNR、line numbers、Reporting Summary |
+| **PNAS** | pnas.org authors/submitting-your-manuscript | 体裁页数与字数、Significance Statement ≤120 词、Abstract ≤250 词、Title <135 字符、稿件顺序、图件 dpi（300 / 600–900 / 1000–1200）、图注写法 |
+| **CVPR/ICCV/3DV** | cvpr.thecvf.com + 官方 author kit `sec/2_formatting.tex` | 8 页上限、模板与匿名硬拒、版面尺寸与边距、Times 字号体系、图注位置、**色觉友好条款** |
+| **Palaeoworld** | elsevier.com Palaeoworld guide | 期刊定位、接受体裁、学科范围 |
+| **APP** | app.pan.pl/instruction.html | 稿件构成、Brief report 篇幅、183/89/237 mm、图注与面板字母、400 dpi、照片黑底、ZooBank/IPNI、标本存放、版面费 |
+| **PE** | palaeo-electronica.org contributor instructions | PDF 单文件投稿、175/84 mm @300 ppi（首投可 150）、8 pt 字号下限、对比度、编号与面板字母 |
+| **PalZ** | link.springer.com/journal/12542 | 三种体裁与各自篇幅、single-blind、Abstract 150–250 词、author-year 引注、EPS/TIFF 图件与字体嵌入 |
+| **Elsevier 微体古生物系** | 同 ESR 模板 | 改为**指针**：直接引用 §一 ESR 原句，不重复抄录 |
+| **JM / Copernicus** | Copernicus 平台投稿说明 | v2.7.0 已逐字核对 |
+
+### 🔴 又修正一处过度断言：PNAS 摘要「单一段落」
+
+本次逐字核对 PNAS 官方页时发现：**该页全文没有出现 "paragraph" 一词**。
+官方只要求 "Explain to the general reader the major contributions of the article /
+Include no more than 250 words / Cite all references in the abstract in full within
+the abstract itself AND in the text"。
+v2.6.0 的「🔴 ≤250 词，单一段落」**同样是无依据的断言**，已删除。
+
+### 目录状态与文件头同步
+
+- 目录「状态」列逐刊标注复核日期与获取状态
+- **Paleobiology 标 🟡**：Cambridge 官方页被 cookie 墙拦截，本次**未取到英文原句**，
+  其内容仍为 2026-10-16 核验版，引用前请回官方页确认（不拿转述冒充原文）
+
 ## [2.7.0] — 2026-11-01
 
 ### 🔴 新规则：期刊硬规则一律用官方原文

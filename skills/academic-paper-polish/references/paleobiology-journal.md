@@ -347,3 +347,18 @@ Smithson, A. B. 1995. Gymnosperm envy. Pp. 23–45 in C. D. Jones, ed. Advances 
 - 转入 Production 后、进入队列前：完成 **Author Information form** + **author agreement**
 - 提交前确认：**ScholarOne 个人资料中的邮箱是最新的**；**有 ORCID 的所有合著者已把 ORCID 加进个人资料**
 - 有补充材料的，**DOI 必须可用**且写在 Data Availability Statement 中；**不要用私有/审稿 DOI**
+
+## 📌 官方原文速查（verbatim，2026-11-01 复核）
+
+> 出处：Cambridge Core 官方 Paleobiology "Author instructions — Preparing your materials"
+> <https://www.cambridge.org/core/journals/paleobiology/information/author-instructions/preparing-your-materials>
+
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 Research Article 篇幅 | "Research Articles present original, analytical results in any area of paleobiology. These should be timely, relevant, and of broad interest. **Research Articles typically do not exceed about 20-25 printed pages. Submissions up to 8500 words and 15 figures and tables.**" |
+| 🔴 Review Article 篇幅 | "Review Articles are summaries of knowledge in any area of paleobiology. Review Articles should aim to advance the field by providing in-depth, up-to-date, and accessible summaries of topics that are timely and of broad interest. **Submissions from ca. 6500-8500 words and 10-15 figures and tables.**" |
+| 🔴 Methodological Advances | "Methodological Advances describe new analytical methods that are broadly relevant to the field of paleobiology, or significant developments to existing, widely used methods. In general, such methodological advances should be presented within the context of an in-depth application to a specific paleobiological problem, and **submitted as a Research Article**." |
+| 🔴 图表编号与标注 | "All illustrative materials should be referred to in your manuscript text as "Figures". Tables and figures must be cited in the text, must be numbered consecutively in Arabic numerals, and captions must be provided in all cases. Diagrams, graphs, maps, boxes, graphical diagrams, and code snippets must also be labelled and numbered." |
+
+⚠️ **本页其余条款（dpi、栏宽、字号、行号、摘要与关键词、参考文献格式、ScholarOne 流程）本次未取到英文原句**，
+仍为 2026-10-16 核验版；**引用前请回官方页确认**。

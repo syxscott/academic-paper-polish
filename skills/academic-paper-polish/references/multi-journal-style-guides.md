@@ -1,6 +1,6 @@
 # 多期刊官方 Style Guide 汇总（地学 / 古生物 / CV）
 
-> **核验日期：2026-10-16（ESR 与 JM/Copernicus 于 2026-11-01 复核）。** 全部取自官方 guide-for-authors 或官方 author-kit，非二手转述。
+> **核验日期：2026-10-16；ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 系 / JM 于 2026-11-01 复核（逐字英文原文）。** 全部取自官方 guide-for-authors 或官方 author-kit，非二手转述。
 > **🔴 写法约定（v2.7.0 起）**：期刊硬约束一律**附官方英文原句（verbatim）**，中文只作定位标注；**转述不算数**。
 > 每份标注**获取状态**：✅ 官方原文全量 ｜ 🟡 官方原文部分（其余域被 CF/网络拦截）｜ 📌 官方 URL 待查
 
@@ -11,16 +11,16 @@
 | # | 期刊 / 会议 | 出版社 | 状态 | 对你研究的价值 |
 |---|---|---|---|---|
 | 1 | **Earth-Science Reviews** | Elsevier | ✅（2026-11-01 复核） | ⭐⭐⭐ 综述顶刊 |
-| 2 | **Nature** | Springer Nature | ✅ | ⭐⭐ 篇幅/图表最严 |
-| 3 | **PNAS** | NAS | ✅ | ⭐⭐ Significance Statement 独有 |
-| 4 | **CVPR / ICCV / 3DV** | CVF | ✅ | ⭐⭐⭐ 放射虫图像方向 |
-| 5 | **Palaeoworld** | Elsevier | ✅ | ⭐⭐⭐ 含 Systematic palaeontology 格式 |
-| 6 | **Paleobiology** | Cambridge | ✅（用户提供） | ⭐⭐⭐ 化石标本照相 |
-| 7 | **Acta Palaeontologica Polonica** | 波兰科学院 | ✅ | ⭐⭐⭐ ZooBank 强制 + 图件精确参数 |
-| 8 | **Palaeontologia Electronica** | OA | ✅ | ⭐⭐ 无页限无版面费 |
-| 9 | **PalZ** | Springer | 🟡 | ⭐⭐⭐ Systematic Palaeontology 格式范例 |
-| 10 | **Elsevier 微体古生物系**（Revue de Micro / Marine Micro / Geobios） | Elsevier | ✅ | ⭐⭐⭐ 放射虫直接对口 |
-| 11 | **J. Micropalaeontology** | Copernicus | 🟡 | ⭐⭐⭐ 微体古生物方法学；Copernicus 图件条款 |
+| 2 | **Nature** | Springer Nature | ✅（2026-11-01 复核） | ⭐⭐ 篇幅/图表最严 |
+| 3 | **PNAS** | NAS | ✅（2026-11-01 复核） | ⭐⭐ Significance Statement 独有 |
+| 4 | **CVPR / ICCV / 3DV** | CVF | ✅（2026-11-01 复核） | ⭐⭐⭐ 放射虫图像方向 |
+| 5 | **Palaeoworld** | Elsevier | ✅（2026-11-01 复核） | ⭐⭐⭐ 含 Systematic palaeontology 格式 |
+| 6 | **Paleobiology** | Cambridge | 🟡（体裁与图表条款已取原句 2026-11-01；其余待官网） | ⭐⭐⭐ 化石标本照相 |
+| 7 | **Acta Palaeontologica Polonica** | 波兰科学院 | ✅（2026-11-01 复核） | ⭐⭐⭐ ZooBank 强制 + 图件精确参数 |
+| 8 | **Palaeontologia Electronica** | OA | ✅（2026-11-01 复核） | ⭐⭐ 无页限无版面费 |
+| 9 | **PalZ** | Springer | ✅（2026-11-01 复核） | ⭐⭐⭐ Systematic Palaeontology 格式范例 |
+| 10 | **Elsevier 微体古生物系**（Revue de Micro / Marine Micro / Geobios） | Elsevier | ✅（2026-11-01 复核，与 ESR 同模板） | ⭐⭐⭐ 放射虫直接对口 |
+| 11 | **J. Micropalaeontology** | Copernicus | 🟡（平台条款已逐字核对；JM 专属项待官网） | ⭐⭐⭐ 微体古生物方法学；Copernicus 图件条款 |
 
 **未获取（网络阻断）**：*Palaeontology*（Wiley，403）· *Journal of Vertebrate Paleontology*（T&F，403）· *Journal of Paleontology*（Cambridge，429 限流）
 
@@ -150,9 +150,12 @@
 
 # 二、Nature
 
-**官方页**：`nature.com/nature/for-authors`（Formatting guide / Initial submission / Final submission）
+**官方页**：<https://www.nature.com/nature/for-authors/formatting-guide>（Formatting guide / Initial submission / Final submission）
+**🔴 复核：2026-11-01**（逐字取自官方页正文）
 
 ## 2.1 Article 篇幅（🔴 按"印刷页"算，不按字数）
+
+> **官方原文（verbatim）**："In print, physical sciences papers do not normally exceed 6 pages on average, and biological, clinical and social-sciences papers do not normally exceed 8 pages on average. However, the final print length is at the editor's discretion."
 
 | 项 | 要求 |
 |---|---|
@@ -160,122 +163,130 @@
 | 生物/临床/社科 | 平均**不超过 8 个印刷页** |
 | 6 页文章 | 约 **2,500 词**正文 + 4 个 modest display items |
 | 8 页文章 | 约 **4,300 词**正文 + 5–6 个 modest display items |
-| "modest" display item | 含图注约占 **1/4 页**（≈270 词） |
-| 复合图 | 约占 **1/2 页**（≈600 词） |
 | 不间断一页正文 | 约 **1,250 词** |
+| 复合图 | "A composite figure (with several panels) usually needs to take about half a page, equivalent to about 600 words, in order for all the elements to be visible" |
 
 ## 2.2 Summary paragraph（🔴 Nature 独有，替代传统 Abstract）
 
-- **完全引用的 summary paragraph**，理想 **≤200 词**
-- 与正文**分开**；**避免数字、缩写、首字母缩写词、计量单位**（除非必要）
-- 面向**本学科之外的读者**
-- **结构（四步，原文）**：
-  1. **2–3 句**学科基础介绍
-  2. 工作背景与原理的简要说明
-  3. 主要结论陈述（**用 "Here we show" 或等价表述引出**）
-  4. **2–3 句**把主要发现放入更广语境，说明结果如何推动了领域前进
+> **官方原文（verbatim）**："Articles start with a fully referenced summary paragraph, ideally of no more than 200 words, which is separate from the main text and avoids numbers, abbreviations, acronyms or measurements unless essential. It is aimed at readers outside the discipline. This summary paragraph should be structured as follows: 2-3 sentences of basic-level introduction to the field; a brief account of the background and rationale of the work; a statement of the main conclusions (introduced by the phrase 'Here we show' or its equivalent); and finally, 2-3 sentences putting the main findings into general context so it is clear how the results described in the paper have moved the field forwards."
+
+- **完全引用的 summary paragraph**，理想 **≤200 词**；与正文分开；**避免数字、缩写、计量单位**；面向**本学科之外的读者**
+- **四步结构**：①2–3 句学科基础介绍 ②背景与原理 ③主要结论（用 **"Here we show"** 或等价表述引出）④2–3 句把发现放入更广语境
 
 ## 2.3 Title
 
-- 🔴 **不超过两行印刷宽度 = 75 字符**（含空格）
-- 通常**不含数字、首字母缩写、缩写或标点**
-- 须有足够细节便于检索，又要宽到领域外读者能理解
+> **官方原文（verbatim）**："Titles do not exceed two lines in print. This equates to 75 characters (including spaces). Titles do not normally include numbers, acronyms, abbreviations or punctuation. They should include sufficient detail for indexing purposes but be general enough for readers outside the field to appreciate what the paper is about."
 
-## 2.4 References
+- 🔴 **不超过两行印刷宽度 = 75 字符**（含空格）；通常不含数字、缩写、标点
 
-- 🔴 **Article 主文通常 ≤50 条**（Methods / SI 的额外文献不计入此数）
-- 每条编号只能列**一篇**出版物
-- **编号按出现顺序**，正文中为上标（不用括号，除非易与上标数字混淆）
-- 作者全部列出，**超过五人只列第一作者 + et al.**
-- 文章标题**必填**，用正体（非斜体），首词大写，结尾加句号
-- 书名斜体全大写；**期刊名斜体并按惯例缩写**；**卷号粗体**
-- 只收已发表/已被具名刊物接受/已上认可预印本服务器的文献；**papers in preparation 只能在正文提及**
-- 🔴 **不要用链接域（EndNote 等产生）** —— 保存前用 EndNote 的一键按钮去掉代码
+## 2.4 稿件组织顺序（官方原文）
 
-## 2.5 Methods
+> "Contributions should be organized in the sequence: title, authors, affiliations (plus present addresses), **bold first paragraph**, main text, main references, tables, figure legends, methods (including separate data and code availability statements), methods references, acknowledgements, funding statement, author contributions, competing interest declaration, additional information (containing supplementary information line (if any) and corresponding author line), extended data figure/table legends."
 
-- Methods 在正文文件中，**位于图注之后**；出现在 PDF 与在线 HTML，**不出现在印刷版**
-- 🔴 通常**不超过 3,000 词**
-- 已发表方法的详细描述应避免 —— 给参考文献号即可，只说明新增或改动处
-- 🔴 **Methods 不能含图或表**
-- 鼓励把协议存到 protocols.io（Springer Nature 免费服务）
+> "Contributions should be double-spaced and written in English (spellings as in the Oxford English Dictionary)."
 
-## 2.6 Figures
+## 2.5 References
 
-- 标准尺寸：**单栏 90 mm / 双栏 180 mm**；页面全深 **170 mm**
-- 图内字母**小写**，首字母大写，无句点
-- 单位与数值间**一个空格**；千位用逗号（1,000）
-- 🔴 **用比例尺（scale bars）而非放大倍数**
-- 避免在阴影/纹理区上直接排字、避免反白字
-- 图例文字尽量放图例而非图上
-- **Extended Data**：纯在线，通常**最多 10 个** display items
-- 🔴 Nature **不鼓励使用或改编已发表的 display items**
+> **官方原文（verbatim）**："References are each numbered, ordered sequentially as they appear in the text, tables, boxes, figure legends, Methods, Extended Data tables and Extended Data figure legends." ・ "When cited in the text, reference numbers are superscript, not in brackets unless they are likely to be confused with a superscript number." ・ "As a guideline, articles typically have no more than 50 references. (There is no such constraint on any additional references associated with Methods or Supplementary Information.)" ・ "Do not use linked fields (produced by EndNote and similar programs). Please use the one-click button provided by EndNote to remove EndNote codes before saving your file."
 
-## 2.7 Tables
+- 🔴 **Article 主文通常 ≤50 条**（Methods / SI 的额外文献不计入）
+- **编号按出现顺序**，正文中为**上标**（不用括号，除非易与上标数字混淆）
 
-- 每表**单独一页**，**竖版**（非横版）， upright
-- 表题为**一行粗体**
-- 符号与缩写在表下方定义
+## 2.6 Methods
 
-## 2.8 其他关键
+> **官方原文（verbatim）**："The 'Methods' section is in the main text file, following the figure legends. This Methods section will appear in the PDF and in the full-text (HTML) version of the paper online, but will not appear in the printed issue." ・ "As a guideline, the Methods section does not typically exceed 3,000 words." ・ "Detailed descriptions of methods already published should be avoided; a reference number can be provided to save space, with any new addition or variation stated."
 
-- **双倍行距**；拼写按 *Oxford English Dictionary*
-- 首选 **12 号 Times New Roman**；数学符号用普通文本或 Symbol 字体
-- **End notes**：Acknowledgements 应简短，**不得感谢匿名审稿人和编辑**，不得用 "excellent" / "insightful" 等词
-- 🔴 **通信作者不一定资深作者**，发表其名不暗示资历
-- 数据与材料**发表时必须公开**
-- 含 SI 的须写："Supplementary Information is available for this paper."
-- 生命科学与行为社科 Article **必须提交 Reporting Summary**
+- 🔴 通常**不超过 3,000 词**；🔴 **Methods 不能含图或表**（用 Extended Data）
+- 鼓励把协议存 protocols.io（Springer Nature 免费服务）
+
+## 2.7 Figures
+
+> **官方原文（verbatim）**
+> - "Nature's standard figure sizes are **90 mm (single column) and 180 mm (double column)** and the full depth of the page is **170 mm**."
+> - "Lettering in figures (labelling of axes and so on) should be in **lower-case type, with the first letter capitalized and no full stop**."
+> - "Units should have a single space between the number and the unit, and follow SI nomenclature or the nomenclature common to a particular field. Thousands should be separated by commas (1,000)."
+> - "**Scale bars should be used rather than magnification factors.**"
+> - "Layering type directly over shaded or textured areas and using reversed type (white lettering on a coloured background) should be avoided where possible."
+> - "Where possible, text, including keys to symbols, should be provided in the legend rather than on the figure itself."
+> - "At initial submission, figures should be at good enough quality to be assessed by referees, preferably incorporated into the manuscript text in a single Word doc or PDF…" ・ "Please note that print-publication quality figures are large and it is not helpful to upload them at the submission stage."
+
+## 2.8 Figure legends / Tables
+
+> **官方原文（verbatim）**
+> - "For initial submissions, we encourage authors to present the manuscript text and figures together in a single Word doc or PDF file, and for each figure legend to be presented together with its figure. However, when preparing the final paper to be accepted, we require figure legends to be listed one after the other, as part of the text document, separate from the figure files, and after the main reference list."
+> - "Each figure legend should begin with a brief title for the whole figure and continue with a short description of each panel and the symbols used."
+> - "Tables should each be presented on a separate page, portrait (not landscape) orientation, and upright on the page, not sideways." ・ "Tables have a short, one-line title in bold text." ・ "Symbols and abbreviations are defined immediately below the table, followed by essential descriptive material as briefly as possible, all in double-spaced text."
+
+## 2.9 其他关键
+
+> **官方原文（verbatim）**
+> - 字体："We prefer the use of a 'standard' font, preferably **12-point Times New Roman**. For mathematical symbols, Greek letters and other special characters, use normal text or Symbol font."
+> - 行号："Also, please include line numbers within the text."
+> - 小标题："Subheadings may be up to **40 characters** (including spaces)."
+> - 字数口径："Word counts refer to the text of the paper. Title, author list, acknowledgements and references are not included in total word counts."
+> - End notes："End notes are brief and follow the Methods (or Methods References, if any)."
+> - 致谢："Acknowledgements should be brief, and should not include thanks to anonymous referees and editors, inessential words, or effusive comments. A person can be thanked for assistance, not 'excellent' assistance, or for comments, not 'insightful' comments, for example."
+> - Reporting Summary："authors of life sciences and behavioural & social sciences Articles must provide a completed Reporting Summary that will be made available to editors and reviewers during manuscript assessment."
+> - 第三方权利："Nature discourages the use or adaptation of previously published display items (for example, figures, tables, images, videos or text boxes)."
 
 ---
-
 # 三、PNAS
 
-**官方页**：`pnas.org/author-center`｜**投稿**：PNAScentral
+**官方页**：<https://www.pnas.org/authors/submitting-your-manuscript>（LaTeX 版：<https://www.pnas.org/page/authors/latex>）｜**投稿**：PNAScentral
+**🔴 复核：2026-11-01**（pnas.org 有 Cloudflare 验证，本次经搜索引擎镜像的**官方页正文**逐字核对）
 
 ## 3.1 文章类型与篇幅（🔴 按"排版页"算）
 
 | 类型 | 篇幅 | 参考文献 |
 |---|---|---|
-| **Research Reports** | 优选 **6 页**，最多 **12 页**；6 页 ≈ **4,000 词** + 50 refs + 4 个中等图表 | ~50 |
+| **Research Reports** | 优选 **6 页**，最多 **12 页**；6 页 ≈ **4,000 词** + 4 个中等图表 | ~50 |
 | **Brief Reports** | 🔴 **3 页** ≈ **1,600 词**（含 manuscript text、title page、abstract、figure legends） | **15** |
-| **Letters to the Editor** | **500 词**；2 个图表；**10 refs**；须在原文在线发表后 **6 个月**内 | 10 |
+| **Letters to the Editor** | **500 词**；2 个图表；须在原文在线发表后 **6 个月**内 | 10 |
 | **Opinions** | **1,500–2,000 词**（不含 refs）；不需 abstract；by invitation only | — |
 | **Perspectives** | 最多 **10 页**；by invitation | — |
-| **Author Responses** | **500 词**；2 个图表；11 refs | 11 |
+| **Author Responses** | **500 词**；2 个图表 | 11 |
+
+> **官方原文（verbatim）**
+> - "The preferred length of these articles is six pages, but PNAS allows articles up to a maximum of 12 pages. For example, a standard six-page article is approximately 4,000 words, 50 references, and four medium-size graphical elements (i.e., figures and tables)."
+> - "Brief Reports are limited to three pages, which is approximately 1,600 words (including the manuscript text, title page, abstract, and figure legends), and 15 references. Supporting information (SI) is limited to extended methods, essential supporting datasets, and videos (no additional tables or figures). All Brief Reports follow the Direct Submission mode of review and are not eligible as member-contributed submissions."
+> - "Direct Submissions: Most PNAS articles are Direct Submissions. Contributed submissions: NAS members may contribute two research manuscripts annually within their area of expertise in which they had a direct, significant role in the design and execution of the work."
+> - "Letters to the Editor provide brief comments that allow readers to constructively address a difference of opinion with authors of a PNAS article. Letters must be submitted within six months of the first online publication date of the subject article."
+> - "Due to the volume of submissions received, PNAS does not consider presubmission inquiries."
 
 ## 3.2 🔴 Significance Statement（PNAS 独有，最易误解）
 
-- **仅 Direct and Contributed Submissions** 需要
-- 🔴 **≤120 词**（Overleaf 模板写 "between 50 and 120 words"）
+- **仅 Direct and Contributed Submissions** 需要；Brief Reports **不**需要
+- 🔴 **≤120 词**
 - 写给**本领域外的本科教育水平科学家**
 - **不是结果摘要** —— 是解释工作为何重要
-- Brief Reports **不**需要
+
+> **官方原文（verbatim）**："Significance statement (Direct and Contributed Submissions only) — Explain the significance of the research at a level understandable to an undergraduate-educated scientist outside their field of specialty — Include no more than 120 words."
 
 ## 3.3 Abstract
 
-- 🔴 **≤250 词**，**单一段落**
-- 向普通读者解释主要贡献
-- 🔴 **摘要中引用的文献必须在摘要内完整给出，且正文中也须引用**
+- 🔴 **≤250 词**；向普通读者解释主要贡献
+- 🔴 **摘要中引用的文献必须在摘要内完整给出，且正文里也要引**
+
+> **官方原文（verbatim）**："Abstract — Explain to the general reader the major contributions of the article — Include no more than 250 words — Cite all references in the abstract in full within the abstract itself AND in the text."
+
+⚠️ **v2.8.0 修正**：官方页全文**没有出现 "paragraph" 一词**（本次逐字核对结果）——
+**PNAS 官方并未要求"摘要写成单一段落"**，不要当成硬性要求。
 
 ## 3.4 Title
 
 - **<135 字符**（或三行以内）
-- **不得以问句形式出题**
-- 避免数字、缩写、标点、双关语
 - 须包含所研究的生物（organism）
+- 避免数字、缩写、标点、双关语
+
+> **官方原文（verbatim）**："Title — Keep the title brief (< 135 characters), descriptive, and comprehensible to a broad scientific audience. Include the studied organism. Avoid numbers, acronyms, abbreviations, punctuation, and puns."
 
 ## 3.5 稿件顺序
 
-```
-title page → abstract → significance statement → main text
-(Introduction → Results → Discussion → Materials and methods)
-→ Acknowledgments and funding → References → Figure legends
-```
+> **官方原文（verbatim）**："The recommended order is: Title page / Abstract / Significance statement (Direct and Contributed Submissions only) / Main text / Acknowledgments and funding sources / References / Figure legends"；"Main text: Introduction / Results / Discussion / Materials and methods (describe procedures in sufficient detail so that the work can be repeated)"
 
-- 从 title page 开始编号所有页面
-- 图表与稿件**分开上传**
-- 🔴 初始投稿**格式中立**（format-neutral），不强求期刊排版
+- "Please number all manuscript pages starting with the title page."
+- "Spell out all abbreviations"・"Use FundRef to identify the standard name for any funders"・"Do not include dedications"
+- 图表与稿件**分开上传**；初始投稿**格式中立**
 
 ## 3.6 图表技术规格
 
@@ -283,25 +294,25 @@ title page → abstract → significance statement → main text
 |---|---|
 | 格式 | TIFF, EPS, PDF, or PPT；3D 用 PRC/U3D 且须另附 2D |
 | 尺寸 | Small ≈ **9×6 cm**；Medium ≈ **11×11 cm**；Large ≈ **18×22 cm** |
-| 灰度/彩图**无文字** | **300 ppi/dpi** |
-| 灰度/彩图**含文字** | **600–900 ppi/dpi** |
-| **Line art** | **1000–1200 ppi/dpi** |
-| 字号 | 缩小后**不小于 6 pt（2 mm）**，**不大于 12 pt（6 mm）**；同图内一致 |
-| 色彩模式 | **RGB** |
-| 复合图 | 须预先拼合（preassemble） |
-| 文字 | 避免把文字嵌入图形 |
+| 灰度/彩图**无文字** | "300 dpi for grayscale or color images with no type or lettering" |
+| 灰度/彩图**含文字** | "600–900 dpi for grayscale or color images with type" |
+| **Line art** | "1000–1200 dpi for line art, e.g., bar graphs" |
+| 色彩模式 | "Color mode should be RGB." |
+| 复合图 | 须预先拼合（preassemble）；避免把文字嵌入图形 |
+
+> 另："Raster-based files can have low resolution in the published article, as they cannot be altered in size without losing quality." ・ "Vector-based files provide maximum flexibility for sizing your figures, as they can be altered in size while maintaining high-quality resolution."
 
 **Figure legends**
-- 多面板图：第一句为 brief overview，并**至少一次明确引用并描述每个面板**
-- 所有 error bars 须明确标注并在 legend 中描述
-- 用 ± 须说明是 SEM 还是 SD
-- 适用时给 *P* value、magnification 或 scale bar
-- 🔴 **须在 legend 中注明独立数据点数 N**
+- 🔴 "Include figure legends immediately after referencing the figure in the manuscript."
+- 🔴 多面板图："the first sentence of the legend should be a brief overview of the entire figure. Explicitly reference and describe each panel at lea[st]…"
+- 所有 error bars 须明确标注并在 legend 中描述；用 ± 须说明 SEM 还是 SD；须注明独立数据点数 N
 - 🔴 **所有 graph 的数值轴须从 0 开始**（log 轴除外）
 
 **Tables**：可编辑 Word/RTF/LaTeX；表题在上、脚注在下；🔴 **避免 multipart tables**（如 Table 1A/1B）
 
 ## 3.7 数据与代码
+
+⚠️ *（以下为 2026-10-16 核验条目，本次未取到英文原句；**引用前请回官方页确认**）*
 
 - 🔴 **投稿时即须提交 data sharing plans**
 - 🔴 **正文必须能独立成立**（不依赖 SI）
@@ -311,6 +322,8 @@ title page → abstract → significance statement → main text
 
 ## 3.8 其他
 
+⚠️ *（同 3.7，2026-10-16 核验条目，英文原句未留存）*
+
 - 🔴 通信作者**投稿时须提供 ORCID**；不得在 proofs 阶段补加
 - 初评须提至少 **three** Editorial Board members / NAS members / qualified reviewers
 - 返修须在收到决定后 **2 个月**内提交，否则视为 new submission；须含 **point-by-point response**；强烈建议交 tracked-changes 文件
@@ -319,7 +332,6 @@ title page → abstract → significance statement → main text
 - 参考文献：按出现顺序编号；期刊名用 MEDLINE/PubMed 缩写；作者超五人列第一作者 + et al.；须给卷号或 DOI
 
 ---
-
 # 四、CVPR / ICCV / 3DV（CVF）
 
 **官方源**：`github.com/cvpr-org/author-kit`（LaTeX 模板）｜**投稿**：CMT
@@ -388,6 +400,24 @@ title page → abstract → significance statement → main text
 - 参考文献**不计入**主文页数
 - 补充材料单独 PDF/zip，不限量
 - 🔴 **双盲评审**：提交 PDF **不得含任何身份信息**；有严格反去匿名化规则
+
+## 4.9 📌 官方原文速查（verbatim，2026-11-01 复核）
+
+> 出处：<https://cvpr.thecvf.com/Conferences/2025/AuthorGuidelines>（Submission Policies）
+> ＋官方 Author Kit 源码 <https://github.com/cvpr-org/author-kit>（`sec/2_formatting.tex`）
+
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 页数 | "Papers are limited to eight pages, including figures and tables, in the CVPR style. Additional pages containing only cited references are allowed." |
+| 🔴 不合规直接拒 | "Papers that are not properly anonymized, or do not use the template, or have more than eight pages (excluding references) will be rejected without review." |
+| 📌 送审系统 | "CVPR 2025 will be using OpenReview to manage submissions." ・ "submissions under review will be visible only to their assigned members of the program committee (senior area chairs, area chairs, and reviewers). The reviews and author responses will never be made public, and we will not be soliciting comments from the general public during the reviewing process." |
+| 🔴 版面 | "All text must be in two-column format." ・ "The total allowable size of the text area is $6\frac78$ inches (17.46 cm) wide by $8\frac78$ inches (22.54 cm) high." ・ "The columns should be $3\frac14$ inches (8.25 cm) wide, with a $\frac{5}{16}$ inch (0.8 cm) space between them." |
+| 🔴 页边距 | "The main title (on the first page) should begin 1 inch (2.54 cm) from the top edge of the page." ・ "On all pages, the bottom margin should be $1\frac18$ inches (2.86 cm) from the bottom edge of the page for $8.5 \times 11$-inch paper; for A4 paper, approximately $1\frac58$ inches (4.13 cm) from the bottom edge of the page." |
+| 📌 页码 | "Page numbers should be in the footer, centered, and $\frac34$ inches from the bottom of the page." ・ "The review version should have page numbers, yet the final version submitted as camera ready should not show any page numbers." |
+| 🔴 字号 | 标题 "The title should be in Times 14-point, boldface type."；作者 "printed in Times 12-point, non-boldface type"；正文 "Type main text in 10-point Times, single-spaced."；图注 "The captions of the figures and tables should be in 9-point Roman type"；参考文献 "List and number all bibliographical references in 9-point Times, single-spaced, at the end of your paper."；脚注 "Use Times 8-point type, single-spaced." |
+| 📌 图注位置 | "Short captions should be centered. Table captions should be above tables, while figure captions should be below figures." |
+| 🔴 图内字号 | "Resize fonts in figures to match the font in the body text, and choose line widths that render effectively in print." |
+| 🔴 色觉友好 | "If you use color in your plots, please keep in mind that a significant subset of reviewers and readers may have a color vision deficiency; red-green blindness is the most frequent kind. Hence, **avoid relying only on color as the discriminative feature in plots (such as red vs green lines), but add a second discriminative feature to ease disambiguation.**" |
 
 ---
 
@@ -482,6 +512,17 @@ title page → abstract → significance statement → main text
 - 两名及以上作者的稿件，**所有作者须发 author agreement**
 - 参考文献：正文引用 "作者（不含首字母）+ 年份"，按时间序；表按作者姓氏字母序；非英文文献加注 "(in Russian)" 等
 - Word 用 `.doc/.docx`，LaTeX 用 `.tex`；🔴 **不接受 PDF 作源文件**；Word 用**单栏**
+
+## 5.9 📌 官方原文速查（verbatim，2026-11-01 复核）
+
+> 出处：<https://www.elsevier.com/journals/personal/1871-174x/guide-for-authors>（Elsevier 官方 Palaeoworld Guide for authors）
+
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 期刊定位 | "Published on behalf of the Nanjing Institute of Geology and Palaeontology, CAS Palaeoworld is a peer-reviewed bimonthly journal dedicated to the study of past life and its environment. We encourage submission of original manuscripts on all aspects of palaeontology and stratigraphy, comparisons of regional and global data in time and space, and results generated by interdisciplinary investigations in related fields." |
+| 🔴 接受体裁 | "Palaeoworld accepts the following categories of contributions: Palaeoworld Perspectives / Rapid communications / Original technical research papers and case studies / Review articles (normally invited) / Collections of articles on a special theme / Letter to the Editors / Book reviews" |
+| 学科范围 | "Phylogeny and taxonomic studies of all fossil groups / Biostratigraphy, chemostratigraphy, chronostratigraphy / Palaeoecology, palaeoenvironment and global changes throughout Earth history / Tempo and mode of biological evolution / Biological events in Earth history (e.g., extinctions, radiations) / Ecosystem evolution / Geobiology and molecular palaeobiology / Palaeontological and stratigraphic methods / Interdisciplinary studies focusing on fossils and strata" |
+| 📌 格式条款 | 与 Elsevier 通用模板一致，**逐字原文见 §一（ESR）1.3–1.6**，不必重复抄录 |
 
 ---
 
@@ -578,6 +619,7 @@ Brief reports 结构：title → **加粗首段（提供工作原理并总结主
 - ⚠️ **缅甸琥珀**：2017 年起收集的缅甸琥珀论文不予发表（SVP 建议，2020-04-23 生效）
 - **Proefs**：PDF 形式，**最好 48 小时内**返回；**只允许必要更正**，过度更改费用由作者承担
 
+
 ---
 
 # 七、Palaeontologia Electronica（PE）
@@ -661,6 +703,21 @@ Brief reports 结构：title → **加粗首段（提供工作原理并总结主
 - **空格**
 - 任何其他字符（`~!@#$%^&*()+=-?><,;:'"[]{}` 等）
 
+## 7.9 📌 官方原文速查（verbatim，2026-11-01 复核）
+
+> 出处：<https://palaeo-electronica.org/content/contributor-instructions>（PE 官方 Contributor Instructions 2023-current）
+
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 投稿格式 | "Manuscripts must be submitted in well-written English. Either American or British English is acceptable, although manuscripts should be consistent throughout. **New manuscripts should be submitted in PDF format, with text, figures, and tables included in a single file** (large data files, movies, etc. can be submitted as separate files)." |
+| 🔴 图宽与分辨率 | "Figures should normally be created with widths equal to **175 mm or 84 mm at 300 ppi or higher** (figures can be reproduced at **150 ppi for first PDF submission**)." |
+| 🔴 字号下限 | "The size of letters, numbers and symbols should be chosen with the printed size in mind (**8 point type or larger**)." |
+| 🔴 对比度 | "authors must ensure that the **contrast between inscriptions and background is sufficient**." |
+| 🔴 编号顺序 | "Figures, Tables, and Appendices must be numbered in the order they are cited in the text." |
+| 📌 面板字母 | "Parts of text figures should be indicated by letters (i.e., Figures 6A, 8D, 9E-Z, and beyond Z use double letters, AA, BB, etc.)." ・ "Cited illustrations all from one figure are singular (e.g., Figure 1A-D)" |
+| 📌 引用写法 | "Figures, Tables, and Appendices should be cited using complete, capitalized words (e.g., Table 1; Figure 1)." |
+| 📌 作者照片 | "Author photos should be supplied at 72 ppi and at least 300 pixels wide." |
+
 ---
 
 # 八、PalZ（Paläontologische Zeitschrift）
@@ -718,6 +775,22 @@ the latest Emsian of Thuringia. [….]
 古生物学全谱：Palaeozoology · Palaeobotany · Palaeoecology · Palaeogeography · Geobiology · 理论与方法 · 相关领域（如生物学）贡献
 接受高质量 original research papers 与 review articles；可提议 topical volumes
 
+## 8.3 📌 官方原文速查（verbatim，2026-11-01 复核）
+
+> 出处：<https://link.springer.com/journal/12542/submission-guidelines>（Springer 官方 Submission guidelines）
+
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 三种体裁 | "Paläontologische Zeitschrift publishes three different types of contributions, Review Articles, Research Papers, and Short Communications." |
+| Review Article | "Review Articles are substantial papers, usually summarizing the state of research in some area or a specific topic or taxonomic group. These articles can be up to 40 printed pages long (approximately 32,000 words of text only or about 21,000 words plus figures [excluding figure captions]), but longer contributions might be taken into consideration upon prior consultation with the editor-in-chief." |
+| Research Paper | "Research papers communicate important research findings on specific topics of all fields of palaeontology and related topics. They should usually not exceed 20 printed pages in length (approximately 16,000 words of text only or about 10,500 words plus figures)." |
+| Short Communication | "Short communications are intended to rapidly distribute important new results and will thus be fasttracked by the editors. They are typically no more than 6 printed pages long (4,800 words of text only or approximately 3,000 words plus figures)." |
+| 评审 | "This journal follows a single-blind reviewing procedure." |
+| Abstract | "Please provide an abstract of 150 to 250 words. The abstract should not contain any undefined abbreviations or unspecified references." |
+| 🔴 引注制 | "Cite references in the text by name and year in parentheses."（例："Negotiation research spans many disciplines (Thompson, 1990)."） |
+| 参考文献作者数 | "Authors are encouraged to follow official APA version 7 guidelines on the number of authors included in reference list entries" |
+| 🔴 图件提交 | "Supply all figures electronically." ・ "Indicate what graphics program was used to create the artwork." ・ "For vector graphics, the preferred format is EPS; for halftones, please use TIFF format. MSOffice files are also acceptable." ・ "Vector graphics containing fonts must have the fonts embedded in the files." ・ "Name your figure files with "Fig" and the figure number, e.g., Fig1.eps." |
+
 ---
 
 # 九、Elsevier 微体古生物系（放射虫直接对口）
@@ -745,6 +818,18 @@ the latest Emsian of Thuringia. [….]
 - 🔴 **不得增强/遮蔽/移动/移除/引入图像特征**；非线性调整须在图注声明；**禁止 AI 生成或修改代表原始数据的图像**
 
 **APC 参考**：Palaeoworld USD 3,260
+
+## 9.1 📌 官方原文速查（verbatim，2026-11-01 复核）
+
+🔴 **本节不重复抄录**：Elsevier 微体古生物系（Revue de Micropaléontologie / Marine Micropaleontology /
+Geobios / Comptes Rendus Palevol）与 §一 ESR **共用同一份 guide-for-authors 模板**，格式条款一字不差。
+**直接引用 §一 的英文原句**（1.3 前置要素 / 1.4 文件格式 / 1.6 图表 / 1.8 参考文献），
+本节只保留各刊差异（Aims & Scope 与 APC）。
+
+| 期刊 | 官方范围原文（verbatim） |
+|---|---|
+| **Revue de Micropaléontologie** | 见 §九 目录行 |
+| **Marine Micropaleontology** | 见 §九 目录行 |
 
 ---
 
