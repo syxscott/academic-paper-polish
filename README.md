@@ -117,7 +117,7 @@ academic-paper-polish/
 │   └── PROMPTS-EN.md                # 英文版 prompt 入口
 ├── assets/banner.svg
 ├── .github/workflows/
-│   └── spec-consistency.yml         # push / PR 自动跑全部 6 个脚本
+│   └── spec-consistency.yml         # push / PR 自动跑全部 5 个脚本
 ├── .cursor/rules/                   # Cursor 规则（含 mdc 头）
 └── .qoder/rules/                    # Qoder / QCode 规则
 ```
