@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "skill": "academic-paper-polish",
   "updated": "2026-11-01",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
@@ -190,8 +190,8 @@
       "prompt": "我要写一篇放射虫论文，introduction 和 discussion 该怎么组织？章节怎么排？",
       "expect": {
         "load": "references/micropaleo-paper-patterns.md",
-        "must_mention": ["Geological setting", "目的句", "转折", "Discussion 首句", "进一步研究"],
-        "must_not": ["让 Discussion 开头照抄摘要", "把 remains unclear 当作本领域缺口的默认写法", "编造命中率或样本量"]
+        "must_mention": ["目的句", "Geological setting", "逐项对照", "让步", "进一步研究"],
+        "must_not": ["让 Discussion 开头照抄摘要", "把讨论写成逐条罗列文献", "用词频命中率代替对论证结构的判断", "编造样本量"]
       }
     }
   ]

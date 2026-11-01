@@ -4,7 +4,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.10.0"
+  version: "2.11.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -257,15 +257,22 @@ Further research should focus on [方向].
 
 ### 🔴 本领域的 Introduction / Discussion 写法与通用模板不同
 
+> 🔴 **方法说明**：以下结论来自**逐篇精读全文**（5 篇 Introduction 全文 + 1 篇 Discussion 全文 + 8 篇 Discussion 首末句），
+> **不是词频统计**。关键词出现率只能证明"某个词出现过"，**不能**证明"作者在这里做了什么论证动作"——
+> v2.10.0 曾用命中率下结论，v2.11.0 已按精读全部更正。
+
 | 环节 | 本领域实际写法 | 与通用 SCI 模板的差别 |
 |---|---|---|
-| Introduction 首句 | **先给事实**（放射虫是什么 / 材料何时何地发现），不直接说"本文做了什么" | 模板通常让你开门见山说目的 |
-| 目的句位置 | **引言后半段**，句式固定：`The aim/purpose of this …` / `In this paper, we present …`，且**必须带具体对象与产地** | 模板通常把目的句放第一句 |
-| 缺口写法 | **具体缺口**（哪个层 / 哪个区 / 哪个类群没研究过），"remains unclear" 仅 14% | 模板爱用 "remains unclear" |
-| Discussion 首句 | **不是复读摘要** —— 先摆领域共识 / 与已有工作对表 / 用数据锁定时代 | 模板教你在 Discussion 开头重述结果 |
-| Discussion 主体 | **机制解释（35%）+ 启示外推（35%）**，与文献逐句对照只有 15% | 模板强调逐条对照文献 |
-| Discussion 收尾 | 让步限定 / "需要进一步研究" / 地层结论 —— **不是"未来展望"** | 模板要求展望未来 |
-| 章节必备 | **Geological setting 几乎必选，且排在 Methods 之前**；系统描述类**没有独立 Results 段** | 模板要求标准 IMRaD 五段 |
+| Introduction 首句 | **给事实**（放射虫是什么 / 材料何时何地发现），不是"本文做了什么" | 模板通常开门见山说目的 |
+| Introduction 结构 | 🔴 **没有统一模板**，实测四种并存：A 缺口→目的 ｜ B 必要性论证 ｜ C 教科书铺陈 ｜ D 材料发现。**按体裁选** | 模板只给一种 |
+| 目的句 | **独立成句**（位置随模式而变，第 1–3 段不等）；句式 `The aim/purpose of this …` / `Here, we give the first description of …`；**必须带具体对象与产地** | 模板通常把目的句放第一句 |
+| 新意声明 | 目的句后**另起一段**说明"为什么值得看"（"of particular interest as …"） | 模板无此动作 |
+| 缺口写法 | **具体或数量化**（"only 19 occurrences in the entire Phanerozoic"、"哪个层没研究过"） | 模板爱用空泛的 "remains unclear" |
+| 局限坦陈 | **材料/数据局限可写在引言里**（"incompletely exposed"） | 模板要求藏到方法或讨论 |
+| Discussion 首句 | **直接进入比较对象 / 用标志性种锁定时代 / 证据→推论**，三种起手并存 | 模板教你在开头重述结果 |
+| Discussion 主体 | **逐项对照**（按形态类型、属种一项一项比）+ **"Because …, we propose that …"** 显式焊合证据与推论 | 模板强调逐条罗列文献 |
+| Discussion 收尾 | 让步限定 / "需要进一步研究" / 归因 / 地层陈述 —— **不是"未来展望"** | 模板要求展望未来 |
+| 章节必备 | **Geological setting 几乎必选，且排在 Methods 之前**；系统描述类**没有独立 Results 段**；老刊常把 Results 与 Discussion 合并 | 模板要求标准 IMRaD 五段 |
 
 ---
 
@@ -313,7 +320,7 @@ Further research should focus on [方向].
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
 | `references/color-system.md` | ★ **配色系统与视觉编码** —— 对照冷/处理暖、色相编码主变量、连续色阶、红绿禁忌、灰度检验 |
 | `references/figure-design-system.md` | ★ **图件设计体系** —— 图序即论证顺序、五种图件原型、实测语义色字典、版式规范、图注模板、交稿自查表 |
-| `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、Introduction/Discussion 实际写法与命中率、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
+| `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、逐字精读的 Introduction/Discussion 写法（5 种引言模式 / 4 种讨论起手与收尾）、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性）+ 官方原文速查 |
 | `references/multi-journal-style-guides.md` | ★ **10 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系 / JM）+ 横向对比与选刊建议 |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |

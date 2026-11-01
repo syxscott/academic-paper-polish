@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/📚_11_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
 <img src="https://img.shields.io/badge/🪄_12_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
-<img src="https://img.shields.io/badge/🏷️_v2.10.0-fbbf24?style=social&logo=github" alt="v2.10.0" />
+<img src="https://img.shields.io/badge/🏷️_v2.11.0-fbbf24?style=social&logo=github" alt="v2.11.0" />
 
 <br/>
 
