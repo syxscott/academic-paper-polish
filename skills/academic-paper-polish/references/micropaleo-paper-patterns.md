@@ -235,6 +235,143 @@
 
 ---
 
+## 九、🔴 论文整体结构：Introduction 怎么写、Discussion 怎么讨论
+
+> **取样口径**：同一分层抽样（224 篇）里，**Introduction 抽到 50 篇、Discussion 20 篇、Conclusions 13 篇**，
+> 三者齐备仅 5 篇 —— 因为老论文常把 Discussion 与 Conclusions 合并，或把讨论拆进各小节。
+> ⚠️ **抽取用"标题样式行"作为段落边界**，遇到下一个标题样式行即停止，
+> 因此**正文可能被截短** → 下表中"文献回顾"与"转折词"偏高、**"提出目的"偏低**。
+> **逐字例句不受此影响**，可直接引用。
+
+### 9.1 Introduction 的实际写法：**先事实，后目的**
+
+**首句几乎从不直接说"本文做了什么"**，而是先给一个领域事实或材料事实：
+
+> "Modern hydrothermal vent sites support communities of animals whose primary producers are chemoautotrophic bacteria that oxidize reduced sulfur compounds from the vent fluid as the primary energy source (e.g., Van Dover, 1995; Grassle, 1986)."
+> "The study of the sedimentary processes in the continent–ocean transition zone is one of the most important tasks of modern marine geology."
+> "Polycystine radiolarians are exclusively marine, pelagic, solitary or colonial protists provided with actinopods."
+> "Fossiliferous lower Paleozoic rocks were discovered in 1965 at the top of the Hecla Hoek Series in north Ny Friesland, Spitsbergen."
+
+**只有少数论文首句即目的句**：
+> "This study examines the radiolarian assemblages from cherts intercalated in two carbonate successions exposed in the Karma and Fushe Lura areas (Fig. 1), Northern Albania."
+
+🔴 **本领域的 Introduction 实际骨架（四段）**：
+① **领域事实 / 材料事实**（"放射虫是什么"、"这些岩层何时何地发现"）
+→ ② **已有研究的状况**（含引用密集段）
+→ ③ **缺口 / 转折**（"however…"）
+→ ④ **本文目的句**（目的句**通常在 Introduction 的后半段**，不是第一句）
+
+**各动作命中率（Introduction, N=50）**：
+
+| 论证动作 | 命中率 | 解读 |
+|---|---|---|
+| 文献回顾 | 52% | 引言主体是文献，不是我 |
+| 转折词（however/but/yet） | 54% | 转折句几乎必有一处 —— 缺口靠转折句点出 |
+| 提出目的 / 研究动作 | 26%（**偏低，因抽取截断**） | 目的句用固定句式，见下 |
+| 知识缺口（remains unclear 等） | 14% | 本领域**不用**"remains unclear"这套说辞，改用**具体地层/材料的未知性** |
+| 范围限定（here / this study…） | 16% | 同上 |
+
+🔴 **"知识缺口"只有 14%**：这个领域不写"X 至今仍不清楚"，而写
+**"某个地层单元的放射虫组合还没有被系统研究过"** —— 缺口是**具体的**（哪个层、哪个区、哪个类群）。
+
+**目的句的标准句式（逐字，语料原句）**：
+
+> "The aim of this note is to present new biostratigraphical data that define a more precise age of the Simoni Mélange, dating a cherty-silty level found at the top of the Kalur Cherts near the Lumi i Zi (northern Albania)."
+> "The purpose of this paper is to examine skeletal ontogenesis in five species of the genus *Lamprocyrtis* Kling 1973, and the latter is present."
+> "In the present paper we describe another structurally intermediate group between Nassellaria and Entactinaria."
+> "The purpose of this project was to better constrain the early history of the WPWP and to consider this history in the context of the equatorial current system and tropical climate during the late Miocene."
+> "The aim of this study is to discuss the geologic age of the radiolarians and the possible origin of the chert pebbles in the Pondaung Formation, in addition to the systematic …"
+> "In this paper, we present some newly discovered Early Jurassic (late Pliensbachian) radiolarian data from the Luoqu Section near Luoqu Village, Xigaze, in southern Tibet (Fig. 2)."
+
+🔴 **可直接套用的三种目的句模板**：
+- `The aim of this study is to <动词> …`
+- `The purpose of this paper is to <动词> …`
+- `In this paper, we present <新数据/新类群> from <具体产地> (Fig. N).`
+
+**注意**：目的句里**必须带具体对象**（哪个地层、哪个区、哪个类群），
+不能写 "to study radiolarians" 这种空话 —— 这是本领域目的句的硬特征。
+
+### 9.2 Discussion 的实际写法：**不是摘要复读，是"用文献校准自己的解释"**
+
+**Discussion 首句的三种常见起手（逐字）**：
+
+| 起手类型 | 逐字例句 |
+|---|---|
+| **A 直接与已有工作对表** | "The sponge microsclere assemblages encountered in this study are directly comparable with Holocene reef sponge communities off the coast of Belize and in the Gulf of Mexico, and with an Upper Jurassic microsclere assemblage." |
+| **B 用结果锁定时代/环境** | "The occurrence of well-known species such as *Dictyomitra formosa*, *Diacanthocapsa euganea*, *Stichomitra communis*, *Cryptamphorella conara*, together with *Guttacapsa biacuta* and *Praeconoaryomma lipmanea* undoubtedly determine the Noni Formation as having an early Late Cretaceous age (Cenomanian–Turonian)." |
+| **C 先摆领域通说，再切入本文** | "The isotopic paleoecologics of planktonic foraminifera can be used to gain insight into the dynamics of stratification in the upper water column." |
+
+🔴 **Discussion 首句不是"本文发现…"** —— 这是与通用 SCI 模板最大的差别。
+通用模板教你在 Discussion 开头重述结果；**本领域的老论文不这么做**，
+而是**先把领域共识摆出来，再让本文数据进入这个框架**。
+
+**各论证动作命中率（Discussion, N=20）**：
+
+| 论证动作 | 命中率 | 解读 |
+|---|---|---|
+| 机制解释（because / due to / likely） | 35% | 讨论的主体是**因果解释** |
+| 启示 / 外推（suggest / may explain） | 35% | 与机制解释并列，构成讨论主体 |
+| 与文献比较（in contrast / consistent with） | 15% | 有比较，但**不是逐句对照** |
+| 重述本文结果（our results / we show） | 10% | **很低** —— 讨论不复读摘要 |
+| 局限 / 不确定（limitation / further work） | 10% | 老论文常以"需要进一步研究"收尾 |
+
+🔴 **Discussion 的三段式（语料实际形态）**：
+① **本文数据落到哪个已知解释上**（年代 / 沉积环境 / 演化压力）
+② **这个解释为什么成立**（机制、证据、与某某文献一致或不一致）
+③ **还剩什么问题没解决**（以"需要进一步研究"或"某某研究不足"收尾）
+
+**三种收尾句式（逐字）**：
+
+| 收尾类型 | 逐字例句 |
+|---|---|
+| **A 让步 + 限定结论** | "However, some of these species occur in high latitudes where silica depletion is less pronounced than other regions of the oceans thus lessening the strength of the silica-depletion hypothesis as a major driving force in their evolution." |
+| **B 明确指出后续工作** | "More detailed research of the Gufeng Formation is needed for the proper understanding of rocks from the oceanic and platformal facies." |
+| **C 以地层/类群结论收尾** | "The lower part of the Formation includes radiolarians belonging to the *Pseudoalbaillella longtanensis-Ps. fusiformis* Assemblage, and the upper part of the Formation includes radiolarians belonging to the *Follicucullus scholasticus* …" |
+
+🔴 **Conclusions 的收尾**也常是 **B 或 C**，而不是"未来展望"——
+**本领域的结论段常以"地层归属 / 组合归属 / 需要进一步研究"结束**。
+
+### 9.3 章节顺序（按 PDF 书签统计，224 篇）
+
+高频序列（前 12 条中占比最高者）：
+
+| 序列 | 出现 |
+|---|---|
+| INTRO → GEO → METH → SYS | 2 |
+| INTRO → GEO → METH → DISC → CONC | 1 |
+| INTRO → METH → RES → RES | 1 |
+| INTRO → GEO → METH → GEO → CONC | 1 |
+
+🔴 **本领域的四类骨架**（与 §一 一致，此处给出**顺序**）：
+
+| 主题 | 章节顺序 |
+|---|---|
+| 分类 / 系统描述 | INTRO → GEO → METH → **SYS（每个类群一个并列小节）** → CONC |
+| 生物地层 | INTRO → GEO → METH → **GEO（地层与对比）** → CONC |
+| 定量 / 古生态 | INTRO → GEO → METH → **RES** → DISC → CONC |
+| 综述 / 专著 | INTRO → 各专题章节 → CONC |
+
+🔴 **两条与通用 SCI 模板不同的硬事实**：
+1. **"Geological setting" 几乎是必选项**（INTRO → GEO 出现最频繁）——
+   地层/区域背景**放在方法之前**，因为"这套放射虫来自哪个层、哪个区"决定了后面一切
+2. **系统描述类论文没有独立的 "Results" 段** —— 结果直接以
+   "Systematic descriptions" 里的**逐类群描述**呈现
+
+### 9.4 交稿前自查（结构部分）
+
+- [ ] Introduction **首句是事实，不是"本文做了什么"**？
+- [ ] Introduction 里**有明确的转折句**点出缺口（however / but / yet）？
+- [ ] 缺口是**具体的**（哪个地层 / 哪个区 / 哪个类群），不是 "remains unclear"？
+- [ ] **目的句在引言后半段**，且用 "The aim/purpose of this …" / "In this paper, we present …"？
+- [ ] 目的句里**带具体对象与产地**（可带 Fig. 交叉引用）？
+- [ ] 有 **Geological setting** 段，且排在 **Methods 之前**？
+- [ ] 系统描述类：每个类群一个**并列小节**，四段式（Holotype→Paratype→Description→Discussion）？
+- [ ] 系统描述类：**没有独立的 Results 段**？
+- [ ] Discussion **首句不是复读摘要**，而是领域共识 / 对表 / 结果定年？
+- [ ] Discussion 主体是**机制解释 + 启示**（各约 35%），不是逐句文献对照？
+- [ ] Discussion 收尾是**让步限定 / 需要进一步研究 / 地层结论**三者之一？
+- [ ] Introduction 与 Discussion 之间**没有重复的句子**？
+
 ## 八、来源与可回查
 
 | 来源 | 提供什么 |

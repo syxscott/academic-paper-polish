@@ -2,6 +2,36 @@
 
 本文件记录本仓库（agent skill：学术论文写作、润色、改稿与投稿）的主要变更。
 
+## [2.10.0] — 2026-11-01
+
+### 新增：论文整体结构（Introduction 怎么写 / Discussion 怎么讨论）
+
+在同一分层抽样（224 篇）上再抽取 IMRaD 正文：**Introduction 50 篇、Discussion 20 篇、
+Conclusions 13 篇**（三者齐备仅 5 篇，老论文常把讨论拆进各小节或与结论合并）。
+新增 `references/micropaleo-paper-patterns.md` 第九章。
+
+**实测到的写法（与通用 SCI 模板不同的部分）**：
+- **Introduction 首句先给事实**（放射虫是什么 / 材料何时何地发现），不直接说"本文做了什么"
+- **目的句在引言后半段**，句式 `The aim/purpose of this …` / `In this paper, we present …`，
+  且**必须带具体对象与产地**
+- **缺口是具体的**（哪个层 / 哪个区 / 哪个类群没研究过）；`remains unclear` 仅 **14%**
+- **Discussion 首句不是复读摘要** —— 先摆领域共识 / 与已有工作对表 / 用数据锁定时代；
+  "重述本文结果"仅 **10%**，主体是**机制解释（35%）+ 启示外推（35%）**
+- **Discussion 收尾是让步限定 / "需要进一步研究" / 地层结论**，不是"未来展望"
+- **Geological setting 几乎必选且排在 Methods 之前**；系统描述类论文**没有独立 Results 段**
+
+**附逐字例句**：Introduction 首句 8 例、目的句 7 例、Discussion 首句 8 例、
+Discussion 收尾 8 例、Conclusions 收尾 6 例，全部取自语料原句。
+
+⚠️ **抽取口径**：以"标题样式行"作为段落边界，正文可能被截短 →
+"文献回顾/转折词"偏高、"提出目的"偏低；**逐字例句不受影响**。
+
+### 其他
+
+- SKILL.md 新增「本领域的 Introduction / Discussion 写法与通用模板不同」对照表
+- 触发词补 `introduction 怎么写` `discussion 怎么写` `论文结构怎么排` `讨论部分怎么写`
+- `evals/evals.json` 升到 1.5.0，新增 **R09-paper-structure**
+
 ## [2.9.0] — 2026-11-01
 
 ### 新增：微体古生物 / 放射虫论文的写作与制图模式（基于 8162 篇本地语料）
