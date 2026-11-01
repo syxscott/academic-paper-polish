@@ -2,6 +2,42 @@
 
 本文件记录本仓库（agent skill：学术论文写作、润色、改稿与投稿）的主要变更。
 
+## [2.6.0] — 2026-11-01
+
+### 🔴 修正：两条在官方原文中查无依据的断言（ESR 复核发现）
+
+重新逐字核对 ESR 官方 guide-for-authors 后，发现两处过度断言：
+
+- 🔴 **「摘要必须写成单一段落」→ 删除**。官方摘要段原文只要求
+  "concise and factual abstract that does not exceed 250 words" + 能独立成篇
+  （stand alone）+ 避免引用 + 避免非常用缩写，**通篇没有 single paragraph 要求**。
+  已同步修正 4 处：`multi-journal-style-guides.md`、`prompts-en/01-abstract.md`、
+  `prompts-en/03-literature-review.md`、`prompts-en/09-journal-submission.md`。
+- 🔴 **「Highlights 是硬性要求」→ 降级为「鼓励提供」**。官方措辞是
+  "You are **encouraged** to provide article highlights at submission"，
+  并非 required。格式数字（3–5 条、每条 ≤85 字符、单独可编辑文件）不变。
+
+### 新增：ESR 章节按官方原文重写并扩充
+
+`references/multi-journal-style-guides.md` 第一章（ESR）于 **2026-11-01 逐字复核**：
+
+- 新增 **1.2 文章类型与字数**：Review paper 无字数上限（官方原话
+  "without any limitation on the number of words used"）；>20,000 词须先邮件
+  + 抄送 Tim Horscroft；**Discussion / Reply 各 ≤3,000 词、各限 1 次、6 个月 / 1 个月时限**；
+  🔴 **Invited Review Article 仅限受邀**
+- 新增 **1.3 前置要素**：Abstract 为 **required**（含 4 项内容要求）、
+  Keywords 1–7、Highlights 为 **encouraged**、Data statement **required at submission**、
+  生成式 AI 声明、🔴 **Covering letter 须附「近期该主题论文清单」**
+- **1.6 图表**补官方 "Do not submit" 三条（分辨率过低 / 文字相对过小 /
+  多图合并——仅比较用图组例外）与 Captions 写法、Text graphics 规则
+- 刊页指标更新：**IF 11.3 / CiteScore 20.8**（官方刊页 2026-11），
+  替换原来的模糊阈值 "IF > 10"
+
+### 回归测试
+
+- `evals/evals.json` 升到 1.3.0，新增 **R07-esr-guide**，
+  `must_not` 直接锁死上面两条过度断言（防回归）
+
 ## [2.5.0] — 2026-11-01
 
 ### 新增：图件设计体系（第三层参考）

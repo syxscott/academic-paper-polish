@@ -46,7 +46,7 @@ My target journal (if any): [JOURNAL NAME]
 | ***Palaeoworld*** | — | — | **≤30 printed pages**; **no page charges**; full Systematic palaeontology format |
 | ***Nature*** | — | — | 6–8 printed pages; **title ≤75 characters**; main-text references **≤50**; Methods **≤3,000 words and no figures or tables** |
 | ***PNAS*** | — | — | Research Report 6 pages (max 12); Brief Report 3 pages / 1,600 words; 🔴 **Significance Statement ≤120 words** |
-| ***Earth-Science Reviews*** | — | — | **Reviews only**; rejects bibliometric studies; abstract ≤250 words, single paragraph |
+| ***Earth-Science Reviews*** | — | — | **Reviews only**; rejects bibliometric studies; abstract ≤250 words (must stand alone; avoid references); Highlights 3–5 bullets × ≤85 characters (**encouraged**, not required) |
 
 > 🔴 **Format failure = desk rejection.** Format is the first impression, the baseline of academic literacy, and reviewers are hunting for errors. Format comments usually outnumber content comments.
 

@@ -123,4 +123,4 @@ Title → Author → Abstract → Introduction
 
 ## 🔴 *Earth-Science Reviews* scope note
 
-*ESR* publishes **reviews only**. It will **not** consider bibliometric studies, meta-analyses without a significant review component, or regular research articles outside occasional special issues. Abstracts are capped at **250 words** and must be a **single paragraph**.
+*ESR* publishes **reviews only**. It will **not** consider bibliometric studies, meta-analyses without a significant review component, or regular research articles outside occasional special issues. Abstracts are capped at **250 words**, must **stand alone**, and should avoid references.

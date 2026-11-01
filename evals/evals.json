@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "skill": "academic-paper-polish",
   "updated": "2026-11-01",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
@@ -162,6 +162,16 @@
         "load": "references/multi-journal-style-guides.md",
         "must_mention": ["300 dpi", "5 MB", "30 MB", "8 cm", "图例", "Coblis"],
         "must_not": ["编造 JM 的摘要字数上限", "把 Paleobiology 的 dpi 参数当成 JM 的"]
+      }
+    },
+    {
+      "id": "R07-esr-guide",
+      "module": "references/multi-journal-style-guides.md",
+      "prompt": "我要投 Earth-Science Reviews，投稿要准备哪些材料？硬要求是什么？",
+      "expect": {
+        "load": "references/multi-journal-style-guides.md",
+        "must_mention": ["只发综述", "bibliometric", "250 词", "85 字符", "1000 dpi", "20,000 词"],
+        "must_not": ["把 Highlights 说成强制要求", "把摘要「必须单一段落」当作 ESR 官方要求", "编造 ESR 的字数上限"]
       }
     }
   ]

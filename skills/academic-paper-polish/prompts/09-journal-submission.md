@@ -34,7 +34,7 @@
 | **GCA**<br>*Geochimica et Cosmochimica Acta* | 🔴 **必须分离**，各自独立编号 | 允许 | ❌ 不收纯方法学/技术/模型论文（须有 broader geochemical significance）<br>❌ 不收 regional case studies<br>🔴 Cover Letter **必须推荐 3 位 Associate Editors** |
 | **ES&T**<br>*Environmental Science & Technology* | 🔴 **合并**为 Results and Discussion | ❌ *"A separate conclusion is not to be used"*，concluding statements 并入 R&D | Research Article 限 **7,000 词**；栏目制；需 Abbreviations、Formulae and Equations 板块 |
 | **PPP**<br>*Palaeogeography, Palaeoclimatology, Palaeoecology* | — | — | Articles **5000–7000 词 / 4–8 图**；Reviews **8000–10000 词**；Short Communications **4000 词 / <3 图表**；图单栏 **<85 mm** / 双栏 **<180 mm** |
-| **Earth-Science Reviews** | — | — | 地学综述顶刊，**IF > 10** |
+| **Earth-Science Reviews** | — | — | 地学综述顶刊，**IF 11.3**（2026-11 官方刊页）；🔴 只发综述，拒 bibliometric studies |
 | **Biological Reviews** | — | — | **IF > 14** |
 | **Chemical Reviews** | — | — | **IF > 50** |
 | **Nature Reviews** 系列 | — | — | 子刊 **IF 46–123**；多数需邀请 |

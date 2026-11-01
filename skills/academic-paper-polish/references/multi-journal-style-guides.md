@@ -1,6 +1,6 @@
 # 多期刊官方 Style Guide 汇总（地学 / 古生物 / CV）
 
-> **核验日期：2026-10-16。** 全部取自官方 guide-for-authors 或官方 author-kit，非二手转述。
+> **核验日期：2026-10-16（ESR 于 2026-11-01 复核）。** 全部取自官方 guide-for-authors 或官方 author-kit，非二手转述。
 > 每份标注**获取状态**：✅ 官方原文全量 ｜ 🟡 官方原文部分（其余域被 CF/网络拦截）｜ 📌 官方 URL 待查
 
 ---
@@ -9,7 +9,7 @@
 
 | # | 期刊 / 会议 | 出版社 | 状态 | 对你研究的价值 |
 |---|---|---|---|---|
-| 1 | **Earth-Science Reviews** | Elsevier | ✅ | ⭐⭐⭐ 综述顶刊 |
+| 1 | **Earth-Science Reviews** | Elsevier | ✅（2026-11-01 复核） | ⭐⭐⭐ 综述顶刊 |
 | 2 | **Nature** | Springer Nature | ✅ | ⭐⭐ 篇幅/图表最严 |
 | 3 | **PNAS** | NAS | ✅ | ⭐⭐ Significance Statement 独有 |
 | 4 | **CVPR / ICCV / 3DV** | CVF | ✅ | ⭐⭐⭐ 放射虫图像方向 |
@@ -28,6 +28,9 @@
 # 一、Earth-Science Reviews（ESR）
 
 **投稿入口**：`submit.elsevier.com/EARTH`｜**同行评审**：single anonymized，至少 2 名审稿人
+**官方指南**：<https://www.sciencedirect.com/journal/earth-science-reviews/publish/guide-for-authors>
+**🔴 复核：2026-11-01**（收录边界 / 文章类型 / 前置要素 / 图件原表 / 结构，逐字取自官方指南页；Elsevier 反爬，需经浏览器渲染读取）
+**刊页指标（2026-11 官方刊页）**：Impact Factor **11.3**｜CiteScore **20.8**
 
 ## 1.1 收录边界（🔴 最容易被 desk-reject 的地方）
 
@@ -39,48 +42,65 @@
 
 > "Submissions that aggregate previous literature and do not integrate and build on existing knowledge are unlikely to be accepted."
 
-## 1.2 字数与要素限制
+## 1.2 文章类型与字数（🔴 官方体裁口径）
 
-| 项 | 要求（原文） |
+| 体裁 | 官方要求 |
 |---|---|
-| 综述论文 | 无严格上限，但 **>20,000 词**须先邮件与编辑讨论（抄送 timothy.horscroft@elsevier.com） |
-| Discussion | **≤3,000 词**；须在原文发表后 **6 个月**内提交 |
-| Reply | **≤3,000 词**；须在收到通知后 **1 个月**内提交 |
-| **Abstract** | 🔴 **≤250 词**，**且必须写成单一段落** |
-| **Highlights** | **3–5 条**，每条 **≤85 字符**（含空格）；作为**单独可编辑文件**提交，文件名含 "highlights" |
-| **Keywords** | **1–7 个**；英文；避免含 and/of 的多词组合 |
+| **Review paper** | 常规体裁；**字数无上限**（原文 "without any limitation on the number of words used"），但官方鼓励在充分与简洁之间取平衡 |
+| 🔴 **超长综述** | **超过约 20,000 词**须**先邮件与任一编辑沟通**，**抄送** Tim Horscroft（Review Papers Coordinator/Managing Editor，timothy.horscroft@elsevier.com），确认选题是否适合 |
+| **Discussion** | 对已发表 ESR 论文的评论；**只针对原文的主要争议点**；**不得**写成综述、**不得**发布本文的新发现；通常 **≤3,000 词**；须在原文发表后 **6 个月**内提交 |
+| **Reply** | 原作者回应；同样 **≤3,000 词**、只回应争议点；**双方各限 1 次 Discussion / Reply**；须在收到通知后 **1 个月**内提交 |
+| **Invited Review Article** | 🔴 **仅限已收到邀稿**才可选这个体裁 |
 
-## 1.3 文件格式
+## 1.3 前置要素（🔴 Abstract 必填 / Highlights 是"鼓励"不是"必须"）
+
+| 项 | 官方要求（逐字核对） |
+|---|---|
+| 🔴 **Abstract** | **必填**（"You are required to provide..."），**≤250 词**；须写明 ①研究目的 ②基本流程 ③主要发现（含统计显著性）+ 主要结论 ④强调新意；**必须能独立成篇**（standalone）；**避免引用**（必要则给出作者+年份）；**避免非常用缩写**（首次出现须定义） |
+| **Keywords** | **1–7 个**；英文；避免用 and/of 组成多词短语；仅用领域内牢固通用的缩写 |
+| 🟡 **Highlights** | 🔴 **官方措辞是 "encouraged"（鼓励提供），并非 required**；**3–5 条**，每条 **≤85 字符**（含空格）；作为**单独可编辑文件**在投稿系统提交，**文件名含 "highlights"** |
+| 🔴 **Data statement** | **required at submission**；Option C：存仓库 + 正文引用链接，或说明为何不能共享 |
+| 🔴 **Declaration of generative AI use** | **投稿时即须声明**生成式 AI 的使用 |
+| 🔴 **Covering letter** | **须附「你近期在该主题上的论文清单」**（"include in their covering letter a list of their recent papers on the subject"） |
+
+## 1.4 文件格式与行号
 
 - Word 用 `.doc/.docx`，LaTeX 用 `.tex`；🔴 **PDF 不是可接受的源文件**
 - Word 用**单栏**排版；双栏仅限 LaTeX
 - 删除所有删除线与下划线（除科学必要性）
-- 🔴 **所有稿件须含连续行号**
+- 🔴 **所有稿件须含连续行号**（"All papers should include continuous line numbering"）
+- 官方通用文件体积上限：单文件 **≤150 MB**、总计 **≤1 GB**（图件单图体积官方页未再单列上限）
 
-## 1.4 结构
+## 1.5 结构
 
 - 章节须清晰编号：`1` → `1.1` → `1.1.1` → `1.2`
 - 交叉引用须用编号格式，不得只写 "the text"
 - 摘要不纳入章节编号
 - 顺序含 Theory and calculation、Acknowledgements（**置于参考文献列表前的独立部分**）、**Author contributions: CRediT**、Appendices（A, B…；Eq. (A.1)；Table A.1, Fig. A.1）
 
-## 1.5 图表
+## 1.6 图表（🔴 官方原表，逐字核对）
 
-| 图像类型 | 格式 | 分辨率 |
+| 图像类型 | 格式 | 要求 |
 |---|---|---|
-| Vector drawings | EPS, PDF | 嵌入字体或将文字存为图形 |
-| Photographs | TIFF, JPG, PNG | **300 dpi**（单栏最小宽 **1063 px**；全页 **2244 px**） |
-| Bitmapped line drawings | TIFF, JPG, PNG | **1000 dpi**（单栏 **3543 px**；全页 **7480 px**） |
-| Charts / 大表格 | XLS, XLSX | 清晰可读 |
-| Annotated images | PPT, PPTX | 内嵌图 ≥300 dpi |
+| Vector drawings | EPS, PDF | **嵌入字体**或将文字存为图形 |
+| Photographs (color or grayscale) | TIFF, JPG, PNG | **最低 300 dpi**（单栏最小宽 **1063 px**；整页 **2244 px**） |
+| Bitmapped line drawings | TIFF, JPG, PNG | **最低 1000 dpi**（单栏 **3543 px**；整页 **7480 px**） |
+| Charts / 大表或带底纹表 | XLS, XLSX | 以清晰可读的格式提供 |
+| Annotated images | PPT, PPTX | 标注与文字须清晰；内嵌图 **≥300 dpi** |
 
-- 每图作为**单独文件**，命名如 `Figure_1`、`Figure_2`
-- 🔴 **不可提交**：多图合并为一个文件（为互相比较而准备的图可例外）
-- 🔴 **图注须置于图下方，并同时放入单独文件，且置于图像区域之外**
+**🔴 官方 "Do not submit" 清单（原文）**
+- 分辨率过低的文件
+- **文字相对图像过小**的图（缩小后会不可读）
+- 🔴 **多张图合并成一个文件**（影响可读性与无障碍）；**仅"相互比较用"的图组可例外**（如 before / during / after 照片）
+
+- 按在正文中出现的顺序编号；**每张图单独一个文件**，命名如 `Figure_1`、`Figure_2`
+- Text graphics 可嵌入正文对应位置（LaTeX 也可嵌入文件内）
+- 🔴 **图注**：须**置于图下方**，**同时放入单独文件**，并**保持在图像区域之外**（例如放在底部）
+- **Captions 写法**：=「简短标题（**不印在图上**）+ 图像说明」；文字量尽量少，但**所有符号与缩写都要解释**
 
 > **Aims & scope 特有要求**：插图必须是**实际图件**（地图、剖面、图、照片），**不能是文字的图形化重复**。所有图注——尤其图来自文献时——**必须说明该图要传达的信息（the message of the figure）**，而非仅描述其内容。
 
-## 1.6 其他
+## 1.7 其他
 
 - **单位**：必须用 SI；提及其他单位须给 SI 等值
 - **公式**：可编辑文本，非图片；变量斜体；e 的幂用 `exp`；小分数用 `/`

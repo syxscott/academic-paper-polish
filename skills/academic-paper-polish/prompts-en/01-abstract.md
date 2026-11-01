@@ -42,7 +42,7 @@ Process the abstract below:
 
 | Journal | Abstract limit | Special front-matter requirement |
 |---|---|---|
-| *Earth-Science Reviews* / *Palaeoworld* | **250 words** | *ESR*: must be a **single paragraph** |
+| *Earth-Science Reviews* / *Palaeoworld* | **250 words** | *ESR*: must **stand alone**; avoid references and uncommon abbreviations |
 | *Nature* | **200 words** (called a **summary paragraph**) | Four-part structure; no numbers, abbreviations, or units |
 | *PNAS* | **250 words** | **Significance Statement ≤120 words** (Direct/Contributed only) |
 | *Paleobiology* | **300 words** | **Non-technical Summary ≤300 words** |

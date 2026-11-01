@@ -4,7 +4,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.5.0"
+  version: "2.6.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -41,7 +41,7 @@ metadata:
 | **Palaeontologia Electronica** | — | — | 🔴 **无页限、无版面费**；图宽 **175 mm / 84 mm**，**300 ppi**，**RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符，仅小写/数字/`_`/`.`）；须提供 plain language summary |
 | **J. Micropalaeontology**<br>★ 微体古生物（Copernicus 平台） | — | — | 图 **300 dpi**、**单图 <5 MB / 全文件 <30 MB**、**图宽 ≥8 cm**；🔴 **复合图必须合并成单文件**；🔴 **图例必须画在图里**（不许靠图注解释虚线/空心圆）；🔴 须过 **Coblis 色觉模拟器**；矢量优先（eps/pdf，字体须嵌入）；单栏版心 177 mm |
 | **PalZ** | — | — | Systematic Palaeontology：分类单元名**粗体**，authority **加逗号**（与 Paleobiology/APP 系相反），同义名列表**隔行缩进** |
-| **Earth-Science Reviews** | — | — | **IF > 10** |
+| **Earth-Science Reviews** | — | — | **IF 11.3**（2026-11 官方刊页）；只发综述 |
 | **Biological Reviews / Chemical Reviews / Nature Reviews** | — | — | **IF > 14 / > 50 / 46–123** |
 
 > 🔴 **格式不过关，直接拒稿 —— 走不到学术编辑和审稿人那一步。**

@@ -9,7 +9,7 @@
 | **GCA**<br>Geochimica et Cosmochimica Acta | **必须分离**，各自独立编号 | 允许 | — | ❌ 不收纯方法学/技术/模型类论文（须有 broader geochemical significance）<br>❌ 不收 regional case studies |
 | **ES&T**<br>Environmental Science & Technology | **合并**为 *Results and Discussion* | ❌ *A separate conclusion is not to be used*，concluding statements 并入 R&D | Research Article **7,000 词**；栏目制；需 Abbreviations、Formulae and Equations 板块 | 聚焦环境科学与技术 |
 | **Water Research** | — | — | 开放获取，IWA 合作刊 | 聚焦 anthropogenic water cycle / water quality |
-| **Earth-Science Reviews** | — | — | 地学综述老牌顶刊 | 综述 |
+| **Earth-Science Reviews** | — | — | 地学综述老牌顶刊（**IF 11.3**，2026-11 官方刊页）；**无字数上限**，>20,000 词须先与编辑沟通 | 只发综述；🔴 拒 bibliometric studies（只能放 SI） |
 | **Annual Review of Earth and Planetary Sciences** | — | — | 每年一卷，仅约 20 篇 | **需邀请** |
 | **National Science Review** | — | — | Science Press / OUP | 中国 Science 系列，刊发综述 |
 | **J. Micropalaeontology**<br>★ 微体古生物（Copernicus 平台） | — | — | 图 **300 dpi**、**单图 <5 MB / 全文件 <30 MB**、**图宽 ≥8 cm**、**1 栏**（版心 177 mm） | 🔴 **图例必须画在图里**；🔴 复合图合并成单文件；🔴 须过 Coblis 色觉模拟器 |
@@ -178,7 +178,7 @@ ScholarOne 投稿，paleobiology@cambridge.org。遵循《芝加哥格式手册�
 
 | 期刊 | 出版社 | 对你研究的价值 |
 |---|---|---|
-| **Earth-Science Reviews** | Elsevier | ⭐⭐⭐ 综述顶刊；只发综述，拒 bibliometric studies |
+| **Earth-Science Reviews** | Elsevier | ⭐⭐⭐ 综述顶刊；只发综述，拒 bibliometric studies；摘要 ≤250 词；Highlights 3–5 条 × ≤85 字符（鼓励提供） |
 | **Nature** | Springer Nature | ⭐⭐ summary paragraph 四步结构；主文 ≤50 refs |
 | **PNAS** | NAS | ⭐⭐ 🔴 Significance Statement ≤120 词（独有） |
 | **CVPR / ICCV / 3DV** | CVF | ⭐⭐⭐ 放射虫图像方向；🔴 色盲友好要求 |
@@ -371,7 +371,7 @@ Line numbers（行号，连续行号）    ← 送审必查项
 |---|---|
 | **Nature Reviews** 系列 | 子刊 46–123（Nat Rev Mol Cell Biol 81.4 / Nat Rev Drug Discov 122.8 / Nat Rev Cancer 237 / Nat Rev Methods Primers 50.1） |
 | **Trends in / Current Opinion in** 系列 | — |
-| **Earth-Science Reviews** | **IF > 10** |
+| **Earth-Science Reviews** | **IF 11.3**（2026-11 官方刊页） |
 | **Biological Reviews** | **IF > 14** |
 | **Annual Reviews** 系列 | — |
 | **Chemical Reviews** | **IF > 50** |
