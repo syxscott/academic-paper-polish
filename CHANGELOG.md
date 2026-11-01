@@ -2,6 +2,40 @@
 
 本文件记录本仓库（agent skill：学术论文写作、润色、改稿与投稿）的主要变更。
 
+## [2.7.0] — 2026-11-01
+
+### 🔴 新规则：期刊硬规则一律用官方原文
+
+转述会丢限定词与强度词（required / encouraged / must / may），还会凭空造出原文没有的要求。
+本仓库因此立规矩：**`references/` 里每条期刊硬约束都附官方英文原句（verbatim）**，
+中文只作定位标注，**转述不算数**；AI 回答时直接引原句。
+
+- `AGENTS.md`「维护约定」新增该条，并说明来源可回查
+- `SKILL.md` 铁律 0 之后新增同款提示
+- `multi-journal-style-guides.md` 文件头新增写法约定
+
+### ESR / JM 两节改为逐字英文原文
+
+- **ESR（第一章）**：1.1 收录边界、1.2 文章类型与字数、1.3 前置要素、1.4 文件格式与行号、
+  1.5 结构、1.6 图表、1.7 其他 —— 全部改为「中文要点 + 官方原文（verbatim）」两列结构
+- **ESR 新增 1.8 参考文献（author-date 制）**：13 条官方原文，覆盖文末排序、
+  摘要引用须完整给出、DOI、数据集引用六要素、预印本标注等
+- **JM（第十章）**：图件硬参数、色觉无障碍、表格/地图/日期/附录条款改为逐字原文
+
+### 图件设计体系补蓝本原文锚点
+
+`references/figure-design-system.md` 新增「🔖 蓝本原文锚点（verbatim）」：
+Fig 1/3/4/6/7/8/9/10/12/13/14 的**图注原句**、正文中「manual (red) versus
+automated (purple)」的**颜色声明原句**、Fig 2 与 Fig 5 的**图注诚实性写法原句**，
+并声明"颜色语义要写进正文"这条规则的原文依据。
+
+### 回归测试
+
+- `evals/evals.json` 的 R07 改为**必须引用官方英文原句**
+  （"without any limitation on the number of words used"、"does not exceed 250 words"、
+  "encouraged"、"Bibliometric studies will not be considered"），
+  `must_not` 增加"用中文转述代替官方英文原句"
+
 ## [2.6.0] — 2026-11-01
 
 ### 🔴 修正：两条在官方原文中查无依据的断言（ESR 复核发现）

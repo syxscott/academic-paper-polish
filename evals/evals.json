@@ -170,8 +170,8 @@
       "prompt": "我要投 Earth-Science Reviews，投稿要准备哪些材料？硬要求是什么？",
       "expect": {
         "load": "references/multi-journal-style-guides.md",
-        "must_mention": ["只发综述", "bibliometric", "250 词", "85 字符", "1000 dpi", "20,000 词"],
-        "must_not": ["把 Highlights 说成强制要求", "把摘要「必须单一段落」当作 ESR 官方要求", "编造 ESR 的字数上限"]
+        "must_mention": ["without any limitation on the number of words used", "does not exceed 250 words", "encouraged", "Bibliometric studies will not be considered", "1000 dpi"],
+        "must_not": ["把 Highlights 说成强制要求", "把摘要「必须单一段落」当作 ESR 官方要求", "用中文转述代替官方英文原句", "编造 ESR 的字数上限"]
       }
     }
   ]

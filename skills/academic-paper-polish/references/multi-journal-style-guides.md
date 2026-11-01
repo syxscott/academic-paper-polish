@@ -1,6 +1,7 @@
 # 多期刊官方 Style Guide 汇总（地学 / 古生物 / CV）
 
-> **核验日期：2026-10-16（ESR 于 2026-11-01 复核）。** 全部取自官方 guide-for-authors 或官方 author-kit，非二手转述。
+> **核验日期：2026-10-16（ESR 与 JM/Copernicus 于 2026-11-01 复核）。** 全部取自官方 guide-for-authors 或官方 author-kit，非二手转述。
+> **🔴 写法约定（v2.7.0 起）**：期刊硬约束一律**附官方英文原句（verbatim）**，中文只作定位标注；**转述不算数**。
 > 每份标注**获取状态**：✅ 官方原文全量 ｜ 🟡 官方原文部分（其余域被 CF/网络拦截）｜ 📌 官方 URL 待查
 
 ---
@@ -32,84 +33,119 @@
 **🔴 复核：2026-11-01**（收录边界 / 文章类型 / 前置要素 / 图件原表 / 结构，逐字取自官方指南页；Elsevier 反爬，需经浏览器渲染读取）
 **刊页指标（2026-11 官方刊页）**：Impact Factor **11.3**｜CiteScore **20.8**
 
+> 🔴 **本节写法约定**：🔴 = 必做/硬约束；🟡 = 建议或可选；📌 = 期刊专属。
+> **每条规则后附官方英文原文（verbatim）** —— 中文只作定位标注，**转述不算数**。
+> 使用本 skill 的 AI **直接引用英文原文**，不要用中文转述代替。
+
 ## 1.1 收录边界（🔴 最容易被 desk-reject 的地方）
 
-**本刊只发综述。** 以下**不予考虑**：
-- 常规研究论文（仅在 occasional special issue 中收录）
-- **Bibliometric studies**（文献计量学研究）—— 若综述必须含文献计量数据，该部分**只能放 SI**
-- 无显著综述成分的 meta-analysis
-- 生物学、生态学、土壤与农业科学、地质工程主题 → 应投相应领域期刊
-
-> "Submissions that aggregate previous literature and do not integrate and build on existing knowledge are unlikely to be accepted."
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 只发综述 | "Earth-Science Reviews publishes review articles dealing with all aspects of the Earth Sciences" |
+| 🔴 必须"整合并推进"已有知识 | "Review articles must integrate and advance existing knowledge and highlight new directions by synthesizing, evaluating and discussing previously published literature; the value of such articles is also increased by authors' own perspectives and comment." |
+| 🟡 可含**少量**自有新数据；常规研究论文不收 | "Authors may also include a small proportion of their own new data and analysis, both to demonstrate what is being done at the forefront of an area and to support their arguments, yet regular research articles will not be considered." |
+| 🔴 只堆文献不整合 → 不接受 | "Submissions that aggregate previous literature and do not integrate and build on existing knowledge are unlikely to be accepted." |
+| 🔴 无显著综述成分的 meta-analysis → 不接受 | "Similarly, meta-analyses that do not include a significant review component in the way described above are also unlikely to be accepted." |
+| 🔴 文献计量研究不收；必须含计量数据时只能放 SI | "Bibliometric studies will not be considered. Where it is necessary to include bibliometric data in a review, that part of the article must be included in the supplementary information only." |
+| 🔴 常规研究论文只在 occasional special issue | "Regular research articles are only included in the occasional special issue, where the collection of papers together performs a review function." |
+| 🔴 实为研究论文/案例研究 → 不送审，转投专业刊 | "Review articles that are in practice regular research papers or case studies and that are not in a special issue will not be peer reviewed but will instead be recommended for discipline journals; a transfer option will enable such papers to be transferred quickly and easily to a discipline journal of the author's choice." |
+| 🔴 生物学/生态/土壤农业/地质工程 → 投别刊 | "Articles on the biological, ecological, soil and agricultural sciences and on geoengineering should be submitted to journals in those fields." |
+| 📌 Covering letter 须附本人近期该主题论文清单 | "Authors are therefore requested to include in their covering letter a list of their recent papers on the subject." |
 
 ## 1.2 文章类型与字数（🔴 官方体裁口径）
 
-| 体裁 | 官方要求 |
-|---|---|
-| **Review paper** | 常规体裁；**字数无上限**（原文 "without any limitation on the number of words used"），但官方鼓励在充分与简洁之间取平衡 |
-| 🔴 **超长综述** | **超过约 20,000 词**须**先邮件与任一编辑沟通**，**抄送** Tim Horscroft（Review Papers Coordinator/Managing Editor，timothy.horscroft@elsevier.com），确认选题是否适合 |
-| **Discussion** | 对已发表 ESR 论文的评论；**只针对原文的主要争议点**；**不得**写成综述、**不得**发布本文的新发现；通常 **≤3,000 词**；须在原文发表后 **6 个月**内提交 |
-| **Reply** | 原作者回应；同样 **≤3,000 词**、只回应争议点；**双方各限 1 次 Discussion / Reply**；须在收到通知后 **1 个月**内提交 |
-| **Invited Review Article** | 🔴 **仅限已收到邀稿**才可选这个体裁 |
+| 体裁 | 中文要点 | 官方原文（verbatim） |
+|---|---|---|
+| **Review paper** | 字数无上限 | "Earth-Science Reviews offers authors the rare opportunity to explore a particular subject without any limitation on the number of words used." |
+| 🔴 **超长综述（>20,000 词）** | 先邮件与任一编辑沟通 + 抄送 Tim Horscroft | "authors of review articles in excess of around 20,000 words should first discuss their idea by email with one of the journal editors, copied to Tim Horscroft, Review Papers Coordinator/Managing Editor (timothy.horscroft@elsevier.com), to ensure the project's suitability for potential publication." |
+| **Discussion** | 对已刊 ESR 论文的评论；只针对争议点；不得写综述、不得发新发现；≤3,000 词；6 个月内 | "Authors wishing to comment on a recently published ESR article should submit a 'Discussion' which must be brief and directed only towards the main issue(s) that are being questioned in the original article. It is not a vehicle for extensive review or for publishing the (Discussion) author's new findings and should typically be no more than 3000 words." |
+| **Reply** | 原作者回应；≤3,000 词；各限 1 次；通知后 1 个月内 | "The original author(s) will be invited to write a 'Reply' that must likewise be brief (no more than 3000 words) and directed to respond only to the issues in question. Both parties are limited to one Discussion and Reply each. The Discussion must be submitted within six months of publication of the original article; the author of the Reply must submit it within one month of being notified of the Discussion." |
+| 🔴 **Invited Review Article** | 仅限已受邀才可选 | "Invited Review Article should be selected only if you have received an invitation to submit a paper." |
 
 ## 1.3 前置要素（🔴 Abstract 必填 / Highlights 是"鼓励"不是"必须"）
 
-| 项 | 官方要求（逐字核对） |
-|---|---|
-| 🔴 **Abstract** | **必填**（"You are required to provide..."），**≤250 词**；须写明 ①研究目的 ②基本流程 ③主要发现（含统计显著性）+ 主要结论 ④强调新意；**必须能独立成篇**（standalone）；**避免引用**（必要则给出作者+年份）；**避免非常用缩写**（首次出现须定义） |
-| **Keywords** | **1–7 个**；英文；避免用 and/of 组成多词短语；仅用领域内牢固通用的缩写 |
-| 🟡 **Highlights** | 🔴 **官方措辞是 "encouraged"（鼓励提供），并非 required**；**3–5 条**，每条 **≤85 字符**（含空格）；作为**单独可编辑文件**在投稿系统提交，**文件名含 "highlights"** |
-| 🔴 **Data statement** | **required at submission**；Option C：存仓库 + 正文引用链接，或说明为何不能共享 |
-| 🔴 **Declaration of generative AI use** | **投稿时即须声明**生成式 AI 的使用 |
-| 🔴 **Covering letter** | **须附「你近期在该主题上的论文清单」**（"include in their covering letter a list of their recent papers on the subject"） |
+| 项 | 状态 | 官方原文（verbatim） |
+|---|---|---|
+| 🔴 **Abstract** | **required** | "You are required to provide a concise and factual abstract that does not exceed 250 words. The abstract should: State the purpose of your paper. Outline basic procedures followed. Include your main findings, their statistical significance, where applicable, and your principal conclusions. Emphasize new and important aspects of your study or observations." |
+| 🔴 Abstract 附加要求 | 独立成篇 / 避免引用 / 避免非常用缩写 | "Abstracts must be able to stand alone, as abstracts are often presented separately from the article." ・ "Avoid references. If any are essential to include, ensure that you cite the author(s) and year(s)." ・ "Avoid non-standard or uncommon abbreviations. If any are essential to include, ensure they are defined within your abstract at first mention." |
+| 🔴 **Keywords** | **required** | "You are required to provide 1 to 7 keywords for indexing purposes. Keywords should be written in English. Try to avoid keywords consisting of multiple words (using "and" or "of"). Only use abbreviations in keywords if they are firmly established in the field." |
+| 🟡 **Highlights** | **encouraged —— 不是 required** | "You are encouraged to provide article highlights at submission." ・ "Highlights should consist of 3 to 5 bullet points, each a maximum of 85 characters, including spaces." ・ "Submit highlights as a separate editable file in the online submission system with the word "highlights" included in the file name." |
+| 🔴 **Data statement** | **required at submission** | "To foster transparency, you are required to state the availability of any data at submission." |
+| 🔴 **Declaration of generative AI use** | 投稿时即须声明 | "Authors must declare the use of generative AI tools in the manuscript preparation process upon submission of the paper." |
 
 ## 1.4 文件格式与行号
 
-- Word 用 `.doc/.docx`，LaTeX 用 `.tex`；🔴 **PDF 不是可接受的源文件**
-- Word 用**单栏**排版；双栏仅限 LaTeX
-- 删除所有删除线与下划线（除科学必要性）
-- 🔴 **所有稿件须含连续行号**（"All papers should include continuous line numbering"）
-- 官方通用文件体积上限：单文件 **≤150 MB**、总计 **≤1 GB**（图件单图体积官方页未再单列上限）
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 源文件格式 | "Submit files with .doc/.docx extensions for Word and .tex for LaTeX files. A PDF is not an acceptable source file." |
+| 🔴 Word 单栏，双栏仅限 LaTeX | "Format Word files in a single-column layout. Double-column formatting is only permitted for LaTeX submissions." |
+| 🔴 去除删除线与下划线 | "Remove all strikethrough and underline formatting, unless it is scientifically relevant." |
+| 🔴 连续行号 | "All papers should include continuous line numbering." |
 
 ## 1.5 结构
 
-- 章节须清晰编号：`1` → `1.1` → `1.1.1` → `1.2`
-- 交叉引用须用编号格式，不得只写 "the text"
-- 摘要不纳入章节编号
-- 顺序含 Theory and calculation、Acknowledgements（**置于参考文献列表前的独立部分**）、**Author contributions: CRediT**、Appendices（A, B…；Eq. (A.1)；Table A.1, Fig. A.1）
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 章节编号 | "Divide your manuscript into clearly defined and numbered sections. Number subsections 1.1 (then 1.1.1, 1.1.2, ...), then 1.2, etc." |
+| 🔴 交叉引用用编号 | "Use the numbering format when cross-referencing within your article. Do not just refer to "the text."" |
+| 🔴 摘要不计入编号 | "Do not include the article abstract within section numbering." |
+| 📌 Theory and calculation 段 | "The theory section should lay the foundation for further work by extending the background you provided in the introduction to your article. The calculation section should represent a practical development from a theoretical basis." |
+| 📌 Acknowledgements 独立段 | "Include any individuals who provided you with help during your research, such as help with language, writing, or proofreading, in the acknowledgments section." |
 
-## 1.6 图表（🔴 官方原表，逐字核对）
+## 1.6 图表（🔴 官方原表，逐字照录）
 
-| 图像类型 | 格式 | 要求 |
+| Image type | Recommended file type | Requirements |
 |---|---|---|
-| Vector drawings | EPS, PDF | **嵌入字体**或将文字存为图形 |
-| Photographs (color or grayscale) | TIFF, JPG, PNG | **最低 300 dpi**（单栏最小宽 **1063 px**；整页 **2244 px**） |
-| Bitmapped line drawings | TIFF, JPG, PNG | **最低 1000 dpi**（单栏 **3543 px**；整页 **7480 px**） |
-| Charts / 大表或带底纹表 | XLS, XLSX | 以清晰可读的格式提供 |
-| Annotated images | PPT, PPTX | 标注与文字须清晰；内嵌图 **≥300 dpi** |
+| Vector drawings | EPS, PDF | Embed the font or save text as graphics |
+| Photographs (color or grayscale) | TIFF, JPG, PNG | Minimum resolution 300 dpi (min. width: single column: 1063 pixels; full page: 2244 pixels) |
+| Bitmapped line drawings | TIFF, JPG, PNG | Minimum resolution 1000 dpi (min. width: single column: 3543 pixels; full page: 7480 pixels) |
+| Charts and large or shaded tables | XLS, XLSX | Supply in a clearly readable format |
+| Annotated images | PPT, PPTX | Annotations and text must be legible; Minimum resolution of embedded images 300 dpi |
 
-**🔴 官方 "Do not submit" 清单（原文）**
-- 分辨率过低的文件
-- **文字相对图像过小**的图（缩小后会不可读）
-- 🔴 **多张图合并成一个文件**（影响可读性与无障碍）；**仅"相互比较用"的图组可例外**（如 before / during / after 照片）
+**🔴 "Do not submit"（官方原文清单）**
+- "Files that are too low in resolution."
+- "Artwork where text is disproportionately small compared to the image size, as text may become unreadable."
+- "Multiple images or graphs combined into one file, as this affects legibility and accessibility. An exception may be made for images that are intended to be compared to each other, such as before, during, and after photographs."
 
-- 按在正文中出现的顺序编号；**每张图单独一个文件**，命名如 `Figure_1`、`Figure_2`
-- Text graphics 可嵌入正文对应位置（LaTeX 也可嵌入文件内）
-- 🔴 **图注**：须**置于图下方**，**同时放入单独文件**，并**保持在图像区域之外**（例如放在底部）
-- **Captions 写法**：=「简短标题（**不印在图上**）+ 图像说明」；文字量尽量少，但**所有符号与缩写都要解释**
-
-> **Aims & scope 特有要求**：插图必须是**实际图件**（地图、剖面、图、照片），**不能是文字的图形化重复**。所有图注——尤其图来自文献时——**必须说明该图要传达的信息（the message of the figure）**，而非仅描述其内容。
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 按正文出现顺序编号 | "Number images according to the order they appear within your article." |
+| 🔴 每图单独文件 + 命名 | "Submit each image as a separate file using a logical naming convention for your files (for example, Figure_1, Figure_2 etc.)." |
+| 🟡 Text graphics 可嵌入正文 | "Text graphics may be embedded in the text at the appropriate position. If you are working with LaTeX, text graphics may also be embedded in the file." |
+| 🔴 图注位置（正文下 + 单独文件 + 图外） | "Figure captions must be placed under the figures, as well as in a separate file. Please ensure to keep the caption outside of the image area itself, for example, at the bottom." |
+| 🔴 Captions 写法 | "All artwork must have a caption. A caption should consist of a brief title (not displayed on the figure itself) and a description of the image. Keep the amount of text to a minimum, though any symbol or abbreviation should be explained." |
+| 📌 插图必须是实际图件 | "Illustrations must be actual figures (maps, profiles, graphs, photos etc) and not repetitions in graphical form of the text." |
+| 📌 图注要讲"message"而非"content" | "All figure captions, especially where the figure is from the literature, must state the message of the figure and not only be a statement of its content." |
+| 📌 图注也可单独列出 | "Figure captions must be placed beneath each figure and can also be listed separately." |
 
 ## 1.7 其他
 
-- **单位**：必须用 SI；提及其他单位须给 SI 等值
-- **公式**：可编辑文本，非图片；变量斜体；e 的幂用 `exp`；小分数用 `/`
-- **表格**：可编辑文本；表注置于表体下方；**避免竖线与单元格底纹**
-- **参考文献**：按第一作者字母序，同作者再按年代；**摘要中引用的文献须完整给出**；尽量给 DOI
-- **数据**：Option C —— 必须存入数据仓库、在文中引用链接、或说明为何不能共享
-- **生成式 AI**：须在参考文献列表前加 "Declaration of generative AI and AI-assisted technologies" 章节
-- **语言**：美式或英式，**不可混用**
-- **校样**：🔴 **两天内**返回
+| 中文要点 | 官方原文（verbatim） |
+|---|---|
+| 🔴 单位用 SI | "This journal requires you to use the International System of Units (SI) which follows internationally accepted rules and conventions. If other units are mentioned within your article, you should provide the equivalent unit in SI." |
+| 🔴 公式可编辑 | "Submit math equations as editable text, not as images." ・ "Present simple formulae in line with normal text, where possible." ・ "Use the solidus (/) instead of a horizontal line for small fractional terms such as X/Y." ・ "Present variables in italics." ・ "Denote powers of e by exp." |
+| 🔴 表格可编辑 + 忌竖线底纹 | "Tables must be submitted as editable text, not as images." ・ "Place any table notes below the table body." ・ "Avoid vertical rules and shading within table cells." ・ "Use tables sparingly, ensuring that any data presented in tables is not duplicating results described elsewhere in the article." |
+| 🔴 数据可用性声明 | "To foster transparency, you are required to state the availability of any data at submission." |
+| 🔴 生成式 AI 声明 | "Authors must declare the use of generative AI tools in the manuscript preparation process upon submission of the paper." ・ "AI tools may only be applied with human oversight and control." |
+| ⚠️ 语言英美不混用 | *（2026-10-16 核验条目，英文原句未留存；本次未取到，**引用前请回官方页确认**）* |
+| ⚠️ 校样 2 天内返回 | *（同上，2026-10-16 核验条目，英文原句未留存）* |
+
+## 1.8 🔴 参考文献（官方原文，author-date 制）
+
+| 要求 | 官方原文（verbatim） |
+|---|---|
+| 🔴 文中与文末互相对应 | "Any references cited in your article should also be present in your reference list and vice versa." |
+| 🔴 摘要中引用的文献须**完整给出** | "References cited in your abstract must be given in full." |
+| 🔴 著录须正确完整 | "Make sure all data provided in your reference list are correct and complete." |
+| 🔴 每条必须是真实存在的来源 | "Every reference included must correspond to a real, existing source." |
+| 🟡 尽量给 DOI | "Where available include Digital Object Identifiers (DOIs), as they provide a permanent link to the electronic article referenced and improve the discoverability of your research." |
+| 🟡 不建议收录未发表结果 / 个人通讯 | "We recommend not including unpublished results or personal communications in your reference list, though you may mention them in the text of your article. If included, they must follow the standard reference style of the journal, substituting publication date with "unpublished results" or "personal communication"." |
+| 🔴 "in press" 的含义 | "References cited as "in press" imply that the item has been accepted for publication." |
+| 📌 文中引注格式 | "…according to Smith and Jones (1999) and Smith et al. (2000)." ・ "…experimental evidence (Jones and Smith, 2001; Jones et al., 2003)." |
+| 🔴 **文末排序** | "Reference list must be in alphabetic order by first author. Multiple references by first author must then be arranged chronologically." |
+| 📌 网络文献 | "When listing web references, as a minimum you should provide the full URL and the date when the reference was last accessed." |
+| 📌 数据集引用须含 6 项 | "author name(s)" ・ "dataset title" ・ "data repository" ・ "version (where available)" ・ "year" ・ "global persistent identifier"；并 "Add [dataset] immediately before your reference." |
+| 📌 预印本引用 | "Mark preprints clearly. Include the word "preprint" or the name of the preprint server as part of your reference, and provide the preprint DOI." ・ "Where a preprint has subsequently become available as a peer-reviewed publication, use the formal publication as your reference." |
 ---
 
 # 二、Nature
@@ -718,50 +754,47 @@ the latest Emsian of Thuringia. [….]
 **微体古生物方法学论文**（有孔虫 / 介形虫 / 钙质超微化石 + 自动化、统计）的对口刊。
 **排版体系**：`copernicus.cls`，**单栏**，版心 **177.0 mm**（A4 595.3 × 785.2 pt）。
 
-**核验状态**：🟡 **图件条款**取自 Copernicus 平台官方投稿说明页（JM 使用同一 `copernicus.cls`
-与同一份图件条款，已由该刊已刊论文 PDF 交叉印证：单栏、版心 177 mm、通栏图宽 175.0 mm）；
-**JM 专属的字数 / 篇幅 / 摘要长度 / Keywords 数一律以官网 Author guidelines 为准**，本节不复述。
+**核验状态**：🟡 本节条款为 **Copernicus 平台官方投稿说明原文**（JM 使用同一 `copernicus.cls`
+与同一份条款；已由该刊已刊论文 PDF 交叉印证单栏、版心 177 mm、通栏图宽 175.0 mm）。
+🔴 **JM 官网被 Cloudflare 拦截，JM 专属的字数 / 篇幅 / 摘要长度 / Keywords 数一律以官网 Author guidelines 为准**，本节不复述。
 
-## 10.1 图件硬参数（Copernicus 平台通用）
+## 10.1 图件硬参数（Copernicus 平台通用，官方原文）
 
-| 项 | 要求 |
+| 中文要点 | 官方原文（verbatim） |
 |---|---|
-| 格式 | `*.pdf` `*.ps` `*.eps` `*.jpg` `*.png` `*.tif`；🔴 **矢量优先**（eps / pdf） |
-| 字体 | 🔴 **必须嵌入**；pdf **不得含隐藏对象**；要改字体须改原字体，**不能加文本框** |
-| 分辨率 | **300 dpi**（位图） |
-| 单图大小 | 🔴 **<5 MB** |
-| 全部文件 | 🔴 **<30 MB**（不含 supplement）；supplement ≤50 MB |
-| 最小图宽 | **≥8 cm** |
-| 复合图 | 🔴 **多面板必须先合并成单个文件**再提交 |
-| 文件命名 | 阿拉伯数字编号（`fig01`、`fig02`） |
-| 稿件格式 | **1 栏** + **行号** + **页码**；图与图注插入正文首次提及处 |
+| 🔴 图件文件整体要求 | "to ensure that your figure files are labelled correctly with Arabic numerals (e.g. fig01, fig02), compiled as *.pdf, *.ps, *.eps, *.jpg, *.png, or *.tif files with a resolution of 300 dpi, panels are collected into one figure file, the reproduction rights have been secured, and our guidelines for figures & tables are followed" |
+| 🔴 **复合图必须合并成单文件** | "it is important for the production process that separate figures are submitted. Composite figures containing multiple panels should be collected into one file before submission." |
+| 🔴 格式与分辨率 | "They can be submitted in *.pdf, *.ps, *.eps, *.jpg, *.png, or *.tif format and should have a resolution of 300 dpi." |
+| 🔴 最小图宽 | "The width should not be less than 8 cm." |
+| 🔴 **图例必须在图里** | "A legend should clarify all symbols used and should appear in the figure itself, rather than verbal explanations in the captions (e.g. "dashed line" or "open green circles")." |
+| 🔴 体积上限 | "Individual figures should not exceed 5 MB, and the overall size of all submitted files excluding supplements should not exceed 30 MB." |
+| 🔴 矢量优先 + 字体嵌入 | "The first choice should be vector graphics in *.eps or *.pdf format. Fonts must be embedded. Please make sure that the *.pdf files do not contain hidden objects." |
+| 🔴 改字体要改原字体 | "If you want to adjust fonts in your original figure file before converting into *.pdf, please make sure that you change the actual font of the original figure rather than adding text boxes or other additional layers." |
+| 🟡 位图用无损格式 | "If the usage of vector graphics is not possible, a bitmap image should be saved in a "non-lossy" format (e.g. *.png). A high quality is recommended. It is always possible to reduce the size of the figure later." |
+| 🔴 JPG 只用于照片 | "The *.jpg format should only be used for photos. It is not suitable for sharp edges. Note that it is not advisable to convert a *.jpg file back to *.png." |
+| 🔴 稿件版式 | "Please note that manuscript files must use the 1-column format ... the file size is limited to 50 MB. All pages must be numbered consecutively and line numbers must be included." |
+| 🔴 图与图注插入首次提及处 | "Figures and tables as well as their captions must be inserted in the main text near the location of the first mention (not appended to the end of the manuscript) and the figure composition must embed any used fonts." |
+| 🔴 Supplement 上限 | "The overall file size of a supplement is limited to 50 MB." |
 
-## 10.2 🔴 图例必须画在图里（平台明确条款）
+## 10.2 🔴 色觉无障碍（平台要求，不是可选项）
 
-> 官方原文：a legend should clarify all symbols used and should appear in the figure itself,
-> rather than verbal explanations in the captions (e.g. "dashed line" or "open green circles").
-
-🔴 虚线、空心圆、颜色、形状**都要在图内出现**，且**在图内就有图例解释**；
-图注里**不许**再靠 "the dashed line means …" 来定义符号。
-
-## 10.3 🔴 色觉无障碍（平台要求，不是可选项）
-
-- 官方点名 **Coblis – Color Blindness Simulator**，要求作者**自查后再改配色**
-- 平台同时列出多个可用于生成 CVD 友好配色的工具
-- 🔴 红/绿并置必须配第二重线索（形状、线型、直接标注）
-
-## 10.4 其他平台条款
-
-| 项 | 要求 |
+| 中文要点 | 官方原文（verbatim） |
 |---|---|
-| 表格 | 🔴 **避免彩色单元格**；横线只出现在表头上下与表头/正文之间；表号写 `Table 4` **不缩写** |
-| 地图 | 遵循 **UN 命名规范**，避免争议边界；编辑器可加 "under dispute" 标注 |
-| 日期 | `25 July 2007`（日 月 年） |
-| 章节标题 | 必须**编号**，最多三级（3 / 3.1 / 3.1.1）；尽量不用脚注 |
-| 数据 | 数据集建议存 FAIR 仓库并给 DOI；须有 **Data availability** 段 |
-| AI 使用 | 用 AI 生成部分稿件，须在 **Methods** 或 **Acknowledgements** 说明 |
-| 图像合规 | 不得修改他人图像特征；引用须在**正文与图注同时**出现 |
-| 附录 | 编号用 Appendix A / B；其中图表编号用 (A1)、Fig. B5、Table C6 |
+| 🔴 配色必须让色觉障碍读者能读懂 | "it is important that the colour schemes used in your maps and charts allow readers with colour vision deficiencies to correctly interpret your findings. Please check your figures using the Coblis – Color Blindness Simulator and revise the colour schemes accordingly." |
+| 📌 平台点名工具 | "Besides the Coblis – Color Blindness Simulator to check how your figures are perceived by those with CVD, there are several tools available to help authors create CVD-friendly figures" |
+
+## 10.3 其他平台条款（官方原文）
+
+| 项 | 官方原文（verbatim） |
+|---|---|
+| 🔴 表格 | "Tables should be numbered sequentially with Arabic numerals. ... Tables submitted as a PDF or an image file cannot be processed. Tables should be self-explanatory and include a concise, yet sufficiently descriptive caption. Coloured table cells should be avoided. Horizontal lines should normally only appear above and below the table, and as a separator between the head and the main body of the table. Please note that the word "Table" is never abbreviated and should be capitalized when followed by a number (e.g. Table 4)." |
+| 🔴 地图 | "Please adhere to United Nations naming conventions for maps used in your manuscript. In order to depoliticize scientific articles, authors should avoid the drawing of borders or use of contested topographical names. The editors reserve the right to insert the label "under dispute" if contested borders are presented." |
+| 📌 日期格式 | "Date and time: 25 July 2007 (dd month yyyy), 15:17:02 (hh:mm:ss). ... If needed when referring to years, use "CE" or "BCE" instead of "AD" and "BC"..." |
+| 🔴 章节标题 | "the headings of all sections, including introduction, results, discussions or summary must be numbered. Three levels of sectioning are allowed, e.g. 3, 3.1, and 3.1.1. ... Footnotes should be avoided in the text..." |
+| 🔴 数据可用性 | "the inclusion of a statement on how their underlying research data can be accessed. This must be placed in the section "Data availability" at the end of the manuscript before the acknowledgements." |
+| 🔴 AI 使用声明 | "Should you have used AI tools to generate (parts of) your manuscript, please describe the usage either in the Methods section or in the Acknowledgements." |
+| 🔴 图像合规与引用 | "Figures entirely taken from another author: since these figures do not follow the distribution licence of the manuscript. A citation must properly indicate the original source and reproduction rights must be granted before submitting your manuscript." |
+| 📌 附录编号 | "These should be labelled with capital letters: Appendix A, Appendix B etc. Equations, figures and tables should be numbered as (A1), Fig. B5 or Table C6, respectively." |
 
 ---
 

@@ -10,6 +10,7 @@
 > DOI [10.5194/jm-45-95-2026](https://doi.org/10.5194/jm-45-95-2026)。
 > 一篇微体古生物 + 机器学习论文，14 张图覆盖「方法 → 模型 → 验证 → 生态 → 成本」全链路。
 > 本文件的每个色号、每条版式规则都**逐像素实测自该文**，不是经验值。
+> **🔴 引用规范**：本文件每条规则都锚在**论文原句**上（见下节「蓝本原文锚点」）；**要引用就引原句**，中文转述不算数。
 
 ---
 
@@ -27,6 +28,43 @@
 
 🔴 **判据**：这篇论文的图**不需要看图注就能读懂颜色** —— 因为同一篇里
 "红=人工、紫=AI" 从 Fig 6 一直守到 Fig 12。**这才是「配色成功」的验收标准。**
+
+---
+
+## 🔖 蓝本原文锚点（verbatim，逐句引用）
+
+> 本文件的每条规则都锚在**论文自己的措辞**上。中文只作定位标注；**要引用就引原句**。
+> 出处：*J. Micropalaeontology* **45**: 95–116, DOI 10.5194/jm-45-95-2026
+> （PDF 图注与正文逐字转录，保留原刊 "colour" / "grey" 等英式拼写）。
+
+| 图 | 原文（verbatim） | 由此得到的规则 |
+|---|---|---|
+| Fig 1 | "Flowchart depicting the classification and automation workflow of foraminifera. **Blue arrows represent training, and black arrows represent model application.**" | 箭头颜色 = 语义，且**必须写进图注** |
+| Fig 3 | "The five classes, including benthic foraminifera, debris, cut, fragment, and planktonic foraminifera, are **bounded by rectangles of different colours**." | 框色 ↔ 类别一一绑定 |
+| Fig 4 | "Each cell indicates the percentage of images from the true class (rows) that were predicted as the corresponding class (columns). Perfect classification is indicated by 100 % values along the diagonal, while off-diagonal values reflect misclassifications, indicating inter-class confusion." | 行 = 真值、列 = 预测；对角线 = 100 % |
+| Fig 6 | "The numbers on the pie charts show the **number of specimens** of each species." ・ "**Diamonds indicate means.**" ・ "Grey points represent individual samples, while **black points indicate mean differences**." | 环形图写绝对数；均值 = 菱形；均值差 = 黑点 |
+| Fig 7 | "Each plot shows samples as **orange dots**, a regression line (black) with the corresponding R2 value, and a **dashed perfect-agreement line**." | 散点单色橙、回归黑实线、1:1 灰虚线 |
+| Fig 8 | "Each plot shows samples as orange dots, a regression line (solid black), a dashed perfect-agreement line (black), and the corresponding R2 value." | 同上（Fig 8 把 1:1 虚线写成 black） |
+| Fig 9 | "The background of the samples is indicated as **orange (black plate) and grey (Plummer cell) stripes**." | 背景语义带 = 实验底色 |
+| Fig 10 | "(a) Box-and-jitter plots for 31 samples showing the distribution of three indices (Evenness index and Shannon (H) and Simpson (1-D) diversity indices) measured using **automated (purple) and manual (red)** methods." ・ "(b) Bland–Altman regression: ... **The dashed line marks zero difference, and the blue line is ordinary least-squares (OLS) fit** of the difference of the mean with the **95 % confidence interval (grey)**. Slopes are small and non-significant, indicating no proportional bias. However, the vertical offset shows systematic differences." | 语义色 + OLS / 零线 / CI 三线制 |
+| Fig 12 | "(a) Bray–Curtis dissimilarity-based non-metric multidimensional scaling (nMDS) of foraminiferal assemblages counted **manually (red) and by CNN (purple)**. **Convex hulls represent the spatial distribution of each group in ordination space.** Different symbols indicate different samples." | 色相 = 组别，形状 = 样品，凸包 = 组分布 |
+| Fig 13 | "**Green circles are individual samples, the solid green line is the regression line**, and the dashed line shows the **1 : 1 agreement**." | 环境量 = 绿色系；空心圆 = 单样本 |
+| Fig 14 | "The time requirement of different steps in the automated identification workflow." | 流程成本单独成图 |
+
+**正文原句 —— 颜色语义被作者写进正文，不只在图注**
+
+> "Figure 10a compares manual (red) versus automated (purple) counting based on three key indices, namely Evenness (Pielou, 1966), Shannon diversity (H) (Shannon, 1948), and Simpson diversity (1-D) (Simpson, 1949), of the same samples."
+
+> "Figure 12a presents a Bray–Curtis-dissimilarity-based nMDS ordination comparing foraminiferal assemblages derived from manual counts (red symbols) versus automated counts (purple symbols)."
+
+🔴 **这一条最关键**：颜色语义写进了**正文**，读者不翻图注也能解码。
+凡是要画「方法 A vs 方法 B」的图，**在正文里就用文字把颜色对应关系写一遍**。
+
+**图注的诚实性写法（原文）**
+
+> "Each pair represents one class for the CNN models. **The images in each pair are not of the same foraminifera specimen.**"（Fig 2）
+
+> "**The image in the top-left corner (purple border)** of each composite image is mislabelled according to the model, and it suggests a different name (in purple) based on the surrounding training images."（Fig 5）
 
 ---
 

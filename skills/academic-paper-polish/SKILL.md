@@ -4,7 +4,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.6.0"
+  version: "2.7.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -48,6 +48,10 @@ metadata:
 > 原因：① 第一印象 ② 基本学术素养 ③ 评审是挑错过程 ④ 格式意见往往比内容意见多
 
 详见 `references/journal-constraints.md`。
+
+> 🔴 **期刊硬规则一律用官方原文**：`references/` 里每条期刊硬约束都附**官方英文原句**，
+> 中文只作定位标注，**转述不算数**。回答时**直接引原句**，不要用中文概括代替 ——
+> 转述会丢强度词（required / encouraged / must / may）并凭空造出原文没有的要求。
 
 ---
 
