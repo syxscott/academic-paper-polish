@@ -1,10 +1,10 @@
 ---
 name: academic-paper-polish
-description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。内置地学 SCI 写作与投稿的硬规则：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选。
+description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。内置地学 SCI 写作与投稿的硬规则：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、图件设计体系（图序/五种原型/语义色字典/图注模板）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、配色方案、图序怎么排、图注怎么写、J. Micropalaeontology、JM、混淆矩阵画法、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选。
 license: MIT
 metadata:
   author: syxscott
-  version: "2.4.1"
+  version: "2.5.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -39,6 +39,7 @@ metadata:
 | **Paleobiology**<br>★化石/古生物方向，规则最细 | — | — | 送审图 **<40 兆像素**；终稿 **线条 1200 / 半调 600 / 组合 800 dpi**；单栏 9 cm / 双栏 18 cm / 最大高 24 cm；🔴 **须提供 Non-technical Summary + Abstract 各 ≤300 词**；全稿 **12 号 TNR + 双倍行距 + 连续行号**；**Ga/Ma/ka = 年代，Gyr/Myr/kyr = 跨度** |
 | **Acta Palaeontologica Polonica** | — | — | 图件参数最精确：单栏 **89 mm** / 双栏 **183 mm** / 最大长 **237 mm**；**Calibri 8 pt**；线宽 **0.2 mm**；照片 **400 dpi**；🔴 **ZooBank 强制注册** |
 | **Palaeontologia Electronica** | — | — | 🔴 **无页限、无版面费**；图宽 **175 mm / 84 mm**，**300 ppi**，**RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符，仅小写/数字/`_`/`.`）；须提供 plain language summary |
+| **J. Micropalaeontology**<br>★ 微体古生物（Copernicus 平台） | — | — | 图 **300 dpi**、**单图 <5 MB / 全文件 <30 MB**、**图宽 ≥8 cm**；🔴 **复合图必须合并成单文件**；🔴 **图例必须画在图里**（不许靠图注解释虚线/空心圆）；🔴 须过 **Coblis 色觉模拟器**；矢量优先（eps/pdf，字体须嵌入）；单栏版心 177 mm |
 | **PalZ** | — | — | Systematic Palaeontology：分类单元名**粗体**，authority **加逗号**（与 Paleobiology/APP 系相反），同义名列表**隔行缩进** |
 | **Earth-Science Reviews** | — | — | **IF > 10** |
 | **Biological Reviews / Chemical Reviews / Nature Reviews** | — | — | **IF > 14 / > 50 / 46–123** |
@@ -185,6 +186,49 @@ Further research should focus on [方向].
 
 ---
 
+## 🔴 图件设计体系（图序 → 原型 → 语义色）
+
+**硬参数只管「能不能过」，这一层管「读者看不看得懂」。**
+
+### 1. 图序即论证顺序
+
+```text
+方法图 → 数据/对象图 → 模型性能图 → 误差案例图
+→ 一致性图（换 3 种量纲各来一次：绝对量 / 相对量 / 群落结构）
+→ 生态/业务意义图 → 成本/效率图
+```
+
+🔴 **「一致性」至少三个量纲** —— 只给一个，审稿人必问「换成相对比例呢」。
+🔴 **每张图只回答一个问题**；同一方法的对比图**全篇只用一对颜色**。
+
+### 2. 五种图件原型
+
+| 原型 | 干什么 | 必备元素 |
+|---|---|---|
+| **A 流程图** | 系统全景 / 成本分解 | 🔴 箭头颜色必须有语义**并写进图注**；框体写「动词+对象」；标注人的动作 |
+| **B 图像对照版** | 展示对象与误差案例 | 🔴 纯黑/纯白底；**比例尺**（不用放大倍数）；物种名斜体；面板字母粗体置左上 |
+| **C 性能矩阵** | 混淆矩阵 / 评估表 | 🔴 **单色阶**（禁彩虹）；深浅格**文字自动反色**；图上方写 accuracy + precision |
+| **D 成对比较** | 新旧方法 / 两条件对照 | 🔴 **跨所有图不变色**；1:1 参考线用**虚线**；背景色带只表类别并单列图例 |
+| **E 回归/排序** | 定量一致性与群落结构 | R² **写在左上角**；统计标注给 **点估计 + p 值**；排序图用**多形状**承担类别 |
+
+### 3. 语义色字典（实测，非目测）
+
+| 角色 | HEX |
+|---|---|
+| 人工 / 基准 | `#D30203` |
+| AI / 自动 | `#75489A` |
+| 单一系列散点 | `#F6A100` |
+| 环境量验证 | `#308E2C` |
+| 拟合线 / 单色阶 | `#093576` → `#00509D` |
+
+🔴 **同一色相全篇只承载一个含义**。
+⚠️ 蓝本论文把颜色语义**写进了正文**（"manual (red) versus automated (purple)"）——
+**颜色语义要进正文，不能只写在图注里**。
+
+详见 `references/figure-design-system.md`（14 图逐图拆解、版式规范、图注模板、交稿自查表）。
+
+---
+
 ## 送审流程
 
 | 体裁 | 流程 |
@@ -228,8 +272,9 @@ Further research should focus on [方向].
 | `references/journal-constraints.md` | 期刊结构硬约束 + 体裁篇幅 + 引文密度 + 送审流程 |
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
 | `references/color-system.md` | ★ **配色系统与视觉编码** —— 对照冷/处理暖、色相编码主变量、连续色阶、红绿禁忌、灰度检验 |
+| `references/figure-design-system.md` | ★ **图件设计体系** —— 图序即论证顺序、五种图件原型、实测语义色字典、版式规范、图注模板、交稿自查表 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性） |
-| `references/multi-journal-style-guides.md` | ★ **9 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系）+ 横向对比与选刊建议 |
+| `references/multi-journal-style-guides.md` | ★ **10 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系 / JM）+ 横向对比与选刊建议 |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |
 | `references/论文写作方法论骨架.md` | 写作方法论全篇：章节写法、综述流程、投稿与返修 |
 | `references/格式硬参数与文献检索实操.md` | 格式硬参数全篇 + 文献检索实操 |

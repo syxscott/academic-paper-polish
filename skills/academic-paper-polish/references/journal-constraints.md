@@ -12,8 +12,36 @@
 | **Earth-Science Reviews** | — | — | 地学综述老牌顶刊 | 综述 |
 | **Annual Review of Earth and Planetary Sciences** | — | — | 每年一卷，仅约 20 篇 | **需邀请** |
 | **National Science Review** | — | — | Science Press / OUP | 中国 Science 系列，刊发综述 |
+| **J. Micropalaeontology**<br>★ 微体古生物（Copernicus 平台） | — | — | 图 **300 dpi**、**单图 <5 MB / 全文件 <30 MB**、**图宽 ≥8 cm**、**1 栏**（版心 177 mm） | 🔴 **图例必须画在图里**；🔴 复合图合并成单文件；🔴 须过 Coblis 色觉模拟器 |
 
 ---
+
+## J. Micropalaeontology（JM）/ Copernicus 平台口径
+
+**排版**：`copernicus.cls`，**单栏**，版心 **177.0 mm**（实测该刊已刊论文 PDF）。
+**期刊定位**：英国微体古生物学会主办，Copernicus 出版；微体古生物方法学的对口刊。
+
+### 图件硬参数
+
+| 项 | 要求 |
+|---|---|
+| 格式 | pdf / ps / eps / jpg / png / tif；🔴 **矢量优先**（eps / pdf），**字体须嵌入** |
+| 分辨率 | **300 dpi**（位图） |
+| 单图 / 全部文件 | 🔴 **<5 MB / <30 MB**（supplement ≤50 MB） |
+| 最小图宽 | **≥8 cm** |
+| 复合图 | 🔴 **多面板必须合并成单文件**再提交 |
+| 命名 | `fig01`、`fig02` |
+| 稿件 | **1 栏** + **行号** + **页码**；图与图注插在正文首次提及处 |
+
+### 🔴 两条平台独有条款
+
+- **图例必须画在图里**：虚线、空心圆、颜色、形状**都要在图内出现并在图内解释**，
+  图注**不许**再靠 "the dashed line means …" 定义符号
+- **色觉无障碍是硬要求**：官方点名 **Coblis 色觉模拟器**，须自查后再改配色；
+  红/绿并置必须配第二重线索（形状 / 线型 / 直接标注）
+
+⚠️ **JM 专属的字数、篇幅、摘要长度、Keywords 数以官网 Author guidelines 为准**，本节不复述。
+详见 `references/multi-journal-style-guides.md` 第十章。
 
 ## GCA 的 Results / Discussion 要求（GCA 原文要点）
 
@@ -146,7 +174,7 @@ ScholarOne 投稿，paleobiology@cambridge.org。遵循《芝加哥格式手册�
 
 # ★ 多期刊官方 Style Guide 汇总
 
-**已取得官方原文的 9 份规范**，见 [`multi-journal-style-guides.md`](multi-journal-style-guides.md)：
+**已取得官方原文的 10 份规范**，见 [`multi-journal-style-guides.md`](multi-journal-style-guides.md)：
 
 | 期刊 | 出版社 | 对你研究的价值 |
 |---|---|---|
@@ -160,8 +188,9 @@ ScholarOne 投稿，paleobiology@cambridge.org。遵循《芝加哥格式手册�
 | **Palaeontologia Electronica** | OA | ⭐⭐ 无页限无版面费；ISO 9660 文件命名 |
 | **PalZ** | Springer | ⭐⭐⭐ Systematic Palaeontology 格式范例 |
 | **Elsevier 微体古生物系**<br>Revue de Micro / Marine Micro / Geobios | Elsevier | ⭐⭐⭐ 放射虫直接对口 |
+| **J. Micropalaeontology** | Copernicus | ⭐⭐⭐ 微体古生物方法学；🔴 图例必须入图 + Coblis 色觉检查 |
 
-**横向对比与选刊建议见该文档第十、十一章**，含：
+**横向对比与选刊建议见该文档第十一、十二章**，含：
 - 各刊摘要上限与双摘要差异（Nature / PNAS / Paleobiology / PE 各不相同）
 - 图表 dpi / 栏宽 / 字号对比 —— **同是化石照片，Paleobiology 要 600 dpi、APP 要 400、PNAS 要 300**
 - Systematic palaeontology 格式换刊差异 —— **PalZ 要粗体名称 + authority 加逗号 + 隔行缩进；Paleobiology/APP 系要斜体 + 不加逗号**

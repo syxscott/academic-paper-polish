@@ -10,10 +10,10 @@
 
 <img src="https://img.shields.io/badge/📜_MIT_License-22c55e?style=social&logo=opensourceinitiative" alt="MIT" />
 <img src="https://img.shields.io/badge/🧩_10_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
-<img src="https://img.shields.io/badge/📚_10_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
+<img src="https://img.shields.io/badge/📚_11_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
 <img src="https://img.shields.io/badge/🪄_12_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
-<img src="https://img.shields.io/badge/🏷️_v2.4.1-fbbf24?style=social&logo=github" alt="v2.4.1" />
+<img src="https://img.shields.io/badge/🏷️_v2.5.0-fbbf24?style=social&logo=github" alt="v2.5.0" />
 
 <br/>
 
@@ -29,6 +29,7 @@
 [🧩 十模块](#十模块-modules) ·
 [🔴 八条硬规则](#八条硬规则) ·
 [🎨 配色系统](#配色系统-new) ·
+[🧭 图件设计体系](#图件设计体系-new) ·
 [📐 检查卡口](#技术检查卡口) ·
 [🚀 快速开始](#快速开始-quick-start) ·
 [🪄 兼容性](#ai-工具兼容性) ·
@@ -45,15 +46,15 @@
 
 > **不是模板，不是填空，是给 LLM 的精准角色定义 + 输入约束 + 输出规范。**
 
-**10 个模块 + 10 份深度参考 + 12 个 AI 工具适配 + 6 个 CI 校验脚本。**
+**10 个模块 + 11 份深度参考 + 12 个 AI 工具适配 + 5 个 CI 校验脚本。**
 覆盖从选题到返修的完整链路 —— 从「怎么写」到「怎么投」。
 
-| | v1.0 | **v2.4** |
+| | v1.0 | **v2.5** |
 |---|---|---|
 | 模块 | 8 | **10**（+ 期刊匹配与投稿、审稿意见回复） |
-| 深度参考 | 无 | **10 份**（期刊约束 / 图表参数 / **配色系统** / 检索 / 句式库 / 自查清单 / 多刊 style guide / Paleobiology 全刊规范 / 写作方法论 / 格式与检索实操） |
+| 深度参考 | 无 | **11 份**（期刊约束 / 图表参数 / **配色系统** / **图件设计体系** / 检索 / 句式库 / 自查清单 / 多刊 style guide / Paleobiology 全刊规范 / 写作方法论 / 格式与检索实操） |
 | AI 工具 | 主要 Claude Code / Cursor | **12 个**，`AGENTS.md` 单轨 + `CLAUDE.md` 跳板 |
-| CI 校验 | 无 | **6 个脚本**，含全量 Markdown 结构体检 |
+| CI 校验 | 无 | **5 个脚本**，含全量 Markdown 结构体检 |
 | 硬规则 | 部分 | **八条**，全部标注出处 |
 
 **内容定位**：地学 SCI 论文与学位论文的写作、改稿、投稿与返修方法库。
@@ -90,13 +91,14 @@ academic-paper-polish/
 │       │   ├── 09-journal-submission.md  # 🎯 期刊匹配与投稿
 │       │   └── 10-reviewer-response.md    # 💬 审稿意见回复
 │       ├── prompts-en/              # 同 10 模块英文版，每文件自包含
-│       └── references/              # 按需加载的深度参考（10 份）
+│       └── references/              # 按需加载的深度参考（11 份）
 │           ├── checklist.md              # 投稿前自查清单（A–J 十组）
 │           ├── journal-constraints.md    # 期刊结构硬约束
 │           ├── figure-specs.md           # 图表硬参数 + 构图
 │           ├── color-system.md           # 🎨 配色系统与视觉编码
+│           ├── figure-design-system.md   # ★ 图件设计体系（图序 / 原型 / 语义色）
 │           ├── paleobiology-journal.md   # ★ Paleobiology 全刊规范
-│           ├── multi-journal-style-guides.md  # ★ 9 家期刊官方 Style Guide
+│           ├── multi-journal-style-guides.md  # ★ 10 家期刊官方 Style Guide
 │           ├── literature-search.md      # 检索与素材积累
 │           ├── sentence-bank.md          # 句式库
 │           ├── 论文写作方法论骨架.md       # 写作方法论（引言/讨论/综述/投稿）
@@ -163,7 +165,7 @@ academic-paper-polish/
 > 🔴 **格式不过关 → 直接拒稿，走不到学术编辑和审稿人那一步。**
 > 原因：① 第一印象 ② 基本学术素养 ③ 评审是挑错过程 ④ **格式意见往往比内容意见多**
 
-📖 完整 9 家期刊对照见 [`skills/academic-paper-polish/references/multi-journal-style-guides.md`](skills/academic-paper-polish/references/multi-journal-style-guides.md)
+📖 完整 10 家期刊对照见 [`skills/academic-paper-polish/references/multi-journal-style-guides.md`](skills/academic-paper-polish/references/multi-journal-style-guides.md)
 
 ### 2️⃣ 引言 = 倒金字塔，opening 必须与 resolution 对齐
 
@@ -244,6 +246,39 @@ Further research should focus on [方向].
 
 **地学场景特别注意**：地层柱状图颜色只编码**时代**，岩性用**花纹** —— 两者混用印刷后极易糊成一团。
 完整规则与 **12 条交稿前检查清单**见 [`color-system.md`](skills/academic-paper-polish/references/color-system.md)。
+
+---
+
+## 🧭 图件设计体系 NEW
+
+> **硬参数管「能不能过」，这一层管「读者看不看得懂」。**
+> 完整规则见 [`figure-design-system.md`](skills/academic-paper-polish/references/figure-design-system.md)。
+
+**蓝本**：Hayat et al. 2026, *J. Micropalaeontology* **45**: 95–116（DOI 10.5194/jm-45-95-2026）——
+14 张图覆盖「方法 → 模型 → 验证 → 生态 → 成本」全链路，色号与版式**逐像素实测**。
+
+| 原型 | 干什么 | 必备元素 |
+|---|---|---|
+| **A 流程图** | 系统全景 / 成本分解 | 🔴 箭头颜色有语义**并写进图注**；框体写「动词+对象」 |
+| **B 图像对照版** | 对象展示与误差案例 | 🔴 纯黑/纯白底；**比例尺**；物种名斜体 |
+| **C 性能矩阵** | 混淆矩阵 / 评估表 | 🔴 **单色阶**（禁彩虹）；深浅格**文字自动反色** |
+| **D 成对比较** | 新旧方法 / 两条件 | 🔴 **全篇只用一对颜色**；1:1 参考线用**虚线** |
+| **E 回归/排序** | 一致性与群落结构 | R² **左上角**；标注给 **点估计 + p 值**；多形状承担类别 |
+
+**实测语义色字典**（不是目测）
+
+| 角色 | HEX |
+|---|---|
+| 人工 / 基准 | `#D30203` |
+| AI / 自动 | `#75489A` |
+| 单一系列散点 | `#F6A100` |
+| 环境量验证 | `#308E2C` |
+| 拟合线 / 单色阶 | `#093576` → `#00509D` |
+
+🔴 **图序即论证顺序**：方法 → 数据/对象 → 模型性能 → 误差案例 → 一致性（**换 3 种量纲各来一次**）
+→ 生态/业务意义 → 成本/效率。
+
+🔴 **同一色相全篇只承载一个含义**；颜色语义要**写进正文**，不只写在图注里。
 
 ---
 
@@ -515,7 +550,8 @@ flowchart LR
 |---|---|
 | 写作方法论骨架 | 章节写法、期刊结构差异、ACCEPTANCE 十点、综述 18 步 |
 | 格式硬参数与文献检索 | 引文密度表、图表硬参数、送审流程、时间预算 |
-| 9 份期刊官方 Style Guide | ESR / Nature / PNAS / CVPR / Palaeoworld / Paleobiology / APP / PE / PalZ 原文数字 |
+| 10 份期刊官方 Style Guide | ESR / Nature / PNAS / CVPR / Palaeoworld / Paleobiology / APP / PE / PalZ / **JM（Copernicus）** 原文数字 |
+| JM 蓝本论文逐图拆解 | Hayat et al. 2026 *JM* 45:95–116 —— 14 张图的原型、**实测语义色字典**、版式与图注模板 |
 | Cell / Cell Metabolism / Cancer Cell 顶刊 Figure | 配色组织逻辑（符号矩阵、气泡三通道、色标方向、空心编码、灰度检验） |
 
 规则部分逐条标注了来源，便于核验。
@@ -556,7 +592,7 @@ python3 scripts/check_markdown.py          # ★ 全量 md 结构体检（含表
 python3 scripts/check_anchors.py README.md # 内部锚点
 ```
 
-`check_markdown.py` 自 v2.4.1 起**扫描全部 39 个 md 文件** ——
+`check_markdown.py` 自 v2.4.1 起**扫描全部 40 个 md 文件** ——
 v2.4.0 之前它只检查 6 个根级文件，**33 个 references/prompts 文件从未被结构检查过**，
 且表格列数检查因缩进错误从未执行。
 

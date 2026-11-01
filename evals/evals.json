@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "skill": "academic-paper-polish",
-  "updated": "2026-10-19",
+  "updated": "2026-11-01",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
   "grading": {
     "scale": "pass / partial / fail",
@@ -132,6 +132,36 @@
         "load": "references/figure-specs.md",
         "must_mention": ["300 ppi", "ISO 9660", "RGB", "图宽 175 mm"],
         "must_not": ["编造期刊影响因子", "把 Paleobiology 的 dpi 参数当成 PE 的"]
+      }
+    },
+    {
+      "id": "R04-figure-design-system",
+      "module": "references/figure-design-system.md",
+      "prompt": "我要写一篇微体古生物论文，图有十几张，怎么排顺序、每张图该长什么样？",
+      "expect": {
+        "load": "references/figure-design-system.md",
+        "must_mention": ["图序即论证顺序", "五种图件原型", "语义色", "图注"],
+        "must_not": ["把配色说成审美选择", "把图序说成编号习惯"]
+      }
+    },
+    {
+      "id": "R05-semantic-color",
+      "module": "references/figure-design-system.md",
+      "prompt": "人工计数和 AI 计数两条序列要画在同一张图里，用什么颜色？",
+      "expect": {
+        "load": "references/figure-design-system.md",
+        "must_mention": ["#D30203", "#75489A", "全篇只承载一个含义"],
+        "must_not": ["编造色号", "推荐彩虹色阶"]
+      }
+    },
+    {
+      "id": "R06-copernicus-figure",
+      "module": "references/multi-journal-style-guides.md",
+      "prompt": "投稿 J. Micropalaeontology，图件有什么硬要求？",
+      "expect": {
+        "load": "references/multi-journal-style-guides.md",
+        "must_mention": ["300 dpi", "5 MB", "30 MB", "8 cm", "图例", "Coblis"],
+        "must_not": ["编造 JM 的摘要字数上限", "把 Paleobiology 的 dpi 参数当成 JM 的"]
       }
     }
   ]

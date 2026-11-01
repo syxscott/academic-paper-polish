@@ -19,6 +19,7 @@
 | 8 | **Palaeontologia Electronica** | OA | ✅ | ⭐⭐ 无页限无版面费 |
 | 9 | **PalZ** | Springer | 🟡 | ⭐⭐⭐ Systematic Palaeontology 格式范例 |
 | 10 | **Elsevier 微体古生物系**（Revue de Micro / Marine Micro / Geobios） | Elsevier | ✅ | ⭐⭐⭐ 放射虫直接对口 |
+| 11 | **J. Micropalaeontology** | Copernicus | 🟡 | ⭐⭐⭐ 微体古生物方法学；Copernicus 图件条款 |
 
 **未获取（网络阻断）**：*Palaeontology*（Wiley，403）· *Journal of Vertebrate Paleontology*（T&F，403）· *Journal of Paleontology*（Cambridge，429 限流）
 
@@ -691,9 +692,62 @@ the latest Emsian of Thuringia. [….]
 
 ---
 
-# 十、横向对比（选刊决策用）
+# 十、J. Micropalaeontology（JM，Copernicus 平台）
 
-## 10.1 摘要 / 前置要素
+**期刊定位**：英国微体古生物学会（British Micropalaeontological Society）主办，Copernicus 出版。
+**微体古生物方法学论文**（有孔虫 / 介形虫 / 钙质超微化石 + 自动化、统计）的对口刊。
+**排版体系**：`copernicus.cls`，**单栏**，版心 **177.0 mm**（A4 595.3 × 785.2 pt）。
+
+**核验状态**：🟡 **图件条款**取自 Copernicus 平台官方投稿说明页（JM 使用同一 `copernicus.cls`
+与同一份图件条款，已由该刊已刊论文 PDF 交叉印证：单栏、版心 177 mm、通栏图宽 175.0 mm）；
+**JM 专属的字数 / 篇幅 / 摘要长度 / Keywords 数一律以官网 Author guidelines 为准**，本节不复述。
+
+## 10.1 图件硬参数（Copernicus 平台通用）
+
+| 项 | 要求 |
+|---|---|
+| 格式 | `*.pdf` `*.ps` `*.eps` `*.jpg` `*.png` `*.tif`；🔴 **矢量优先**（eps / pdf） |
+| 字体 | 🔴 **必须嵌入**；pdf **不得含隐藏对象**；要改字体须改原字体，**不能加文本框** |
+| 分辨率 | **300 dpi**（位图） |
+| 单图大小 | 🔴 **<5 MB** |
+| 全部文件 | 🔴 **<30 MB**（不含 supplement）；supplement ≤50 MB |
+| 最小图宽 | **≥8 cm** |
+| 复合图 | 🔴 **多面板必须先合并成单个文件**再提交 |
+| 文件命名 | 阿拉伯数字编号（`fig01`、`fig02`） |
+| 稿件格式 | **1 栏** + **行号** + **页码**；图与图注插入正文首次提及处 |
+
+## 10.2 🔴 图例必须画在图里（平台明确条款）
+
+> 官方原文：a legend should clarify all symbols used and should appear in the figure itself,
+> rather than verbal explanations in the captions (e.g. "dashed line" or "open green circles").
+
+🔴 虚线、空心圆、颜色、形状**都要在图内出现**，且**在图内就有图例解释**；
+图注里**不许**再靠 "the dashed line means …" 来定义符号。
+
+## 10.3 🔴 色觉无障碍（平台要求，不是可选项）
+
+- 官方点名 **Coblis – Color Blindness Simulator**，要求作者**自查后再改配色**
+- 平台同时列出多个可用于生成 CVD 友好配色的工具
+- 🔴 红/绿并置必须配第二重线索（形状、线型、直接标注）
+
+## 10.4 其他平台条款
+
+| 项 | 要求 |
+|---|---|
+| 表格 | 🔴 **避免彩色单元格**；横线只出现在表头上下与表头/正文之间；表号写 `Table 4` **不缩写** |
+| 地图 | 遵循 **UN 命名规范**，避免争议边界；编辑器可加 "under dispute" 标注 |
+| 日期 | `25 July 2007`（日 月 年） |
+| 章节标题 | 必须**编号**，最多三级（3 / 3.1 / 3.1.1）；尽量不用脚注 |
+| 数据 | 数据集建议存 FAIR 仓库并给 DOI；须有 **Data availability** 段 |
+| AI 使用 | 用 AI 生成部分稿件，须在 **Methods** 或 **Acknowledgements** 说明 |
+| 图像合规 | 不得修改他人图像特征；引用须在**正文与图注同时**出现 |
+| 附录 | 编号用 Appendix A / B；其中图表编号用 (A1)、Fig. B5、Table C6 |
+
+---
+
+# 十一、横向对比（选刊决策用）
+
+## 11.1 摘要 / 前置要素
 
 | 期刊 | 摘要上限 | 特殊前置要素 | Keywords |
 |---|---|---|---|
@@ -707,7 +761,7 @@ the latest Emsian of Thuringia. [….]
 
 > 🔴 **三门"双摘要"要求各不相同**：Nature=summary paragraph（四步结构）｜PNAS=Significance Statement（讲重要性不讲结果）｜Paleobiology=Non-technical Summary｜PE=plain language summary。**同一篇论文换个刊就要重写前置部分，别偷懒复用。**
 
-## 10.2 图表参数对比
+## 11.2 图表参数对比
 
 | 期刊 | 照片 dpi | 线绘 dpi | 单栏宽 | 双栏宽 | 最大高 | 字号下限 | 线宽下限 |
 |---|---|---|---|---|---|---|---|
@@ -718,10 +772,11 @@ the latest Emsian of Thuringia. [….]
 | **PE** | **300**（可 150 首投） | **300** | **84 mm** | **175 mm** | — | **8 pt** | — |
 | **CVPR** | — | — | 8.25 cm（栏宽） | 17.46 cm（区宽） | 22.54 cm | — | — |
 | **Nature** | — | — | **90 mm** | **180 mm** | 170 mm（页全深） | — | — |
+| **JM / Copernicus 系** | **300** | 🔴 **矢量优先（eps/pdf）** | —（单栏版心 177 mm） | — | — | — | — |
 
 > 🔴 **同是"化石照片"， Paleobiology 要 600 dpi，APP 要 400 dpi，PNAS 要 300 dpi（含文字则 600–900）。** 按最高标准（600 dpi）准备最安全。
 
-## 10.3 图件提交方式
+## 11.3 图件提交方式
 
 | 期刊 | 图是否嵌入正文 | 单独文件 | 命名要求 |
 |---|---|---|---|
@@ -730,9 +785,10 @@ the latest Emsian of Thuringia. [….]
 | **APP** | 终稿标位置 | ✅ | 可编辑格式，标注单独图层 |
 | **PE** | 🔴 **不嵌入** | ✅ | 🔴 **ISO 9660：≤8 字符，仅小写/数字/`_`/`.`** |
 | **Elsevier 系** | — | ✅ | `Figure_1`、`Figure_2` |
+| **JM / Copernicus 系** | 图与图注插在正文首次提及处 | ✅（🔴 复合图合并成单文件） | `fig01`、`fig02` |
 | **CVPR** | LaTeX `\includegraphics` | — | — |
 
-## 10.4 篇幅与参考文献
+## 11.4 篇幅与参考文献
 
 | 期刊 | 篇幅 | 参考文献 |
 |---|---|---|
@@ -745,7 +801,7 @@ the latest Emsian of Thuringia. [….]
 | **PE** | 🔴 **无页限** | — |
 | **CVPR** | 主文 **8 页**（camera-ready 9 页） | 不计入页数 |
 
-## 10.5 Systematic palaeontology 格式差异（★ 分类学论文换刊必改）
+## 11.5 Systematic palaeontology 格式差异（★ 分类学论文换刊必改）
 
 | 项 | **Paleobiology** | **Palaeoworld** | **APP** | **PalZ** |
 |---|---|---|---|---|
@@ -759,7 +815,7 @@ the latest Emsian of Thuringia. [….]
 
 > 🔴 **这是换刊成本最高的一块。** PalZ 要粗体名称 + authority 加逗号 + 隔行缩进；Paleobiology/APP 系要斜体名称 + 不加逗号。**同一套 systematic palaeontology 文本不能直接搬。**
 
-## 10.6 通用红线（所有刊一致，最易违反）
+## 11.6 通用红线（所有刊一致，最易违反）
 
 1. 🔴 **照片不得改动** —— 除色调、对比度、加标注/轮廓线；非线性调整（gamma）须在图注声明
 2. 🔴 **标本照片必须带比例尺 + 数值说明**，**不可用 ×40 等放大倍数代替**（终版可能缩放）
@@ -776,9 +832,9 @@ the latest Emsian of Thuringia. [….]
 
 ---
 
-# 十一、给你的选刊建议（放射虫化石图像提取方向）
+# 十二、给你的选刊建议（放射虫化石图像提取方向）
 
-## 11.1 期刊梯队
+## 12.1 期刊梯队
 
 | 梯队 | 期刊 | 理由 |
 |---|---|---|
@@ -789,13 +845,13 @@ the latest Emsian of Thuringia. [….]
 | **冲刺** | **Nature / PNAS** | 若方法有跨学科突破；但篇幅/前置要素约束最严 |
 | **综述** | **ESR** | 若做"计算机视觉在微体化石分类中的应用"综述 —— **这正是你课程报告的主题** |
 
-## 11.2 立即可做的三件事
+## 12.2 立即可做的三件事
 
 1. **按最高标准备图** —— 化石照片统一做到 **600 dpi at final size**，可同时满足 Paleobiology(600)/APP(400)/PNAS(300)/Elsevier(300)
 2. **若含新分类单元** —— 现在就注册 **ZooBank**（APP 强制，Nature 也要求 LSID），别等到 proof 阶段
 3. **论文同时准备两版前置部分** —— 学术摘要（≤250 词）+ 通俗摘要（≤300 词），覆盖 Paleobiology / PNAS / PE 三家的双摘要要求
 
-## 11.3 待补的网络阻断项
+## 12.3 待补的网络阻断项
 
 以下期刊官方 guide 因 CF/网络阻断未取到，需要时用浏览器手动打开：
 
