@@ -717,6 +717,7 @@ Brief reports 结构：title → **加粗首段（提供工作原理并总结主
 | 📌 面板字母 | "Parts of text figures should be indicated by letters (i.e., Figures 6A, 8D, 9E-Z, and beyond Z use double letters, AA, BB, etc.)." ・ "Cited illustrations all from one figure are singular (e.g., Figure 1A-D)" |
 | 📌 引用写法 | "Figures, Tables, and Appendices should be cited using complete, capitalized words (e.g., Table 1; Figure 1)." |
 | 📌 作者照片 | "Author photos should be supplied at 72 ppi and at least 300 pixels wide." |
+| 🔴 **文件名 ISO 9660** | "All material submitted to PE must meet the following electronic-submission requirements, which are based on **ISO 9660 constraints for naming of files**. Your file names may ONLY contain the following characters: 1. Lower case 2. Digits 0-9 3. The symbols underscore (_) or period (.). Your file names may _NOT_ contain any of the following: 1. **More than 8 characters** (e.g., Figure1HorowitzManuscript.ai) 2. **File extensions longer than 3 characters** (e.g., RudistManuscript.text) 3. **Spaces** (e.g., Figure 1 Horowitz Ms.doc) 4. Any other characters not listed above" |
 
 ---
 
