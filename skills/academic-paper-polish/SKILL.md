@@ -1,10 +1,10 @@
 ---
 name: academic-paper-polish
-description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。内置地学 SCI 写作与投稿的硬规则：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、图件设计体系（图序/五种原型/语义色字典/图注模板）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、配色方案、图序怎么排、图注怎么写、J. Micropalaeontology、JM、混淆矩阵画法、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选。
+description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。内置地学 SCI 写作与投稿的硬规则：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、图件设计体系（图序/五种原型/语义色字典/图注模板）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、配色方案、图序怎么排、图注怎么写、J. Micropalaeontology、JM、混淆矩阵画法、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选、微体古生物、放射虫、有孔虫、系统描述论文、图版 Plate、Micropaleontology、化石照片怎么排。
 license: MIT
 metadata:
   author: syxscott
-  version: "2.8.0"
+  version: "2.9.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -41,6 +41,7 @@ metadata:
 | **Palaeontologia Electronica** | — | — | 🔴 **无页限、无版面费**；图宽 **175 mm / 84 mm**，**300 ppi**，**RGB 不用 CMYK**；🔴 文件名 **ISO 9660**（≤8 字符，仅小写/数字/`_`/`.`）；须提供 plain language summary |
 | **J. Micropalaeontology**<br>★ 微体古生物（Copernicus 平台） | — | — | 图 **300 dpi**、**单图 <5 MB / 全文件 <30 MB**、**图宽 ≥8 cm**；🔴 **复合图必须合并成单文件**；🔴 **图例必须画在图里**（不许靠图注解释虚线/空心圆）；🔴 须过 **Coblis 色觉模拟器**；矢量优先（eps/pdf，字体须嵌入）；单栏版心 177 mm |
 | **PalZ** | — | — | Systematic Palaeontology：分类单元名**粗体**，authority **加逗号**（与 Paleobiology/APP 系相反），同义名列表**隔行缩进** |
+| **Micropaleontology** | — | — | 微体古生物专业刊；🔴 图件标签用 **"TEXT-FIGURE"** 而非 "Fig."；地质图用**黑白花纹 + 插图定位图 + 比例尺 + 指北针** |
 | **Earth-Science Reviews** | — | — | **IF 11.3**（2026-11 官方刊页）；只发综述 |
 | **Biological Reviews / Chemical Reviews / Nature Reviews** | — | — | **IF > 14 / > 50 / 46–123** |
 
@@ -233,6 +234,29 @@ Further research should focus on [方向].
 
 ---
 
+## 🔴 微体古生物 / 放射虫论文的写作与制图模式
+
+**这个领域的图不是彩色的，章节也不是通用 SCI 模板。**（依据：本地语料 8162 篇的分层抽样统计）
+
+| 事实 | 样本量与口径 |
+|---|---|
+| 🔴 **93% 的图是灰度**（376 张嵌入图），图内平均饱和度中位数 = 0.000 | 40 篇抽样 |
+| 🔴 图注用 **"Fig."** 占 **67%**，"Figure" 仅 20% | 1139 条图注 |
+| **71%** 的论文用 Fig. 制，**19%** 用**图版（Plate）**制，**18%** 两者兼有 | 272 篇有文本层 |
+| 地质体用**黑白花纹**，不用颜色 | Micropaleontology 实刊 |
+
+🔴 **三条推论（写微体古生物论文时照用）**：
+1. **分组用形状 / 灰度 / 花纹，不是颜色** —— 轴和位置已经用掉信息通道，
+   形状与灰度才是剩下的通道（见 `references/color-system.md` 的"一通道一变量"）
+2. **展示分类单元形态 → 图版 Plate；展示分布 / 关系 / 趋势 → Fig.**
+3. **借用与改造的图，必须在图注里写来源**：From X / Slightly modified from X /
+   modified from X (year) / Original.
+
+详见 `references/micropaleo-paper-patterns.md`（四类主题的章节骨架、图注面板字母体系、
+地质图制式、图版规则、前置要素实测覆盖率、交稿自查表）。
+
+---
+
 ## 送审流程
 
 | 体裁 | 流程 |
@@ -277,6 +301,7 @@ Further research should focus on [方向].
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
 | `references/color-system.md` | ★ **配色系统与视觉编码** —— 对照冷/处理暖、色相编码主变量、连续色阶、红绿禁忌、灰度检验 |
 | `references/figure-design-system.md` | ★ **图件设计体系** —— 图序即论证顺序、五种图件原型、实测语义色字典、版式规范、图注模板、交稿自查表 |
+| `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性）+ 官方原文速查 |
 | `references/multi-journal-style-guides.md` | ★ **10 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系 / JM）+ 横向对比与选刊建议 |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |

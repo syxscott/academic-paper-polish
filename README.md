@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/📚_11_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
 <img src="https://img.shields.io/badge/🪄_12_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
-<img src="https://img.shields.io/badge/🏷️_v2.8.0-fbbf24?style=social&logo=github" alt="v2.8.0" />
+<img src="https://img.shields.io/badge/🏷️_v2.9.0-fbbf24?style=social&logo=github" alt="v2.9.0" />
 
 <br/>
 
@@ -46,13 +46,13 @@
 
 > **不是模板，不是填空，是给 LLM 的精准角色定义 + 输入约束 + 输出规范。**
 
-**10 个模块 + 11 份深度参考 + 12 个 AI 工具适配 + 5 个 CI 校验脚本。**
+**10 个模块 + 12 份深度参考 + 12 个 AI 工具适配 + 5 个 CI 校验脚本。**
 覆盖从选题到返修的完整链路 —— 从「怎么写」到「怎么投」。
 
 | | v1.0 | **v2.5** |
 |---|---|---|
 | 模块 | 8 | **10**（+ 期刊匹配与投稿、审稿意见回复） |
-| 深度参考 | 无 | **11 份**（期刊约束 / 图表参数 / **配色系统** / **图件设计体系** / 检索 / 句式库 / 自查清单 / 多刊 style guide / Paleobiology 全刊规范 / 写作方法论 / 格式与检索实操） |
+| 深度参考 | 无 | **12 份**（期刊约束 / 图表参数 / **配色系统** / **图件设计体系** / 检索 / 句式库 / 自查清单 / 多刊 style guide / Paleobiology 全刊规范 / 写作方法论 / 格式与检索实操） |
 | AI 工具 | 主要 Claude Code / Cursor | **12 个**，`AGENTS.md` 单轨 + `CLAUDE.md` 跳板 |
 | CI 校验 | 无 | **5 个脚本**，含全量 Markdown 结构体检 |
 | 硬规则 | 部分 | **八条**，全部标注出处 |
@@ -91,11 +91,13 @@ academic-paper-polish/
 │       │   ├── 09-journal-submission.md  # 🎯 期刊匹配与投稿
 │       │   └── 10-reviewer-response.md    # 💬 审稿意见回复
 │       ├── prompts-en/              # 同 10 模块英文版，每文件自包含
-│       └── references/              # 按需加载的深度参考（11 份）
+│       └── references/              # 按需加载的深度参考（12 份）
 │           ├── checklist.md              # 投稿前自查清单（A–J 十组）
 │           ├── journal-constraints.md    # 期刊结构硬约束
 │           ├── figure-specs.md           # 图表硬参数 + 构图
 │           ├── color-system.md           # 🎨 配色系统与视觉编码
+│           ├── figure-design-system.md   # ★ 图件设计体系（图序/原型/语义色）
+│           ├── micropaleo-paper-patterns.md  # ★ 微体古生物/放射虫写作与制图模式
 │           ├── figure-design-system.md   # ★ 图件设计体系（图序 / 原型 / 语义色）
 │           ├── paleobiology-journal.md   # ★ Paleobiology 全刊规范
 │           ├── multi-journal-style-guides.md  # ★ 10 家期刊官方 Style Guide

@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "skill": "academic-paper-polish",
   "updated": "2026-11-01",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
@@ -172,6 +172,16 @@
         "load": "references/multi-journal-style-guides.md",
         "must_mention": ["without any limitation on the number of words used", "does not exceed 250 words", "encouraged", "Bibliometric studies will not be considered", "1000 dpi"],
         "must_not": ["把 Highlights 说成强制要求", "把摘要「必须单一段落」当作 ESR 官方要求", "用中文转述代替官方英文原句", "编造 ESR 的字数上限"]
+      }
+    },
+    {
+      "id": "R08-micropaleo-patterns",
+      "module": "references/micropaleo-paper-patterns.md",
+      "prompt": "我要写一篇放射虫新种的系统描述论文，章节和图该怎么排？图要不要上色？",
+      "expect": {
+        "load": "references/micropaleo-paper-patterns.md",
+        "must_mention": ["Plate", "Fig.", "Holotype", "灰度", "比例尺", "From", "Original"],
+        "must_not": ["给分类描述论文配彩色编码表", "把 Fig. 与图版 Plate 混用", "编造语料样本量"]
       }
     }
   ]
