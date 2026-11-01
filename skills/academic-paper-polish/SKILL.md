@@ -4,7 +4,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.11.0"
+  version: "2.12.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -257,22 +257,26 @@ Further research should focus on [方向].
 
 ### 🔴 本领域的 Introduction / Discussion 写法与通用模板不同
 
-> 🔴 **方法说明**：以下结论来自**逐篇精读全文**（5 篇 Introduction 全文 + 1 篇 Discussion 全文 + 8 篇 Discussion 首末句），
-> **不是词频统计**。关键词出现率只能证明"某个词出现过"，**不能**证明"作者在这里做了什么论证动作"——
-> v2.10.0 曾用命中率下结论，v2.11.0 已按精读全部更正。
+> 🔴 **方法说明**：以下结论来自**逐篇读**（130 篇段落骨架 + 48 篇可读 Introduction + 22 篇可读 Discussion
+> + 5 篇 Introduction 全文 + 1 篇 Discussion 全文 + RadSS 全文），**不是词频统计**。
+> 关键词出现率只能证明"某个词出现过"，**不能**证明"作者在这里做了什么论证动作"——
+> v2.10.0 曾用命中率下结论，v2.11.0 起已按精读逐条更正并附逐字原文。
 
 | 环节 | 本领域实际写法 | 与通用 SCI 模板的差别 |
 |---|---|---|
 | Introduction 首句 | **给事实**（放射虫是什么 / 材料何时何地发现），不是"本文做了什么" | 模板通常开门见山说目的 |
-| Introduction 结构 | 🔴 **没有统一模板**，实测四种并存：A 缺口→目的 ｜ B 必要性论证 ｜ C 教科书铺陈 ｜ D 材料发现。**按体裁选** | 模板只给一种 |
-| 目的句 | **独立成句**（位置随模式而变，第 1–3 段不等）；句式 `The aim/purpose of this …` / `Here, we give the first description of …`；**必须带具体对象与产地** | 模板通常把目的句放第一句 |
+| Introduction 结构 | 🔴 **没有统一模板**，实测五种并存：A 缺口→目的 ｜ B 必要性论证 ｜ C 教科书铺陈 ｜ D 材料发现 ｜ E 铺垫→目的→新意声明。**按体裁选** | 模板只给一种 |
+| 目的句 | **独立成句**，实测**九类句式**（aim / purpose / goal / objective / It is the purpose of… / In this work we… / We present here… / **Therefore, …（推理式）** / **否定式划边界**）；**必须带具体对象与产地** | 模板通常把目的句放第一句 |
+| 引言长度 | 🔴 **实测 2–108 段**，无规范；短引言多见于数据报告与短通信 | 模板给固定字数 |
 | 新意声明 | 目的句后**另起一段**说明"为什么值得看"（"of particular interest as …"） | 模板无此动作 |
 | 缺口写法 | **具体或数量化**（"only 19 occurrences in the entire Phanerozoic"、"哪个层没研究过"） | 模板爱用空泛的 "remains unclear" |
 | 局限坦陈 | **材料/数据局限可写在引言里**（"incompletely exposed"） | 模板要求藏到方法或讨论 |
 | Discussion 首句 | **直接进入比较对象 / 用标志性种锁定时代 / 证据→推论**，三种起手并存 | 模板教你在开头重述结果 |
 | Discussion 主体 | **逐项对照**（按形态类型、属种一项一项比）+ **"Because …, we propose that …"** 显式焊合证据与推论 | 模板强调逐条罗列文献 |
+| Discussion 起手 | 实测**十一种**，常用：比较对象型 / 标志性种定年型 / 结论先行 / 否定排除 / 让步 / 复述目的 / 子标题+综述铺陈 / 子标题+结合已发表数据 / 数据→推断 / 结果陈述 / 自承不完整 | 模板只给"重述结果"一种 |
 | Discussion 收尾 | 让步限定 / "需要进一步研究" / 归因 / 地层陈述 —— **不是"未来展望"** | 模板要求展望未来 |
 | 章节必备 | **Geological setting 几乎必选，且排在 Methods 之前**；系统描述类**没有独立 Results 段**；老刊常把 Results 与 Discussion 合并 | 模板要求标准 IMRaD 五段 |
+| 中文 / 日文稿 | 章节对应词：**提要**=Abstract、**地質概説/地质概况**=Geological setting、**考察**=Discussion、まとめ=Conclusions；中文刊常**没有引言节**，直接以地质概况起头 | 模板默认五段 |
 
 ---
 

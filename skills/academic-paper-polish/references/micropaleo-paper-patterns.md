@@ -237,156 +237,186 @@
 
 ## 九、🔴 论文整体结构：Introduction 怎么写、Discussion 怎么讨论
 
-> **本节的依据**：对同一批抽样论文做**逐篇精读** —— **5 篇 Introduction 全文**
-> （Little et al. 1999 *Geology*；Fortey & Bruton 1973 *GSA Bull.*；Robinson & Haslett 1995；
-> Vashchenkova 2011 *Marine Geology*；教科书式综述章）+ **1 篇 Discussion 全文**
-> （Robinson & Haslett 1995）+ **8 篇 Discussion 的首句与末句**。
+> **本节的依据（三层，逐层加深）**：
+> ① **130 篇逐篇读段落骨架**（分层抽样；英文 110、中文 18、俄文 2）；
+> ② 其中 **48 篇有可读的 Introduction、22 篇有可读的 Discussion**，逐段读；
+> ③ **5 篇 Introduction 全文 + 1 篇 Discussion 全文 + RadSS 全文**通读。
 > 🔴 **本节不给出任何"命中率"** —— 词频只能证明"某个词出现过"，
-> 不能证明"作者在这里做了什么论证动作"。结构结论一律来自**通读全文后的判断**，
-> 并附逐字原文供复核。
+> 不能证明"作者在这里做了什么论证动作"。所有结论都附**逐字原文**供复核。
+> ⚠️ **段数用缩进重建**，对无缩进排版（老扫描件、中文刊物）会偏大，故只作量级参考。
 
-### 9.1 Introduction：**没有统一模板，实测四种写法并存**
+### 9.1 Introduction：**没有统一模板，实测九类目的句句式并存**
 
-#### 模式 A｜"缺口 → 目的"式（系统描述与新发现类最常见）
+#### 9.1.1 目的句的九类句式（逐字，语料原句）
 
-Little et al. 1999 (*Geology*) 的引言**只有一段**，内部走完四步：
+| # | 句式 | 逐字例句 |
+|---|---|---|
+| 1 | **The aim of this … is to** | "The aim of this study is to discuss the geologic age of the radiolarians and the possible origin of the chert pebbles in the Pondaung Formation…" |
+| 2 | **The purpose of this … is to** | "The purpose of this paper is to examine skeletal ontogenesis in five species of the genus *Lamprocyrtis* Kling 1973…" |
+| 3 | **The goal of this … is to** | "The goal of this paper is to consider this problem." |
+| 4 | **Our objective / Our main objective …** | "Our objective in this work is to consider biostratigraphic zonations of Paleocene and Eocene sediments in western regions of Russia…" |
+| 5 | **It is the purpose of this paper to**（老式） | "It is the purpose of this paper to report the unusually abundant, widely scattered, yet somewhat depth-restricted occurrences from this area." |
+| 6 | **In this work / paper / contribution, we …** | "In this work we provide the first characterization of the sterols of *Z. nutricula*…" ／ "In this contribution, we report Guadalupian radiolarian and sponge spicule assemblages from the Gujingling Section…" |
+| 7 | **We present here / Here we present / Here, we give** | "We present here the occurrence and probable mechanism of formation of volcanic magnetite spherules…" ／ "Here, we give the first description of the only known Jurassic hydrothermal vent fossils…" |
+| 8 | 🔴 **Therefore, …（由前文推理得出目的）** | "**Therefore, in the present paper we recognize** the Cordevolian and Julian as separate and roughly equal substages of the Carnian stage." ／ "**Therefore, the objective of the present study is to propose a** …" |
+| 9 | 🔴 **否定式：用"不做什么"划定边界** | "**The goal of this project has not been to attempt to formally revise the entire corpus of Cenozoic radiolarian taxonomy**, an enormous task for which we are neither fully qualified, nor have the resources to achieve." |
 
-> ① 领域事实 + 文献："Modern hydrothermal vent sites support communities of animals whose primary producers are chemoautotrophic bacteria … (e.g., Van Dover, 1995; Grassle, 1986)."
-> ② **数量化的知识空白**："Although more than 50 modern vent fields with flourishing communities are known, the known fossil record of vent fauna is sparse: **only 19 occurrences in the entire Phanerozoic—three from the Silurian, six from the Devonian, one from the Jurassic (described here), seven from the Cretaceous …**"
-> ③ 结论句："**Consequently, the evolutionary history of these novel communities is not well understood.**"
-> ④ **目的句 + 贡献句**（两句连排）："**Here, we give the first description of** the only known Jurassic hydrothermal vent fossils, recently discovered in a small lens of massive sulfide (named here the Figueroa deposit) and in an associated iron-silica bed in central California. The Figueroa assemblage **fills a 270 m.y. gap** in the vent fossil record, from the Middle Devonian to the Cretaceous, and **offers important insights into** the structure of ancient vent communities."
+🔴 **可直接套用的三条硬规则**（从 130 篇读出来的）：
+1. **目的句一定要带具体对象**（哪个层、哪个区、哪个类群、哪个数据集）——
+   语料里没有一条目的句是空泛的 "to study radiolarians"
+2. **目的句可以只是推导的落点**（句式 8）：先把推理铺好，再用 "Therefore" 引出本文主张，
+   比开头宣告目的更像"论证"而不是"公告"
+3. **目的句可以是否定式**（句式 9）：先声明本项目**不**做什么，往往比声明做什么更专业
 
-🔴 **模式 A 的四个可抄动作**：
-1. 缺口**用数量写出来**（"50 个现代 vs 化石记录仅 19 处"），不写 "remains unclear"
-2. 缺口句后紧跟 "**Consequently, … is not well understood**" 这类**结论化缺口句**
-3. 目的句用 **"Here, we give the first description of …"**（含 "first"/"only known" 等**新颖性限定词**）
-4. 目的句**之后再加一句"贡献句"**，写清楚这个发现**填补了什么、提供了什么认识**
+**双目标 / 编号式目的句**（两类）：
+> "**Our two main objectives were 1)** to document in a Caribbean land setting the late Paleocene changes already reported elsewhere …, **and 2)** to evaluate the potential of Cuban sections to serve as a Global Stratotype Section and Point (GSSP)…"（Aubry & Sanfilippo 1999）
+> "**The aims of this synthesis are to** recover long-term paleoproductivity patterns and trends … **and to compare these two areas**."（Schumacher & Lazarus 2004）
 
-#### 模式 B｜"为什么重要 → 为什么必须做"式（成因/沉积类）
+**"已有工作 + 本文增量"式**（把本文定位成前作的延续）：
+> "In addition to geochemical data, we present radiolarian biostratigraphic data, some paleomagnetic data, and Ar-Ar age analyses…"（Osozawa et al. 2012）
+> "The purpose of this paper is to comment on the use of Radiolaria in dating deep-sea sediments and **to complement a recent review** of radiolarian palaeoenvironmental applications (Haslett, 2002)."（Haslett 2004）
 
-Vashchenkova 2011 (*Marine Geology*) 的引言是**一整段没有小标题**的"必要性论证"：
+#### 9.1.2 五种引言结构（每种附逐字原文）
 
-> "The study of the sedimentary processes in the continent–ocean transition zone is **one of the most important tasks of modern marine geology**. In this connection, of particular interest are the Tertiary siliceous sediments … since the formation of the ancient siliceous sequences **remains one of the most intriguing problems in geology**, and the origin of the pelitomorphic siliceous rocks … is still debatable."
-> 层层加码："Moreover, the mineralization type and its intensity are determined by the composition and texture of the host rocks." → "Owing to their high moisture saturation, porosity, and the occurrence of chemically active amorphous silica, siliceous rocks frequently serve as a substrate for …" → 收束："**All these properties determine the necessity of the investigation of siliceous sediments and their formation conditions.**"
+**A 缺口→目的式**（新发现、系统描述最常见）—— Little et al. 1999 (*Geology*)，**引言只有一段**：
+> "Although more than 50 modern vent fields with flourishing communities are known, the known fossil record of vent fauna is sparse: **only 19 occurrences in the entire Phanerozoic**—three from the Silurian, six from the Devonian, one from the Jurassic (described here)…"
+> "**Consequently, the evolutionary history of these novel communities is not well understood.**"
+> "**Here, we give the first description of** the only known Jurassic hydrothermal vent fossils… The Figueroa assemblage **fills a 270 m.y. gap** in the vent fossil record…"
 
-🔴 **模式 B 的特点**：**没有"文献回顾"段**，而是**用重要性 + 未决性 + 现实意义三件事把必要性堆出来**，
-最后一句落到"因此必须研究"。作者甚至把 **"Results and Discussion" 合并成一个段**（本文段2 标题即 RESULTS AND DISCUSSION）——
-**讨论与结果合并，是本领域老论文的常见形态。**
+🔴 **缺口用数量写出来**，随后用 "Consequently, … is not well understood" 收口，
+**目的句 + 贡献句两句连排**（"目的 + 填补了什么 + 提供了什么认识"）。
 
-#### 模式 C｜教科书式铺陈式（综述、教科书章节、术语解释型）
+**B 必要性论证式**（成因、沉积、全球变化类）—— Vashchenkova 2011 (*Marine Geology*)，**一整段无小标题**：
+> "The study of the sedimentary processes in the continent–ocean transition zone is **one of the most important tasks of modern marine geology**."
+> "…the origin of the pelitomorphic siliceous rocks … is **still debatable**."
+> "**All these properties determine the necessity of the investigation of** siliceous sediments and their formation conditions."
 
-教科书式章节（放射虫学教材章）的引言**没有"缺口→目的"结构**，而是**按知识体系逐段铺陈**：
-形态解剖 → 分类 → 生态 → 繁殖：
+🔴 **没有文献回顾段**，用"重要性 + 未决性 + 现实意义"三层把必要性堆出来。
+🔴 这类论文常把 **Results 与 Discussion 合并**（段标题直接写 "RESULTS AND DISCUSSION"）。
 
-> "Polycystine radiolarians are exclusively marine, pelagic, solitary or colonial protists provided with actinopods."
-> "A distinguishing feature of all radiolarians … is the central capsule, a proteinaceous perforated membrane that divides the cytoplasm into two areas … (Figure 1A)."
-> "Polycystine skeletons are typically constructed of a network of structures which can be either connected at both ends with other elements - the bars (Figure 2F), or formations attached to the rest of the shell by one end only - the spines (Figure 2A-B, 2G)."
-> "Polycystines consume a wide variety of prey including bacteria, algae, protists, copepods …"
+**C 教科书铺陈式**（综述、术语解释、教科书章）：
+> "Polycystine radiolarians are exclusively marine, pelagic, solitary or colonial protists provided with actinopods." → 形态解剖 → 分类 → 生态 → 繁殖，**逐段铺陈，无"缺口→目的"结构**。
+> 🔴 这类章节的图引用写 **"(Figure 1A)"**（不带点），与期刊论文的 "(Fig. 1A)" 不同 —— **别照抄别处的格式**。
 
-🔴 **模式 C 的注意**：这类章节的图引用写 **"(Figure 1A)"**（不带点），
-与期刊论文的 "(Fig. 1A)" 不同 —— **看期刊的引用格式习惯，别照抄别处**。
-
-#### 模式 D｜材料发现式（老刊、地层/大剖面类）
-
-Fortey & Bruton 1973 (*GSA Bulletin*) 的引言**以一句纯事实开头**：
-
+**D 材料发现式**（老刊、大剖面、地层工作）—— Fortey & Bruton 1973 (*GSA Bull.*)：
 > ① "Fossiliferous lower Paleozoic rocks were **discovered in 1965** at the top of the Hecla Hoek Series in north Ny Friesland, Spitsbergen."
-> ② 工作史 + **本文范围 + 预告后续论文**："Part of the section was measured and collected in 1967, and a preliminary account … was given by Vallance and Fortey (1968) … In 1971 the field work was extended … **This paper describes the succession and its field relations and discusses its correlation within Spitsbergen and adjacent Arctic regions preliminary to more detailed paleontologic work to be published in the future.**"
-> ③ 地质背景 —— **含对自身局限的坦陈**："The Cambrian rocks are, however, **incompletely exposed**, and are only present in the northern area; complete knowledge of this part of the section is unlikely."
+> ② "**This paper describes the succession and its field relations and discusses its correlation** within Spitsbergen and adjacent Arctic regions **preliminary to more detailed paleontologic work to be published in the future**."
+> ③ 地质背景 + **坦陈材料局限**："The Cambrian rocks are, however, **incompletely exposed**, and are only present in the northern area; complete knowledge of this part of the section is unlikely."
 
-🔴 **模式 D 有一个常被忽略的优点**：**引言里就写明材料局限**（"incompletely exposed"）。
-这在通用模板里很少见，但**审稿人最想知道的正是这个**。
+🔴 **模式 D 有两个通用模板没有的好习惯**：预告后续论文；在引言里就写出材料局限。
 
-#### 模式 E｜铺垫 → 目的 → **单独一段声明新意**
-
-Robinson & Haslett 1995：
-
-> 铺垫三段（海绵骨针的成分/分类/沉积行为）之后：
-> "Sponge spicules, and in particular siliceous sponge spicules, are readily fossilized due to their durability, resistance to dissolution, and to the great numbers produced, making them a common component of marine sedimentary rocks throughout the Phanerozoic. **In this study, we report on a siliceous microsclere assemblage from the mid-Early Miocene Dos Bocas Formation of Ecuador.**"
+**E 铺垫 → 目的 → 单独一段新意声明**（Robinson & Haslett 1995）：
+> 铺垫三段后："Sponge spicules … are readily fossilized … making them a common component of marine sedimentary rocks throughout the Phanerozoic. **In this study, we report on** a siliceous microsclere assemblage from the mid-Early Miocene Dos Bocas Formation of Ecuador."
 > 然后**另起一段**只写一句新意："**This assemblage is of particular interest as it comprises species previously unknown in the fossil record.**"
 
-🔴 **模式 E 的关键动作**：**目的句与"新意声明"分成两段** ——
-目的句说"我做了什么"，下一段说"为什么这个值得看"。
+#### 9.1.3 引言长度的实测（48 篇可读）
 
-#### 🔴 四种模式的共同底线
-
-| 无论哪种模式 | 具体要求 |
+| 指标 | 实测 |
 |---|---|
-| 首句 | 给**事实**（领域事实或材料事实），不是"本文要研究 X" |
-| 目的句 | **独立成句**；位置随模式而变（第 1–3 段都有），**不必强行放首句，也不必放末段** |
-| 目的句内容 | **必须带具体对象与产地**（层位、区带、类群名），并常带图号交叉引用 |
-| 缺口 | 可以是"remains unclear"，但**更常见的是数量化的知识空白**（"only 19 occurrences …"）或**具体的未研究对象**（哪个层/哪个区/哪个类群） |
-| 新意 | 目的句之后**最好单独一段**说明"为什么这个结果值得看" |
-| 局限 | **材料/数据局限可以直接写进引言**（"incompletely exposed"），不必藏到方法或讨论里 |
+| 段数 | **最少 2 段，最多 108 段**（中位约 43 段；⚠️ 缩进重建会偏大，仅作量级） |
+| 短引言（2–6 段） | 多见于**数据报告、短通信**（如 ODP Data Report、引言仅 1–5 段） |
+| 长引言（60+ 段） | 多见于**系统描述、综述、专著章节** |
 
-### 9.2 Discussion：**三段骨架 + 四种起手 + 四种收尾**
+🔴 **所以：本领域不存在"引言该写多长"的规范**，别套通用字数。
 
-**精读 Robinson & Haslett 1995 的 Discussion 全文**，其骨架是：
+#### 9.1.4 缺口的四种写法（130 篇读出来的）
 
-> **① 直接给出比较对象**："The sponge microsclere assemblages encountered in this study are **directly comparable with** Holocene reef sponge communities off the coast of Belize and in the Gulf of Mexico, and with an Upper Jurassic microsclere assemblage."
-> **② 引入已有工作并逐类群对照**："Haslett (1992) describes a microsclere assemblage from the Portlandian of southern England in which reniform microscleres … occur in association with spherical and oval-cylindrical microscleres … This Portlandian assemblage is very similar in composition with that of JW 199, in which reniform microscleres are represented by *Placospongia carinata*, spherical microscleres by *Geodia neptuni* and the oval-cylindrical microscleres by *Conciliaspongia rarus* Gen. et sp. nov."
-> **③ 指出差异并推进结论**："The assemblages **only differ by** the absence in the Jurassic assemblage of a stellate microsclere, such as *Chondrilla nucula* Schmidt. This similarity appears to imply some kind of faunistic …"
+| 写法 | 逐字例句 |
+|---|---|
+| **数量化** | "only 19 occurrences in the entire Phanerozoic" |
+| **未决性** | "the origin … is still debatable" ／ "remains one of the most intriguing problems in geology" |
+| **具体未研究对象** | "the first attempt of Early Albian successions dating in northeastern Tunisia" |
+| **技术/方法空白** | "The use of technology in biological classification has **not yet been given that much attention** by some specialists from different areas such as taxonomy, paleontology and morphological systematics."（RadSS 2016） |
 
-🔴 **讨论的核心动作是"逐项对照"，不是"逐句罗列文献"**：
-把本文的组合**按形态类型一项一项**（reniform / spherical / oval-cylindrical / stellate）去对已有组合，
-最后用"只差 X"收口。**这是与通用模板最大的差别**——通用模板教你在讨论里逐条引用文献。
+### 9.2 Discussion：**起手与收尾各有多种，逐字给出**
 
-**四种起手（语料逐字）**：
+#### 9.2.1 十一种起手（语料逐字）
 
 | 起手 | 逐字例句 |
 |---|---|
-| **A 直接进入比较对象** | "The sponge microsclere assemblages encountered in this study are directly comparable with Holocene reef sponge communities …" |
-| **B 用数据锁定时代/环境** | "The occurrence of well-known species such as *Dictyomitra formosa*, *Diacanthocapsa euganea* … undoubtedly determine the Noni Formation as having an early Late Cretaceous age (Cenomanian–Turonian)." |
-| **C 先摆领域通说** | "The isotopic paleoecologics of planktonic foraminifera can be used to gain insight into the dynamics of stratification in the upper water column." |
-| **D 证据 → 推论** | "**Because** the Figueroa fossils are hosted by massive sulfides and associated with basaltic pillow lavas and radiolarian cherts, **we propose that** this assemblage represents part of an Early Jurassic high-temperature hydrothermal vent community." |
+| ① **比较对象型** | "The sponge microsclere assemblages encountered in this study are **directly comparable with** Holocene reef sponge communities off the coast of Belize and in the Gulf of Mexico…" |
+| ② **标志性种定年型** | "The occurrence of well-known species such as *Dictyomitra formosa*, *Diacanthocapsa euganea* … undoubtedly determine the Noni Formation as having an early Late Cretaceous age (Cenomanian–Turonian)." |
+| ③ **结论先行型** | "Cretaceous accretionary–collision complexes in central Indonesia **were the products of the interaction of** a continent and an ocean." ／ "**Radiolaria were very strongly affected by the** Permian-Triassic biotic crisis." ／ "**We can identify two principal transitions** in the facies distribution of chert during the past 1000 Ma (Table 3)." |
+| ④ **否定排除型** | "The cause of the Middle Carnian Wet Intermezzo **cannot be explained simply by** local changes in the climate in the Germanic Basin …, because tectonic changes …" |
+| ⑤ **让步型** | "**Although** the unit origami system was for regular polyhedrons, **it could be used for** the modeling of cortical shell structures." |
+| ⑥ **复述目的型**（现代刊常见） | "**This research aimed to** identify the sterols of *Z. nutricula* and to use these sterols to clarify the chemotaxonomic relatedness…" |
+| ⑦ **子标题 + 综述铺陈型** | "Palaeogeographical settings and chronostratigraphical correlation of Chaohu, Meishan and Dongpan sections / The late Changxsingian rocks of South China can be subdivided into continental clastic facies …, carbonate platform …" |
+| ⑧ **子标题 + "结合已发表数据"型** | "**Our assessment of the chemostratigraphy**, described in the geochemistry sections, **combines our data with previously published data sets to arrive at the conclusion that** our suite…" |
+| ⑨ **数据 → 推断一句式** | "The studied radiolarian assemblage is early or early middle Albian in age and was collected approximately 15 m below the occurrence of keeled globotruncanids indicating a late middle Albian, or younger, age." |
+| ⑩ **结果陈述型（最朴素）** | "Acantharian abundances were relatively low at the VERTEX seasonal station (33°N, 139°W)." |
+| ⑪ **自承不完整型** | "The San Agustine and San Franciso de Paula sections **complement each other for a better -yet incomplete-** representation of the uppermost Paleocene-lower Eocene interval." |
 
-🔴 **B 与 D 是本领域最值得抄的两种**：B 先用**标志性种**把时代/环境钉死（地层学论文的看家本领）；
-D 用 **"Because …, we propose that …"** 一句话把**证据与推论**焊在一起。
+🔴 **最值得抄的两种**：② **用标志性种把时代/环境钉死**（地层学论文的看家本领）；
+④ **"cannot be explained simply by …, because …"**（先排除简单解释，再给机制）。
 
-**四种收尾（语料逐字）**：
+#### 9.2.2 Discussion 的核心动作：**逐项对照**，不是逐条罗列文献
+
+Robinson & Haslett 1995 全文的骨架：
+> ① 给比较对象 → ② 引已有工作并**按形态类型一项一项对**：
+> "Haslett (1992) describes a microsclere assemblage from the Portlandian of southern England in which **reniform** microscleres … occur in association with **spherical** and **oval-cylindrical** microscleres … This Portlandian assemblage is very similar in composition with that of JW 199, in which reniform microscleres are represented by *Placospongia carinata*, **spherical microscleres by** *Geodia neptuni* and **the oval-cylindrical microscleres by** *Conciliaspongia rarus* Gen. et sp. nov."
+> ③ 指出差异并收口："The assemblages **only differ by the absence** in the Jurassic assemblage of a stellate microsclere, such as *Chondrilla nucula* Schmidt."
+
+🔴 **写法模板**：把本文的组合**按形态类型 / 属种逐项列出**，逐项对应已有组合，
+最后用"只差 X"收口。**这是本领域讨论与通用 SCI 模板最大的差别。**
+
+#### 9.2.3 七种收尾（语料逐字）
 
 | 收尾 | 逐字例句 |
 |---|---|
-| **A 让步并限定结论** | "However, some of these species occur in high latitudes where silica depletion is less pronounced than other regions of the oceans thus lessening the strength of the silica-depletion hypothesis as a major driving force in their evolution." |
-| **B 明确指出后续工作** | "More detailed research of the Gufeng Formation is needed for the proper understanding of rocks from the oceanic and platformal facies." ／ "To discuss this issue, further study is required to correct the fossil data such as the Aalenian ammonoid occurring in these intervals." |
-| **C 归因收尾** | "The latter result is likely due to the high factor scores of *C. d. davisiana*, a species …" |
-| **D 地层/演化陈述收尾** | "Arc magmatism continued well into Late Triassic time along the Sukhothai Terrane in Thailand until its collision with the Loei Terrane during Norian time." |
+| ① **让步限定** | "However, some of these species occur in high latitudes where silica depletion is less pronounced than other regions of the oceans thus lessening the strength of the silica-depletion hypothesis as a major driving force in their evolution." |
+| ② **需要进一步研究** | "More detailed research of the Gufeng Formation is needed for the proper understanding of rocks from the oceanic and platformal facies." ／ "To discuss this issue, further study is required to correct the fossil data…" |
+| ③ **归因** | "The latter result is likely due to the high factor scores of *C. d. davisiana*, a species …" |
+| ④ **地层 / 演化陈述** | "Arc magmatism continued well into Late Triassic time along the Sukhothai Terrane in Thailand until its collision with the Loei Terrane during Norian time." |
+| ⑤ **审慎推测** | "**One might indeed speculate that** the decline of siliceous sponges in platform environments was a consequence of decreasing silica concentrations in surface ocean waters concomitant with the ecological expansion of planktonic diatoms…" |
+| ⑥ **否定 / 限定收口** | "**Not all areas changed their tectonic setting, however,** as the oceanic plate stratigraphy indicates continuous subduction throughout the …" |
+| ⑦ **结论重述** | "We conclude that the ability to deposit SrSO4 is a less reliable phylogenetic marker than the ability to construct elaborate skeletal architecture using SrSO4." |
 
-🔴 **四种收尾没有一种是"未来展望 / future research will…"** ——
-本领域讨论段的尾声是**限定、归因、或地质陈述**，不是展望。
+🔴 **七种收尾没有一种是"未来展望 / future research will…"** ——
+本领域讨论段的尾声是**限定、归因、推测或地质陈述**。
 
-### 9.3 章节顺序：**Geological setting 前置、Results 常被合并**
+### 9.3 章节顺序与**中日文论文的章节对应词**
 
-从 PDF 书签（224 篇）与精读全文看到的顺序：
+从 PDF 书签与 130 篇通读看到的顺序：
 
-| 主题 | 典型顺序 | 备注 |
+| 主题 | 典型顺序 |
+|---|---|
+| 系统描述 / 新类群 | INTRO → **GEO** → METH → **SYS**（逐类群并列小节）→ CONC（**无独立 Results 段**） |
+| 地层 / 生物地层 | INTRO → **GEO** → METH → **对比** → CONC |
+| 成因 / 定量 | INTRO → **GEO** → METH → **RES+DISC 合并** → CONC |
+| 综述 / 教科书 | INTRO → 逐知识点铺陈 → CONC |
+| **计算机方法类（RadSS 2016）** | **I. INTRODUCTION → II. RELATED WORK → III. RADIOLARIANS / MACHINE LEARNING AND FEATURE EXTRACTION（A. RaDSS Training App｜B. RaDSS Classifier App）→ RESULTS** |
+
+🔴 **中文 / 日文论文的章节对应词**（语料里高频出现，写中文稿时别用错词）：
+
+| 中文 / 日文 | 英文对应 | 说明 |
 |---|---|---|
-| 系统描述 / 新类群 | INTRO → **GEO** → METH → **SYS**（逐类群并列小节）→ CONC | **没有独立 Results 段**，结果直接在 SYS 里 |
-| 地层 / 生物地层 | INTRO → **GEO** → METH → **GEO/对比** → CONC | 地质背景出现两次：开头的区域背景 + 后面的地层对比 |
-| 成因 / 定量 | INTRO → **GEO** → METH → **RES + DISC 合并** → CONC | 合并写法在老刊常见（"RESULTS AND DISCUSSION"） |
-| 综述 / 教科书 | INTRO → 逐知识点铺陈 → CONC | 无 GEO/METH |
+| 提要 | Abstract | 中文期刊摘要叫"提要" |
+| 关键词 | Keywords | |
+| はじめに / 引言 | Introduction | |
+| **地質概説 / 地质概况** | **Geological setting** | 🔴 中文常叫"地质概况"，不是"地质背景" |
+| 地层 | Stratigraphy | |
+| 放散虫化石 / 放射虫化石 | Systematic description | 中文多直接写"放射虫化石" |
+| **考察 / 討論** | **Discussion** | 🔴 中文用"考察" |
+| まとめ / 結論 | Conclusions | |
+| 参考文献 | References | |
 
-🔴 **三条硬事实**：
-1. **"Geological setting" 几乎必选，且排在 Methods 之前** —— 这个顺序在语料里最常见。
-   理由很实际：**"这套化石来自哪个层、哪个区"决定了后面所有的对比与解释**，放在 Methods 后面会颠倒因果。
-2. **系统描述类论文没有独立的 Results 段** —— 结果以"逐类群并列小节"呈现。
-3. **Results 与 Discussion 合并是老刊常态**（段标题直接写 "RESULTS AND DISCUSSION"），
-   新刊则普遍分开。
+🔴 **中文期刊论文常常没有"引言"这一节**——直接以"地质概况"起头，
+写中文稿时不要硬套英文的 Introduction/Geological setting 两段式。
 
 ### 9.4 交稿前自查（结构部分）
 
 - [ ] 引言首句是**事实**，不是"本文要研究 X"？
-- [ ] 引言里有**明确的目的句**（独立成句、带具体对象与产地）？
-- [ ] 缺口是**具体的或数量化的**（哪个层/哪个区/多少处记录），而不是空泛的 "remains unclear"？
-- [ ] 目的句之后**另有一段说明新意**（"of particular interest as …"）？
-- [ ] 有 **Geological setting**，且排在 **Methods 之前**？
+- [ ] 有**明确的目的句**，且带具体对象与产地？句式是否属于 §9.1.1 的九类之一？
+- [ ] 目的句**独立成句**，且后面另有段落说明"为什么值得看"？
+- [ ] 缺口是**数量化 / 未决性 / 具体未研究对象 / 方法空白**四种之一？
+- [ ] 有 **Geological setting（地质概况）**，且排在 **Methods 之前**？
 - [ ] 系统描述类：每个类群一个**并列小节**（Holotype→Paratype→Description→Discussion），**且没有独立 Results 段**？
 - [ ] 讨论是**逐项对照**（按形态类型/属种一项一项比），而不是逐条罗列文献？
 - [ ] 讨论里**标志性种**用来锁定时代/环境？
 - [ ] 推论与证据之间是 **"Because …, we propose that …"** 的显式焊合？
-- [ ] 讨论收尾是**让步 / 需进一步研究 / 归因 / 地质陈述**之一，而不是"未来展望"？
-- [ ] 材料或数据局限**在引言里就坦陈**（而不是藏到方法或讨论里）？
-
+- [ ] 讨论收尾是**让步 / 需进一步研究 / 归因 / 审慎推测 / 地层陈述 / 否定限定 / 结论重述**之一，而不是"未来展望"？
+- [ ] 材料或数据局限**在引言里就坦陈**？
+- [ ] **中文稿**：章节名用"提要 / 地质概况 / 放射虫化石 / 考察"这些对应词了吗？
 ## 八、来源与可回查
 
 | 来源 | 提供什么 |
