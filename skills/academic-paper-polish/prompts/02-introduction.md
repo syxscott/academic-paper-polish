@@ -91,3 +91,5 @@ has (have) been less focused on / attempted to / conducted
 | 5 | 提出假设验证 | *We aim to test the feasibility (reliability) of the…* / *It is hoped that the question will be resolved with our proposed method.* |
 
 详见 `../references/sentence-bank.md`。
+
+> 中文稿请先读 §8.11.4：中文第一人称三型 =「本文」/「我们」/「笔者」；中文无被动标记，别套英文的被动要求。

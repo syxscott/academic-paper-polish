@@ -127,3 +127,5 @@
 3. *"An increasing volume of submissions prevents us from publishing all worthwhile manuscripts we receive…"*
 
 详见 `../references/journal-constraints.md`。
+
+> **中文刊与英文刊系统性地不同**（§8.11）：中文刊全用比例尺、图注中英双语、图表引用写「（图１）」「（表１，点２）」、对比表用「√」。

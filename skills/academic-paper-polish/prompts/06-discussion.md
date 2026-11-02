@@ -81,3 +81,5 @@ Further research should focus on [识别合适的xxx] and [开发可支持xxx的
 前言 + 方法 + 结果讨论写完后，读者知道"做了什么、解决了什么问题"，但**意犹未尽 —— 知道了这些有什么用？**
 
 这一节回答它，常作为 Discussion 的独立小节（如 4.3 Environmental significance / 4.3 Geological implications）。
+
+> 无独立 Discussion 时读 §8.11.11：讨论可装进 METHODS / 嵌在引言 / 嵌在 Results / 由类群块 Comparison 承担。
