@@ -2,6 +2,34 @@
 
 本文件记录本仓库（agent skill：学术论文写作、润色、改稿与投稿）的主要变更。
 
+## [2.13.0] — 2026-11-02
+
+### 新增：系统描述类论文专章（22 篇精读）
+
+从 346 篇分层抽样中筛出**系统描述类候选 35 篇**，**逐篇精读 22 篇**
+（含全文段落、类群块标签顺序、系统描述段正文、讨论段正文），覆盖 J. Micropaleontology、
+Palaeontological Research、Revue de micropaléontologie、Micropaleontology、
+Palaeontological Journal、USGS Professional Paper 等刊式。
+
+**🔴 最重要的结论**：**系统描述类论文通常没有独立 Discussion 段**，
+讨论由**每个类群块的 Remarks（+ Comparison）承担**。
+
+**新增内容**（references/micropaleo-paper-patterns.md 第十章）：
+- **Remarks 块四步**：吻合 → 差异点 → 分类处置 → 与他人处理不同（逐字例句）
+- **类群块标签三种模板**：完整型 / 标准型 / 度量型
+- **章节安排**：Repository 常独立成节；地质背景常分区域地质 + 采样剖面两节；
+  属级标题固定写法（Genus X Author, 19xx ＋ Type Species.—）
+- **图版说明两制式**：放大倍数制（× 175）与图版引用制（Plate 3.1, figure 7）
+- **前人描述引用三要素**：命名人 + 年 + pl.X, figs. Y-Z, p.N
+- **跨类群讨论写法**：把本系列新种汇成"数量 + 出处"总结 → 与前人计数对照 → 抬到属级问题
+- **形态计量类讨论骨架**：引前人原句标页码 → 指出其局限 → 本文如何扩展 → 承认方法误差
+- **13 条系统描述类交稿自查**
+
+### SKILL.md / evals 同步
+
+- SKILL.md 新增「🔴 系统描述类论文（写新种/新属）专章」小节与触发词
+- evals/evals.json 升到 1.8.0，新增 **R10-systematic-description**
+
 ## [2.12.0] — 2026-11-02
 
 ### 精读扩到 130 篇，第九章整章重写

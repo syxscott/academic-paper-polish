@@ -417,6 +417,125 @@ Robinson & Haslett 1995 全文的骨架：
 - [ ] 讨论收尾是**让步 / 需进一步研究 / 归因 / 审慎推测 / 地层陈述 / 否定限定 / 结论重述**之一，而不是"未来展望"？
 - [ ] 材料或数据局限**在引言里就坦陈**？
 - [ ] **中文稿**：章节名用"提要 / 地质概况 / 放射虫化石 / 考察"这些对应词了吗？
+## 十、🔴 系统描述类论文专章（Systematic Description）
+
+> **本节依据**：从 346 篇分层抽样中筛出**系统描述类候选 35 篇**，其中 **22 篇逐篇精读**
+> （含全文段落、类群块标签顺序、系统描述段正文、讨论段正文）。
+> 语料包含 *Journal of Micropaleontology*、*Palaeontological Research*、
+> *Revue de micropaléontologie*、*Micropaleontology*、*Palaeontological Journal*、
+> *Geological Survey of Canada / USGS Professional Paper* 等多种刊式。
+
+### 10.1 🔴 核心结论：这类论文的"讨论"不在 Discussion 段
+
+**读了 22 篇之后最确定的一条**：系统描述类论文通常**没有独立的 Discussion 段**，
+讨论功能由**每个类群块里的 Remarks（+ Comparison）承担**。
+
+| 讨论的落位 | 典型论文 | 写法 |
+|---|---|---|
+| **① 每个类群的 Remarks 块**（最常见） | Blome et al. 1986；Dumitrica 1983；Goll 1978；Ito 2020 | "这个标本与 X 的描述很吻合 / 但 Y 特征说明它应归入 Z 属 / 因此与某某作者的处理不同" |
+| **② 独立的跨类群讨论段** | Renaudie & Lazarus 2016；Afanasieva & Amon 2011 | 把本系列多个新种**汇成数量总结**，再指出更高层级的问题（属级分类需重审） |
+| **③ 形态计量 / 方法类论文的讨论** | Danelian & MacLeod 2019 | 先引前人原句指出传统描述的局限 → 说明本文方法如何扩展 → 结果 → 承认方法的误差来源 |
+
+**Remarks 块的逐字写法**（Blome et al. 1986, USGS Professional Paper 1435）：
+> "**Remarks.—**Details of the specimen fit well the descriptions given by both Frech and Smith. Distinctive features are in the septal arrangement and columnella. Based on the study of Melnikova (1968), Frech's species must be placed in the Genus *Cyathocoenia* Duncan.
+> **Occurrences.—**Wallowa Mountains (Eagle Creek); Lake Shasta, California; Pilot Mountains, Nevada; Gravina Island, Alaska; …"
+
+🔴 **Remarks 的四步**：**吻合**（fit well the descriptions）→ **差异点**（distinctive features are …）→
+**分类处置**（must be placed in the Genus …）→ **与他人处理的不同**（with which I do not agree）。
+
+**方法类论文的讨论骨架**（Danelian & MacLeod 2019，逐字）：
+> 引前人原句并给页码："as stressed by Sanfilippo and Riedel (1990, p. 347), '**conventional descriptions and diagrams are unable to accommodate all the variation and all the intermediate forms included in each species at each level in the continuum**.'"
+> → 本文如何扩展："In this investigation we have **extended the methodology** used by Sanfilippo and Riedel (1990), by (1) focusing on only two morphospecies …, (2) combining information from both contour/outline and landmark data, and (3) attempting to evaluate the utility of a new system of morphometric measurements…"
+> → 承认方法误差："Cephalis shape was also likely subject to a greater degree of error insofar as the horn—**which was variably preserved in this sample**—was not included in the analysis…"
+
+🔴 **写法模板**：**直接引用前人原句并标页码** → 指出其局限 → 说明本文如何扩展 → 给出方法自身的误差来源。
+
+### 10.2 🔴 类群块（taxon block）的标签模板
+
+22 篇里逐篇抽出"类群块内的小标题出现顺序"，可归并为**三种主模板**：
+
+| 模板 | 标签顺序 | 出处 |
+|---|---|---|
+| **A 完整型** | **synonym → diagnosis → description → remarks → occurrence** | Nakagawa & Wakita 2020；Ito 2020 *Longtanella* |
+| **B 标准型** | **material → description → occurrence → remarks → diagnosis → holotype** | Renaudie & Lazarus 2016（60 个标签，重复单元最规整） |
+| **C 度量型** | **remarks → description → material → holotype → paratype → remarks → occurrence** | Dumitrica 2020（*Revue de micropaléontologie*） |
+
+**必备标签**：
+- **Holotype / Paratype**（正模/副模）—— 新种、新属必给
+- **Repository**（存放机构）—— 常**单列一节**放在系统描述之前
+  > "**Repository.—**The specimens used in this study are deposited in the National Museum of Nature and Science, Japan."（Nakagawa & Wakita 2020）
+  > "All specimens described in this paper are stored in the Geological Museum of the Geological Survey of Japan, AIST, Tsukuba, Japan."（Ito 2020）
+- **Occurrence(s)**（产地清单）—— 逐个产地列出，常带州/国
+- **Age / Stratigraphy / Horizon / Locality** —— 时代与层位
+- **Comparison / Differential diagnosis** —— 与近缘种对比
+
+### 10.3 🔴 章节安排（系统描述类的典型链条）
+
+    INTRODUCTION
+      └─ [Geological setting / Geologic overview]      ← 区域地质
+      └─ [Material & methods]  或  [Repository]         ← 存放机构常独立成节
+    Systematic description(s)                            ← 逐类群并列小节
+      └─ (可选) Discussion / Conclusions                 ← 常缺省，讨论由 Remarks 承担
+    References
+
+**实测到的章节实例**：
+- Nishizono & Yonemitsu 2020: "1. Introduction / 2. Geologic overview of the Toyora Group / **3. Lithostratigraphy of the sampling section** / 4. Radiolarian assemblages and age assignment / …"（地质背景占两节：区域 + 采样剖面）
+- Nakagawa & Wakita 2020: "… / **Repository** / Family Follicucullidae Ormiston and Babcock, 1979 / **Genus** Parafollicucullus Holdsworth and Jones, 1980 / **Type Species.—**Parafollicucullus fusiformis Holdsworth and Jones, 1980."
+- Dumitrica 1983: "SYSTEMATICS AND EVOLUTION OF THE GENUS SUTTONIUM / **MORPHOLOGY OF SKELETON** / **ORIGIN OF SUTTONIUM**"（系统描述内先形态、再起源）
+- Renaudie & Lazarus 2016 (*JM*): "Material and methods / **Systematic palaeontology** / …"
+
+🔴 **属级标题的固定写法**：Genus <属名> <命名人>, <年> ＋ Type Species.—<种名> <命名人>, <年>.
+
+### 10.4 🔴 图版说明的两种制式
+
+**制式一：放大倍数制**（老刊、法语/俄文刊常见）—— Kellici et al. 1994 逐字：
+> "1. *Emiluvia pessagnoi* FÜHEMAN 10 ALB., 9499(7) (× 175). 2. *Emiluvia aff. pessagnoi* FÜHEMAN 10 ALB., 9498(4) (× 50). 3-4. *Tritrabs casmaliensis* (PESSAGNÜ) 3 : 10 ALB., 9499(9) (× 130). 4 : 10 ALE., 9498(2) (× 80)."
+
+🔴 **格式 = 图号. 分类单元名 + 命名人 + 时代缩写（ALB. = 阿尔布阶 / ALE.） + 标本号 + (× 放大倍数)**
+🔴 **命名人全大写**，**同一张图版上多个属用同一编号体系**（3-4. 表示两个图合用一条说明）
+
+**制式二：图版引用制**（美式刊）—— Blome et al. 1986 逐字：
+> "Order SCLERACTINIA Bourne 1900 / Suborder ASTROCOENIINA Vaughan and Wells 1943 / Family ASTROCOENIIDAE Koby 1890 / Genus CYATHOCOENIA Duncan 1867 / *Cyathocoenia cf. C. juvavica* (Frech) / **Plate 3.1, figure 7** / *Stephanocoenia juvavica* Smith, 1927, **pl.112, figs. 7-10, p.132**. / *Actinastrea juvavica* (Frech). Stanley, 1979, pl. 1, fig. 7."
+
+🔴 **系统描述段内的前人引用三要素**：命名人 + 年 + pl.X, figs. Y-Z, p.N
+🔴 **正文引用图版用 "pl." 缩写，图版说明里用 "Plate" 全称**
+
+### 10.5 分类学记号与命名格式（22 篇实测）
+
+| 记号 | 含义 |
+|---|---|
+| sp. nov. / gen. nov. / n. sp. | 新种 / 新属 |
+| cf. | 亲近但不能确定（conformis） |
+| aff. | 近似（affinis） |
+| ex gr. | 属于某个类群（ex grege） |
+| emend. | 修订既有类群的定义 |
+
+🔴 **属级标题带命名人与年代**：Genus *Parafollicucullus* Holdsworth and Jones, 1980；
+🔴 **种级标题用斜体 + 命名人年代**：*Parafollicucullus fusiformis* Holdsworth and Jones, 1980.
+
+### 10.6 跨类群的讨论怎么写（Renaudie & Lazarus 2016 逐字）
+
+> "One striking feature of the Antarctic radiolarian fauna during the Neogene is the richness (in terms of diversity as well as in terms of relative abundance …) in plagiacanthids …: **133 species of plagiacanthids** (about half of them being lophophaenins) were encountered during our study, **including 40 that we described in this series of papers**, out of the **490 total species** that we observed from the earliest Miocene to the Holocene in this region. It confirms previous observations of high relative diversity of plagiacanthids in (Recent) austral waters by Boltovskoy (1987) and Boltovskoy et al. (2010)."
+> "In addition to the underestimated specific diversity of the plagiacanthids, it became obvious during the preparation of this series of papers that **their generic taxonomy also needs to be re-examined in detail** (see, for instance, the discussions for: *Botryopera? daleki* …; *Lophophaena? neuma* …; *Spongomelissa? bipatens* …)."
+
+🔴 **写法**：**把本系列所有新种汇成"数量 + 出处"的总结** → **与前人计数对照（confirms / extends）**
+→ **再把问题抬到更高层级（属级分类需重审）**。
+
+### 10.7 交稿前自查（系统描述类专用）
+
+- [ ] 每个新种 / 新属都有 **Holotype**（新属还要有 **Paratype** 与 **Type Species**）？
+- [ ] 有 **Repository** 段（存放机构 + 藏号），且放在系统描述之前？
+- [ ] 每个类群块的小标题顺序一致（synonym / diagnosis / description / remarks / occurrence）？
+- [ ] **Remarks 块写全四步**：吻合 → 差异点 → 分类处置 → 与他人处理的不同？
+- [ ] 有 **Occurrences** 段，逐产地列出（含州/国）？
+- [ ] 有 **Age / Stratigraphy / Horizon / Locality**？
+- [ ] 图版说明是**放大倍数制**还是**图版引用制**？与目标刊一致？
+- [ ] 图版说明里的**时代缩写**（ALB./ALE.）与正文用法一致？
+- [ ] 引前人描述时写全 **命名人 + 年 + pl.X, figs. Y-Z, p.N**？
+- [ ] **属级标题带命名人与年代**，种级标题**斜体**？
+- [ ] 讨论是靠 **Remarks 块**承担的？若另设 Discussion，是否做了**跨类群总结**（数量 + 出处 + 与前人对照）？
+- [ ] 地质背景是否分成了**区域地质**与**采样剖面**两节？
+- [ ] 新属/新科是否给了 **ZooBank 登记号**（见 APP 条款）？
 ## 八、来源与可回查
 
 | 来源 | 提供什么 |

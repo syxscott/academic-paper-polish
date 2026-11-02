@@ -1,10 +1,10 @@
 ---
 name: academic-paper-polish
-description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。内置地学 SCI 写作与投稿的硬规则：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、图件设计体系（图序/五种原型/语义色字典/图注模板）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、配色方案、图序怎么排、图注怎么写、J. Micropalaeontology、JM、混淆矩阵画法、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选、微体古生物、放射虫、有孔虫、系统描述论文、图版 Plate、Micropaleontology、化石照片怎么排、introduction 怎么写、discussion 怎么写、论文结构怎么排、讨论部分怎么写。
+description: 学术论文写作、润色、改稿与投稿的全流程助手。10 个模块覆盖摘要、引言、文献综述、研究方法、结果、讨论、结论、期刊匹配与投稿、审稿意见回复、去 AI 化终稿润色。内置地学 SCI 写作与投稿的硬规则：期刊结构硬约束（GCA/ES&T/PPP 的 Results-Discussion 分离vs合并、有无独立结论段）、引言倒金字塔与 opening-resolution 对齐、引文密度表、讨论六步框架、结论局限句式、综述 18 步、图表硬参数（300dpi/<10MB/<180mm/禁对角线缩放）、图件设计体系（图序/五种原型/语义色字典/图注模板）、送审三段流程、参考文献五误区、审稿回复四要素。触发词：写论文、论文写作、论文润色、SCI、投稿、返修、审稿意见、文献综述怎么写、review paper、cover letter、期刊要求、GCA、ES&T、PPP、Earth-Science Reviews、制图规范、图件要求、配色方案、图序怎么排、图注怎么写、J. Micropalaeontology、JM、混淆矩阵画法、Highlights、行号、论文自查、降低AI率、去AI化、论文结构、文献检索、关键词怎么选、微体古生物、放射虫、有孔虫、系统描述论文、新种描述、Holotype、Paratype、类群怎么描述、图版 Plate、Micropaleontology、化石照片怎么排、introduction 怎么写、discussion 怎么写、论文结构怎么排、讨论部分怎么写。
 license: MIT
 metadata:
   author: syxscott
-  version: "2.12.0"
+  version: "2.13.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -255,6 +255,21 @@ Further research should focus on [方向].
 详见 `references/micropaleo-paper-patterns.md`（四类主题的章节骨架、图注面板字母体系、
 地质图制式、图版规则、前置要素实测覆盖率、交稿自查表）。
 
+### 🔴 系统描述类论文（写新种/新属）专章
+
+**这类论文的"讨论"不在 Discussion 段，而在每个类群块的 Remarks 里。**（22 篇精读实测）
+
+| 环节 | 实测写法 |
+|---|---|
+| 章节链 | INTRODUCTION → [Geological setting] → [Material & methods / **Repository**] → **Systematic description**（逐类群并列小节）→ [Discussion 常缺省] |
+| 类群块标签 | **A 完整型** synonym→diagnosis→description→remarks→occurrence／**B 标准型** material→description→occurrence→remarks→diagnosis→holotype／**C 度量型** remarks→description→material→holotype→paratype→remarks→occurrence |
+| **Remarks 四步** | **吻合**（fit well the descriptions）→ **差异点**（distinctive features are …）→ **分类处置**（must be placed in the Genus …）→ **与他人处理不同**（with which I do not agree） |
+| 必备 | **Holotype / Paratype**（新属还要 **Type Species**）、**Repository**（常独立成节）、**Occurrences**（逐产地） |
+| 图版说明 | **放大倍数制**（× 175：图号. 分类单元名 + 命名人 + 时代缩写 + 标本号 + (× N)）或**图版引用制**（Plate 3.1, figure 7） |
+| 命名 | 属级标题带命名人与年代（Genus X Author, 19xx）；种名斜体；记号 sp. nov. / cf. / aff. / ex gr. / emend. |
+
+详见 references/micropaleo-paper-patterns.md 第十章（含 13 条系统描述类交稿自查）。
+
 ### 🔴 本领域的 Introduction / Discussion 写法与通用模板不同
 
 > 🔴 **方法说明**：以下结论来自**逐篇读**（130 篇段落骨架 + 48 篇可读 Introduction + 22 篇可读 Discussion
@@ -324,7 +339,7 @@ Further research should focus on [方向].
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
 | `references/color-system.md` | ★ **配色系统与视觉编码** —— 对照冷/处理暖、色相编码主变量、连续色阶、红绿禁忌、灰度检验 |
 | `references/figure-design-system.md` | ★ **图件设计体系** —— 图序即论证顺序、五种图件原型、实测语义色字典、版式规范、图注模板、交稿自查表 |
-| `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、逐字精读的 Introduction/Discussion 写法（5 种引言模式 / 4 种讨论起手与收尾）、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
+| `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、逐字精读的 Introduction/Discussion 写法（5 种引言模式 / 4 种讨论起手与收尾）、**系统描述类专章（类群块模板 / Remarks 四步 / 图版两制式）**、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性）+ 官方原文速查 |
 | `references/multi-journal-style-guides.md` | ★ **10 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系 / JM）+ 横向对比与选刊建议 |
 | `references/literature-search.md` | 检索工具 + 关键词尺度 + 素材库积累 + review proposal |
