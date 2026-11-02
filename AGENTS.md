@@ -41,6 +41,8 @@ academic-paper-polish/
 │           ├── journal-constraints.md   # 期刊结构硬约束
 │           ├── figure-specs.md          # 图表硬参数
 │           ├── color-system.md          # 配色系统与视觉编码（对照冷暖/色相编码/灰度检验）
+│           ├── figure-design-system.md  # ★ 图件设计体系（图序/五种原型/语义色字典）
+│           ├── micropaleo-paper-patterns.md # ★ 微体古生物/放射虫论文模式（全文通读实证）
 │           ├── paleobiology-journal.md  # ★ Paleobiology 全刊规范（图件+文体+数据）
 │           ├── multi-journal-style-guides.md  # ★ 9 家期刊官方 Style Guide 汇总
 │           ├── literature-search.md     # 检索与素材积累
@@ -180,6 +182,9 @@ academic-paper-polish/
   **理由**：转述会丢限定词与强度词 —— 本仓库曾因此把 "Highlights … **encouraged**" 写成强制要求，
   并多写了一条官方并不存在的 "摘要必须单一段落"（两处均已在 v2.7.0 按原文修正）
 - 保持**中文为主、关键术语中英并列**的现状；英文版单独放 `docs/`
+- 🔴 **写"阅读量 / 样本量"必须写精确口径**：说"读了 N 篇"要区分是**骨架扫描**还是**全文通读**，
+  并给出正文字符量与抽取失败篇数。本仓库曾把"130 篇骨架扫描 + 引言只摘首句/目的句/末句"
+  写成"130 篇逐篇精读、48 篇引言逐段读"（v2.12.0），**已于 v2.14.0 作废并更正**。
 
 ### 内容来源（修改时可回查）
 
@@ -190,6 +195,7 @@ academic-paper-polish/
 | **ESR 官方 guide-for-authors**（2026-11-01 复核） | 收录边界、article types、前置要素、图件原表、References（author-date）—— **逐字英文原文** |
 | **Copernicus 平台投稿说明**（JM 共用） | 图件组成与体积、图例入图、Coblis 色觉、表格/地图/日期/附录条款 —— **逐字英文原文** |
 | **JM 蓝本论文**（Hayat et al. 2026, JM 45:95–116） | 14 张图的原型、实测语义色字典、版式与图注写法 —— 图注与正文原句见 `figure-design-system.md` |
+| **本地语料 `D:/数据集/PDF_Radiolaria` 的全文通读** | 微体古生物论文的 Introduction / Discussion / Conclusions 写法、类群块标签模板、Remarks 写法 —— 逐字原文与清单见 `skills/academic-paper-polish/references/micropaleo-paper-patterns.md` §九 / §十 |
 
 
 ---

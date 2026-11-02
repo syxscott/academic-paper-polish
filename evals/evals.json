@@ -1,7 +1,7 @@
 {
-  "version": "1.8.0",
+  "version": "1.9.0",
   "skill": "academic-paper-polish",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
   "grading": {
     "scale": "pass / partial / fail",
@@ -202,6 +202,26 @@
         "load": "references/micropaleo-paper-patterns.md",
         "must_mention": ["Holotype", "Repository", "Remarks", "Occurrences", "diagnosis", "description"],
         "must_not": ["只写独立 Discussion 段而不写 Remarks 块", "漏掉 Repository 存放机构", "编造样本量"]
+      }
+    },
+    {
+      "id": "R11-fulltext-honesty",
+      "module": "references/micropaleo-paper-patterns.md",
+      "prompt": "你们关于放射虫论文结构的结论，到底基于多少篇论文？给我准确的样本量和口径，别吹。",
+      "expect": {
+        "load": "references/micropaleo-paper-patterns.md",
+        "must_mention": ["130 篇", "17 篇", "21.6 万字符", "骨架扫描", "逐字原文"],
+        "must_not": ["用词频命中率代替对论证结构的判断", "把 130 篇骨架扫描说成 130 篇全文精读", "编造样本量"]
+      }
+    },
+    {
+      "id": "R12-fulltext-patterns",
+      "module": "references/micropaleo-paper-patterns.md",
+      "prompt": "引言结尾要不要列研究问题？讨论该怎么组织？描述一个新种时 Remarks 到底写什么？",
+      "expect": {
+        "load": "references/micropaleo-paper-patterns.md",
+        "must_mention": ["编号问句", "逐项对照", "待观察特征清单", "definition → range → origin", "Holotype"],
+        "must_not": ["编造样本量", "编造期刊要求"]
       }
     }
   ]

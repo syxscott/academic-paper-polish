@@ -238,16 +238,22 @@
 ## 九、🔴 论文整体结构：Introduction 怎么写、Discussion 怎么讨论
 
 > **本节的依据（三层，逐层加深）**：
-> ① **130 篇逐篇读段落骨架**（分层抽样；英文 110、中文 18、俄文 2）；
-> ② 其中 **48 篇有可读的 Introduction、22 篇有可读的 Discussion**，逐段读；
-> ③ **5 篇 Introduction 全文 + 1 篇 Discussion 全文 + RadSS 全文**通读。
+> ① **第一轮＝骨架扫描（只读结构，不读论证）**：130 篇（分层抽样；英文 110、中文 18、俄文 2）
+>    逐篇抽出章节名、段落数、图注格式。**这一步不构成"逐篇精读"。**
+> ② **第二轮＝全文通读（v2.14.0）**：去重后 **17 篇**读通了 **Introduction / Discussion /
+>    Conclusions 的连续散文全文**，合计 **约 21.6 万字符**（引言 16 篇 12.5 万、讨论 7 篇 5.0 万、
+>    结论 6 篇 4.2 万）。另有 1 篇（Dumitrica 1983 *Suttonium*）**PDF 文本层抽取失败**，只出脚注，不计入。
+> ③ ⚠️ **v2.12.0 的"48 篇可读引言、22 篇可读讨论，逐段读"这一说法已作废**：那一轮的抽取物里，
+>    引言**只摘了首句、目的句、末句三处**，不构成通读。
+>    **本轮新增的每一条结论都注明论文名与逐字原文**；旧结论若未在本轮 17 篇内复核，
+>    其例句**只代表"该句在语料中出现过"，不代表"已通读该文"**。
 > 🔴 **本节不给出任何"命中率"** —— 词频只能证明"某个词出现过"，
 > 不能证明"作者在这里做了什么论证动作"。所有结论都附**逐字原文**供复核。
 > ⚠️ **段数用缩进重建**，对无缩进排版（老扫描件、中文刊物）会偏大，故只作量级参考。
 
-### 9.1 Introduction：**没有统一模板，实测九类目的句句式并存**
+### 9.1 Introduction：**没有统一模板，实测十类目的句句式并存**
 
-#### 9.1.1 目的句的九类句式（逐字，语料原句）
+#### 9.1.1 目的句的十类句式（逐字，语料原句）
 
 | # | 句式 | 逐字例句 |
 |---|---|---|
@@ -260,8 +266,13 @@
 | 7 | **We present here / Here we present / Here, we give** | "We present here the occurrence and probable mechanism of formation of volcanic magnetite spherules…" ／ "Here, we give the first description of the only known Jurassic hydrothermal vent fossils…" |
 | 8 | 🔴 **Therefore, …（由前文推理得出目的）** | "**Therefore, in the present paper we recognize** the Cordevolian and Julian as separate and roughly equal substages of the Carnian stage." ／ "**Therefore, the objective of the present study is to propose a** …" |
 | 9 | 🔴 **否定式：用"不做什么"划定边界** | "**The goal of this project has not been to attempt to formally revise the entire corpus of Cenozoic radiolarian taxonomy**, an enormous task for which we are neither fully qualified, nor have the resources to achieve." |
+| 10 | 🔴 **Our study focused on …**（先讲缺口与重要性，再落到"本文聚焦"） | "**Our study focused on the age determination of the Zongzhuo Formation by microfossil.**"（Li et al. 2009） |
 
-🔴 **可直接套用的三条硬规则**（从 130 篇读出来的）：
+🔴 **句式 10 前面通常紧跟"缺口 + 重要性"两句**（Li et al. 2009 逐字）：
+> "Previous studies contributed it to Cretaceous Zongzhuo Formation, **but without believable fossil evidence** (TBGMR, 1983; TBGMR. 1993)."
+> "… **is of critical importance to understand the original mechanism of CORBs in this area.**"
+
+🔴 **可直接套用的三条硬规则**（第一轮语料 + 本轮 17 篇全文通读）：
 1. **目的句一定要带具体对象**（哪个层、哪个区、哪个类群、哪个数据集）——
    语料里没有一条目的句是空泛的 "to study radiolarians"
 2. **目的句可以只是推导的落点**（句式 8）：先把推理铺好，再用 "Therefore" 引出本文主张，
@@ -276,7 +287,7 @@
 > "In addition to geochemical data, we present radiolarian biostratigraphic data, some paleomagnetic data, and Ar-Ar age analyses…"（Osozawa et al. 2012）
 > "The purpose of this paper is to comment on the use of Radiolaria in dating deep-sea sediments and **to complement a recent review** of radiolarian palaeoenvironmental applications (Haslett, 2002)."（Haslett 2004）
 
-#### 9.1.2 五种引言结构（每种附逐字原文）
+#### 9.1.2 八种引言结构（每种附逐字原文）
 
 **A 缺口→目的式**（新发现、系统描述最常见）—— Little et al. 1999 (*Geology*)，**引言只有一段**：
 > "Although more than 50 modern vent fields with flourishing communities are known, the known fossil record of vent fauna is sparse: **only 19 occurrences in the entire Phanerozoic**—three from the Silurian, six from the Devonian, one from the Jurassic (described here)…"
@@ -309,17 +320,57 @@
 > 铺垫三段后："Sponge spicules … are readily fossilized … making them a common component of marine sedimentary rocks throughout the Phanerozoic. **In this study, we report on** a siliceous microsclere assemblage from the mid-Early Miocene Dos Bocas Formation of Ecuador."
 > 然后**另起一段**只写一句新意："**This assemblage is of particular interest as it comprises species previously unknown in the fossil record.**"
 
-#### 9.1.3 引言长度的实测（48 篇可读）
+**F 地质背景前置式**（区域地质 / 构造—地层工作）—— Ohba & Adachi 1995：
+> ① 区域构造开篇："The southeastern part of the Shima Peninsula, central Japan, consists of the Chichibu and Shimanto terranes; the Butsuzo Tectonic Line (BTL in Fig. 1) separates the Chichibu terrane from the Shimanto terrane."
+> ② 前人缺口："Up to now, however, **no detailed geological, paleontological and sedimentological studies have been done on** the sedimentary complex of these islands, **except for only a few reports on the occurrence of fusulinid and radiolarian fossils** (Yamagiwa and Ishii, 1958, Yamagiwa and Saka, 1967, Nakaseko and Nishimura, 1979, Sugano et al., 1980 )."
+> ③ 本文做法："**We thus made a detailed field investigation on the sedimentary complex** exposed continuously in the seashore of these islands, together with the sedimentary complex in the adjoining Shima and Atsumi Peninsulas."
+> ④ 本文目的："**In this paper, we present fossil data on** Permian, Triassic and Jurassic radiolarians obtained from Omura and Ogura Islands and **discuss the tectonic framework** of these islands."
 
-| 指标 | 实测 |
+🔴 **顺序＝背景 → 缺口 → 做法 → 目的 → 再展开详细地质背景**；
+本文引言 7,557 字符里**大半是地层与岩石描述**——背景前置型允许地质内容占满引言。
+
+**G 综述—反例式**（机制 / 生理 / 生物力学这类"找反例"的论文）—— Febvre 1981：
+> "Recent cytological and biochemical descriptions of motility processes among unicellular [protozoa] have emphasized the ubiquity of both actomyosin and tubulin-dynein systems and the evidence that motile forces are generated by the sliding of these microfibrillar proteins (Bloodgood, 1975; Langford and Inoue, 1979; Mooseker and Tilney, 1973; Peltz et al., 1981; Satir, 1968; Satir, 1974; Taylor and Condelis, 1979; Warner, 1976; Woodrum and Linck, 1980). **But it now clear that other mechanisms of motility not based on sliding exist in protozoa**, as seen in the active bendings of the costa of some trichomonad flagellates (Amos et al., 1979), in the contraction-relaxation cycles of the spasmoneme of the peritrich ciliates (Amos, 1972; Routledge et al., 1976), and in the rowing beats of the axopods of the heliozoan Sticholonche zanclea (Cachon et al., 1977)."
+
+🔴 **先综述主流解释，再用 "But …" 转折提反例，反例一次给三条并各带引用**，然后才进入本文对象。
+这比"缺口→目的"更硬：缺口不是"没人做过"，而是"已有解释不成立"。
+
+**H 编号问题式**（方法 / 形态计量 / 定量类）—— Danelian & MacLeod 2019：
+> "More particularly, in this investigation we focused on testing the following questions.
+> **1. Can the test shapes of Podocyrtis mitra and P. sinuosa populations, as identified by taxonomic experts, be distinguished objectively and consistently from one another?
+> 2. What regions of the test are important for making distinctions between these two species?**"
+
+🔴 **引言末尾用编号问句列出研究问题，结论段再按同样的编号逐条回答**（见 §9.3.1）。
+
+#### 9.1.3 引言长度的实测（本轮 17 篇全文通读，口径＝**引言正文字符数**）
+
+| 论文（引言全文已通读） | 引言正文字符数 |
 |---|---|
-| 段数 | **最少 2 段，最多 108 段**（中位约 43 段；⚠️ 缩进重建会偏大，仅作量级） |
-| 短引言（2–6 段） | 多见于**数据报告、短通信**（如 ODP Data Report、引言仅 1–5 段） |
-| 长引言（60+ 段） | 多见于**系统描述、综述、专著章节** |
+| Li et al. 2009, *Acta Geol. Sin.* | 1,712 |
+| Febvre 1981, *J. Protozool.* | 2,990 |
+| Haslett 2004, *J. Micropaleontology* | 5,878 |
+| Nakaseko & Nishimura 1972 | 5,963 |
+| Kashiwagi & Isaji 2015 | 6,616 |
+| Nishizono & Yonemitsu 2020, *GSJ Bulletin* | 7,025 |
+| Shen et al. 1996 | 7,473 |
+| Ohba & Adachi 1995 | 7,557 |
+| Feng et al. 2007b, *Ecol. Geol. Helv.* | 7,567 |
+| Danelian & MacLeod 2019, *Palaeontological Research* | 8,826 |
+| Noble et al. 2017, *Geodiversitas* | 9,336 |
+| Caridroit et al. 1999 | 9,911 |
+| Goll 1978 | 10,075 |
+| Aubry & Sanfilippo 1999, *Micropaleontology* | 10,649 |
+| Qu et al. 2020, *Marine Micropaleontology* | 11,152 |
+| Yoshino et al. 2020, *Revue de micropaléontologie* | 12,184 |
 
+🔴 **实测区间 1.7k–12.2k 字符（约 340–2,450 词），中位约 7.6k 字符。**
+最短的一篇（1,712 字符）是中文刊，结构只有"缺口 + 重要性 + 一句目的"；
+最长的一篇（12,184 字符）是方法论评述型，正文有一半在讲模型构造与局限。
 🔴 **所以：本领域不存在"引言该写多长"的规范**，别套通用字数。
+⚠️ 第一轮骨架扫描另给出 48 篇的**段落数**（2–108 段），但该计数来自缩进重建、
+对无缩进排版会偏大，**只作量级参考**；**以上表的正文字符数为准**。
 
-#### 9.1.4 缺口的四种写法（130 篇读出来的）
+#### 9.1.4 缺口的四种写法（语料逐字）
 
 | 写法 | 逐字例句 |
 |---|---|
@@ -330,7 +381,7 @@
 
 ### 9.2 Discussion：**起手与收尾各有多种，逐字给出**
 
-#### 9.2.1 十一种起手（语料逐字）
+#### 9.2.1 十三种起手（语料逐字）
 
 | 起手 | 逐字例句 |
 |---|---|
@@ -345,6 +396,11 @@
 | ⑨ **数据 → 推断一句式** | "The studied radiolarian assemblage is early or early middle Albian in age and was collected approximately 15 m below the occurrence of keeled globotruncanids indicating a late middle Albian, or younger, age." |
 | ⑩ **结果陈述型（最朴素）** | "Acantharian abundances were relatively low at the VERTEX seasonal station (33°N, 139°W)." |
 | ⑪ **自承不完整型** | "The San Agustine and San Franciso de Paula sections **complement each other for a better -yet incomplete-** representation of the uppermost Paleocene-lower Eocene interval." |
+| ⑫ **竞争假说二选一型** | "**It is uncertain whether** increased levels of faunal and floral turnover in the uppermost Maastrichtian are sampling artefacts (e.g. a Signor–Lipps effect), **or** a response to environmental changes (e.g. sea-level fluctuations, increased rates of volcanism)…"（MacLeod et al. 1997） |
+| ⑬ **已知事实 + 从未有人做过型** | "The conglomerate beds in the Ashikajima Formation include abundant chert gravels, **although there has been no examination on radiolarians until our research**."（Kashiwagi & Isaji 2015） |
+
+🔴 起手 ⑫ 把**竞争假说摆成二选一**，后文逐个评述；⑬ 先摆一个公认事实，
+再用"直到我们之前没人做过"立住空白——比空泛的"remains unclear"硬得多。
 
 🔴 **最值得抄的两种**：② **用标志性种把时代/环境钉死**（地层学论文的看家本领）；
 ④ **"cannot be explained simply by …, because …"**（先排除简单解释，再给机制）。
@@ -359,7 +415,7 @@ Robinson & Haslett 1995 全文的骨架：
 🔴 **写法模板**：把本文的组合**按形态类型 / 属种逐项列出**，逐项对应已有组合，
 最后用"只差 X"收口。**这是本领域讨论与通用 SCI 模板最大的差别。**
 
-#### 9.2.3 七种收尾（语料逐字）
+#### 9.2.3 八种收尾（语料逐字）
 
 | 收尾 | 逐字例句 |
 |---|---|
@@ -370,13 +426,35 @@ Robinson & Haslett 1995 全文的骨架：
 | ⑤ **审慎推测** | "**One might indeed speculate that** the decline of siliceous sponges in platform environments was a consequence of decreasing silica concentrations in surface ocean waters concomitant with the ecological expansion of planktonic diatoms…" |
 | ⑥ **否定 / 限定收口** | "**Not all areas changed their tectonic setting, however,** as the oceanic plate stratigraphy indicates continuous subduction throughout the …" |
 | ⑦ **结论重述** | "We conclude that the ability to deposit SrSO4 is a less reliable phylogenetic marker than the ability to construct elaborate skeletal architecture using SrSO4." |
+| ⑧ **方法缺陷自陈 + 反常归因型** | "On the other hand, **the notable demerit of this model is** the number of units that need to be used." ／ "In additions, **we also could not comment on the biological significances** of the primary spines and the vertex having a degree of four."（Yoshino et al. 2020） |
 
-🔴 **七种收尾没有一种是"未来展望 / future research will…"** ——
-本领域讨论段的尾声是**限定、归因、推测或地质陈述**。
+🔴 **八种收尾没有一种是"未来展望 / future research will…"**——
+本领域讨论段的尾声是**限定、归因、推测、地质陈述或方法自陈**。
+🔴 收尾 ⑧ 的收口句值得单抄：**把反常现象判为"偶发 + 标本本身不规则"**，而不是展望：
+> "For the present study, **we considered that the observation of the vertex having a degree of four was a rare case and was also irrelevant** because all the specimens seemed to include some kind of irregularity."
+
+#### 9.2.4 🔴 三种可直接套用的讨论骨架（逐字拼装）
+
+**骨架甲：逐项对照**（本领域最常见，见 §9.2.2）
+
+**骨架乙：反常 → 可能原因 → 坦承未决**（Qu et al. 2020 逐字）
+> ① 摆出与预期不符的事实："The NECB fauna contained fewer species than the fauna of other regions, **which did not conform to the classical notion that species richness decreases along latitude gradients** in both the water column and surface sediments (Boltovskoy and Correa, 2017)."
+> ② 明确这是"意外"："**This unexpected scenario may have been induced by the following causes.**"
+> ③ 逐条列可能原因，每条都挂前人文献："**Primarily**, the fauna in the NECB, where the NEC bifurcates into the Kuroshio and Mindanao currents, is likely to show distinct species compositions. Boltovskoy (1985) found that the abundance and diversity of living radiolarians dropped dramatically at the boundary of different currents." ／ "In addition, extremely low values of chlorophyll a concentration were detected in the NECB (Fig. 2)."
+> ④ **坦承未决并指名缺哪类数据**："The exact reasons for the lower abundance and diversity **remain unknown and more information (plankton and sediment trap data) are needed** to elucidate this case."
+
+🔴 第 ④ 步是硬要求：**说清"还缺哪类数据"**，不要只写"有待进一步研究"。
+
+**骨架丙：已有说法 → 本文新证据 → 结论**（Kashiwagi & Isaji 2015 逐字）
+> ① 前人说法（并点明它只基于间接证据）："Furthermore it has been suggested that the origin of chert gravels in the Ashikajima Formation was the Jurassic accretionary complexes **only due to lithological similarities of cherts** (e.g., Matsubara et al., 2005)."
+> ② 本文证据："Here we discuss the provenances of chert gravels based on **newly-extracted radiolarians which show the Middle Permian (middle Guadalupian) and the Middle Jurassic (late Bathonian to early Callovian)** respectively."
+> ③ 结论句直接用 must："**Chert gravels in the Ashikajima Formation must be derived from the accretionary complexes** based on the common lithological features."
+
+🔴 注意 ② 与 ③ **贴在一起**（证据后立刻给结论），不像通用 SCI 模板那样把结论推到最后。
 
 ### 9.3 章节顺序与**中日文论文的章节对应词**
 
-从 PDF 书签与 130 篇通读看到的顺序：
+从 PDF 书签、骨架扫描与本轮 17 篇全文通读看到的顺序：
 
 | 主题 | 典型顺序 |
 |---|---|
@@ -403,6 +481,21 @@ Robinson & Haslett 1995 全文的骨架：
 🔴 **中文期刊论文常常没有"引言"这一节**——直接以"地质概况"起头，
 写中文稿时不要硬套英文的 Introduction/Geological setting 两段式。
 
+#### 9.3.1 🔴 引言的编号问题 ↔ 结论的编号答案，一一对应
+
+Danelian & MacLeod 2019 是最干净的范例（引言与结论**同编号、同顺序、动词形态镜像**）：
+
+| 引言末尾（提问） | 结论（回答） |
+|---|---|
+| "1. Can the test shapes of *Podocyrtis mitra* and *P. sinuosa* populations, as identified by taxonomic experts, be distinguished objectively and consistently from one another?" | "1. The test shapes of *Podocyrtis mitra* and *P. sinuosa* **can be distinguished objectively and consistently** from one another. All the results of geometric morphometric analyses (landmark, landmark-constrained outlines) support an interpretation of statistically significant species-specific shape differences." |
+| "2. What regions of the test are important for making distinctions between these two species?" | "2. Overall test shape, abdomen shape and/or thorax shape **can all be used as a basis for the identification** of these two species. While abdomen shape appears to be slightly more reliable than overall test shape, the results obtained for all three datasets are very similar." |
+
+🔴 **编号要一致、顺序要一致、动词形态要镜像**（Can → can；What regions … are → … can be used）。
+🔴 中文刊也这么做：Li et al. 2009 的 "5 Conclusions" 是**三条编号句，每条一句、关键词在句首**：
+> "The Zongzhuo Formation outcropped in Tianba, Kangrnar, southern Tibet **are divisible lithologically into two units**: a lower Red Bed Member … and an Upper Unit …"
+> "The radiolarians retrieved from the Zongzhuo Formation of Tianba **indicate a late Cretaceous Campanian-Maastrichtian age**."
+> "The new radiolarian data from the Zongzhuo Formation of Tianba **provide a local basis to correlate** these deposits with other regions of the Tethyan Himalaya."
+
 ### 9.4 交稿前自查（结构部分）
 
 - [ ] 引言首句是**事实**，不是"本文要研究 X"？
@@ -416,11 +509,16 @@ Robinson & Haslett 1995 全文的骨架：
 - [ ] 推论与证据之间是 **"Because …, we propose that …"** 的显式焊合？
 - [ ] 讨论收尾是**让步 / 需进一步研究 / 归因 / 审慎推测 / 地层陈述 / 否定限定 / 结论重述**之一，而不是"未来展望"？
 - [ ] 材料或数据局限**在引言里就坦陈**？
+- [ ] 引言末尾是否用**编号问句**列出研究问题，并在结论里**按同编号逐条回答**？
+- [ ] 讨论是否交代了"**前人说法 vs 本文的直接证据**"（骨架丙），而不是只复述文献？
+- [ ] 讨论若以"仍未决"收尾，是否**指名缺哪类数据**（骨架乙第 ④ 步）？
 - [ ] **中文稿**：章节名用"提要 / 地质概况 / 放射虫化石 / 考察"这些对应词了吗？
 ## 十、🔴 系统描述类论文专章（Systematic Description）
 
 > **本节依据**：从 346 篇分层抽样中筛出**系统描述类候选 35 篇**，其中 **22 篇逐篇精读**
-> （含全文段落、类群块标签顺序、系统描述段正文、讨论段正文）。
+> （含全文段落、类群块标签顺序、系统描述段正文、讨论段正文），
+> 合计 **约 11.96 万字符正文**（每篇中位 4,139 字符）；其中 **15/22 篇**抽出整段讨论、
+> **11/22 篇**抽出整段系统描述正文。v2.14.0 另有 **17 篇全文通读**与之交叉验证（见 §九）。
 > 语料包含 *Journal of Micropaleontology*、*Palaeontological Research*、
 > *Revue de micropaléontologie*、*Micropaleontology*、*Palaeontological Journal*、
 > *Geological Survey of Canada / USGS Professional Paper* 等多种刊式。
@@ -436,12 +534,23 @@ Robinson & Haslett 1995 全文的骨架：
 | **② 独立的跨类群讨论段** | Renaudie & Lazarus 2016；Afanasieva & Amon 2011 | 把本系列多个新种**汇成数量总结**，再指出更高层级的问题（属级分类需重审） |
 | **③ 形态计量 / 方法类论文的讨论** | Danelian & MacLeod 2019 | 先引前人原句指出传统描述的局限 → 说明本文方法如何扩展 → 结果 → 承认方法的误差来源 |
 
-**Remarks 块的逐字写法**（Blome et al. 1986, USGS Professional Paper 1435）：
+🔴 **Remarks 不是只有一种写法**，实测三种模板。
+
+**模板一：四步（吻合 → 差异 → 处置 → 与他人不同）**——Blome et al. 1986, USGS Professional Paper 1435：
 > "**Remarks.—**Details of the specimen fit well the descriptions given by both Frech and Smith. Distinctive features are in the septal arrangement and columnella. Based on the study of Melnikova (1968), Frech's species must be placed in the Genus *Cyathocoenia* Duncan.
 > **Occurrences.—**Wallowa Mountains (Eagle Creek); Lake Shasta, California; Pilot Mountains, Nevada; Gravina Island, Alaska; …"
 
-🔴 **Remarks 的四步**：**吻合**（fit well the descriptions）→ **差异点**（distinctive features are …）→
-**分类处置**（must be placed in the Genus …）→ **与他人处理的不同**（with which I do not agree）。
+**模板二：五步（判定同义 → 原作者的区分点 → 差异归因 → 模式标本复核 → 结论）**——Noble et al. 2017（*Geodiversitas*）：
+> "Remarks **Huasha is considered a junior synonym to** Lapidopiscum Deflandre 1958. **Huasha was originally distinguished from** Lapidopiscum by having a perforate lamellar shell rather than an imperforate one, by having well developed i.v. and b.v. extra-triangular extensions, and a longer shell (Won 1998). **The difference in lamellar shell structure is a function of preservation and perception of the original authors.** Examination of Lapidopiscum **from the type material** shows that there is no difference in the structure of the lamellar wall. **Differences in the length of the extra-triangular extensions and of the shell as a whole are considered a species level distinction and does not warrant the designation of a new genus.**"
+
+🔴 第 ③ 步"**差异归因**"是同义判定的关键：把差异说成"保存 + 认知"问题；
+第 ④ 步必须回到**模式标本**复核；第 ⑤ 步才敢下"属级不成立"的结论。
+
+**模板三：四步（开放命名下的"待观察特征清单"）**——Kashiwagi & Isaji 2015：
+> "The illustrated specimens resemble *Striatojaponocapsa plicarem* (Yao), *Striatojaponocapsa conexa* (Matsuoka), and/or *Striatojaponocapsa synconexa* O'Dogherty, Gorican and Dumitrica in drop-like outline of test with longitudinal costae through their overall tests. **However more morphological characteristics are necessary for specific identification; whether transverse ridges between longitudinal costae exist or not, development degree of basal appendage, and whether peripheral convex ridge exist or not** around circular depression on the distal portion (Yao, 1979; Matsuoka, 1983; O'Dogherty et al., 2006; Hatakeda et al., 2007). **Due to poor preservation, we find it difficult to observe above-mentioned morphological features.**"
+
+🔴 定种不足时不要硬给种名：**列出相似种 → 逐条列出"还缺哪些特征" → 给前人出处 → 归因保存差**。
+"还缺哪些特征"要具体到形态部件（横脊 / 基部附肢 / 周边凸脊），不能写 "more data needed"。
 
 **方法类论文的讨论骨架**（Danelian & MacLeod 2019，逐字）：
 > 引前人原句并给页码："as stressed by Sanfilippo and Riedel (1990, p. 347), '**conventional descriptions and diagrams are unable to accommodate all the variation and all the intermediate forms included in each species at each level in the continuum**.'"
@@ -452,19 +561,30 @@ Robinson & Haslett 1995 全文的骨架：
 
 ### 10.2 🔴 类群块（taxon block）的标签模板
 
-22 篇里逐篇抽出"类群块内的小标题出现顺序"，可归并为**三种主模板**：
+22 篇里逐篇抽出"类群块内的小标题出现顺序"，加上 v2.14.0 通读复核的 3 篇，可归并为**五种主模板**
+（**不是穷举** —— 同一篇里不同属也常换模板）：
 
 | 模板 | 标签顺序 | 出处 |
 |---|---|---|
 | **A 完整型** | **synonym → diagnosis → description → remarks → occurrence** | Nakagawa & Wakita 2020；Ito 2020 *Longtanella* |
 | **B 标准型** | **material → description → occurrence → remarks → diagnosis → holotype** | Renaudie & Lazarus 2016（60 个标签，重复单元最规整） |
 | **C 度量型** | **remarks → description → material → holotype → paratype → remarks → occurrence** | Dumitrica 2020（*Revue de micropaléontologie*） |
+| **D 度量短文型** | **description → measurements → occurrences → remarks** | Nakaseko & Nishimura 1972（逐字：`Description:-` → `Measurements:-` → `Occurrences:-` → `Remarks:-`） |
+| **E 目录式（catalogue）型** | **type species → original diagnosis → diagnosis (English translation) → age and location of type material → taxon code → status → diagnosis → remarks** | Noble et al. 2017（*Geodiversitas*） |
+
+🔴 **属 / 目 / 科级块的标签与种级块不同**，实测三种：
+
+| 层级 | 标签顺序 | 出处（逐字） |
+|---|---|---|
+| **目级（新目）** | **definition → range → origin** | Caridroit et al. 1999：`Order Latentifistularia (n.o.)` → `Definition.` → `Range.` → `Origin.` |
+| **科级** | **type genus → diagnosis → occurrence** | Feng et al. 2007b：`Family Entactiniidae RIEDEL 1967` → `Type genus. – Entactinia RIEDEL 1967` → `Diagnosis. –` → `Occurrence. –` |
+| **种级** | **type species → diagnosis → description → etymology → type → measurements (µm) → comparison** | Feng et al. 2007b：`Genus Megaporus FENG new genus` → `Type species. – Megaporus jini FENG n. sp.` → `Diagnosis. –` → `Description. –` → `Etymology. –` → `Type. – Holotype, Plate 1 Figure 14, sample C6-3, catalog number X0301-14.` → `Measurements (µm). – Based on 24 specimens…` |
 
 **必备标签**：
 - **Holotype / Paratype**（正模/副模）—— 新种、新属必给
-- **Repository**（存放机构）—— 常**单列一节**放在系统描述之前
-  > "**Repository.—**The specimens used in this study are deposited in the National Museum of Nature and Science, Japan."（Nakagawa & Wakita 2020）
-  > "All specimens described in this paper are stored in the Geological Museum of the Geological Survey of Japan, AIST, Tsukuba, Japan."（Ito 2020）
+- **Repository**（存放机构）—— **两种放法**：① **单列一节**放在系统描述之前；② **写在系统描述段的第一句**
+  > 放法①："**Repository.—**The specimens used in this study are deposited in the National Museum of Nature and Science, Japan."（Nakagawa & Wakita 2020）
+  > 放法②："**All specimens described in this paper are deposited in** Museum of China University of Geosciences, Wuhan, People's Republic China."（Feng et al. 2007b，紧接 "7 Systematic Paleontology" 标题之后）
 - **Occurrence(s)**（产地清单）—— 逐个产地列出，常带州/国
 - **Age / Stratigraphy / Horizon / Locality** —— 时代与层位
 - **Comparison / Differential diagnosis** —— 与近缘种对比
@@ -499,6 +619,11 @@ Robinson & Haslett 1995 全文的骨架：
 
 🔴 **系统描述段内的前人引用三要素**：命名人 + 年 + pl.X, figs. Y-Z, p.N
 🔴 **正文引用图版用 "pl." 缩写，图版说明里用 "Plate" 全称**
+🔴 **图号可带小数点（figs. 4.1–4.6），也可不带（figs. 8–12）**，同一篇里两种并存（Kashiwagi & Isaji 2015 逐字）：
+> "Stichocapsa japonica Yao – **Yao, 1979, pl. 6, figs. 8–12, pl. 7, figs. 1–15**"
+> "Williriedellum dierschei Suzuki and Gawlick – **Gawlick et al., 2004, figs. 4.1–4.6**"
+🔴 **把前人的度量值直接搬进 Remarks 做对比**，是这套写法的隐藏规则（Kashiwagi & Isaji 2015 逐字）：
+> "Also our specimens are **not inconsistent in test size to those of** *Williriedellum dierschei* (Gawlick et al., 2004; **total height=100–112 μm and maximum width of test=91–105 μm**)."
 
 ### 10.5 分类学记号与命名格式（22 篇实测）
 
@@ -536,6 +661,10 @@ Robinson & Haslett 1995 全文的骨架：
 - [ ] 讨论是靠 **Remarks 块**承担的？若另设 Discussion，是否做了**跨类群总结**（数量 + 出处 + 与前人对照）？
 - [ ] 地质背景是否分成了**区域地质**与**采样剖面**两节？
 - [ ] 新属/新科是否给了 **ZooBank 登记号**（见 APP 条款）？
+- [ ] 类群块用的是哪种模板（A–E）？**属 / 目 / 科级块的标签与种级不同**（目级 definition–range–origin；科级 type genus–diagnosis–occurrence）？
+- [ ] Remarks 用的是哪种模板（四步 / 同义五步 / 待观察特征清单）？**定种不足时列的是具体形态部件**，不是 "more data needed"？
+- [ ] Repository 用的是**单列一节**，还是**写在系统描述段第一句**？
+- [ ] Remarks 里搬了前人的**度量数值**做对比（total height=… / maximum width of test=…）？
 ## 八、来源与可回查
 
 | 来源 | 提供什么 |
@@ -546,6 +675,27 @@ Robinson & Haslett 1995 全文的骨架：
 | Biard et al. 2022, *Environ Microbiol* | 彩色系统树（灰条外群 / 灰色分组框 / "?" 不支持节点）、Box 1 侧栏、面板级引用 |
 | Adl et al. 2019, *J. Eukaryot Microbiol.* | 分类学论文把"分类"写成**编号命题**（(1)…(7)）的写法 |
 | APP `instruction.html`、PE `contributor instructions`（见 `multi-journal-style-guides.md`） | 图注必含 authority/date/age/locality；文件名 ISO 9660 |
+
+| **本轮 17 篇全文通读**（v2.14.0，≈21.6 万字符） | §九 / §十 新增结论的**唯一**来源，逐字例句全部可回查 |
+
+### 本轮（v2.14.0）全文通读的 17 篇清单
+
+**引言全文 16 篇**（按引言正文字符数排序）：Li et al. 2009（*Acta Geol. Sin.*）·
+Febvre 1981（*J. Protozool.*）· Haslett 2004（*J. Micropaleontology*）·
+Nakaseko & Nishimura 1972 · Kashiwagi & Isaji 2015 ·
+Nishizono & Yonemitsu 2020（*GSJ Bulletin*）· Shen et al. 1996 · Ohba & Adachi 1995 ·
+Feng et al. 2007b（*Ecol. Geol. Helv.*）· Danelian & MacLeod 2019（*Palaeontological Research*）·
+Noble et al. 2017（*Geodiversitas*）· Caridroit et al. 1999 · Goll 1978 ·
+Aubry & Sanfilippo 1999（*Micropaleontology*）· Qu et al. 2020（*Marine Micropaleontology*）·
+Yoshino et al. 2020（*Revue de micropaléontologie*）
+
+**讨论全文 7 篇**：Yoshino et al. 2020 · Aubry & Sanfilippo 1999 · MacLeod et al. 1997（K–T）·
+Danelian & MacLeod 2019 · Qu et al. 2020 · Kashiwagi & Isaji 2015 · Li et al. 2009
+
+**结论全文 6 篇**：Haslett 2004 · Nishizono & Yonemitsu 2020 · Danelian & MacLeod 2019 ·
+Qu et al. 2020 · Shen et al. 1996 · Li et al. 2009
+
+⚠️ **抽取失败 1 篇（不计入任何结论）**：Dumitrica 1983 *Suttonium* —— PDF 文本层只出脚注。
 
 ⚠️ **Micropaleontology 的官方作者指南页受 cookie 墙拦截**，本文件关于该刊的证据
 全部来自**已刊论文本身**（属一手出版物证据），**不是官方指南原文**；
