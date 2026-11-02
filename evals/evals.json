@@ -1,5 +1,5 @@
 {
-  "version": "1.9.0",
+  "version": "2.0.0",
   "skill": "academic-paper-polish",
   "updated": "2026-11-02",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
@@ -210,7 +210,7 @@
       "prompt": "你们关于放射虫论文结构的结论，到底基于多少篇论文？给我准确的样本量和口径，别吹。",
       "expect": {
         "load": "references/micropaleo-paper-patterns.md",
-        "must_mention": ["130 篇", "17 篇", "21.6 万字符", "骨架扫描", "逐字原文"],
+        "must_mention": ["181 篇", "164 篇", "570 万字符", "分层随机", "不按文件大小排序", "逐字原文"],
         "must_not": ["用词频命中率代替对论证结构的判断", "把 130 篇骨架扫描说成 130 篇全文精读", "编造样本量"]
       }
     },
@@ -222,6 +222,26 @@
         "load": "references/micropaleo-paper-patterns.md",
         "must_mention": ["编号问句", "逐项对照", "待观察特征清单", "definition → range → origin", "Holotype"],
         "must_not": ["编造样本量", "编造期刊要求"]
+      }
+    },
+    {
+      "id": "R13-figure-conventions",
+      "module": "references/figure-conventions-evidence.md",
+      "prompt": "放射虫论文的图版照片，该画比例尺还是写放大倍数？不同期刊一样吗？图注里的符号怎么解释？",
+      "expect": {
+        "load": "references/figure-conventions-evidence.md",
+        "must_mention": ["按刊分", "比例尺", "放大倍数", "图注前缀", "标本号"],
+        "must_not": ["全领域统一用比例尺", "编造某期刊的硬性规定"]
+      }
+    },
+    {
+      "id": "R14-fulltext-evidence",
+      "module": "references/fulltext-reading-evidence.md",
+      "prompt": "你们说讨论要按时间段分四拍、结论有两种形态，这些结论基于多少篇全文？样本是怎么抽的？",
+      "expect": {
+        "load": "references/fulltext-reading-evidence.md",
+        "must_mention": ["分层随机", "不按文件大小排序", "四拍", "两种形态", "回源核对"],
+        "must_not": ["130 篇逐篇读段落骨架", "用命中率代替阅读"]
       }
     }
   ]

@@ -42,6 +42,8 @@ academic-paper-polish/
 │           ├── figure-specs.md          # 图表硬参数
 │           ├── color-system.md          # 配色系统与视觉编码（对照冷暖/色相编码/灰度检验）
 │           ├── figure-design-system.md  # ★ 图件设计体系（图序/五种原型/语义色字典）
+│           ├── figure-conventions-evidence.md  # ★ 图件制图实证（449 张渲染图实看：比例尺 vs 放大倍数按刊分、图注前缀多语种、图版四制式、表格表注符号体系）
+│           ├── fulltext-reading-evidence.md     # ★ 全文逐字精读实证（181 篇分层随机样本：章节链五类骨架、Discussion 四拍、Conclusion 两种形态、短篇三种讨论形态）
 │           ├── micropaleo-paper-patterns.md # ★ 微体古生物/放射虫论文模式（全文通读实证）
 │           ├── paleobiology-journal.md  # ★ Paleobiology 全刊规范（图件+文体+数据）
 │           ├── multi-journal-style-guides.md  # ★ 9 家期刊官方 Style Guide 汇总
@@ -185,6 +187,9 @@ academic-paper-polish/
 - 🔴 **写"阅读量 / 样本量"必须写精确口径**：说"读了 N 篇"要区分是**骨架扫描**还是**全文通读**，
   并给出正文字符量与抽取失败篇数。本仓库曾把"130 篇骨架扫描 + 引言只摘首句/目的句/末句"
   写成"130 篇逐篇精读、48 篇引言逐段读"（v2.12.0），**已于 v2.14.0 作废并更正**。
+  v2.15.0 进一步发现旧样本的两个抽样/抽取缺陷（抽取器 dict 覆盖同名章节、
+    旧"130 篇"取自按文件大小升序的清单即全语料最小的 130 篇），已重抽**分层随机**样本 181 篇
+    （种子 20261103、不按大小排序），其中 164 篇可逐字读，正文约 570 万字符。
 
 ### 内容来源（修改时可回查）
 

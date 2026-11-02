@@ -6,7 +6,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.14.0"
+  version: "2.15.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -257,6 +257,15 @@ Further research should focus on [方向].
 详见 `references/micropaleo-paper-patterns.md`（四类主题的章节骨架、图注面板字母体系、
 地质图制式、图版规则、前置要素实测覆盖率、交稿自查表）。
 
+> 🆕 **v2.15.0 新增两份实证文件**（读到这一节时按需加载）：
+> - `references/figure-conventions-evidence.md` —— **图件制图实证**：449 张渲染图实看。
+>   核心：**比例尺 vs 放大倍数按刊分**（Palaeo 3P/Pal J/QSR 用比例尺条；Geologica Carpathica/
+>   Micropaleontology/Revue de micropaléontologie 只写 × magn.）；图注前缀多语种词汇表（实测 4035 条）；
+>   图版说明四种制式；表格表注符号体系；Elsevier 彩色图强制话术。
+> - `references/fulltext-reading-evidence.md` —— **全文逐字精读实证**：181 篇分层随机样本。
+>   核心：章节链五类骨架、Methods 三档详略、**Discussion 四拍结构**、Conclusion 两种形态、
+>   **短篇三种讨论形态**、引言六种起手、类群块跨语种模板。
+
 ### 🔴 系统描述类论文（写新种/新属）专章
 
 **这类论文的"讨论"不在 Discussion 段，而在每个类群块的 Remarks 里。**（22 篇精读 + 17 篇全文通读实测）
@@ -282,6 +291,10 @@ Further research should focus on [方向].
 > **不是词频统计** —— 关键词出现率只能证明"某个词出现过"，**不能**证明"作者在这里做了什么论证动作"。
 > v2.10.0 曾用命中率下结论，v2.11.0 起作废；v2.12.0 的"48 篇可读引言逐段读"口径**已于 v2.14.0 作废**
 > （那一轮引言只摘了首句、目的句、末句三处）。**每条结论都附论文名与逐字原文**。
+> 🆕 **v2.15.0 重做**：旧样本另有两个缺陷（抽取器 dict 覆盖同名章节导致正文重复计数；
+> 旧"130 篇"取自按文件大小升序的清单，实为全语料最小的 130 篇）。已重抽**分层随机**样本 181 篇
+> （种子 20261103、**不按大小排序**），其中 **164 篇逐字读完**，正文约 570 万字符；
+> 图件另渲染 449 张 PNG 由 5 组**实际打开看图**。详见 `references/fulltext-reading-evidence.md`。
 
 | 环节 | 本领域实际写法 | 与通用 SCI 模板的差别 |
 |---|---|---|
@@ -347,6 +360,8 @@ Further research should focus on [方向].
 | `references/figure-specs.md` | 图表硬参数 + 构图 + 版权红线 + 版式范例 |
 | `references/color-system.md` | ★ **配色系统与视觉编码** —— 对照冷/处理暖、色相编码主变量、连续色阶、红绿禁忌、灰度检验 |
 | `references/figure-design-system.md` | ★ **图件设计体系** —— 图序即论证顺序、五种图件原型、实测语义色字典、版式规范、图注模板、交稿自查表 |
+| `references/figure-conventions-evidence.md` | ★ **图件制图实证（v2.15.0）** —— 449 张渲染图实看：比例尺 vs 放大倍数按刊分、图注前缀多语种词汇表、图版四种制式、表格表注符号体系、Elsevier 彩色图话术、交稿自查 |
+| `references/fulltext-reading-evidence.md` | ★ **全文逐字精读实证（v2.15.0）** —— 181 篇分层随机样本的章节链实测、Methods 三档详略、Discussion 四拍结构、Conclusion 两种形态、短篇三种讨论形态、引言六种起手、类群块跨语种模板 |
 | `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、逐字精读的 Introduction/Discussion 写法（8 种引言模式 / 13 种讨论起手 / 8 种收尾 / 3 种讨论骨架 / 引言编号问题↔结论编号答案）、**系统描述类专章（类群块模板 A–E / Remarks 三种模板 / 图版两制式）**、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性）+ 官方原文速查 |
 | `references/multi-journal-style-guides.md` | ★ **10 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系 / JM）+ 横向对比与选刊建议 |
