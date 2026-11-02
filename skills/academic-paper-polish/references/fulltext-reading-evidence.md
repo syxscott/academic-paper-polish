@@ -280,6 +280,105 @@ SYSTEMATIC → 逐类群块 → 结论
 | **D 区域综合/综述** | 无统一链，按主题分节 | 综述刊 |
 | **E 短篇报告** | （无标题引言）→ 正文连续散文 → 图注；或 一、二、三 编号小节 | 各类刊的短通讯 |
 
+## 八之五、标题（Title）写法实证
+
+### 8.5.1 统计（44 篇可抽取标题，≥5 词）
+
+| 指标 | 数值 |
+|---|---|
+| 词数 min / p25 / **中位** / p75 / max | 5 / 5 / **6.5** / 10 / 16 |
+| 含**年代词**（Devonian/Stage/Formation/Group…） | **41%** |
+| 含**产地/构造词**（Urals/Sea/Basin/Klippen/Suture…） | **32%** |
+| 含**类群名**（radiolaria/foraminifera…） | **25%** |
+| 含**方法/研究词**（analysis/review/biostratigraphy/fauna…） | 20% |
+| 用**破折号** | 23% |
+| 用**冒号副标题** | **0%** |
+| 用**问号** | **0%** |
+
+→ 🔴 **本领域标题不用冒号副标题、不用问号**；主流是 **6–7 个词的名词短语**。
+
+### 8.5.2 三个可抄的构造公式
+
+1. **「时代 + 类群 + 产地」**（最主流）
+   > "Devonian radiolarians of Russia"
+   > "Jurassic Sedimentary Evolution and Nappe Emplacement in the Argolis Peninsula (Peloponnesus Greece)"
+2. **「新类群名 + 产地 + 时代」**（分类学论文，把新类群名直接写进标题）
+   > "New Taxa and New Middle Famennian Natgorella hirsuta–Spinoalius melekessensis Radiolarian Ecozone of the Volga–Ural Basin"
+3. **「主题 + 产地」**（区域地层）
+   > "Some Devonian radiolarians from chert blocks in the Bentong-Raub Suture Zone in Pahang"
+   > "Northern Okinawa Trough"
+
+### 8.5.3 逐字标题（跨刊）
+
+- "Pieniny Klippen Belt"（极短型，4 词）
+- "Jurassic and Early Cretaceous Vaamychgyn-Podgornaya Koryak"（时代 + 构造单元）
+- "Туронские радиолярии в разрезе горы Ак Крым"（俄文：时代 + 类群 + 剖面）
+- "Анализ динамики исчезновения и появления новых видов радиолярий"（俄文：方法词 + 对象）
+- "micro L'origine péridienne des Radiolaires et l'interprétation parasitaire de l'anisosporogénèse"（法文：主题 + 理论解释）
+
+---
+
+## 八之六、时态与语态（摘要口径，38 篇英文摘要）
+
+| 特征 | 出现率 | 写法建议 |
+|---|---|---|
+| 现在时（is/are/shows/indicates/suggests） | **95%** | 陈述结论用现在时 |
+| 被动结构（be + 过去分词） | **87%** | 用被动，突出结果而非作者 |
+| 第一人称 "we" | **仅 18%** | 少用 "we" |
+| 过去时/完成体 | 68% | 描述具体做过的事可用过去时 |
+| 含数字/数据 | 84% | 摘要要给具体数据 |
+
+→ 🔴 **本领域摘要规范 = 现在时 + 被动 + 少用 we**。
+  这与通用模板"避免被动"的建议**相反**，是本领域最容易被通用建议带偏的一条。
+
+⚠️ **引言段的时态/语态未做同口径统计**（笔记中散见，未量化）——
+  需要时按目标刊抽样 10–20 篇引言首段重做。
+
+---
+
+## 八之七、综述口吻（review tone）
+
+语料里识别出 **4 篇综述型论文**（刊眉或体裁自标 "総説" / review / 综述），
+其口吻与原创研究**明显不同**：
+
+### 8.7.1 综述型引言 = 「前编回顾 + 本编范围 + 双角色框架」
+
+> 「本論では言及しないことにする。」（前编已述，本编不重复）
+> 「石油根源に底生有孔虫が実績をあげてきたが，放散虫化石は潜在のような古生態学的な研究の不足については」
+> —— 本山功 1999, J. Japan Assoc. Petrol. Technol. 64(3):269–281（刊眉明写 "総説"）
+
+### 8.7.2 综述方法学的关键动作：**先立收录标准，再列数据**
+
+> 「収録の対象とした文献は，原則として放散虫化石の種名あるいは化石帯名が掲載されていて，かつ試料採取地点あるいは試料採取ルートが明示されている公表論文とした。」
+> —— 同上
+
+→ 🔴 **综述不能只罗列文献，必须显式写出"我收录了什么、排除了什么、为什么"。**
+
+### 8.7.3 综述体的骨架钉：**每节收尾给一句可记忆的概括句**
+
+> "Summing up, one might conclude that sinking serves different purposes in the life-history cycles of diatoms."
+> —— Smetacek 1985, Marine Biology 84:239–251（综述+假说论文，**零图表**，以文献密度替代图表）
+
+### 8.7.4 用类比跨门类外推
+
+> "The striking similarity of this behaviour with that of bloom diatoms strongly suggests similar life-history patterns amongst species in both groups."
+> —— 同上
+
+### 8.7.5 长篇报告的综述放在**章首「概要と研究史」**
+
+> 「本報告では化石の産出が乏しく，詳しい年代の検討が困難なため，手取層群の区分はおおむね河合・野沢（1958）に従い…」
+> —— 日文地学报告（先综述研究史与争议，再声明本报告采用方案）
+
+### 8.7.6 综述 vs 原创的五条差异
+
+| 维度 | 原创研究 | 综述 |
+|---|---|---|
+| 引言 | 缺口 → 目的 → 本文动作 | 前编回顾 → 本编范围 → 双角色框架 |
+| 方法 | 材料/采样/仪器 | **收录标准**（收什么、排什么） |
+| 图表 | 本文数据图 | 常为零图表，靠文献密度 |
+| 收尾 | 结论 + 开放问题 | 每节给可记忆的概括句 |
+| 文献 | 支持论证 | **本身就是对象**，需分层评价 |
+
 ## 九、横切统计（164 篇精读笔记，机器计数）
 
 对 164 篇精读笔记做关键词计数（**仅作覆盖率参考，不作论证动作判断**）：
