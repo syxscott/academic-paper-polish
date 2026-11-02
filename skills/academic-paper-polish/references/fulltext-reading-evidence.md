@@ -379,6 +379,92 @@ SYSTEMATIC → 逐类群块 → 结论
 | 收尾 | 结论 + 开放问题 | 每节给可记忆的概括句 |
 | 文献 | 支持论证 | **本身就是对象**，需分层评价 |
 
+## 八之八、引言（Introduction）时态与语态
+
+**口径**：45 篇有独立 INTRODUCTION 段的英文论文（其余 119 篇无独立标题，未纳入）。
+
+| 特征 | 引言 | 对比：摘要 |
+|---|---|---|
+| 现在时标记 | **96%** | 95% |
+| 过去时/完成体标记 | **93%** | 68% |
+| 被动结构 | **96%** | 87% |
+| **第一人称 we** | **49%** | **仅 18%** |
+
+→ 🔴 **最重要的差异：引言可以用 we（49%），摘要几乎不用（18%）。**
+  写引言时「我们做了什么」是合法的；写摘要时要把主语让给结果。
+
+→ 引言长度：中位 **3786 字符**（min 774 / p75 8177 / max 18955），
+  是摘要中位（2000）的约 **1.9 倍**。
+
+**写法建议**：
+- 引言：现在时陈述领域现状 + 过去时叙述本文工作 + 可用 we
+- 摘要：现在时 + 被动 + 不用 we
+
+
+## 八之九、关键词（Keywords）写法
+
+**口径**：62/164 篇（38%）能机器识别关键词块（58 篇为行内标记，4 篇为独立段）。
+
+| 指标 | 数值 |
+|---|---|
+| 个数 min / p25 / **中位** / p75 / max | 0 / 4 / **8** / 12 / 20 |
+| 分隔符 | 逗号（英文）/ 逗号或顿号（中文） |
+| 大小写 | **全小写为主**（英文刊） |
+| 是否加句号 | **不加** |
+
+### 8.9.1 关键词的四个语义层（按出现频次）
+
+1. **类群名**（最高频）：Radiolaria / radiolarians / Polycystine radiolaria
+2. **研究主题**：biostratigraphy / paleoecology / paleobiogeography / evolution / biodiversity / taxonomy / stratigraphy
+3. **时代**：Devonian / Cretaceous / Jurassic / Paleogene / Famennian / Campanian
+4. **产地**：Russia / Polar Urals / Volga-Ural Basin / Western Carpathians / Koryak Highland
+
+→ 🔴 **公式：类群 + 主题 + 时代 + 产地**（各取 1-3 个，共约 8 个）。
+
+### 8.9.2 逐字例子
+
+> "Radiolaria, paleoecology, paleobiogeography, evolution, biodiversity, new species, biostratigraphy, Devonian, Russia."
+> —— Afanasieva & Amon 2011c（Pal J）
+
+> "Jurassic, Western Carpathians, Pieniny Klippen Belt, Pruske Unit, stratigraphy, microfacies, radiolarians, sedimentology."
+> —— Aubrecht & Ozvoldova 1994（Geol. Carpathica）
+
+> "Polycystine radiolaria  Biodiversity  Eastern Mediterranean  Sediment trap  Ionian Sea  Aegean sea  Cretan sea"
+> —— Danelian et al. 2022b（注意：用**双空格**分隔，无逗号）
+
+### 8.9.3 双语关键词是常态（多语种刊）
+
+> "Ключевые слова: РАДИОЛЯРИИ, МЕЛ, ПАЛЕОГЕН, ЭВОЛЮЦИЯ, ВЫМИРАНИЕ ВИДОВ" + "Keywords: RADIOLARIA, CRETACEOUS, PALEOGENE, EVOLUTION, SPECIES EXTINCTION"
+> —— Agarkov & Agarkov 2017（俄文刊附英文关键词）
+
+> "Key words : Upper Cretaceous, Dictyomitra koslovae Assemblage Zone, radiolaria.　キーワード：上部白亜系，Dictyomitra koslovae 群集帯，放散虫．"
+> —— Yamasaki & Yamasaki 1999（日英并置）
+
+→ **中文/日文/俄文刊常要求双语关键词**；英文刊只给英文。
+
+### 8.9.4 注意一种变体：**双空格代替逗号**
+
+Danelian et al. 2022b 用双空格分隔且无标点——**同一刊物体系内可能两种并存**，
+交稿前按目标刊近期论文核对。
+
+
+## 八之十、适用范围声明（重要）
+
+🔴 **本 skill 的结论只适用于「地学 / 古生物（微体古生物）类的期刊论文写作」**，
+具体是放射虫、有孔虫、牙形刺、硅藻等微体古生物方向的**原创研究论文与综述**。
+
+**不要推广到**：
+- 其他学科（生物、化学、医学、材料、计算机）——章节惯例、引文密度、图表规范都可能不同
+- 非地学的古生物学（脊椎动物大化石、植物化石）——图版制式与描述粒度不同
+- 社科 / 人文 —— 完全不适用
+
+**证据基础**：本地语料 D:\数据集\PDF_Radiolaria（8162 篇 / 62 GB / 64 子目录），
+分层随机抽取 181 篇，164 篇逐字精读。
+
+**明确不覆盖**：
+- 返修信 / 审稿回复（需要另一批语料）
+- 基金申请书、学位论文答辩（不在语料里）
+- 非英文/俄文/中文/日文/德文的第四语种
 ## 九、横切统计（164 篇精读笔记，机器计数）
 
 对 164 篇精读笔记做关键词计数（**仅作覆盖率参考，不作论证动作判断**）：
