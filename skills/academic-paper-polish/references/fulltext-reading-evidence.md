@@ -153,6 +153,133 @@ SYSTEMATIC → 逐类群块 → 结论
 → **俄文必写两句**："Близкие по морфологии виды не установлены."（无近似种时）
 和 "…позволяет выделить новый род, так как подобный род в семействе … не выделен."（新属理由）。
 
+## 八之二、摘要（Abstract）写法实证
+
+### 8.2.1 一个必须先说的口径问题
+
+164 篇里**只有 44 篇**（27%）有机器可识别的独立 ABSTRACT 段；
+其余 **120 篇（73%）的摘要没有标题标记**，直接嵌在标题页/正文流里
+（俄文刊、中文刊、日文刊、老刊尤其如此）。
+→ **写摘要时不必纠结"要不要 Abstract 标题"**：老刊常省略标题，新刊（Elsevier/Springer）必有。
+
+### 8.2.2 摘要长度与句数（44 篇有独立摘要段的样本）
+
+| 指标 | 数值 |
+|---|---|
+| 字符数 min / p25 / **中位** / p75 / max | 314 / 1089 / **1992** / 2553 / 6340 |
+| 句数 min / **中位** / max | 3 / **13** / 150 |
+
+→ 中位 **约 2000 字符 ≈ 300 词**，**约 13 句**。
+  比多数期刊的 150–250 词上限**偏长**——说明本领域摘要偏向"小型引言"，不限定字数时容易写长。
+
+### 8.2.3 摘要的五个功能件（38 篇英文摘要，逐字标记）
+
+| 功能件 | 出现率 | 写法 |
+|---|---|---|
+| **结果** | **87%** | 必写，且常带数据 |
+| **方法** | **74%** | 材料 + 产地 + 手段 |
+| **背景/现状** | **68%** | 1–2 句，常用 however / remains / poorly known |
+| **结论/意义** | **50%** | suggest / indicate / provide / first record |
+| **目的** | **29%** | 反而不常见——本领域摘要常**开门见山报结果**，不写"本文旨在" |
+
+→ 🔴 **与通用模板最大的不同：本领域摘要以"结果"打头（87%），"目的句"只占 29%。**
+  通用模板要求的"背景→目的→方法→结果→结论"五段式，在本领域**只有约 30% 的摘要**真的写了目的句。
+
+### 8.2.4 时态与语态（38 篇英文摘要）
+
+| 特征 | 出现率 |
+|---|---|
+| 现在时标记（is/are/shows/indicates/suggests） | **95%** |
+| 过去时/完成体标记（was/were/has been） | 68% |
+| 被动结构（be + 过去分词） | **87%** |
+| 第一人称 "we" | **仅 18%** |
+| 含数字/数据 | 84% |
+| 含新分类单元声明（gen. nov./sp. nov.） | 3% |
+
+→ 🔴 **摘要用现在时陈述结论（95%），用被动语态（87%），几乎不用 "we"（18%）。**
+  这与通用模板"避免被动"的建议**相反**——本领域的规范是**被动 + 现在时**。
+
+### 8.2.5 逐字例句
+
+**开门见山报结果型**（本领域主流）：
+> "There appear to be about six shallow-water polycystine radiolarian provinces in the modern ocean. These provinces owe their integrity to the major circulation systems that create packages of water and environments which vary in degrees of oceanographic and temporal stability."
+> —— Casey 1989, Palaeogeogr. Palaeoclimatol. Palaeoecol. 74:15–22
+
+**新分类单元摘要型**（注意：标题即新类群名，摘要直接列新属新种）：
+> "Based on the structure of microsphere and systems of girdles the author describes a new family — Miropylidae, two new pyloniid subfamilies — Palaeotetrapylinae and Dipylissinae, and three new genera and species — Miropyle mirabilis, Palaeotetrapyle muelleri and Dipylissa bensoni."
+> —— Dumitrica 1988, Pylonioidea
+
+**多语摘要型**（德/法刊同一篇附多种语言摘要）：
+> "Résumé — ... / Zusammenfassung — ..."
+> —— Baumgartner 1985（121 页专著，附三语摘要）
+
+### 8.2.6 可抄的摘要骨架（按体裁选）
+
+| 体裁 | 骨架 |
+|---|---|
+| **分类学新类群** | 新类群名 + 产地层位 → 鉴别特征 → 与近缘类群差异 → 意义 |
+| **生物地层** | 剖面/层位 → 群集特征 → 与已知带的对比 → 时代结论 |
+| **古环境重建** | 材料与方法 → 代理指标结果 → 与环境事件的对应 → 结论 |
+| **综述** | 领域范围 → 已有共识 → 分歧/空白 → 本文如何处理 |
+
+## 八之三、现代期刊的强制声明块（1% 覆盖率，但属硬性要求）
+
+164 篇里只有极个别论文（主要是 Elsevier/Springer 系）带这些块，但**目标期刊若要求，缺失即退稿**。
+
+### 8.3.1 四日期投稿流程（Elsevier）
+
+> "Received 11 June 2020 / Received in revised form 26 August 2020 / Accepted 27 August 2020 / Available online 13 September 2020"
+
+### 8.3.2 作者贡献（CRediT）
+
+> "Author statement — Sergey A. Gorbarenko: Conceptualization, Methodology, Validation, Investigation, Writing - Original Draft, Writing - Review & Editing. Elena A. Yanchenko: Methodology, Validation, Formal analysis, Investigation."
+
+→ **逐作者列角色**，用 CRediT 词表（Conceptualization / Methodology / Validation / Investigation / Formal analysis / Writing - Original Draft / Writing - Review & Editing）。
+
+### 8.3.3 数据可用性
+
+> "Data availability — All relevant data in this paper have been uploaded to MendeleyData https://data.mendeley.com/datasets/gbr7tprkyd/1."
+
+### 8.3.4 利益冲突
+
+> "Declaration of competing interest — The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper."
+
+### 8.3.5 致谢
+
+> "We are grateful to Captain Akamine and the crew of the R/V Mirai for their help with sediment collection in the OS during the MR06-04 cruise."
+
+→ 致谢顺序：**先谢船上/野外协助 → 再谢合作机构 → 最后谢基金号**。
+
+---
+
+## 八之四、决策树：先判断体裁，再选骨架
+
+**写之前先回答三个问题**（依据：164 篇章节链实测）：
+
+**Q1 本文的主要贡献是什么？**
+- 新分类单元 / 新类群 → 骨架 A（系统描述类）
+- 地层的时代确定 / 对比 → 骨架 B（生物地层类）
+- 环境 / 气候重建 → 骨架 C（多指标古环境类）
+- 方法 / 理论 / 综述 → 骨架 D（方法或综述类）
+
+**Q2 目标刊是"老刊"还是"新刊"？**
+- 老刊（Pal J / 俄文刊 / 中文老刊 / 日文刊）→ 可省独立摘要标题、可省 Discussion、可用图版制、可用 × magn.
+- 新刊（Elsevier / Springer / Wiley）→ 必须有独立 Abstract、必须带声明块、必须给比例尺条、彩色图需免责句
+
+**Q3 篇幅多长？**
+- ≤10 页 → 短篇骨架（无独立 Discussion，讨论嵌入末段）
+- >10 页 → 完整骨架（但仍可能无 Discussion——65% 的论文没有）
+
+### 五种骨架速查
+
+| 骨架 | 章节链 | 典型刊 |
+|---|---|---|
+| **A 系统描述** | INTRODUCTION → [Repository] → SYSTEMATIC DESCRIPTION（逐类群块）→ [Discussion 常缺省] | Pal J, Pal Zh, 分类学专刊 |
+| **B 生物地层** | INTRODUCTION → GEOLOGICAL SETTING → MATERIAL & METHODS → RESULTS（逐剖面/逐层）→ DISCUSSION → CONCLUSION | Palaeo 3P, 地层学杂志 |
+| **C 多指标古环境** | INTRODUCTION → OCEANOGRAPHICAL SETTING → METHODS → RESULTS → DISCUSSION（按时间段分节）→ CONCLUSION + 声明块 | QSR, Palaeo 3P, Deep-Sea Res. |
+| **D 区域综合/综述** | 无统一链，按主题分节 | 综述刊 |
+| **E 短篇报告** | （无标题引言）→ 正文连续散文 → 图注；或 一、二、三 编号小节 | 各类刊的短通讯 |
+
 ## 九、横切统计（164 篇精读笔记，机器计数）
 
 对 164 篇精读笔记做关键词计数（**仅作覆盖率参考，不作论证动作判断**）：

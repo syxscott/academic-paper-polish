@@ -1,5 +1,9 @@
 # 模块 9 · 期刊匹配与投稿（Journal Matching & Submission）
 
+> 🔴 **动笔前先读实证**：references/figure-conventions-evidence.md（449 张图实看）。
+> **比例尺 vs 放大倍数按刊分**：Palaeo 3P/Pal J/QSR 用比例尺条；Geologica Carpathica/Micropaleontology/
+> Revue de micropaléontologie 只写 × magn.。图注前缀也是多语种的（Fig./Рис./Таблица/图/图版/Abb.）。
+
 > 🔴 **这一步决定后面所有结构决策，不可跳过。** 不是流程形式 —— Results 与 Discussion 是否分开、有无独立结论段，都由目标期刊决定。
 
 ```text

@@ -1,6 +1,9 @@
 # 模块 6 · 讨论润色（Discussion）
 
 > 适用：讨论章节。核心：**结果 ↔ 文献 ↔ 理论 ↔ 实践**，并且必须**诚实陈述局限性**。
+> 🔴 **动笔前先读实证**：references/fulltext-reading-evidence.md §四（Discussion 四拍结构：
+> 数据→机制→与前人一致/矛盾→本研究结论）与 §六（短篇三种讨论形态）。
+> 关键句式："consistent with ... but contradicts ..."；不确定用 "likely due to"。
 
 ```text
 请对我的讨论章节进行深度优化，帮助我将研究结果与现有文献对话，并挖掘其理论与实践意义。

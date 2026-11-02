@@ -1,6 +1,8 @@
 # 模块 5 · 结果润色（Results）
 
 > 适用：结果章节 + 图表规范检查。核心原则：**Results 只讲"发现了什么"，"为什么"留给 Discussion**。
+> 🔴 **动笔前先读实证**：references/fulltext-reading-evidence.md §三（Results 两条硬要求：
+> 先给总量与采样密度；直接说某组不具信息量）与 §五（Conclusion 两种形态）。
 
 ```text
 请优化我的结果章节，确保结果的呈现客观、清晰，并符合学术图表规范。

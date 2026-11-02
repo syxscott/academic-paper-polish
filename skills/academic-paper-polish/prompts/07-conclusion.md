@@ -1,6 +1,8 @@
 # 模块 7 · 结论润色（Conclusion）
 
 > 适用：结论章节。核心：**总结 + 亮点 + 局限性 + 未来方向**，不引入新信息。
+> 🔴 **动笔前先读实证**：references/fulltext-reading-evidence.md §五（Conclusion 两种形态：
+> 连续散文式 vs 编号清单式）。机制归因用 "rather than" 排除；末尾留明确的开放问题。
 
 ```text
 请帮我重写或优化结论部分，使其强有力地总结全文并升华研究价值。
