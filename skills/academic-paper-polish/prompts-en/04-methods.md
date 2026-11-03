@@ -80,3 +80,39 @@ Process the methods section below:
 | *Palaeontologia Electronica* | Single file ≤50 MB, total ≤200 MB |
 
 > 🔴 **References inside Supplementary Material must not appear in the main Literature Cited.**
+
+
+---
+
+## v2.16.0 - Evidence-based additions for METHOD-CLASS (AI / data-driven) papers
+
+> Source: `references/ai-ml-paper-patterns.md` 4 (50 fossil+AI papers read verbatim).
+> **These are observed practices, not prescriptions.**
+
+### The six mandatory dataset items
+
+| Item | Observed wording (verbatim) | Source |
+|---|---|---|
+| Source and query | taxon name + download date: "taxon/taxa name 'Ammonoidea'", "10 November, 2020" | Foxon 2021 |
+| Initial N -> cleaning rule -> final N | "Outlying cases or samples that contain very few coccoliths ... have been removed from the analyses." | Boeckel & Baumann 2004 |
+| Per-class sample size | tabulated per class with a percentage column | Duan 2023 |
+| Annotation | "manually cropped and labeled by an expert diatomist" | Bueno et al. 2017 |
+| Split ratio | "a 10-fold cross-validation has been applied" / "~85% / ~15%" | Bueno 2017 / Duan 2023 |
+| Class imbalance | "The conodont dataset collected in this study has two problems: the dataset is small and imbalanced." + weighted loss "Weighti = 1 - ni/N" | Duan 2023 |
+
+### Data magnitudes in this field (state them, or the work looks implausible)
+
+613 images / 9 conodont species - 781 specimens / 11 ammonite species - 24,000 images / 80 diatom taxa -
+34,640 images / 35 planktic foraminifera species.
+
+### Environment versions (most often omitted, most often asked for)
+
+> "All models were trained using an NVIDIA GeForce RTX 2070 graphics card, and the operating system
+> version was Windows 10 Professional. Python version 3.7.0 was used, along with PyTorch version 1.10.0
+> and CUDA version 10.2." - Duan 2023
+
+### Always report a naive baseline
+
+> "the simplest baselines ... are given by using transfer learning via ImageNet-initialised off-the-shelf
+> CNN architectures" - Karaderi 2022; the ammonite study writes the majority-class baseline explicitly:
+> **148/781 = 0.190** - Foxon 2021

@@ -119,3 +119,46 @@ My target journal (if any): [JOURNAL NAME]
 1. *"We regret to say that…"*
 2. *"We suggest that you might submit it to another journal"*
 3. *"An increasing volume of submissions prevents us from publishing all worthwhile manuscripts we receive…"*
+
+
+---
+
+## v2.16.0 - Declaration blocks: measured frequency and verbatim wording
+
+> Source: `references/ai-ml-paper-patterns.md` 3 (225 papers machine-counted; 79 read verbatim).
+
+### Measured rates (denominators stated)
+
+| Declaration block | Fossil + AI (A, n=50) | Pure AI (C, n=113) |
+|---|---|---|
+| Data availability | **54 %** (27/50) | 28 % (32/113) |
+| Competing interest | 52 % (26/50) | 21 % (24/113) |
+| Author contributions | 46 % (23/50) | 23 % (26/113) |
+| Funding | 38 % (19/50) | 27 % (30/113) |
+| Code availability | **24 %** (12/50) | 5 % (6/113) |
+| AI-usage disclosure | **0 %** (0/50) | 1.8 % (2/113) |
+
+### Five observed Data availability formulations (verbatim)
+
+1. **Public repository + DOI**: "Data are available online at: osf.io/j3q67/" (Foxon 2021)
+2. **Specimen repository + dataset DOI** (specific to this field - state BOTH):
+   "Microscopic slides are prepared and stored at UMR 8198 - Evo-Eco-Paleo of the University of Lille, France.
+   The datasets (https://doi.org/10.57745/8KBOFP, Pinto et al. 2023) have been archived in the repository of the
+   University of Lille at Recherche Data Gouv." (Carlsson 2023)
+3. **Institutional archive**: "The Airyscan images used in this study were submitted to the Illinois Databank
+   (https://doi.org/10.13012/B2IDB-8817604V1)." (Adaime et al. 2024, PNAS Nexus)
+4. **In supplementary material**: "The code to collect the data used in figures is distributed as part of the
+   Supplementary Material." (Hou et al. 2023)
+5. **On request after acceptance** (weakest tier): "The data can be supplied by authors after acceptance of
+   the article." (Gorur et al. 2023)
+
+### Three tiers of code release
+
+1. GitHub link only; 2. GitHub + Zenodo DOI (the mainstream in this field);
+3. Zenodo + Software Heritage permanent archive (citable).
+
+### Declaration order differs by journal
+
+Common order: `Data availability -> CRediT -> Competing interest -> Acknowledgments`.
+Elsevier-family order: `Author contributions -> Funding -> Acknowledgements -> Competing interest -> Data availability`.
+**Check the actual order in the last 3 papers of your target journal before submission.**

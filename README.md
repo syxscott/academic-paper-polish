@@ -10,10 +10,10 @@
 
 <img src="https://img.shields.io/badge/📜_MIT_License-22c55e?style=social&logo=opensourceinitiative" alt="MIT" />
 <img src="https://img.shields.io/badge/🧩_10_Modules-8b5cf6?style=social&logo=bookstack" alt="Modules" />
-<img src="https://img.shields.io/badge/📚_11_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
+<img src="https://img.shields.io/badge/📚_12_References-0ea5e9?style=social&logo=readthedocs" alt="References" />
 <img src="https://img.shields.io/badge/🌐_中文-ef4444?style=social&logo=googletranslate" alt="中文" />
 <img src="https://img.shields.io/badge/🪄_12_AI_Tools-3b82f6?style=social&logo=anthropic" alt="AI Tools" />
-<img src="https://img.shields.io/badge/🏷️_v2.15.0-fbbf24?style=social&logo=github" alt="v2.15.0" />
+<img src="https://img.shields.io/badge/🏷️_v2.16.0-fbbf24?style=social&logo=github" alt="v2.16.0" />
 
 <br/>
 

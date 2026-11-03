@@ -44,6 +44,7 @@ academic-paper-polish/
 │           ├── figure-design-system.md  # ★ 图件设计体系（图序/五种原型/语义色字典）
 │           ├── figure-conventions-evidence.md  # ★ 图件制图实证（449 张渲染图实看：比例尺 vs 放大倍数按刊分、图注前缀多语种、图版四制式、表格表注符号体系）
 │           ├── fulltext-reading-evidence.md     # ★ 全文逐字精读实证（181 篇分层随机样本：章节链五类骨架、Discussion 四拍、Conclusion 两种形态、短篇三种讨论形态）
+│           ├── ai-ml-paper-patterns.md       # ★ AI/ML 方法类地学论文写作实证（225 篇 AI×分类学专题 PDF，A 组 50 篇化石+AI 逐字精读：描述类 vs 方法类骨架对照、声明块实测频率与五种逐字写法、数据集交代六件、基线三种强度、混淆矩阵等方法类专属图件）
 │           ├── micropaleo-paper-patterns.md # ★ 微体古生物/放射虫论文模式（全文通读实证）
 │           ├── paleobiology-journal.md  # ★ Paleobiology 全刊规范（图件+文体+数据）
 │           ├── multi-journal-style-guides.md  # ★ 9 家期刊官方 Style Guide 汇总
@@ -190,6 +191,12 @@ academic-paper-polish/
   v2.15.0 进一步发现旧样本的两个抽样/抽取缺陷（抽取器 dict 覆盖同名章节、
     旧"130 篇"取自按文件大小升序的清单即全语料最小的 130 篇），已重抽**分层随机**样本 181 篇
     （种子 20261103、不按大小排序），其中 164 篇可逐字读，正文约 570 万字符。
+- **第二批语料（v2.16.0）**：`D:\文档\硕士\论文artificial intelligence in taxonomical classification\参考文献`
+  225 篇「AI × 分类学」专题 PDF，225/225 抽取成功、正文约 1650 万字符、**全英文**；
+  其中 **A 组 50 篇（化石/微体化石 + AI/ML）与 B 组 29 篇逐字精读**（77 篇，408 万字符，25 个分片，
+  每篇由独立子 Agent 用 read 读到文件末尾），另 225 篇全部做机器层统计。
+  ⚠️ 这批语料**非随机抽样**（人选专题文献），**不可用于任何频率推断**；
+  且**文件名不可信**（已发现文件名与正文不符实例），所有结论以正文实际作者/期刊为准。
 
 ### 内容来源（修改时可回查）
 

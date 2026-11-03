@@ -92,3 +92,26 @@ that supports Y].
 After the introduction, methods, and results-and-discussion, readers know *what you did* and *what problem you solved* — but are left wanting: **so what?**
 
 This subsection answers it, commonly appearing as an independent section such as 4.3 Environmental significance or 4.3 Geological implications.
+
+
+---
+
+## v2.16.0 - Discussion in METHOD-CLASS papers
+
+> Source: `references/ai-ml-paper-patterns.md` 6.2, 4.5 (50 papers).
+
+### Three observed shapes
+
+| Shape | Practice | Source |
+|---|---|---|
+| 1. Separate Discussion + dedicated "Threats to validity" section | "5.2 Threats to validity and areas for future work", numbered limits | Duan 2023 |
+| 2. Separate Strengths + Limitations, closing the paper | no Discussion heading; paper ends with Strengths then Limitations | Foxon 2021 |
+| 3. Discussion folded into the end of each results subsection | each subsection: experiment -> explanation -> comparison with literature -> meaning for the field | Bueno 2017 |
+
+### Attribute errors to the fossils, not to the model
+
+> "Segmentation faults, including omissions, misidentifications and incomplete segmentations, were rarely
+> seen and mostly occurred in poor-preserved fossils." - Huang et al. 2024
+
+Limits in method-class papers are about **the data and the objects**: specimen breakage, damaged texture,
+class imbalance, life-cycle morphological variation, viewing angle - not about the model being weak.

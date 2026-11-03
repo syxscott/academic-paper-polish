@@ -4,6 +4,8 @@
 > 🔴 **动笔前先读实证**：references/fulltext-reading-evidence.md §五（Conclusion 两种形态：
 > 连续散文式 vs 编号清单式）。机制归因用 "rather than" 排除；末尾留明确的开放问题。
 
+> 🆕 **v2.16.0 实证补充**：references/ai-ml-paper-patterns.md §6.3（方法类结论三种形态）+ §7（与描述类的对照速查表）。
+> 🔴 方法类论文的结论必须多一段「**什么时候不该用这个方法**」——描述类论文没有这一层。
 ```text
 请帮我重写或优化结论部分，使其强有力地总结全文并升华研究价值。
 

@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "skill": "academic-paper-polish",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
   "grading": {
     "scale": "pass / partial / fail",
@@ -242,6 +242,16 @@
         "load": "references/fulltext-reading-evidence.md",
         "must_mention": ["分层随机", "不按文件大小排序", "四拍", "两种形态", "回源核对"],
         "must_not": ["130 篇逐篇读段落骨架", "用命中率代替阅读"]
+      }
+    },
+    {
+      "id": "R15-ai-ml-patterns",
+      "module": "references/ai-ml-paper-patterns.md",
+      "prompt": "我要写一篇用深度学习做有孔虫自动识别的论文，Methods 和 Discussion 该怎么写？数据与代码怎么声明？",
+      "expect": {
+        "load": "references/ai-ml-paper-patterns.md",
+        "must_mention": ["数据集交代", "Data availability", "Code availability", "基线", "适用边界", "分母"],
+        "must_not": ["描述类骨架", "把方法类结论说成领域规律", "编造期刊规定"]
       }
     }
   ]

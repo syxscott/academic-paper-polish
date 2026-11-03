@@ -95,3 +95,36 @@ has (have) been less focused on / attempted to / conducted
 | 3 | **Region** | Summarise adjacent or other regions first, then note this region is under-studied |
 | 4 | **Uncertainty** | Prior work is extensive but holds two or more competing views worth clarifying |
 | 5 | **Hypothesis testing** | When no comparable prior work exists, state the hypothesis confidently: *We aim to test the feasibility (reliability) of the…* |
+
+
+---
+
+## v2.16.0 - Introduction in METHOD-CLASS papers
+
+> Source: `references/ai-ml-paper-patterns.md` 6.1 (50 papers).
+
+### The four fixed steps
+
+1. **Geological significance of the object** (as in descriptive papers - not "what this paper does")
+2. **The pain of the traditional method, quantified where possible** - absent from descriptive papers:
+   "in order to compute an index score, the identification of a minimum of 400 valves per sample is required"
+   (Bueno et al. 2017)
+3. **The gap in existing technique** - not "nobody studied X" but "existing methods fall short on dimension Y"
+   (Duan 2023's gap is **granularity**: prior data spanned genera/families, this work is intra-genus)
+4. **What this paper does, and what it is for**
+
+### Four shapes of the contribution statement
+
+| Shape | Verbatim | Source |
+|---|---|---|
+| Lettered (a)(b) | "The main contributions of this work are: (a) big database collection... and (b) the study of the main handcrafted features..." | Bueno 2017 |
+| Numbered questions | numbered research questions at the end of the intro | as in descriptive papers |
+| One sentence | "In this study, we use..." | Duan 2023 |
+| Dedicated subsection | a bold **"Paper Contributions."** subsection | Karaderi 2022 |
+
+### Section-navigation sentences (common in method-class papers, rare in descriptive ones)
+
+> "In order to extract the main diatom features, we propose in Section 3 a segmentation... Sections 5 and 6
+> describe classification strategies and some classifiers. Experimental results are presented in Section 7
+> where an overall accuracy of 98.11% is presented... Finally, Section 8 concludes the paper addressing
+> unresolved challenging problems." - Bueno et al. 2017

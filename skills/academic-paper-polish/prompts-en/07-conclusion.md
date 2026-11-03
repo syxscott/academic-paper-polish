@@ -65,3 +65,34 @@ One to two paragraphs, briefly presenting the most important conclusions of the 
 **Model structure** (GCA-style):
 - Paragraph 1: what was done + the main finding and its mechanism (e.g. under anoxic conditions ·OH is generated mainly by surface sulfur-defect oxidation of H₂O(ad); under oxic conditions mainly by O₂ reduction, with H₂O₂ the key intermediate…)
 - Paragraph 2: implications for the fate of organic contaminants and redox-active elements, especially in flowing environments
+
+
+---
+
+## v2.16.0 - Conclusions in METHOD-CLASS papers
+
+> Source: `references/ai-ml-paper-patterns.md` 6.3, 7.
+
+### A method-class conclusion must state its boundary of validity
+
+> "The optimal classifer, c6, obtained an AUC value of 0.9 on the test set. This was a good result for the
+> classication of a conodont species, especially considering that the model was trained in the low data
+> regime, and some conodont images have natural defects (e.g., some parts of the fossil were missing and
+> the surface of the fossil was covered by colloid)." - Duan 2023
+
+> "Machine learning models and outputs should be used with caution in studies where quantification of the
+> abundance of rare species is a central goal, as the models we show..." - Kahanamoku et al. 2024
+
+**"Not every task suits AI" recurs across this corpus** - a method-class conclusion must answer
+**"when should this method NOT be used"**.
+
+### Skeletons are not interchangeable (descriptive vs method-class)
+
+| Component | Descriptive | Method-class |
+|---|---|---|
+| Geological setting | almost always | **0/50** |
+| Repository | required | **0/50** |
+| Systematic | core section | **0/50** |
+| Standalone Results | usually absent | **46 % present** |
+| Standalone Discussion | absent in 65 % | **48 % present** |
+| Standalone Conclusion | present | **52 % present** |

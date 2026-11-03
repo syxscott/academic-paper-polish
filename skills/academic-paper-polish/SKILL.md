@@ -6,7 +6,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.15.0"
+  version: "2.16.0"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -265,6 +265,13 @@ Further research should focus on [方向].
 > - `references/fulltext-reading-evidence.md` —— **全文逐字精读实证**：181 篇分层随机样本。
 >   核心：章节链五类骨架、Methods 三档详略、**Discussion 四拍结构**、Conclusion 两种形态、
 >   **短篇三种讨论形态**、引言六种起手、类群块跨语种模板。
+> - `references/ai-ml-paper-patterns.md` —— **方法类（AI/数据）地学论文的写作实证**：
+>   第二批语料（225 篇「AI × 分类学」专题 PDF，A 组 50 篇化石+AI **逐字精读**）。
+>   🔴 **描述类与方法类骨架不可混用**：Geological setting / Repository / Systematic 在描述类
+>   几乎必选、在方法类 **0/50**；而方法类有独立 Results **46%**、Discussion **48%**、
+>   Conclusion **52%**、Data availability **54%**（27/50）、Code availability **24%**（12/50）。
+>   另含：声明块五种逐字写法（Zenodo/OSF/机构库/补充材料/录用后提供）、数据集交代六件、
+>   模型交代五种粒度、基线三种强度、混淆矩阵与特征空间图、结论的「适用边界」段。
 
 ### 🔴 系统描述类论文（写新种/新属）专章
 
@@ -366,6 +373,7 @@ Further research should focus on [方向].
 | `references/figure-design-system.md` | ★ **图件设计体系** —— 图序即论证顺序、五种图件原型、实测语义色字典、版式规范、图注模板、交稿自查表 |
 | `references/figure-conventions-evidence.md` | ★ **图件制图实证（v2.15.0）** —— 449 张渲染图实看：比例尺 vs 放大倍数按刊分、图注前缀多语种词汇表、图版四种制式、表格表注符号体系、Elsevier 彩色图话术、交稿自查 |
 | `references/fulltext-reading-evidence.md` | ★ **全文逐字精读实证（v2.15.0）** —— 181 篇分层随机样本的章节链实测、Methods 三档详略、Discussion 四拍结构、Conclusion 两种形态、短篇三种讨论形态、引言六种起手、类群块跨语种模板 |
+| `references/ai-ml-paper-patterns.md` | ★ **AI/ML 方法类地学论文的写作实证（v2.16.0）** —— 第二批语料（225 篇「AI × 分类学」专题 PDF，A 组 50 篇化石+AI 逐字精读）：**描述类 vs 方法类骨架对照**、声明块实测频率与五种逐字写法（Data/Code availability）、数据集交代六件、模型交代五种粒度、评估指标实测、基线三种强度、混淆矩阵/ROC/特征空间等方法类专属图件、局限自陈三类写法、结论的「适用边界」段 |
 | `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、逐字精读的 Introduction/Discussion 写法（8 种引言模式 / 13 种讨论起手 / 8 种收尾 / 3 种讨论骨架 / 引言编号问题↔结论编号答案）、**系统描述类专章（类群块模板 A–E / Remarks 三种模板 / 图版两制式）**、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性）+ 官方原文速查 |
 | `references/multi-journal-style-guides.md` | ★ **10 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系 / JM）+ 横向对比与选刊建议 |

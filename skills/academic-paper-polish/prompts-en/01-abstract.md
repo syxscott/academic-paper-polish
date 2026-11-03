@@ -57,3 +57,21 @@ Process the abstract below:
 2. A brief account of the background and rationale
 3. The main conclusions, introduced by *"Here we show"* or an equivalent
 4. 2–3 sentences placing the findings in a broader context so readers outside the field see how the field moved forward
+
+
+---
+
+## v2.16.0 - Abstract in METHOD-CLASS papers
+
+> Source: `references/ai-ml-paper-patterns.md` 6.
+
+Method-class abstracts share the descriptive-paper skeleton but shift weight:
+
+- **Results lead more often**, and results carry **numbers plus metric names** (accuracy / AUC / F1),
+  not morphological description.
+- The **data scale** (how many images, how many classes) and the **method name**
+  (CNN / transfer learning / deep metric learning) must appear.
+- The closing often carries a **boundary of validity** ("satisfactory even in the low-data regime",
+  "should be used with caution when quantifying abundant rare species").
+
+Do not mix this with the descriptive-paper abstract: see `references/fulltext-reading-evidence.md` 8.2.

@@ -101,3 +101,23 @@ The same body of results is reorganised along **different axes** in the two sect
 | *Palaeontologia Electronica* | **300 ppi** (150 ppi allowed for first PDF) | **300 ppi** |
 
 > 🔴 **Preparing all specimen photos at 600 dpi at final size satisfies every journal above.**
+
+
+---
+
+## v2.16.0 - Figure types unique to METHOD-CLASS papers
+
+> Source: `references/ai-ml-paper-patterns.md` 5 (50 papers).
+
+| Figure type | Verbatim caption | Source |
+|---|---|---|
+| Confusion matrix | "The confusion matrix is generated based on the prediction results of the final classifer on the test dataset." | Duan 2023 |
+| ROC curves | "The ROC curves are generated based on the prediction results of the final classifer on the Test set." | Duan 2023 |
+| Feature space | "Data features visualized by t-SNE (A), visualize original data features; (B), visualize the last layer of features after training on the original data." | Duan 2023 |
+| Network architecture | "Overview of the convolutional neural network used and its procedures in the experiment." | Duan 2023 |
+| Error cases | "Some incomplete fossil samples [(A), the part enclosed by the white oval dotted line] and samples with surfaces attached to colloids (B)." | Duan 2023 |
+
+**Fixed confusion-matrix caption convention**: rows = ground truth, columns = prediction, cell = percentage, diagonal = 100 %.
+
+**Table note convention**: bold the best value; footnote markers (a/b) for input size etc.; **put training /
+inference time in the same table as the accuracy metrics** - compute cost is reported as a first-class dimension.
