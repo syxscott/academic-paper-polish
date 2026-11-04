@@ -61,3 +61,18 @@
 - 数据可用性：repository DOI / 附件 / 申请获取
 - 代码可用性：GitHub URL + DOI（Zenodo）
 - 🔴 不可用时必须说明原因，而非沉默省略
+
+---
+
+## v2.16.1 - 数据集交代的三种主流写法（实测口径）
+
+> Source: `references/ai-ml-paper-patterns.md` §9.4（8 个分片 31 篇合并口径）。
+
+| 项 | 实测主流 | 逐字原文 |
+|---|---|---|
+| 标注方式 | 四种并存：网络爬虫+人工复核 / 人工标注+平台画框 / 专家鉴定+馆藏号 / 多人标注+资深专家定 gold standard | "by one of the authors (TI), who has studied radiolarians for more than 30 years" |
+| 划分比例 | 🔴 **本批 12 种写法互不相同，不要照抄任何一篇** | "The images were then split into training (~ 85%) and testing (~ 15%) datasets." |
+| 类别不平衡 | 五种处理：加权损失 / 下采样并写出下采样后数字 / 重采样 / 剔除样本过少的类 / **承认不平衡并声明是行业常态** | "... were randomly subsampled to 660 specimens to reduce imbalance." |
+
+🔴 **超参表不是标配**：合并 21 篇口径，**有独立超参表的只有 2 篇（9.5%）**。
+其余三种写法：写在正文散文 / 只列架构而不列学习率 / 直接声明沿用默认配置。

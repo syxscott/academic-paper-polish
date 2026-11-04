@@ -6,7 +6,7 @@ description: 学术论文写作、润色、改稿与投稿的全流程助手。1
 license: MIT
 metadata:
   author: syxscott
-  version: "2.16.0"
+  version: "2.16.1"
   source_material:
     - "论文写作方法论骨架：章节写法、综述流程、投稿与返修"
     - "格式硬参数与文献检索实操：图表规范、引文密度、送审流程、时间预算"
@@ -272,6 +272,12 @@ Further research should focus on [方向].
 >   Conclusion **52%**、Data availability **54%**（27/50）、Code availability **24%**（12/50）。
 >   另含：声明块五种逐字写法（Zenodo/OSF/机构库/补充材料/录用后提供）、数据集交代六件、
 >   模型交代五种粒度、基线三种强度、混淆矩阵与特征空间图、结论的「适用边界」段。
+>   **v2.16.1 追加 §九**（8 个分片 31 篇横向观察交叉统计，合并口径）：
+>   混淆矩阵 **45.8%（11/24，不是「标配」）**、独立超参表 **9.5%（2/21）**、
+>   统计检验 **16.7%（5/30）**、训练曲线 **13.6%（3/22）**；
+>   局限自陈**七种句式**、可解释性图件**三条路线**、标注方式**四种**、划分比例**十二种写法**、
+>   文件名误标**全量清单（9 例完全不符 / 225 = 4.0%）**、声明块机器层 vs 人工层**口径差**。
+>   ⚠️ §九 对 §4.2 / §5.1 / §3.1 / §8 第 3 条四处表述给出**口径更正**（见 §9.2），引用时一并读。
 
 ### 🔴 系统描述类论文（写新种/新属）专章
 
@@ -373,7 +379,7 @@ Further research should focus on [方向].
 | `references/figure-design-system.md` | ★ **图件设计体系** —— 图序即论证顺序、五种图件原型、实测语义色字典、版式规范、图注模板、交稿自查表 |
 | `references/figure-conventions-evidence.md` | ★ **图件制图实证（v2.15.0）** —— 449 张渲染图实看：比例尺 vs 放大倍数按刊分、图注前缀多语种词汇表、图版四种制式、表格表注符号体系、Elsevier 彩色图话术、交稿自查 |
 | `references/fulltext-reading-evidence.md` | ★ **全文逐字精读实证（v2.15.0）** —— 181 篇分层随机样本的章节链实测、Methods 三档详略、Discussion 四拍结构、Conclusion 两种形态、短篇三种讨论形态、引言六种起手、类群块跨语种模板 |
-| `references/ai-ml-paper-patterns.md` | ★ **AI/ML 方法类地学论文的写作实证（v2.16.0）** —— 第二批语料（225 篇「AI × 分类学」专题 PDF，A 组 50 篇化石+AI 逐字精读）：**描述类 vs 方法类骨架对照**、声明块实测频率与五种逐字写法（Data/Code availability）、数据集交代六件、模型交代五种粒度、评估指标实测、基线三种强度、混淆矩阵/ROC/特征空间等方法类专属图件、局限自陈三类写法、结论的「适用边界」段 |
+| `references/ai-ml-paper-patterns.md` | ★ **AI/ML 方法类地学论文的写作实证（v2.16.0，v2.16.1 追加 §九）** —— 第二批语料（225 篇「AI × 分类学」专题 PDF，A 组 50 篇化石+AI 逐字精读）：**描述类 vs 方法类骨架对照**、声明块实测频率与五种逐字写法（Data/Code availability）、数据集交代六件、模型交代五种粒度、评估指标实测、基线三种强度、混淆矩阵/ROC/特征空间等方法类专属图件、局限自陈三类写法、结论的「适用边界」段；**§九 横向观察交叉统计（31 篇合并口径）**：图件真实频率（混淆矩阵 45.8%、超参表 9.5%、统计检验 16.7%、训练曲线 13.6%）、局限自陈七种句式、标注四种 / 划分十二种 / 不平衡五种处理、文件名误标全量清单、声明块机器层 vs 人工层口径差 |
 | `references/micropaleo-paper-patterns.md` | ★ **微体古生物 / 放射虫论文的写作与制图模式** —— 四类主题骨架、逐字精读的 Introduction/Discussion 写法（8 种引言模式 / 13 种讨论起手 / 8 种收尾 / 3 种讨论骨架 / 引言编号问题↔结论编号答案）、**系统描述类专章（类群块模板 A–E / Remarks 三种模板 / 图版两制式）**、Fig. vs 图版、灰度优先、面板字母体系、地质图制式、来源声明 |
 | `references/paleobiology-journal.md` | ★ *Paleobiology* 全刊规范（图件 + 文体 + 数据可用性）+ 官方原文速查 |
 | `references/multi-journal-style-guides.md` | ★ **10 份官方 style guide 汇总**（ESR / Nature / PNAS / CVPR / Palaeoworld / APP / PE / PalZ / Elsevier 微体古生物系 / JM）+ 横向对比与选刊建议 |

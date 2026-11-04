@@ -121,3 +121,19 @@ The same body of results is reorganised along **different axes** in the two sect
 
 **Table note convention**: bold the best value; footnote markers (a/b) for input size etc.; **put training /
 inference time in the same table as the accuracy metrics** - compute cost is reported as a first-class dimension.
+
+---
+
+## v2.16.1 - Actual frequency of method-class figures (pooled, 31 papers)
+
+> Source: `references/ai-ml-paper-patterns.md` sections 9.1 / 9.5.
+
+| Figure / practice | Measured rate | Verbatim |
+|---|---|---|
+| Confusion matrix | **11/24 = 45.8%** (strict: main-text figure only, 10/24 = 41.7%) - 🔴 **not a "standard"**; nearly half substitute a per-class F1/Precision/Recall table | "The confusion matrix is generated based on the prediction results of the final classifer on the test dataset." |
+| Stand-alone hyper-parameter table | **2/21 = 9.5%** | see 9.1 |
+| Statistical tests | **5/30 = 16.7%** (a minority; most use "mean +/- SD over 10 runs" instead) | see 9.1 |
+| Training / loss curves | **3/22 = 13.6%**, and often pushed into the supplement | "The training and validation iterations are given in Supplements 4.2 figure S1, which confirms that the data is neither overfit, nor underfit." |
+| Interpretability figure | Three routes coexist: Grad-CAM / saliency map / **none at all**; not a requirement | "the weighted activation heatmap (Grad-CAM) (Servaraju et al., 2017) ... centered around the thoracic and abdominal walls of the specimens" |
+
+🔴 **Training curves and Grad-CAM are frequently pushed into supplementary material** (shard_02 CH3 / CH4-1).

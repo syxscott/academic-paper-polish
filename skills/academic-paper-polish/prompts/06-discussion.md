@@ -85,3 +85,26 @@ Further research should focus on [识别合适的xxx] and [开发可支持xxx的
 这一节回答它，常作为 Discussion 的独立小节（如 4.3 Environmental significance / 4.3 Geological implications）。
 
 > 无独立 Discussion 时读 §8.11.11：讨论可装进 METHODS / 嵌在引言 / 嵌在 Results / 由类群块 Comparison 承担。
+
+---
+
+## v2.16.1 - 局限自陈的七种句式（实测，可直接套用）
+
+> Source: `references/ai-ml-paper-patterns.md` §9.6（8 个分片 31 篇）。
+
+| # | 句式 | 逐字原文 |
+|---|---|---|
+| 1 | "It is worth noting that…" | "It is worth noting that…" |
+| 2 | 单句点名 | "The limitation of the proposed method is the lack of…" |
+| 3 | **警示句式**（顺带说"何时不该用"） | "Machine learning models and outputs should be used with caution in studies where…" |
+| 4 | 条件句式 | "If the initial metaweb is too narrow…" |
+| 5 | 先扬后抑 + 专设编号小节 | "4.1 Future Research" |
+| 6 | **「因为做不到 X 所以不采用 Y」** | 散落在数据处理小节 |
+| 7 | **方法论权衡句式**（每小节先优势后局限） | "the major advantage…" → "the major limitation…" |
+
+另有两种**归因句式**：
+
+- 域偏移的**并列归因**（不下断言）："The still remaining small shift might represent either a slight residual methodological drift, or genuine biological signal…"
+- 承认域外后把责任归给训练数据："As the CNN training… and accuracy are independent from the camera itself"
+
+🔴 七种句式指向的仍是**数据 / 对象本身**；只有第 3、7 种会顺带说到"何时不该依赖本方法"。

@@ -76,3 +76,19 @@
 - **对称** → 严谨稳定分类；**不对称** → 变化动态演化
 
 详见 `../references/figure-specs.md`。
+
+---
+
+## v2.16.1 - 方法类图件的真实频率（合并 8 分片 31 篇）
+
+> Source: `references/ai-ml-paper-patterns.md` §9.1 / §9.5。
+
+| 图件 / 做法 | 实测频率 | 逐字原文 |
+|---|---|---|
+| 混淆矩阵 | **11/24 = 45.8%**（严格只算主文图 10/24 = 41.7%）—— 🔴 **不是「标配」**，近一半用逐类 F1/Precision/Recall 表替代 | "The confusion matrix is generated based on the prediction results of the final classifer on the test dataset." |
+| 独立超参表 | **2/21 = 9.5%** | 见 §9.1 |
+| 统计检验 | **5/30 = 16.7%**（少数派；多数改用「10 次重复的 mean ± SD」） | 见 §9.1 |
+| 训练 / loss 曲线 | **3/22 = 13.6%**，且常被推入补充材料 | "The training and validation iterations are given in Supplements 4.2 figure S1, which confirms that the data is neither overfit, nor underfit." |
+| 可解释性图件 | 三条路线并存：Grad-CAM / saliency map / **完全不用**；不是必需项 | "the weighted activation heatmap (Grad-CAM) (Servaraju et al., 2017) ... centered around the thoracic and abdominal walls of the specimens" |
+
+🔴 **训练曲线与 Grad-CAM 常被推到补充材料**（shard_02 的 CH3 / CH4-1）。

@@ -116,3 +116,18 @@ Process the methods section below:
 > "the simplest baselines ... are given by using transfer learning via ImageNet-initialised off-the-shelf
 > CNN architectures" - Karaderi 2022; the ammonite study writes the majority-class baseline explicitly:
 > **148/781 = 0.190** - Foxon 2021
+
+---
+
+## v2.16.1 - How datasets are actually described (measured, 31-paper pooled)
+
+> Source: `references/ai-ml-paper-patterns.md` section 9.4 (pooled over 8 shards, 31 papers).
+
+| Item | Measured mainstream | Verbatim |
+|---|---|---|
+| Labelling | Four coexist: web-crawled + human re-check / human label + platform bounding boxes / expert ID + collection number / multi-annotator + senior expert gold standard | "by one of the authors (TI), who has studied radiolarians for more than 30 years" |
+| Train/test split | 🔴 **Twelve different ratios in this batch - do not copy any one of them** | "The images were then split into training (~ 85%) and testing (~ 15%) datasets." |
+| Class imbalance | Five treatments: loss weighting / down-sampling with the post-sampling number written out / resampling / dropping classes with too few specimens / **acknowledging it and stating it is normal in the field** | "... were randomly subsampled to 660 specimens to reduce imbalance." |
+
+🔴 **A hyper-parameter table is not the norm**: only **2 of 21 (9.5%)** papers have one.
+The other three routes: hyper-parameters in prose / architecture-only tables / "default configuration" declared outright.

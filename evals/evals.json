@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "skill": "academic-paper-polish",
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "description": "评测集：每个模块覆盖「正确触发」「不误触发」「输出质量基线」三类用例。",
   "grading": {
     "scale": "pass / partial / fail",
@@ -252,6 +252,16 @@
         "load": "references/ai-ml-paper-patterns.md",
         "must_mention": ["数据集交代", "Data availability", "Code availability", "基线", "适用边界", "分母"],
         "must_not": ["描述类骨架", "把方法类结论说成领域规律", "编造期刊规定"]
+      }
+    },
+    {
+      "id": "R16-ai-ml-cross-shard",
+      "module": "references/ai-ml-paper-patterns.md",
+      "prompt": "我要写一篇化石图像深度学习分类论文：混淆矩阵和超参表要不要放？统计检验要不要做？局限怎么写？数据与代码声明块怎么排？",
+      "expect": {
+        "load": "references/ai-ml-paper-patterns.md",
+        "must_mention": ["45.8%", "9.5%", "16.7%", "分母", "Funding", "10.0%"],
+        "must_not": ["混淆矩阵是标配", "超参表是标配", "把 31 篇说成 225 篇", "编造期刊规定"]
       }
     }
   ]

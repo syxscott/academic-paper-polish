@@ -162,3 +162,23 @@ My target journal (if any): [JOURNAL NAME]
 Common order: `Data availability -> CRediT -> Competing interest -> Acknowledgments`.
 Elsevier-family order: `Author contributions -> Funding -> Acknowledgements -> Competing interest -> Data availability`.
 **Check the actual order in the last 3 papers of your target journal before submission.**
+
+---
+
+## v2.16.1 - Two calibres for declaration blocks (machine layer vs human layer)
+
+> Source: `references/ai-ml-paper-patterns.md` section 9.9 (pooled over 8 shards, 31 papers).
+
+| Block | Machine layer (225 papers, heading match) | Human layer (31 papers, **standalone sections only**) |
+|---|---|---|
+| Data availability | 54% (27/50) | **12/31 = 38.7%** |
+| Code availability | 24% (12/50) | **4/31 = 12.9%** |
+| Funding | 38% (19/50) | **1/10 = 10.0%** |
+
+🔴 **Read Funding 38% (19/50) as "funding mentioned in the text"**, not "a standalone Funding heading" -
+the human layer finds only 10.0% standalone Funding headings; the rest sit in the first acknowledgement
+sentence, inside Acknowledgements, or mixed into Authors' contributions.
+
+📌 If the target journal only asks for funding to be acknowledged, write it in place; do not invent a
+Funding section. **Data availability / Code availability are "must write" for fossil-class papers**
+(verbatim originals in sections 3.2 / 3.3).

@@ -115,3 +115,26 @@ This subsection answers it, commonly appearing as an independent section such as
 
 Limits in method-class papers are about **the data and the objects**: specimen breakage, damaged texture,
 class imbalance, life-cycle morphological variation, viewing angle - not about the model being weak.
+
+---
+
+## v2.16.1 - Seven sentence patterns for stating limitations (measured)
+
+> Source: `references/ai-ml-paper-patterns.md` section 9.6 (8 shards, 31 papers).
+
+| # | Pattern | Verbatim |
+|---|---|---|
+| 1 | "It is worth noting that…" | "It is worth noting that…" |
+| 2 | Single-sentence naming | "The limitation of the proposed method is the lack of…" |
+| 3 | **Caution pattern** (also says when NOT to use it) | "Machine learning models and outputs should be used with caution in studies where…" |
+| 4 | Conditional | "If the initial metaweb is too narrow…" |
+| 5 | Concession + dedicated numbered subsection | "4.1 Future Research" |
+| 6 | **"Because X could not be done, Y was not adopted"** | scattered in the data-processing subsection |
+| 7 | **Method-trade-off pattern** (advantage first, limitation second, per subsection) | "the major advantage…" → "the major limitation…" |
+
+Two attribution patterns worth stealing:
+
+- **Parallel attribution for domain shift** (no assertion): "The still remaining small shift might represent either a slight residual methodological drift, or genuine biological signal…"
+- Admit out-of-domain, then attribute it to the training data: "As the CNN training… and accuracy are independent from the camera itself"
+
+🔴 All seven still point at **the data and the objects**; only #3 and #7 add "when not to rely on this method".

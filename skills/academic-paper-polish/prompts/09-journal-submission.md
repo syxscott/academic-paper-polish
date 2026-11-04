@@ -131,3 +131,21 @@
 详见 `../references/journal-constraints.md`。
 
 > **中文刊与英文刊系统性地不同**（§8.11）：中文刊全用比例尺、图注中英双语、图表引用写「（图１）」「（表１，点２）」、对比表用「√」。
+
+---
+
+## v2.16.1 - 声明块的两种口径（机器层 vs 人工层）
+
+> Source: `references/ai-ml-paper-patterns.md` §9.9（8 个分片 31 篇合并）。
+
+| 声明块 | 机器层（225 篇标题匹配） | 人工层（31 篇，只认**独立段落**） |
+|---|---|---|
+| Data availability | 54%（27/50） | **12/31 = 38.7%** |
+| Code availability | 24%（12/50） | **4/31 = 12.9%** |
+| Funding | 38%（19/50） | **1/10 = 10.0%** |
+
+🔴 **Funding 38%（19/50）要读作「正文提到资助」，不是「有独立 Funding 标题」**——
+人工层实测独立 Funding 标题只有 10.0%，其余写在致谢首句 / Acknowledgements 内 / Authors' contributions 段内。
+
+📌 目标刊若只要求「致谢中写明资助」，照散写即可，不必硬造 Funding 段；
+但 **Data availability / Code availability 在化石类论文里属于「要写」项**（§3.2 / §3.3 的逐字原文可抄）。
